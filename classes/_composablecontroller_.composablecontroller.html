@@ -97,19 +97,21 @@
 								<li class="tsd-kind-constructor tsd-parent-kind-class tsd-is-overwrite"><a href="_composablecontroller_.composablecontroller.html#constructor" class="tsd-kind-icon">constructor</a></li>
 							</ul>
 						</section>
-						<section class="tsd-index-section tsd-is-inherited">
+						<section class="tsd-index-section ">
 							<h3>Properties</h3>
 							<ul class="tsd-index-list">
 								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-inherited"><a href="_composablecontroller_.composablecontroller.html#defaultconfig" class="tsd-kind-icon">default<wbr>Config</a></li>
 								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-inherited"><a href="_composablecontroller_.composablecontroller.html#defaultstate" class="tsd-kind-icon">default<wbr>State</a></li>
 								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-inherited"><a href="_composablecontroller_.composablecontroller.html#disabled" class="tsd-kind-icon">disabled</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-class"><a href="_composablecontroller_.composablecontroller.html#internalstores" class="tsd-kind-icon">internal<wbr>Stores</a></li>
 							</ul>
 						</section>
-						<section class="tsd-index-section tsd-is-inherited">
+						<section class="tsd-index-section ">
 							<h3>Accessors</h3>
 							<ul class="tsd-index-list">
 								<li class="tsd-kind-get-signature tsd-parent-kind-class tsd-is-inherited"><a href="_composablecontroller_.composablecontroller.html#config" class="tsd-kind-icon">config</a></li>
 								<li class="tsd-kind-get-signature tsd-parent-kind-class tsd-is-inherited"><a href="_composablecontroller_.composablecontroller.html#state" class="tsd-kind-icon">state</a></li>
+								<li class="tsd-kind-accessor tsd-parent-kind-class"><a href="_composablecontroller_.composablecontroller.html#stores" class="tsd-kind-icon">stores</a></li>
 							</ul>
 						</section>
 						<section class="tsd-index-section tsd-is-inherited">
@@ -139,7 +141,7 @@
 							<aside class="tsd-sources">
 								<p>Overrides <a href="_basecontroller_.basecontroller.html">BaseController</a>.<a href="_basecontroller_.basecontroller.html#constructor">constructor</a></p>
 								<ul>
-									<li>Defined in <a href="https://github.com/bitpshr/gaba/blob/e47f720/src/ComposableController.ts#L6">ComposableController.ts:6</a></li>
+									<li>Defined in <a href="https://github.com/bitpshr/gaba/blob/e940870/src/ComposableController.ts#L10">ComposableController.ts:10</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -163,7 +165,7 @@
 					</ul>
 				</section>
 			</section>
-			<section class="tsd-panel-group tsd-member-group tsd-is-inherited">
+			<section class="tsd-panel-group tsd-member-group ">
 				<h2>Properties</h2>
 				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-inherited">
 					<a name="defaultconfig" class="tsd-anchor"></a>
@@ -172,7 +174,7 @@
 					<aside class="tsd-sources">
 						<p>Inherited from <a href="_basecontroller_.basecontroller.html">BaseController</a>.<a href="_basecontroller_.basecontroller.html#defaultconfig">defaultConfig</a></p>
 						<ul>
-							<li>Defined in <a href="https://github.com/bitpshr/gaba/blob/e47f720/src/BaseController.ts#L32">BaseController.ts:32</a></li>
+							<li>Defined in <a href="https://github.com/bitpshr/gaba/blob/e940870/src/BaseController.ts#L32">BaseController.ts:32</a></li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
@@ -188,7 +190,7 @@
 					<aside class="tsd-sources">
 						<p>Inherited from <a href="_basecontroller_.basecontroller.html">BaseController</a>.<a href="_basecontroller_.basecontroller.html#defaultstate">defaultState</a></p>
 						<ul>
-							<li>Defined in <a href="https://github.com/bitpshr/gaba/blob/e47f720/src/BaseController.ts#L37">BaseController.ts:37</a></li>
+							<li>Defined in <a href="https://github.com/bitpshr/gaba/blob/e940870/src/BaseController.ts#L37">BaseController.ts:37</a></li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
@@ -204,7 +206,7 @@
 					<aside class="tsd-sources">
 						<p>Inherited from <a href="_basecontroller_.basecontroller.html">BaseController</a>.<a href="_basecontroller_.basecontroller.html#disabled">disabled</a></p>
 						<ul>
-							<li>Defined in <a href="https://github.com/bitpshr/gaba/blob/e47f720/src/BaseController.ts#L42">BaseController.ts:42</a></li>
+							<li>Defined in <a href="https://github.com/bitpshr/gaba/blob/e940870/src/BaseController.ts#L42">BaseController.ts:42</a></li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
@@ -213,8 +215,23 @@
 						</div>
 					</div>
 				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class">
+					<a name="internalstores" class="tsd-anchor"></a>
+					<h3>internal<wbr>Stores</h3>
+					<div class="tsd-signature tsd-kind-icon">internal<wbr>Stores<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">Array</span><span class="tsd-signature-symbol">&lt;</span><a href="_basecontroller_.basecontroller.html" class="tsd-signature-type">BaseController</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">any</span><span class="tsd-signature-symbol">, </span><span class="tsd-signature-type">any</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol"> =&nbsp;[]</span></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in <a href="https://github.com/bitpshr/gaba/blob/e940870/src/ComposableController.ts#L10">ComposableController.ts:10</a></li>
+						</ul>
+					</aside>
+					<div class="tsd-comment tsd-typography">
+						<div class="lead">
+							<p>Array of stores to compose together</p>
+						</div>
+					</div>
+				</section>
 			</section>
-			<section class="tsd-panel-group tsd-member-group tsd-is-inherited">
+			<section class="tsd-panel-group tsd-member-group ">
 				<h2>Accessors</h2>
 				<section class="tsd-panel tsd-member tsd-kind-get-signature tsd-parent-kind-class tsd-is-inherited">
 					<a name="config" class="tsd-anchor"></a>
@@ -227,7 +244,7 @@
 							<aside class="tsd-sources">
 								<p>Inherited from <a href="_basecontroller_.basecontroller.html">BaseController</a>.<a href="_basecontroller_.basecontroller.html#config">config</a></p>
 								<ul>
-									<li>Defined in <a href="https://github.com/bitpshr/gaba/blob/e47f720/src/BaseController.ts#L81">BaseController.ts:81</a></li>
+									<li>Defined in <a href="https://github.com/bitpshr/gaba/blob/e940870/src/BaseController.ts#L84">BaseController.ts:84</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -253,7 +270,7 @@
 							<aside class="tsd-sources">
 								<p>Inherited from <a href="_basecontroller_.basecontroller.html">BaseController</a>.<a href="_basecontroller_.basecontroller.html#state">state</a></p>
 								<ul>
-									<li>Defined in <a href="https://github.com/bitpshr/gaba/blob/e47f720/src/BaseController.ts#L90">BaseController.ts:90</a></li>
+									<li>Defined in <a href="https://github.com/bitpshr/gaba/blob/e940870/src/BaseController.ts#L93">BaseController.ts:93</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -265,6 +282,55 @@
 							<ul>
 								<li>Current state</li>
 							</ul>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-accessor tsd-parent-kind-class">
+					<a name="stores" class="tsd-anchor"></a>
+					<h3>stores</h3>
+					<ul class="tsd-signatures tsd-kind-accessor tsd-parent-kind-class">
+						<li class="tsd-signature tsd-kind-icon"><span class="tsd-signature-symbol">get</span> stores<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="_basecontroller_.basecontroller.html" class="tsd-signature-type">BaseController</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">any</span><span class="tsd-signature-symbol">, </span><span class="tsd-signature-type">any</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol">[]</span></li>
+						<li class="tsd-signature tsd-kind-icon"><span class="tsd-signature-symbol">set</span> stores<span class="tsd-signature-symbol">(</span>stores<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Array</span><span class="tsd-signature-symbol">&lt;</span><a href="_basecontroller_.basecontroller.html" class="tsd-signature-type">BaseController</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">any</span><span class="tsd-signature-symbol">, </span><span class="tsd-signature-type">any</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/bitpshr/gaba/blob/e940870/src/ComposableController.ts#L28">ComposableController.ts:28</a></li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Get current list of composed stores</p>
+								</div>
+							</div>
+							<h4 class="tsd-returns-title">Returns <a href="_basecontroller_.basecontroller.html" class="tsd-signature-type">BaseController</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">any</span><span class="tsd-signature-symbol">, </span><span class="tsd-signature-type">any</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol">[]</span></h4>
+							<p>List of composed stores</p>
+						</li>
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/bitpshr/gaba/blob/e940870/src/ComposableController.ts#L37">ComposableController.ts:37</a></li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Set new list of composed stores</p>
+								</div>
+							</div>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>stores: <span class="tsd-signature-type">Array</span><span class="tsd-signature-symbol">&lt;</span><a href="_basecontroller_.basecontroller.html" class="tsd-signature-type">BaseController</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">any</span><span class="tsd-signature-symbol">, </span><span class="tsd-signature-type">any</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol">&gt;</span></h5>
+									<div class="tsd-comment tsd-typography">
+										<div class="lead">
+											<p>New list of composed stores</p>
+										</div>
+									</div>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
+							<p>List of composed stores</p>
 						</li>
 					</ul>
 				</section>
@@ -282,7 +348,7 @@
 							<aside class="tsd-sources">
 								<p>Inherited from <a href="_basecontroller_.basecontroller.html">BaseController</a>.<a href="_basecontroller_.basecontroller.html#configure">configure</a></p>
 								<ul>
-									<li>Defined in <a href="https://github.com/bitpshr/gaba/blob/e47f720/src/BaseController.ts#L100">BaseController.ts:100</a></li>
+									<li>Defined in <a href="https://github.com/bitpshr/gaba/blob/e940870/src/BaseController.ts#L103">BaseController.ts:103</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -320,12 +386,14 @@
 							<aside class="tsd-sources">
 								<p>Inherited from <a href="_basecontroller_.basecontroller.html">BaseController</a>.<a href="_basecontroller_.basecontroller.html#initialize">initialize</a></p>
 								<ul>
-									<li>Defined in <a href="https://github.com/bitpshr/gaba/blob/e47f720/src/BaseController.ts#L68">BaseController.ts:68</a></li>
+									<li>Defined in <a href="https://github.com/bitpshr/gaba/blob/e940870/src/BaseController.ts#L71">BaseController.ts:71</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
 								<div class="lead">
-									<p>Enables the controller</p>
+									<p>Enables the controller. This sets each config option as a member
+										variable on this instance and triggers any defined setters. This
+									also sets initial state and triggers any listeners.</p>
 								</div>
 							</div>
 							<h4 class="tsd-returns-title">Returns <a href="_basecontroller_.basecontroller.html" class="tsd-signature-type">BaseController</a><span class="tsd-signature-symbol">&lt;</span><a href="../interfaces/_basecontroller_.basestate.html" class="tsd-signature-type">BaseState</a><span class="tsd-signature-symbol">, </span><a href="../interfaces/_basecontroller_.baseconfig.html" class="tsd-signature-type">BaseConfig</a><span class="tsd-signature-symbol">&gt;</span></h4>
@@ -344,7 +412,7 @@
 							<aside class="tsd-sources">
 								<p>Inherited from <a href="_basecontroller_.basecontroller.html">BaseController</a>.<a href="_basecontroller_.basecontroller.html#notify">notify</a></p>
 								<ul>
-									<li>Defined in <a href="https://github.com/bitpshr/gaba/blob/e47f720/src/BaseController.ts#L111">BaseController.ts:111</a></li>
+									<li>Defined in <a href="https://github.com/bitpshr/gaba/blob/e940870/src/BaseController.ts#L114">BaseController.ts:114</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -367,7 +435,7 @@
 							<aside class="tsd-sources">
 								<p>Inherited from <a href="_basecontroller_.basecontroller.html">BaseController</a>.<a href="_basecontroller_.basecontroller.html#subscribe">subscribe</a></p>
 								<ul>
-									<li>Defined in <a href="https://github.com/bitpshr/gaba/blob/e47f720/src/BaseController.ts#L125">BaseController.ts:125</a></li>
+									<li>Defined in <a href="https://github.com/bitpshr/gaba/blob/e940870/src/BaseController.ts#L128">BaseController.ts:128</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -399,7 +467,7 @@
 							<aside class="tsd-sources">
 								<p>Inherited from <a href="_basecontroller_.basecontroller.html">BaseController</a>.<a href="_basecontroller_.basecontroller.html#unsubscribe">unsubscribe</a></p>
 								<ul>
-									<li>Defined in <a href="https://github.com/bitpshr/gaba/blob/e47f720/src/BaseController.ts#L135">BaseController.ts:135</a></li>
+									<li>Defined in <a href="https://github.com/bitpshr/gaba/blob/e940870/src/BaseController.ts#L138">BaseController.ts:138</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -434,7 +502,7 @@
 							<aside class="tsd-sources">
 								<p>Inherited from <a href="_basecontroller_.basecontroller.html">BaseController</a>.<a href="_basecontroller_.basecontroller.html#update">update</a></p>
 								<ul>
-									<li>Defined in <a href="https://github.com/bitpshr/gaba/blob/e47f720/src/BaseController.ts#L147">BaseController.ts:147</a></li>
+									<li>Defined in <a href="https://github.com/bitpshr/gaba/blob/e940870/src/BaseController.ts#L150">BaseController.ts:150</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -482,6 +550,9 @@
 						<a href="../modules/_currencyratecontroller_.html">"<wbr>Currency<wbr>Rate<wbr>Controller"</a>
 					</li>
 					<li class=" tsd-kind-external-module">
+						<a href="../modules/_networkcontroller_.html">"<wbr>Network<wbr>Controller"</a>
+					</li>
+					<li class=" tsd-kind-external-module">
 						<a href="../modules/_networkstatuscontroller_.html">"<wbr>Network<wbr>Status<wbr>Controller"</a>
 					</li>
 					<li class=" tsd-kind-external-module">
@@ -511,11 +582,17 @@
 							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-inherited">
 								<a href="_composablecontroller_.composablecontroller.html#disabled" class="tsd-kind-icon">disabled</a>
 							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-class">
+								<a href="_composablecontroller_.composablecontroller.html#internalstores" class="tsd-kind-icon">internal<wbr>Stores</a>
+							</li>
 							<li class=" tsd-kind-get-signature tsd-parent-kind-class tsd-is-inherited">
 								<a href="_composablecontroller_.composablecontroller.html#config" class="tsd-kind-icon">config</a>
 							</li>
 							<li class=" tsd-kind-get-signature tsd-parent-kind-class tsd-is-inherited">
 								<a href="_composablecontroller_.composablecontroller.html#state" class="tsd-kind-icon">state</a>
+							</li>
+							<li class=" tsd-kind-accessor tsd-parent-kind-class">
+								<a href="_composablecontroller_.composablecontroller.html#stores" class="tsd-kind-icon">stores</a>
 							</li>
 							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-inherited">
 								<a href="_composablecontroller_.composablecontroller.html#configure" class="tsd-kind-icon">configure</a>
