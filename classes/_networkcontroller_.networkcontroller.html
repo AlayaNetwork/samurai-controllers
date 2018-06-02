@@ -95,6 +95,7 @@
 							<ul class="tsd-index-list">
 								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-inherited"><a href="_networkcontroller_.networkcontroller.html#context" class="tsd-kind-icon">context</a></li>
 								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-inherited"><a href="_networkcontroller_.networkcontroller.html#defaultconfig" class="tsd-kind-icon">default<wbr>Config</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-inherited"><a href="_networkcontroller_.networkcontroller.html#defaultstate" class="tsd-kind-icon">default<wbr>State</a></li>
 								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-inherited"><a href="_networkcontroller_.networkcontroller.html#disabled" class="tsd-kind-icon">disabled</a></li>
 								<li class="tsd-kind-property tsd-parent-kind-class"><a href="_networkcontroller_.networkcontroller.html#provider" class="tsd-kind-icon">provider</a></li>
 							</ul>
@@ -121,12 +122,6 @@
 								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-inherited"><a href="_networkcontroller_.networkcontroller.html#update" class="tsd-kind-icon">update</a></li>
 							</ul>
 						</section>
-						<section class="tsd-index-section ">
-							<h3>Object literals</h3>
-							<ul class="tsd-index-list">
-								<li class="tsd-kind-object-literal tsd-parent-kind-class tsd-is-overwrite"><a href="_networkcontroller_.networkcontroller.html#defaultstate" class="tsd-kind-icon">default<wbr>State</a></li>
-							</ul>
-						</section>
 					</div>
 				</section>
 			</section>
@@ -136,14 +131,14 @@
 					<a name="constructor" class="tsd-anchor"></a>
 					<h3>constructor</h3>
 					<ul class="tsd-signatures tsd-kind-constructor tsd-parent-kind-class tsd-is-overwrite">
-						<li class="tsd-signature tsd-kind-icon">new <wbr>Network<wbr>Controller<span class="tsd-signature-symbol">(</span>state<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">Partial</span><span class="tsd-signature-symbol">&lt;</span><a href="../interfaces/_networkcontroller_.networkstate.html" class="tsd-signature-type">NetworkState</a><span class="tsd-signature-symbol">&gt;</span>, config<span class="tsd-signature-symbol">?: </span><a href="../interfaces/_networkcontroller_.networkconfig.html" class="tsd-signature-type">NetworkConfig</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="_networkcontroller_.networkcontroller.html" class="tsd-signature-type">NetworkController</a></li>
+						<li class="tsd-signature tsd-kind-icon">new <wbr>Network<wbr>Controller<span class="tsd-signature-symbol">(</span>state<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">Partial</span><span class="tsd-signature-symbol">&lt;</span><a href="../interfaces/_networkcontroller_.networkstate.html" class="tsd-signature-type">NetworkState</a><span class="tsd-signature-symbol">&gt;</span>, config<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">Partial</span><span class="tsd-signature-symbol">&lt;</span><a href="../interfaces/_networkcontroller_.networkconfig.html" class="tsd-signature-type">NetworkConfig</a><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="_networkcontroller_.networkcontroller.html" class="tsd-signature-type">NetworkController</a></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<p>Overrides <a href="_basecontroller_.basecontroller.html">BaseController</a>.<a href="_basecontroller_.basecontroller.html#constructor">constructor</a></p>
 								<ul>
-									<li>Defined in <a href="https://github.com/bitpshr/gaba/blob/3dfb972/src/NetworkController.ts#L51">NetworkController.ts:51</a></li>
+									<li>Defined in <a href="https://github.com/bitpshr/gaba/blob/d1b9852/src/NetworkController.ts#L44">NetworkController.ts:44</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -152,7 +147,7 @@
 									<h5><span class="tsd-flag ts-flagOptional">Optional</span> state: <span class="tsd-signature-type">Partial</span><span class="tsd-signature-symbol">&lt;</span><a href="../interfaces/_networkcontroller_.networkstate.html" class="tsd-signature-type">NetworkState</a><span class="tsd-signature-symbol">&gt;</span></h5>
 								</li>
 								<li>
-									<h5><span class="tsd-flag ts-flagOptional">Optional</span> config: <a href="../interfaces/_networkcontroller_.networkconfig.html" class="tsd-signature-type">NetworkConfig</a></h5>
+									<h5><span class="tsd-flag ts-flagOptional">Optional</span> config: <span class="tsd-signature-type">Partial</span><span class="tsd-signature-symbol">&lt;</span><a href="../interfaces/_networkcontroller_.networkconfig.html" class="tsd-signature-type">NetworkConfig</a><span class="tsd-signature-symbol">&gt;</span></h5>
 								</li>
 							</ul>
 							<h4 class="tsd-returns-title">Returns <a href="_networkcontroller_.networkcontroller.html" class="tsd-signature-type">NetworkController</a></h4>
@@ -169,7 +164,7 @@
 					<aside class="tsd-sources">
 						<p>Inherited from <a href="_basecontroller_.basecontroller.html">BaseController</a>.<a href="_basecontroller_.basecontroller.html#context">context</a></p>
 						<ul>
-							<li>Defined in <a href="https://github.com/bitpshr/gaba/blob/3dfb972/src/BaseController.ts#L36">BaseController.ts:36</a></li>
+							<li>Defined in <a href="https://github.com/bitpshr/gaba/blob/d1b9852/src/BaseController.ts#L36">BaseController.ts:36</a></li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
@@ -187,12 +182,28 @@
 					<aside class="tsd-sources">
 						<p>Inherited from <a href="_basecontroller_.basecontroller.html">BaseController</a>.<a href="_basecontroller_.basecontroller.html#defaultconfig">defaultConfig</a></p>
 						<ul>
-							<li>Defined in <a href="https://github.com/bitpshr/gaba/blob/3dfb972/src/BaseController.ts#L41">BaseController.ts:41</a></li>
+							<li>Defined in <a href="https://github.com/bitpshr/gaba/blob/d1b9852/src/BaseController.ts#L41">BaseController.ts:41</a></li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
 						<div class="lead">
 							<p>Default options used to configure this controller</p>
+						</div>
+					</div>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-inherited">
+					<a name="defaultstate" class="tsd-anchor"></a>
+					<h3>default<wbr>State</h3>
+					<div class="tsd-signature tsd-kind-icon">default<wbr>State<span class="tsd-signature-symbol">:</span> <a href="../interfaces/_networkcontroller_.networkstate.html" class="tsd-signature-type">NetworkState</a><span class="tsd-signature-symbol"> =&nbsp;{} as S</span></div>
+					<aside class="tsd-sources">
+						<p>Inherited from <a href="_basecontroller_.basecontroller.html">BaseController</a>.<a href="_basecontroller_.basecontroller.html#defaultstate">defaultState</a></p>
+						<ul>
+							<li>Defined in <a href="https://github.com/bitpshr/gaba/blob/d1b9852/src/BaseController.ts#L46">BaseController.ts:46</a></li>
+						</ul>
+					</aside>
+					<div class="tsd-comment tsd-typography">
+						<div class="lead">
+							<p>Default state set on this controller</p>
 						</div>
 					</div>
 				</section>
@@ -203,7 +214,7 @@
 					<aside class="tsd-sources">
 						<p>Inherited from <a href="_basecontroller_.basecontroller.html">BaseController</a>.<a href="_basecontroller_.basecontroller.html#disabled">disabled</a></p>
 						<ul>
-							<li>Defined in <a href="https://github.com/bitpshr/gaba/blob/3dfb972/src/BaseController.ts#L51">BaseController.ts:51</a></li>
+							<li>Defined in <a href="https://github.com/bitpshr/gaba/blob/d1b9852/src/BaseController.ts#L51">BaseController.ts:51</a></li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
@@ -218,7 +229,7 @@
 					<div class="tsd-signature tsd-kind-icon">provider<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">any</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/bitpshr/gaba/blob/3dfb972/src/NetworkController.ts#L44">NetworkController.ts:44</a></li>
+							<li>Defined in <a href="https://github.com/bitpshr/gaba/blob/d1b9852/src/NetworkController.ts#L44">NetworkController.ts:44</a></li>
 						</ul>
 					</aside>
 				</section>
@@ -236,7 +247,7 @@
 							<aside class="tsd-sources">
 								<p>Inherited from <a href="_basecontroller_.basecontroller.html">BaseController</a>.<a href="_basecontroller_.basecontroller.html#config">config</a></p>
 								<ul>
-									<li>Defined in <a href="https://github.com/bitpshr/gaba/blob/3dfb972/src/BaseController.ts#L93">BaseController.ts:93</a></li>
+									<li>Defined in <a href="https://github.com/bitpshr/gaba/blob/d1b9852/src/BaseController.ts#L93">BaseController.ts:93</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -261,7 +272,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/bitpshr/gaba/blob/3dfb972/src/NetworkController.ts#L129">NetworkController.ts:129</a></li>
+									<li>Defined in <a href="https://github.com/bitpshr/gaba/blob/d1b9852/src/NetworkController.ts#L126">NetworkController.ts:126</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -285,7 +296,7 @@
 							<aside class="tsd-sources">
 								<p>Inherited from <a href="_basecontroller_.basecontroller.html">BaseController</a>.<a href="_basecontroller_.basecontroller.html#state">state</a></p>
 								<ul>
-									<li>Defined in <a href="https://github.com/bitpshr/gaba/blob/3dfb972/src/BaseController.ts#L102">BaseController.ts:102</a></li>
+									<li>Defined in <a href="https://github.com/bitpshr/gaba/blob/d1b9852/src/BaseController.ts#L102">BaseController.ts:102</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -314,7 +325,7 @@
 							<aside class="tsd-sources">
 								<p>Inherited from <a href="_basecontroller_.basecontroller.html">BaseController</a>.<a href="_basecontroller_.basecontroller.html#configure">configure</a></p>
 								<ul>
-									<li>Defined in <a href="https://github.com/bitpshr/gaba/blob/3dfb972/src/BaseController.ts#L112">BaseController.ts:112</a></li>
+									<li>Defined in <a href="https://github.com/bitpshr/gaba/blob/d1b9852/src/BaseController.ts#L112">BaseController.ts:112</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -352,7 +363,7 @@
 							<aside class="tsd-sources">
 								<p>Inherited from <a href="_basecontroller_.basecontroller.html">BaseController</a>.<a href="_basecontroller_.basecontroller.html#initialize">initialize</a></p>
 								<ul>
-									<li>Defined in <a href="https://github.com/bitpshr/gaba/blob/3dfb972/src/BaseController.ts#L80">BaseController.ts:80</a></li>
+									<li>Defined in <a href="https://github.com/bitpshr/gaba/blob/d1b9852/src/BaseController.ts#L80">BaseController.ts:80</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -377,7 +388,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/bitpshr/gaba/blob/3dfb972/src/NetworkController.ts#L139">NetworkController.ts:139</a></li>
+									<li>Defined in <a href="https://github.com/bitpshr/gaba/blob/d1b9852/src/NetworkController.ts#L136">NetworkController.ts:136</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
@@ -395,7 +406,7 @@
 							<aside class="tsd-sources">
 								<p>Inherited from <a href="_basecontroller_.basecontroller.html">BaseController</a>.<a href="_basecontroller_.basecontroller.html#notify">notify</a></p>
 								<ul>
-									<li>Defined in <a href="https://github.com/bitpshr/gaba/blob/3dfb972/src/BaseController.ts#L123">BaseController.ts:123</a></li>
+									<li>Defined in <a href="https://github.com/bitpshr/gaba/blob/d1b9852/src/BaseController.ts#L123">BaseController.ts:123</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -417,7 +428,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/bitpshr/gaba/blob/3dfb972/src/NetworkController.ts#L158">NetworkController.ts:158</a></li>
+									<li>Defined in <a href="https://github.com/bitpshr/gaba/blob/d1b9852/src/NetworkController.ts#L155">NetworkController.ts:155</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -440,7 +451,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/bitpshr/gaba/blob/3dfb972/src/NetworkController.ts#L148">NetworkController.ts:148</a></li>
+									<li>Defined in <a href="https://github.com/bitpshr/gaba/blob/d1b9852/src/NetworkController.ts#L145">NetworkController.ts:145</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -464,7 +475,7 @@
 							<aside class="tsd-sources">
 								<p>Inherited from <a href="_basecontroller_.basecontroller.html">BaseController</a>.<a href="_basecontroller_.basecontroller.html#subscribe">subscribe</a></p>
 								<ul>
-									<li>Defined in <a href="https://github.com/bitpshr/gaba/blob/3dfb972/src/BaseController.ts#L137">BaseController.ts:137</a></li>
+									<li>Defined in <a href="https://github.com/bitpshr/gaba/blob/d1b9852/src/BaseController.ts#L137">BaseController.ts:137</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -496,7 +507,7 @@
 							<aside class="tsd-sources">
 								<p>Inherited from <a href="_basecontroller_.basecontroller.html">BaseController</a>.<a href="_basecontroller_.basecontroller.html#unsubscribe">unsubscribe</a></p>
 								<ul>
-									<li>Defined in <a href="https://github.com/bitpshr/gaba/blob/3dfb972/src/BaseController.ts#L147">BaseController.ts:147</a></li>
+									<li>Defined in <a href="https://github.com/bitpshr/gaba/blob/d1b9852/src/BaseController.ts#L147">BaseController.ts:147</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -531,7 +542,7 @@
 							<aside class="tsd-sources">
 								<p>Inherited from <a href="_basecontroller_.basecontroller.html">BaseController</a>.<a href="_basecontroller_.basecontroller.html#update">update</a></p>
 								<ul>
-									<li>Defined in <a href="https://github.com/bitpshr/gaba/blob/3dfb972/src/BaseController.ts#L159">BaseController.ts:159</a></li>
+									<li>Defined in <a href="https://github.com/bitpshr/gaba/blob/d1b9852/src/BaseController.ts#L159">BaseController.ts:159</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -557,50 +568,6 @@
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
 						</li>
 					</ul>
-				</section>
-			</section>
-			<section class="tsd-panel-group tsd-member-group ">
-				<h2>Object literals</h2>
-				<section class="tsd-panel tsd-member tsd-kind-object-literal tsd-parent-kind-class tsd-is-overwrite">
-					<a name="defaultstate" class="tsd-anchor"></a>
-					<h3>default<wbr>State</h3>
-					<div class="tsd-signature tsd-kind-icon">default<wbr>State<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">object</span></div>
-					<aside class="tsd-sources">
-						<p>Overrides <a href="_basecontroller_.basecontroller.html">BaseController</a>.<a href="_basecontroller_.basecontroller.html#defaultstate">defaultState</a></p>
-						<ul>
-							<li>Defined in <a href="https://github.com/bitpshr/gaba/blob/3dfb972/src/NetworkController.ts#L46">NetworkController.ts:46</a></li>
-						</ul>
-					</aside>
-					<section class="tsd-panel tsd-member tsd-kind-variable tsd-parent-kind-object-literal">
-						<a name="defaultstate.network" class="tsd-anchor"></a>
-						<h3>network</h3>
-						<div class="tsd-signature tsd-kind-icon">network<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span><span class="tsd-signature-symbol"> =&nbsp;&quot;loading&quot;</span></div>
-						<aside class="tsd-sources">
-							<ul>
-								<li>Defined in <a href="https://github.com/bitpshr/gaba/blob/3dfb972/src/NetworkController.ts#L47">NetworkController.ts:47</a></li>
-							</ul>
-						</aside>
-					</section>
-					<section class="tsd-panel tsd-member tsd-kind-object-literal tsd-parent-kind-object-literal">
-						<a name="defaultstate.provider-1" class="tsd-anchor"></a>
-						<h3>provider</h3>
-						<div class="tsd-signature tsd-kind-icon">provider<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">object</span></div>
-						<aside class="tsd-sources">
-							<ul>
-								<li>Defined in <a href="https://github.com/bitpshr/gaba/blob/3dfb972/src/NetworkController.ts#L48">NetworkController.ts:48</a></li>
-							</ul>
-						</aside>
-						<section class="tsd-panel tsd-member tsd-kind-variable tsd-parent-kind-object-literal">
-							<a name="defaultstate.provider-1.type" class="tsd-anchor"></a>
-							<h3>type</h3>
-							<div class="tsd-signature tsd-kind-icon">type<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">"rinkeby"</span><span class="tsd-signature-symbol"> =&nbsp;&quot;rinkeby&quot;</span></div>
-							<aside class="tsd-sources">
-								<ul>
-									<li>Defined in <a href="https://github.com/bitpshr/gaba/blob/3dfb972/src/NetworkController.ts#L49">NetworkController.ts:49</a></li>
-								</ul>
-							</aside>
-						</section>
-					</section>
 				</section>
 			</section>
 		</div>
@@ -653,6 +620,9 @@
 								<a href="_networkcontroller_.networkcontroller.html#defaultconfig" class="tsd-kind-icon">default<wbr>Config</a>
 							</li>
 							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-inherited">
+								<a href="_networkcontroller_.networkcontroller.html#defaultstate" class="tsd-kind-icon">default<wbr>State</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-inherited">
 								<a href="_networkcontroller_.networkcontroller.html#disabled" class="tsd-kind-icon">disabled</a>
 							</li>
 							<li class=" tsd-kind-property tsd-parent-kind-class">
@@ -693,9 +663,6 @@
 							</li>
 							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-inherited">
 								<a href="_networkcontroller_.networkcontroller.html#update" class="tsd-kind-icon">update</a>
-							</li>
-							<li class=" tsd-kind-object-literal tsd-parent-kind-class tsd-is-overwrite">
-								<a href="_networkcontroller_.networkcontroller.html#defaultstate" class="tsd-kind-icon">default<wbr>State</a>
 							</li>
 						</ul>
 					</li>
