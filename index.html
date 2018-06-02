@@ -75,18 +75,27 @@
      AddressBookController,
      ComposableController,
      CurrencyRateController,
+     NetworkController,
      NetworkStatusController,
      TokenRatesController
  } <span class="hljs-keyword">from</span> <span class="hljs-string">'@metamask/gaba'</span>;
 
- <span class="hljs-keyword">const</span> datamodel = <span class="hljs-keyword">new</span> ComposableController([
-     <span class="hljs-keyword">new</span> AddressBookController(),
-     <span class="hljs-keyword">new</span> CurrencyRateController(),
-     <span class="hljs-keyword">new</span> NetworkStatusController,
-     <span class="hljs-keyword">new</span> TokenRatesController()
- ]);
+ <span class="hljs-keyword">const</span> datamodel = <span class="hljs-keyword">new</span> ComposableController({
+     <span class="hljs-attr">address</span>: <span class="hljs-keyword">new</span> AddressBookController(),
+     <span class="hljs-attr">currency</span>: <span class="hljs-keyword">new</span> CurrencyRateController(),
+     <span class="hljs-attr">network</span>: <span class="hljs-keyword">new</span> NetworkController(),
+     <span class="hljs-attr">networkStatus</span>: <span class="hljs-keyword">new</span> NetworkStatusController(),
+     <span class="hljs-attr">tokenRates</span>: <span class="hljs-keyword">new</span> TokenRatesController()
+ });
 
- datamodel.subscribe(<span class="hljs-function">(<span class="hljs-params">state</span>) =&gt;</span> { <span class="hljs-comment">/* data model has changed */</span> });
+ datamodel.subscribe(<span class="hljs-function">(<span class="hljs-params">state</span>) =&gt;</span> {
+     <span class="hljs-comment">/* data model has changed */</span>
+     <span class="hljs-built_in">console</span>.log(state);
+     <span class="hljs-built_in">console</span>.log(datamodel.flatState);
+ });
+
+ <span class="hljs-comment">/* Child controller APIs are exposed through ComposableController's context property */</span>
+ datamodel.context.address.set(<span class="hljs-string">'0x1337'</span>, <span class="hljs-string">'someNickname'</span>);
 </code></pre>
 					</li>
 				</ol>
