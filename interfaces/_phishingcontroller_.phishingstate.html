@@ -3,7 +3,7 @@
 <head>
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<title>NetworkState | @metamask/gaba</title>
+	<title>PhishingState | @metamask/gaba</title>
 	<meta name="description" content="">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="stylesheet" href="../assets/css/main.css">
@@ -54,19 +54,32 @@
 					<a href="../globals.html">Globals</a>
 				</li>
 				<li>
-					<a href="../modules/_networkcontroller_.html">&quot;NetworkController&quot;</a>
+					<a href="../modules/_phishingcontroller_.html">&quot;PhishingController&quot;</a>
 				</li>
 				<li>
-					<a href="_networkcontroller_.networkstate.html">NetworkState</a>
+					<a href="_phishingcontroller_.phishingstate.html">PhishingState</a>
 				</li>
 			</ul>
-			<h1>Interface NetworkState</h1>
+			<h1>Interface PhishingState</h1>
 		</div>
 	</div>
 </header>
 <div class="container container-main">
 	<div class="row">
 		<div class="col-8 col-content">
+			<section class="tsd-panel tsd-comment">
+				<div class="tsd-comment tsd-typography">
+					<dl class="tsd-comment-tags">
+						<dt>type</dt>
+						<dd><p>PhishingState</p>
+							<p>Phishing controller state</p>
+						</dd>
+						<dt>property</dt>
+						<dd><p>phishing - eth-phishing-detect configuration</p>
+						</dd>
+					</dl>
+				</div>
+			</section>
 			<section class="tsd-panel tsd-hierarchy">
 				<h3>Hierarchy</h3>
 				<ul class="tsd-hierarchy">
@@ -74,7 +87,7 @@
 						<a href="_basecontroller_.basestate.html" class="tsd-signature-type">BaseState</a>
 						<ul class="tsd-hierarchy">
 							<li>
-								<span class="target">NetworkState</span>
+								<span class="target">PhishingState</span>
 							</li>
 						</ul>
 					</li>
@@ -87,9 +100,8 @@
 						<section class="tsd-index-section ">
 							<h3>Properties</h3>
 							<ul class="tsd-index-list">
-								<li class="tsd-kind-property tsd-parent-kind-interface tsd-is-inherited"><a href="_networkcontroller_.networkstate.html#name" class="tsd-kind-icon">name</a></li>
-								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="_networkcontroller_.networkstate.html#network" class="tsd-kind-icon">network</a></li>
-								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="_networkcontroller_.networkstate.html#provider" class="tsd-kind-icon">provider</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-interface tsd-is-inherited"><a href="_phishingcontroller_.phishingstate.html#name" class="tsd-kind-icon">name</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="_phishingcontroller_.phishingstate.html#phishing" class="tsd-kind-icon">phishing</a></li>
 							</ul>
 						</section>
 					</div>
@@ -104,34 +116,19 @@
 					<aside class="tsd-sources">
 						<p>Inherited from <a href="_basecontroller_.basestate.html">BaseState</a>.<a href="_basecontroller_.basestate.html#name">name</a></p>
 						<ul>
-							<li>Defined in <a href="https://github.com/bitpshr/gaba/blob/d1b9852/src/BaseController.ts#L24">BaseController.ts:24</a></li>
+							<li>Defined in <a href="https://github.com/bitpshr/gaba/blob/bc1e85a/src/BaseController.ts#L28">BaseController.ts:28</a></li>
 						</ul>
 					</aside>
 				</section>
 				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
-					<a name="network" class="tsd-anchor"></a>
-					<h3>network</h3>
-					<div class="tsd-signature tsd-kind-icon">network<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span></div>
+					<a name="phishing" class="tsd-anchor"></a>
+					<h3>phishing</h3>
+					<div class="tsd-signature tsd-kind-icon">phishing<span class="tsd-signature-symbol">:</span> <a href="_phishingcontroller_.ethphishingresponse.html" class="tsd-signature-type">EthPhishingResponse</a></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/bitpshr/gaba/blob/d1b9852/src/NetworkController.ts#L31">NetworkController.ts:31</a></li>
+							<li>Defined in <a href="https://github.com/bitpshr/gaba/blob/bc1e85a/src/PhishingController.ts#L45">PhishingController.ts:45</a></li>
 						</ul>
 					</aside>
-				</section>
-				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
-					<a name="provider" class="tsd-anchor"></a>
-					<h3>provider</h3>
-					<div class="tsd-signature tsd-kind-icon">provider<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">object</span></div>
-					<aside class="tsd-sources">
-						<ul>
-							<li>Defined in <a href="https://github.com/bitpshr/gaba/blob/d1b9852/src/NetworkController.ts#L32">NetworkController.ts:32</a></li>
-						</ul>
-					</aside>
-					<div class="tsd-type-declaration">
-						<h4>Type declaration</h4>
-						<ul class="tsd-parameters">
-						</ul>
-					</div>
 				</section>
 			</section>
 		</div>
@@ -153,11 +150,11 @@
 					<li class=" tsd-kind-external-module">
 						<a href="../modules/_currencyratecontroller_.html">"<wbr>Currency<wbr>Rate<wbr>Controller"</a>
 					</li>
-					<li class="current tsd-kind-external-module">
-						<a href="../modules/_networkcontroller_.html">"<wbr>Network<wbr>Controller"</a>
-					</li>
 					<li class=" tsd-kind-external-module">
 						<a href="../modules/_networkstatuscontroller_.html">"<wbr>Network<wbr>Status<wbr>Controller"</a>
+					</li>
+					<li class="current tsd-kind-external-module">
+						<a href="../modules/_phishingcontroller_.html">"<wbr>Phishing<wbr>Controller"</a>
 					</li>
 					<li class=" tsd-kind-external-module">
 						<a href="../modules/_tokenratescontroller_.html">"<wbr>Token<wbr>Rates<wbr>Controller"</a>
@@ -170,35 +167,29 @@
 			<nav class="tsd-navigation secondary menu-sticky">
 				<ul class="before-current">
 					<li class=" tsd-kind-class tsd-parent-kind-external-module">
-						<a href="../classes/_networkcontroller_.networkcontroller.html" class="tsd-kind-icon">Network<wbr>Controller</a>
+						<a href="../classes/_phishingcontroller_.phishingcontroller.html" class="tsd-kind-icon">Phishing<wbr>Controller</a>
 					</li>
 					<li class=" tsd-kind-interface tsd-parent-kind-external-module">
-						<a href="_networkcontroller_.networkconfig.html" class="tsd-kind-icon">Network<wbr>Config</a>
+						<a href="_phishingcontroller_.ethphishingresponse.html" class="tsd-kind-icon">Eth<wbr>Phishing<wbr>Response</a>
+					</li>
+					<li class=" tsd-kind-interface tsd-parent-kind-external-module">
+						<a href="_phishingcontroller_.phishingconfig.html" class="tsd-kind-icon">Phishing<wbr>Config</a>
 					</li>
 				</ul>
 				<ul class="current">
 					<li class="current tsd-kind-interface tsd-parent-kind-external-module">
-						<a href="_networkcontroller_.networkstate.html" class="tsd-kind-icon">Network<wbr>State</a>
+						<a href="_phishingcontroller_.phishingstate.html" class="tsd-kind-icon">Phishing<wbr>State</a>
 						<ul>
 							<li class=" tsd-kind-property tsd-parent-kind-interface tsd-is-inherited">
-								<a href="_networkcontroller_.networkstate.html#name" class="tsd-kind-icon">name</a>
+								<a href="_phishingcontroller_.phishingstate.html#name" class="tsd-kind-icon">name</a>
 							</li>
 							<li class=" tsd-kind-property tsd-parent-kind-interface">
-								<a href="_networkcontroller_.networkstate.html#network" class="tsd-kind-icon">network</a>
-							</li>
-							<li class=" tsd-kind-property tsd-parent-kind-interface">
-								<a href="_networkcontroller_.networkstate.html#provider" class="tsd-kind-icon">provider</a>
+								<a href="_phishingcontroller_.phishingstate.html#phishing" class="tsd-kind-icon">phishing</a>
 							</li>
 						</ul>
 					</li>
 				</ul>
 				<ul class="after-current">
-					<li class=" tsd-kind-interface tsd-parent-kind-external-module">
-						<a href="_networkcontroller_.providerconfig.html" class="tsd-kind-icon">Provider<wbr>Config</a>
-					</li>
-					<li class=" tsd-kind-type-alias tsd-parent-kind-external-module">
-						<a href="../modules/_networkcontroller_.html#networktype" class="tsd-kind-icon">Network<wbr>Type</a>
-					</li>
 				</ul>
 			</nav>
 		</div>
