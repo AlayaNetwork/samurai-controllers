@@ -3,7 +3,7 @@
 <head>
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<title>CurrencyRateController | gaba</title>
+	<title>BlockHistoryController | gaba</title>
 	<meta name="description" content="">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="stylesheet" href="../assets/css/main.css">
@@ -54,13 +54,13 @@
 					<a href="../globals.html">Globals</a>
 				</li>
 				<li>
-					<a href="../modules/_currencyratecontroller_.html">&quot;CurrencyRateController&quot;</a>
+					<a href="../modules/_blockhistorycontroller_.html">&quot;BlockHistoryController&quot;</a>
 				</li>
 				<li>
-					<a href="_currencyratecontroller_.currencyratecontroller.html">CurrencyRateController</a>
+					<a href="_blockhistorycontroller_.blockhistorycontroller.html">BlockHistoryController</a>
 				</li>
 			</ul>
-			<h1>Class CurrencyRateController</h1>
+			<h1>Class BlockHistoryController</h1>
 		</div>
 	</div>
 </header>
@@ -70,7 +70,7 @@
 			<section class="tsd-panel tsd-comment">
 				<div class="tsd-comment tsd-typography">
 					<div class="lead">
-						<p>Controller that passively polls on a set interval for an ETH-to-fiat exchange rate</p>
+						<p>Controller responsible for maintaining a set number of past blocks</p>
 					</div>
 				</div>
 			</section>
@@ -78,10 +78,10 @@
 				<h3>Hierarchy</h3>
 				<ul class="tsd-hierarchy">
 					<li>
-						<a href="_basecontroller_.basecontroller.html" class="tsd-signature-type">BaseController</a><span class="tsd-signature-symbol">&lt;</span><a href="../interfaces/_currencyratecontroller_.currencyratestate.html" class="tsd-signature-type">CurrencyRateState</a><span class="tsd-signature-symbol">, </span><a href="../interfaces/_currencyratecontroller_.currencyrateconfig.html" class="tsd-signature-type">CurrencyRateConfig</a><span class="tsd-signature-symbol">&gt;</span>
+						<a href="_basecontroller_.basecontroller.html" class="tsd-signature-type">BaseController</a><span class="tsd-signature-symbol">&lt;</span><a href="../interfaces/_blockhistorycontroller_.blockhistorystate.html" class="tsd-signature-type">BlockHistoryState</a><span class="tsd-signature-symbol">, </span><a href="../interfaces/_blockhistorycontroller_.blockhistoryconfig.html" class="tsd-signature-type">BlockHistoryConfig</a><span class="tsd-signature-symbol">&gt;</span>
 						<ul class="tsd-hierarchy">
 							<li>
-								<span class="target">CurrencyRateController</span>
+								<span class="target">BlockHistoryController</span>
 							</li>
 						</ul>
 					</li>
@@ -94,55 +94,54 @@
 						<section class="tsd-index-section ">
 							<h3>Constructors</h3>
 							<ul class="tsd-index-list">
-								<li class="tsd-kind-constructor tsd-parent-kind-class tsd-is-overwrite"><a href="_currencyratecontroller_.currencyratecontroller.html#constructor" class="tsd-kind-icon">constructor</a></li>
+								<li class="tsd-kind-constructor tsd-parent-kind-class tsd-is-overwrite"><a href="_blockhistorycontroller_.blockhistorycontroller.html#constructor" class="tsd-kind-icon">constructor</a></li>
 							</ul>
 						</section>
 						<section class="tsd-index-section tsd-is-inherited">
 							<h3>Properties</h3>
 							<ul class="tsd-index-list">
-								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-inherited"><a href="_currencyratecontroller_.currencyratecontroller.html#context" class="tsd-kind-icon">context</a></li>
-								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-inherited"><a href="_currencyratecontroller_.currencyratecontroller.html#defaultconfig" class="tsd-kind-icon">default<wbr>Config</a></li>
-								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-inherited"><a href="_currencyratecontroller_.currencyratecontroller.html#defaultstate" class="tsd-kind-icon">default<wbr>State</a></li>
-								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-inherited"><a href="_currencyratecontroller_.currencyratecontroller.html#disabled" class="tsd-kind-icon">disabled</a></li>
-								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-inherited tsd-is-static"><a href="_currencyratecontroller_.currencyratecontroller.html#defaultmaxlisteners" class="tsd-kind-icon">default<wbr>Max<wbr>Listeners</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-inherited"><a href="_blockhistorycontroller_.blockhistorycontroller.html#context" class="tsd-kind-icon">context</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-inherited"><a href="_blockhistorycontroller_.blockhistorycontroller.html#defaultconfig" class="tsd-kind-icon">default<wbr>Config</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-inherited"><a href="_blockhistorycontroller_.blockhistorycontroller.html#defaultstate" class="tsd-kind-icon">default<wbr>State</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-inherited"><a href="_blockhistorycontroller_.blockhistorycontroller.html#disabled" class="tsd-kind-icon">disabled</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-inherited tsd-is-static"><a href="_blockhistorycontroller_.blockhistorycontroller.html#defaultmaxlisteners" class="tsd-kind-icon">default<wbr>Max<wbr>Listeners</a></li>
 							</ul>
 						</section>
 						<section class="tsd-index-section ">
 							<h3>Accessors</h3>
 							<ul class="tsd-index-list">
-								<li class="tsd-kind-get-signature tsd-parent-kind-class tsd-is-inherited"><a href="_currencyratecontroller_.currencyratecontroller.html#config" class="tsd-kind-icon">config</a></li>
-								<li class="tsd-kind-set-signature tsd-parent-kind-class"><a href="_currencyratecontroller_.currencyratecontroller.html#currency" class="tsd-kind-icon">currency</a></li>
-								<li class="tsd-kind-set-signature tsd-parent-kind-class"><a href="_currencyratecontroller_.currencyratecontroller.html#interval" class="tsd-kind-icon">interval</a></li>
-								<li class="tsd-kind-get-signature tsd-parent-kind-class tsd-is-inherited"><a href="_currencyratecontroller_.currencyratecontroller.html#state" class="tsd-kind-icon">state</a></li>
+								<li class="tsd-kind-set-signature tsd-parent-kind-class"><a href="_blockhistorycontroller_.blockhistorycontroller.html#blockdepth" class="tsd-kind-icon">block<wbr>Depth</a></li>
+								<li class="tsd-kind-set-signature tsd-parent-kind-class"><a href="_blockhistorycontroller_.blockhistorycontroller.html#blocktracker" class="tsd-kind-icon">block<wbr>Tracker</a></li>
+								<li class="tsd-kind-get-signature tsd-parent-kind-class tsd-is-inherited"><a href="_blockhistorycontroller_.blockhistorycontroller.html#config" class="tsd-kind-icon">config</a></li>
+								<li class="tsd-kind-set-signature tsd-parent-kind-class"><a href="_blockhistorycontroller_.blockhistorycontroller.html#provider" class="tsd-kind-icon">provider</a></li>
+								<li class="tsd-kind-get-signature tsd-parent-kind-class tsd-is-inherited"><a href="_blockhistorycontroller_.blockhistorycontroller.html#state" class="tsd-kind-icon">state</a></li>
 							</ul>
 						</section>
-						<section class="tsd-index-section ">
+						<section class="tsd-index-section tsd-is-inherited">
 							<h3>Methods</h3>
 							<ul class="tsd-index-list">
-								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-overwrite tsd-is-inherited"><a href="_currencyratecontroller_.currencyratecontroller.html#addlistener" class="tsd-kind-icon">add<wbr>Listener</a></li>
-								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-inherited"><a href="_currencyratecontroller_.currencyratecontroller.html#configure" class="tsd-kind-icon">configure</a></li>
-								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-overwrite tsd-is-inherited"><a href="_currencyratecontroller_.currencyratecontroller.html#emit" class="tsd-kind-icon">emit</a></li>
-								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-overwrite tsd-is-inherited"><a href="_currencyratecontroller_.currencyratecontroller.html#eventnames" class="tsd-kind-icon">event<wbr>Names</a></li>
-								<li class="tsd-kind-method tsd-parent-kind-class"><a href="_currencyratecontroller_.currencyratecontroller.html#fetchexchangerate" class="tsd-kind-icon">fetch<wbr>Exchange<wbr>Rate</a></li>
-								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-overwrite tsd-is-inherited"><a href="_currencyratecontroller_.currencyratecontroller.html#getmaxlisteners" class="tsd-kind-icon">get<wbr>Max<wbr>Listeners</a></li>
-								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-inherited tsd-is-protected"><a href="_currencyratecontroller_.currencyratecontroller.html#initialize" class="tsd-kind-icon">initialize</a></li>
-								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-overwrite tsd-is-inherited"><a href="_currencyratecontroller_.currencyratecontroller.html#listenercount" class="tsd-kind-icon">listener<wbr>Count</a></li>
-								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-overwrite tsd-is-inherited"><a href="_currencyratecontroller_.currencyratecontroller.html#listeners" class="tsd-kind-icon">listeners</a></li>
-								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-inherited"><a href="_currencyratecontroller_.currencyratecontroller.html#notify" class="tsd-kind-icon">notify</a></li>
-								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-overwrite tsd-is-inherited"><a href="_currencyratecontroller_.currencyratecontroller.html#off" class="tsd-kind-icon">off</a></li>
-								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-overwrite tsd-is-inherited"><a href="_currencyratecontroller_.currencyratecontroller.html#on" class="tsd-kind-icon">on</a></li>
-								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-overwrite tsd-is-inherited"><a href="_currencyratecontroller_.currencyratecontroller.html#once" class="tsd-kind-icon">once</a></li>
-								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-overwrite tsd-is-inherited"><a href="_currencyratecontroller_.currencyratecontroller.html#prependlistener" class="tsd-kind-icon">prepend<wbr>Listener</a></li>
-								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-overwrite tsd-is-inherited"><a href="_currencyratecontroller_.currencyratecontroller.html#prependoncelistener" class="tsd-kind-icon">prepend<wbr>Once<wbr>Listener</a></li>
-								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-overwrite tsd-is-inherited"><a href="_currencyratecontroller_.currencyratecontroller.html#rawlisteners" class="tsd-kind-icon">raw<wbr>Listeners</a></li>
-								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-overwrite tsd-is-inherited"><a href="_currencyratecontroller_.currencyratecontroller.html#removealllisteners" class="tsd-kind-icon">remove<wbr>All<wbr>Listeners</a></li>
-								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-overwrite tsd-is-inherited"><a href="_currencyratecontroller_.currencyratecontroller.html#removelistener" class="tsd-kind-icon">remove<wbr>Listener</a></li>
-								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-overwrite tsd-is-inherited"><a href="_currencyratecontroller_.currencyratecontroller.html#setmaxlisteners" class="tsd-kind-icon">set<wbr>Max<wbr>Listeners</a></li>
-								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-inherited"><a href="_currencyratecontroller_.currencyratecontroller.html#subscribe" class="tsd-kind-icon">subscribe</a></li>
-								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-inherited"><a href="_currencyratecontroller_.currencyratecontroller.html#unsubscribe" class="tsd-kind-icon">unsubscribe</a></li>
-								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-inherited"><a href="_currencyratecontroller_.currencyratecontroller.html#update" class="tsd-kind-icon">update</a></li>
-								<li class="tsd-kind-method tsd-parent-kind-class"><a href="_currencyratecontroller_.currencyratecontroller.html#updateexchangerate" class="tsd-kind-icon">update<wbr>Exchange<wbr>Rate</a></li>
-								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-inherited tsd-is-static"><a href="_currencyratecontroller_.currencyratecontroller.html#listenercount-1" class="tsd-kind-icon">listener<wbr>Count</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-overwrite tsd-is-inherited"><a href="_blockhistorycontroller_.blockhistorycontroller.html#addlistener" class="tsd-kind-icon">add<wbr>Listener</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-inherited"><a href="_blockhistorycontroller_.blockhistorycontroller.html#configure" class="tsd-kind-icon">configure</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-overwrite tsd-is-inherited"><a href="_blockhistorycontroller_.blockhistorycontroller.html#emit" class="tsd-kind-icon">emit</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-overwrite tsd-is-inherited"><a href="_blockhistorycontroller_.blockhistorycontroller.html#eventnames" class="tsd-kind-icon">event<wbr>Names</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-overwrite tsd-is-inherited"><a href="_blockhistorycontroller_.blockhistorycontroller.html#getmaxlisteners" class="tsd-kind-icon">get<wbr>Max<wbr>Listeners</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-inherited tsd-is-protected"><a href="_blockhistorycontroller_.blockhistorycontroller.html#initialize" class="tsd-kind-icon">initialize</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-overwrite tsd-is-inherited"><a href="_blockhistorycontroller_.blockhistorycontroller.html#listenercount" class="tsd-kind-icon">listener<wbr>Count</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-overwrite tsd-is-inherited"><a href="_blockhistorycontroller_.blockhistorycontroller.html#listeners" class="tsd-kind-icon">listeners</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-inherited"><a href="_blockhistorycontroller_.blockhistorycontroller.html#notify" class="tsd-kind-icon">notify</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-overwrite tsd-is-inherited"><a href="_blockhistorycontroller_.blockhistorycontroller.html#off" class="tsd-kind-icon">off</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-overwrite tsd-is-inherited"><a href="_blockhistorycontroller_.blockhistorycontroller.html#on" class="tsd-kind-icon">on</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-overwrite tsd-is-inherited"><a href="_blockhistorycontroller_.blockhistorycontroller.html#once" class="tsd-kind-icon">once</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-overwrite tsd-is-inherited"><a href="_blockhistorycontroller_.blockhistorycontroller.html#prependlistener" class="tsd-kind-icon">prepend<wbr>Listener</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-overwrite tsd-is-inherited"><a href="_blockhistorycontroller_.blockhistorycontroller.html#prependoncelistener" class="tsd-kind-icon">prepend<wbr>Once<wbr>Listener</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-overwrite tsd-is-inherited"><a href="_blockhistorycontroller_.blockhistorycontroller.html#rawlisteners" class="tsd-kind-icon">raw<wbr>Listeners</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-overwrite tsd-is-inherited"><a href="_blockhistorycontroller_.blockhistorycontroller.html#removealllisteners" class="tsd-kind-icon">remove<wbr>All<wbr>Listeners</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-overwrite tsd-is-inherited"><a href="_blockhistorycontroller_.blockhistorycontroller.html#removelistener" class="tsd-kind-icon">remove<wbr>Listener</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-overwrite tsd-is-inherited"><a href="_blockhistorycontroller_.blockhistorycontroller.html#setmaxlisteners" class="tsd-kind-icon">set<wbr>Max<wbr>Listeners</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-inherited"><a href="_blockhistorycontroller_.blockhistorycontroller.html#subscribe" class="tsd-kind-icon">subscribe</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-inherited"><a href="_blockhistorycontroller_.blockhistorycontroller.html#unsubscribe" class="tsd-kind-icon">unsubscribe</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-inherited"><a href="_blockhistorycontroller_.blockhistorycontroller.html#update" class="tsd-kind-icon">update</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-inherited tsd-is-static"><a href="_blockhistorycontroller_.blockhistorycontroller.html#listenercount-1" class="tsd-kind-icon">listener<wbr>Count</a></li>
 							</ul>
 						</section>
 					</div>
@@ -154,25 +153,25 @@
 					<a name="constructor" class="tsd-anchor"></a>
 					<h3>constructor</h3>
 					<ul class="tsd-signatures tsd-kind-constructor tsd-parent-kind-class tsd-is-overwrite">
-						<li class="tsd-signature tsd-kind-icon">new <wbr>Currency<wbr>Rate<wbr>Controller<span class="tsd-signature-symbol">(</span>state<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">Partial</span><span class="tsd-signature-symbol">&lt;</span><a href="../interfaces/_currencyratecontroller_.currencyratestate.html" class="tsd-signature-type">CurrencyRateState</a><span class="tsd-signature-symbol">&gt;</span>, config<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">Partial</span><span class="tsd-signature-symbol">&lt;</span><a href="../interfaces/_currencyratecontroller_.currencyrateconfig.html" class="tsd-signature-type">CurrencyRateConfig</a><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="_currencyratecontroller_.currencyratecontroller.html" class="tsd-signature-type">CurrencyRateController</a></li>
+						<li class="tsd-signature tsd-kind-icon">new <wbr>Block<wbr>History<wbr>Controller<span class="tsd-signature-symbol">(</span>state<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">Partial</span><span class="tsd-signature-symbol">&lt;</span><a href="../interfaces/_blockhistorycontroller_.blockhistorystate.html" class="tsd-signature-type">BlockHistoryState</a><span class="tsd-signature-symbol">&gt;</span>, config<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">Partial</span><span class="tsd-signature-symbol">&lt;</span><a href="../interfaces/_blockhistorycontroller_.blockhistoryconfig.html" class="tsd-signature-type">BlockHistoryConfig</a><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="_blockhistorycontroller_.blockhistorycontroller.html" class="tsd-signature-type">BlockHistoryController</a></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<p>Overrides <a href="_basecontroller_.basecontroller.html">BaseController</a>.<a href="_basecontroller_.basecontroller.html#constructor">constructor</a></p>
 								<ul>
-									<li>Defined in <a href="https://github.com/bitpshr/gaba/blob/488ed86/src/CurrencyRateController.ts#L40">CurrencyRateController.ts:40</a></li>
+									<li>Defined in <a href="https://github.com/bitpshr/gaba/blob/488ed86/src/BlockHistoryController.ts#L140">BlockHistoryController.ts:140</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
 								<div class="lead">
-									<p>Creates a CurrencyRateController instance</p>
+									<p>Creates a BlockHistoryController instance</p>
 								</div>
 							</div>
 							<h4 class="tsd-parameters-title">Parameters</h4>
 							<ul class="tsd-parameters">
 								<li>
-									<h5><span class="tsd-flag ts-flagOptional">Optional</span> state: <span class="tsd-signature-type">Partial</span><span class="tsd-signature-symbol">&lt;</span><a href="../interfaces/_currencyratecontroller_.currencyratestate.html" class="tsd-signature-type">CurrencyRateState</a><span class="tsd-signature-symbol">&gt;</span></h5>
+									<h5><span class="tsd-flag ts-flagOptional">Optional</span> state: <span class="tsd-signature-type">Partial</span><span class="tsd-signature-symbol">&lt;</span><a href="../interfaces/_blockhistorycontroller_.blockhistorystate.html" class="tsd-signature-type">BlockHistoryState</a><span class="tsd-signature-symbol">&gt;</span></h5>
 									<div class="tsd-comment tsd-typography">
 										<div class="lead">
 											<p>Initial state to set on this controller</p>
@@ -180,7 +179,7 @@
 									</div>
 								</li>
 								<li>
-									<h5><span class="tsd-flag ts-flagOptional">Optional</span> config: <span class="tsd-signature-type">Partial</span><span class="tsd-signature-symbol">&lt;</span><a href="../interfaces/_currencyratecontroller_.currencyrateconfig.html" class="tsd-signature-type">CurrencyRateConfig</a><span class="tsd-signature-symbol">&gt;</span></h5>
+									<h5><span class="tsd-flag ts-flagOptional">Optional</span> config: <span class="tsd-signature-type">Partial</span><span class="tsd-signature-symbol">&lt;</span><a href="../interfaces/_blockhistorycontroller_.blockhistoryconfig.html" class="tsd-signature-type">BlockHistoryConfig</a><span class="tsd-signature-symbol">&gt;</span></h5>
 									<div class="tsd-comment tsd-typography">
 										<div class="lead">
 											<p>Initial options used to configure this controller</p>
@@ -188,7 +187,7 @@
 									</div>
 								</li>
 							</ul>
-							<h4 class="tsd-returns-title">Returns <a href="_currencyratecontroller_.currencyratecontroller.html" class="tsd-signature-type">CurrencyRateController</a></h4>
+							<h4 class="tsd-returns-title">Returns <a href="_blockhistorycontroller_.blockhistorycontroller.html" class="tsd-signature-type">BlockHistoryController</a></h4>
 						</li>
 					</ul>
 				</section>
@@ -216,7 +215,7 @@
 				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-inherited">
 					<a name="defaultconfig" class="tsd-anchor"></a>
 					<h3>default<wbr>Config</h3>
-					<div class="tsd-signature tsd-kind-icon">default<wbr>Config<span class="tsd-signature-symbol">:</span> <a href="../interfaces/_currencyratecontroller_.currencyrateconfig.html" class="tsd-signature-type">CurrencyRateConfig</a><span class="tsd-signature-symbol"> =&nbsp;{} as C</span></div>
+					<div class="tsd-signature tsd-kind-icon">default<wbr>Config<span class="tsd-signature-symbol">:</span> <a href="../interfaces/_blockhistorycontroller_.blockhistoryconfig.html" class="tsd-signature-type">BlockHistoryConfig</a><span class="tsd-signature-symbol"> =&nbsp;{} as C</span></div>
 					<aside class="tsd-sources">
 						<p>Inherited from <a href="_basecontroller_.basecontroller.html">BaseController</a>.<a href="_basecontroller_.basecontroller.html#defaultconfig">defaultConfig</a></p>
 						<ul>
@@ -232,7 +231,7 @@
 				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-inherited">
 					<a name="defaultstate" class="tsd-anchor"></a>
 					<h3>default<wbr>State</h3>
-					<div class="tsd-signature tsd-kind-icon">default<wbr>State<span class="tsd-signature-symbol">:</span> <a href="../interfaces/_currencyratecontroller_.currencyratestate.html" class="tsd-signature-type">CurrencyRateState</a><span class="tsd-signature-symbol"> =&nbsp;{} as S</span></div>
+					<div class="tsd-signature tsd-kind-icon">default<wbr>State<span class="tsd-signature-symbol">:</span> <a href="../interfaces/_blockhistorycontroller_.blockhistorystate.html" class="tsd-signature-type">BlockHistoryState</a><span class="tsd-signature-symbol"> =&nbsp;{} as S</span></div>
 					<aside class="tsd-sources">
 						<p>Inherited from <a href="_basecontroller_.basecontroller.html">BaseController</a>.<a href="_basecontroller_.basecontroller.html#defaultstate">defaultState</a></p>
 						<ul>
@@ -275,11 +274,77 @@
 			</section>
 			<section class="tsd-panel-group tsd-member-group ">
 				<h2>Accessors</h2>
+				<section class="tsd-panel tsd-member tsd-kind-set-signature tsd-parent-kind-class">
+					<a name="blockdepth" class="tsd-anchor"></a>
+					<h3>block<wbr>Depth</h3>
+					<ul class="tsd-signatures tsd-kind-set-signature tsd-parent-kind-class">
+						<li class="tsd-signature tsd-kind-icon"><span class="tsd-signature-symbol">set</span> blockDepth<span class="tsd-signature-symbol">(</span>blockDepth<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/bitpshr/gaba/blob/488ed86/src/BlockHistoryController.ts#L165">BlockHistoryController.ts:165</a></li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Sets a new BlockTracker instance</p>
+								</div>
+							</div>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>blockDepth: <span class="tsd-signature-type">number</span></h5>
+									<div class="tsd-comment tsd-typography">
+										<div class="lead">
+											<p>Number of past blocks to maintain</p>
+										</div>
+									</div>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-set-signature tsd-parent-kind-class">
+					<a name="blocktracker" class="tsd-anchor"></a>
+					<h3>block<wbr>Tracker</h3>
+					<ul class="tsd-signatures tsd-kind-set-signature tsd-parent-kind-class">
+						<li class="tsd-signature tsd-kind-icon"><span class="tsd-signature-symbol">set</span> blockTracker<span class="tsd-signature-symbol">(</span>blockTracker<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">any</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/bitpshr/gaba/blob/488ed86/src/BlockHistoryController.ts#L179">BlockHistoryController.ts:179</a></li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Sets a new BlockTracker instance</p>
+								</div>
+							</div>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>blockTracker: <span class="tsd-signature-type">any</span></h5>
+									<div class="tsd-comment tsd-typography">
+										<div class="lead">
+											<p>Contains methods for tracking blocks and querying the blockchain</p>
+										</div>
+									</div>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
+						</li>
+					</ul>
+				</section>
 				<section class="tsd-panel tsd-member tsd-kind-get-signature tsd-parent-kind-class tsd-is-inherited">
 					<a name="config" class="tsd-anchor"></a>
 					<h3>config</h3>
 					<ul class="tsd-signatures tsd-kind-get-signature tsd-parent-kind-class tsd-is-inherited">
-						<li class="tsd-signature tsd-kind-icon"><span class="tsd-signature-symbol">get</span> config<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="../interfaces/_currencyratecontroller_.currencyrateconfig.html" class="tsd-signature-type">CurrencyRateConfig</a></li>
+						<li class="tsd-signature tsd-kind-icon"><span class="tsd-signature-symbol">get</span> config<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="../interfaces/_blockhistorycontroller_.blockhistoryconfig.html" class="tsd-signature-type">BlockHistoryConfig</a></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
@@ -294,7 +359,7 @@
 									<p>Retrieves current controller configuration options</p>
 								</div>
 							</div>
-							<h4 class="tsd-returns-title">Returns <a href="../interfaces/_currencyratecontroller_.currencyrateconfig.html" class="tsd-signature-type">CurrencyRateConfig</a></h4>
+							<h4 class="tsd-returns-title">Returns <a href="../interfaces/_blockhistorycontroller_.blockhistoryconfig.html" class="tsd-signature-type">BlockHistoryConfig</a></h4>
 							<ul>
 								<li>Current configuration</li>
 							</ul>
@@ -302,63 +367,30 @@
 					</ul>
 				</section>
 				<section class="tsd-panel tsd-member tsd-kind-set-signature tsd-parent-kind-class">
-					<a name="currency" class="tsd-anchor"></a>
-					<h3>currency</h3>
+					<a name="provider" class="tsd-anchor"></a>
+					<h3>provider</h3>
 					<ul class="tsd-signatures tsd-kind-set-signature tsd-parent-kind-class">
-						<li class="tsd-signature tsd-kind-icon"><span class="tsd-signature-symbol">set</span> currency<span class="tsd-signature-symbol">(</span>currency<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
+						<li class="tsd-signature tsd-kind-icon"><span class="tsd-signature-symbol">set</span> provider<span class="tsd-signature-symbol">(</span>provider<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">any</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/bitpshr/gaba/blob/488ed86/src/CurrencyRateController.ts#L80">CurrencyRateController.ts:80</a></li>
+									<li>Defined in <a href="https://github.com/bitpshr/gaba/blob/488ed86/src/BlockHistoryController.ts#L190">BlockHistoryController.ts:190</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
 								<div class="lead">
-									<p>Sets a currency to track a exchange rate for</p>
+									<p>Sets a new provider</p>
 								</div>
 							</div>
 							<h4 class="tsd-parameters-title">Parameters</h4>
 							<ul class="tsd-parameters">
 								<li>
-									<h5>currency: <span class="tsd-signature-type">string</span></h5>
+									<h5>provider: <span class="tsd-signature-type">any</span></h5>
 									<div class="tsd-comment tsd-typography">
 										<div class="lead">
-											<p>ISO 4217 currency code</p>
-										</div>
-									</div>
-								</li>
-							</ul>
-							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
-						</li>
-					</ul>
-				</section>
-				<section class="tsd-panel tsd-member tsd-kind-set-signature tsd-parent-kind-class">
-					<a name="interval" class="tsd-anchor"></a>
-					<h3>interval</h3>
-					<ul class="tsd-signatures tsd-kind-set-signature tsd-parent-kind-class">
-						<li class="tsd-signature tsd-kind-icon"><span class="tsd-signature-symbol">set</span> interval<span class="tsd-signature-symbol">(</span>interval<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
-					</ul>
-					<ul class="tsd-descriptions">
-						<li class="tsd-description">
-							<aside class="tsd-sources">
-								<ul>
-									<li>Defined in <a href="https://github.com/bitpshr/gaba/blob/488ed86/src/CurrencyRateController.ts#L67">CurrencyRateController.ts:67</a></li>
-								</ul>
-							</aside>
-							<div class="tsd-comment tsd-typography">
-								<div class="lead">
-									<p>Sets a new polling interval</p>
-								</div>
-							</div>
-							<h4 class="tsd-parameters-title">Parameters</h4>
-							<ul class="tsd-parameters">
-								<li>
-									<h5>interval: <span class="tsd-signature-type">number</span></h5>
-									<div class="tsd-comment tsd-typography">
-										<div class="lead">
-											<p>Polling interval used to fetch new exchange rates</p>
+											<p>Provider used to create a new underlying EthQuery instance</p>
 										</div>
 									</div>
 								</li>
@@ -371,7 +403,7 @@
 					<a name="state" class="tsd-anchor"></a>
 					<h3>state</h3>
 					<ul class="tsd-signatures tsd-kind-get-signature tsd-parent-kind-class tsd-is-inherited">
-						<li class="tsd-signature tsd-kind-icon"><span class="tsd-signature-symbol">get</span> state<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="../interfaces/_currencyratecontroller_.currencyratestate.html" class="tsd-signature-type">CurrencyRateState</a></li>
+						<li class="tsd-signature tsd-kind-icon"><span class="tsd-signature-symbol">get</span> state<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="../interfaces/_blockhistorycontroller_.blockhistorystate.html" class="tsd-signature-type">BlockHistoryState</a></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
@@ -386,7 +418,7 @@
 									<p>Retrieves current controller state</p>
 								</div>
 							</div>
-							<h4 class="tsd-returns-title">Returns <a href="../interfaces/_currencyratecontroller_.currencyratestate.html" class="tsd-signature-type">CurrencyRateState</a></h4>
+							<h4 class="tsd-returns-title">Returns <a href="../interfaces/_blockhistorycontroller_.blockhistorystate.html" class="tsd-signature-type">BlockHistoryState</a></h4>
 							<ul>
 								<li>Current state</li>
 							</ul>
@@ -394,7 +426,7 @@
 					</ul>
 				</section>
 			</section>
-			<section class="tsd-panel-group tsd-member-group ">
+			<section class="tsd-panel-group tsd-member-group tsd-is-inherited">
 				<h2>Methods</h2>
 				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-overwrite tsd-is-inherited">
 					<a name="addlistener" class="tsd-anchor"></a>
@@ -446,7 +478,7 @@
 					<a name="configure" class="tsd-anchor"></a>
 					<h3>configure</h3>
 					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-inherited">
-						<li class="tsd-signature tsd-kind-icon">configure<span class="tsd-signature-symbol">(</span>config<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Partial</span><span class="tsd-signature-symbol">&lt;</span><a href="../interfaces/_currencyratecontroller_.currencyrateconfig.html" class="tsd-signature-type">CurrencyRateConfig</a><span class="tsd-signature-symbol">&gt;</span>, overwrite<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">boolean</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
+						<li class="tsd-signature tsd-kind-icon">configure<span class="tsd-signature-symbol">(</span>config<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Partial</span><span class="tsd-signature-symbol">&lt;</span><a href="../interfaces/_blockhistorycontroller_.blockhistoryconfig.html" class="tsd-signature-type">BlockHistoryConfig</a><span class="tsd-signature-symbol">&gt;</span>, overwrite<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">boolean</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
@@ -464,7 +496,7 @@
 							<h4 class="tsd-parameters-title">Parameters</h4>
 							<ul class="tsd-parameters">
 								<li>
-									<h5>config: <span class="tsd-signature-type">Partial</span><span class="tsd-signature-symbol">&lt;</span><a href="../interfaces/_currencyratecontroller_.currencyrateconfig.html" class="tsd-signature-type">CurrencyRateConfig</a><span class="tsd-signature-symbol">&gt;</span></h5>
+									<h5>config: <span class="tsd-signature-type">Partial</span><span class="tsd-signature-symbol">&lt;</span><a href="../interfaces/_blockhistorycontroller_.blockhistoryconfig.html" class="tsd-signature-type">BlockHistoryConfig</a><span class="tsd-signature-symbol">&gt;</span></h5>
 									<div class="tsd-comment tsd-typography">
 										<p>New configuration options</p>
 									</div>
@@ -527,40 +559,6 @@
 						</li>
 					</ul>
 				</section>
-				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class">
-					<a name="fetchexchangerate" class="tsd-anchor"></a>
-					<h3>fetch<wbr>Exchange<wbr>Rate</h3>
-					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
-						<li class="tsd-signature tsd-kind-icon">fetch<wbr>Exchange<wbr>Rate<span class="tsd-signature-symbol">(</span>currency<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><a href="../interfaces/_currencyratecontroller_.currencyratestate.html" class="tsd-signature-type">CurrencyRateState</a><span class="tsd-signature-symbol">&gt;</span></li>
-					</ul>
-					<ul class="tsd-descriptions">
-						<li class="tsd-description">
-							<aside class="tsd-sources">
-								<ul>
-									<li>Defined in <a href="https://github.com/bitpshr/gaba/blob/488ed86/src/CurrencyRateController.ts#L91">CurrencyRateController.ts:91</a></li>
-								</ul>
-							</aside>
-							<div class="tsd-comment tsd-typography">
-								<div class="lead">
-									<p>Fetches the exchange rate for a given currency</p>
-								</div>
-							</div>
-							<h4 class="tsd-parameters-title">Parameters</h4>
-							<ul class="tsd-parameters">
-								<li>
-									<h5>currency: <span class="tsd-signature-type">string</span></h5>
-									<div class="tsd-comment tsd-typography">
-										<p>ISO 4217 currency code</p>
-									</div>
-								</li>
-							</ul>
-							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><a href="../interfaces/_currencyratecontroller_.currencyratestate.html" class="tsd-signature-type">CurrencyRateState</a><span class="tsd-signature-symbol">&gt;</span></h4>
-							<ul>
-								<li>Promise resolving to exchange rate for given currecy</li>
-							</ul>
-						</li>
-					</ul>
-				</section>
 				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-overwrite tsd-is-inherited">
 					<a name="getmaxlisteners" class="tsd-anchor"></a>
 					<h3>get<wbr>Max<wbr>Listeners</h3>
@@ -584,7 +582,7 @@
 					<a name="initialize" class="tsd-anchor"></a>
 					<h3><span class="tsd-flag ts-flagProtected">Protected</span> initialize</h3>
 					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-inherited tsd-is-protected">
-						<li class="tsd-signature tsd-kind-icon">initialize<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="_basecontroller_.basecontroller.html" class="tsd-signature-type">BaseController</a><span class="tsd-signature-symbol">&lt;</span><a href="../interfaces/_currencyratecontroller_.currencyratestate.html" class="tsd-signature-type">CurrencyRateState</a><span class="tsd-signature-symbol">, </span><a href="../interfaces/_currencyratecontroller_.currencyrateconfig.html" class="tsd-signature-type">CurrencyRateConfig</a><span class="tsd-signature-symbol">&gt;</span></li>
+						<li class="tsd-signature tsd-kind-icon">initialize<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="_basecontroller_.basecontroller.html" class="tsd-signature-type">BaseController</a><span class="tsd-signature-symbol">&lt;</span><a href="../interfaces/_blockhistorycontroller_.blockhistorystate.html" class="tsd-signature-type">BlockHistoryState</a><span class="tsd-signature-symbol">, </span><a href="../interfaces/_blockhistorycontroller_.blockhistoryconfig.html" class="tsd-signature-type">BlockHistoryConfig</a><span class="tsd-signature-symbol">&gt;</span></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
@@ -601,7 +599,7 @@
 									also sets initial state and triggers any listeners.</p>
 								</div>
 							</div>
-							<h4 class="tsd-returns-title">Returns <a href="_basecontroller_.basecontroller.html" class="tsd-signature-type">BaseController</a><span class="tsd-signature-symbol">&lt;</span><a href="../interfaces/_currencyratecontroller_.currencyratestate.html" class="tsd-signature-type">CurrencyRateState</a><span class="tsd-signature-symbol">, </span><a href="../interfaces/_currencyratecontroller_.currencyrateconfig.html" class="tsd-signature-type">CurrencyRateConfig</a><span class="tsd-signature-symbol">&gt;</span></h4>
+							<h4 class="tsd-returns-title">Returns <a href="_basecontroller_.basecontroller.html" class="tsd-signature-type">BaseController</a><span class="tsd-signature-symbol">&lt;</span><a href="../interfaces/_blockhistorycontroller_.blockhistorystate.html" class="tsd-signature-type">BlockHistoryState</a><span class="tsd-signature-symbol">, </span><a href="../interfaces/_blockhistorycontroller_.blockhistoryconfig.html" class="tsd-signature-type">BlockHistoryConfig</a><span class="tsd-signature-symbol">&gt;</span></h4>
 							<p>This controller instance</p>
 						</li>
 					</ul>
@@ -1034,7 +1032,7 @@
 					<a name="subscribe" class="tsd-anchor"></a>
 					<h3>subscribe</h3>
 					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-inherited">
-						<li class="tsd-signature tsd-kind-icon">subscribe<span class="tsd-signature-symbol">(</span>listener<span class="tsd-signature-symbol">: </span><a href="../modules/_basecontroller_.html#listener" class="tsd-signature-type">Listener</a><span class="tsd-signature-symbol">&lt;</span><a href="../interfaces/_currencyratecontroller_.currencyratestate.html" class="tsd-signature-type">CurrencyRateState</a><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
+						<li class="tsd-signature tsd-kind-icon">subscribe<span class="tsd-signature-symbol">(</span>listener<span class="tsd-signature-symbol">: </span><a href="../modules/_basecontroller_.html#listener" class="tsd-signature-type">Listener</a><span class="tsd-signature-symbol">&lt;</span><a href="../interfaces/_blockhistorycontroller_.blockhistorystate.html" class="tsd-signature-type">BlockHistoryState</a><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
@@ -1052,7 +1050,7 @@
 							<h4 class="tsd-parameters-title">Parameters</h4>
 							<ul class="tsd-parameters">
 								<li>
-									<h5>listener: <a href="../modules/_basecontroller_.html#listener" class="tsd-signature-type">Listener</a><span class="tsd-signature-symbol">&lt;</span><a href="../interfaces/_currencyratecontroller_.currencyratestate.html" class="tsd-signature-type">CurrencyRateState</a><span class="tsd-signature-symbol">&gt;</span></h5>
+									<h5>listener: <a href="../modules/_basecontroller_.html#listener" class="tsd-signature-type">Listener</a><span class="tsd-signature-symbol">&lt;</span><a href="../interfaces/_blockhistorycontroller_.blockhistorystate.html" class="tsd-signature-type">BlockHistoryState</a><span class="tsd-signature-symbol">&gt;</span></h5>
 									<div class="tsd-comment tsd-typography">
 										<p>Callback triggered when state changes</p>
 									</div>
@@ -1066,7 +1064,7 @@
 					<a name="unsubscribe" class="tsd-anchor"></a>
 					<h3>unsubscribe</h3>
 					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-inherited">
-						<li class="tsd-signature tsd-kind-icon">unsubscribe<span class="tsd-signature-symbol">(</span>listener<span class="tsd-signature-symbol">: </span><a href="../modules/_basecontroller_.html#listener" class="tsd-signature-type">Listener</a><span class="tsd-signature-symbol">&lt;</span><a href="../interfaces/_currencyratecontroller_.currencyratestate.html" class="tsd-signature-type">CurrencyRateState</a><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">boolean</span></li>
+						<li class="tsd-signature tsd-kind-icon">unsubscribe<span class="tsd-signature-symbol">(</span>listener<span class="tsd-signature-symbol">: </span><a href="../modules/_basecontroller_.html#listener" class="tsd-signature-type">Listener</a><span class="tsd-signature-symbol">&lt;</span><a href="../interfaces/_blockhistorycontroller_.blockhistorystate.html" class="tsd-signature-type">BlockHistoryState</a><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">boolean</span></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
@@ -1084,7 +1082,7 @@
 							<h4 class="tsd-parameters-title">Parameters</h4>
 							<ul class="tsd-parameters">
 								<li>
-									<h5>listener: <a href="../modules/_basecontroller_.html#listener" class="tsd-signature-type">Listener</a><span class="tsd-signature-symbol">&lt;</span><a href="../interfaces/_currencyratecontroller_.currencyratestate.html" class="tsd-signature-type">CurrencyRateState</a><span class="tsd-signature-symbol">&gt;</span></h5>
+									<h5>listener: <a href="../modules/_basecontroller_.html#listener" class="tsd-signature-type">Listener</a><span class="tsd-signature-symbol">&lt;</span><a href="../interfaces/_blockhistorycontroller_.blockhistorystate.html" class="tsd-signature-type">BlockHistoryState</a><span class="tsd-signature-symbol">&gt;</span></h5>
 									<div class="tsd-comment tsd-typography">
 										<p>Callback to remove</p>
 									</div>
@@ -1101,7 +1099,7 @@
 					<a name="update" class="tsd-anchor"></a>
 					<h3>update</h3>
 					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-inherited">
-						<li class="tsd-signature tsd-kind-icon">update<span class="tsd-signature-symbol">(</span>state<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Partial</span><span class="tsd-signature-symbol">&lt;</span><a href="../interfaces/_currencyratecontroller_.currencyratestate.html" class="tsd-signature-type">CurrencyRateState</a><span class="tsd-signature-symbol">&gt;</span>, overwrite<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">boolean</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
+						<li class="tsd-signature tsd-kind-icon">update<span class="tsd-signature-symbol">(</span>state<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Partial</span><span class="tsd-signature-symbol">&lt;</span><a href="../interfaces/_blockhistorycontroller_.blockhistorystate.html" class="tsd-signature-type">BlockHistoryState</a><span class="tsd-signature-symbol">&gt;</span>, overwrite<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">boolean</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
@@ -1119,7 +1117,7 @@
 							<h4 class="tsd-parameters-title">Parameters</h4>
 							<ul class="tsd-parameters">
 								<li>
-									<h5>state: <span class="tsd-signature-type">Partial</span><span class="tsd-signature-symbol">&lt;</span><a href="../interfaces/_currencyratecontroller_.currencyratestate.html" class="tsd-signature-type">CurrencyRateState</a><span class="tsd-signature-symbol">&gt;</span></h5>
+									<h5>state: <span class="tsd-signature-type">Partial</span><span class="tsd-signature-symbol">&lt;</span><a href="../interfaces/_blockhistorycontroller_.blockhistorystate.html" class="tsd-signature-type">BlockHistoryState</a><span class="tsd-signature-symbol">&gt;</span></h5>
 									<div class="tsd-comment tsd-typography">
 										<p>New state</p>
 									</div>
@@ -1132,28 +1130,6 @@
 								</li>
 							</ul>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
-						</li>
-					</ul>
-				</section>
-				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class">
-					<a name="updateexchangerate" class="tsd-anchor"></a>
-					<h3>update<wbr>Exchange<wbr>Rate</h3>
-					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
-						<li class="tsd-signature tsd-kind-icon">update<wbr>Exchange<wbr>Rate<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">void</span><span class="tsd-signature-symbol">&gt;</span></li>
-					</ul>
-					<ul class="tsd-descriptions">
-						<li class="tsd-description">
-							<aside class="tsd-sources">
-								<ul>
-									<li>Defined in <a href="https://github.com/bitpshr/gaba/blob/488ed86/src/CurrencyRateController.ts#L115">CurrencyRateController.ts:115</a></li>
-								</ul>
-							</aside>
-							<div class="tsd-comment tsd-typography">
-								<div class="lead">
-									<p>Updates exchange rates for the current currency</p>
-								</div>
-							</div>
-							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">void</span><span class="tsd-signature-symbol">&gt;</span></h4>
 						</li>
 					</ul>
 				</section>
@@ -1205,13 +1181,13 @@
 					<li class=" tsd-kind-external-module">
 						<a href="../modules/_basecontroller_.html">"<wbr>Base<wbr>Controller"</a>
 					</li>
-					<li class=" tsd-kind-external-module">
+					<li class="current tsd-kind-external-module">
 						<a href="../modules/_blockhistorycontroller_.html">"<wbr>Block<wbr>History<wbr>Controller"</a>
 					</li>
 					<li class=" tsd-kind-external-module">
 						<a href="../modules/_composablecontroller_.html">"<wbr>Composable<wbr>Controller"</a>
 					</li>
-					<li class="current tsd-kind-external-module">
+					<li class=" tsd-kind-external-module">
 						<a href="../modules/_currencyratecontroller_.html">"<wbr>Currency<wbr>Rate<wbr>Controller"</a>
 					</li>
 					<li class=" tsd-kind-external-module">
@@ -1236,119 +1212,119 @@
 				</ul>
 				<ul class="current">
 					<li class="current tsd-kind-class tsd-parent-kind-external-module">
-						<a href="_currencyratecontroller_.currencyratecontroller.html" class="tsd-kind-icon">Currency<wbr>Rate<wbr>Controller</a>
+						<a href="_blockhistorycontroller_.blockhistorycontroller.html" class="tsd-kind-icon">Block<wbr>History<wbr>Controller</a>
 						<ul>
 							<li class=" tsd-kind-constructor tsd-parent-kind-class tsd-is-overwrite">
-								<a href="_currencyratecontroller_.currencyratecontroller.html#constructor" class="tsd-kind-icon">constructor</a>
+								<a href="_blockhistorycontroller_.blockhistorycontroller.html#constructor" class="tsd-kind-icon">constructor</a>
 							</li>
 							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-inherited">
-								<a href="_currencyratecontroller_.currencyratecontroller.html#context" class="tsd-kind-icon">context</a>
+								<a href="_blockhistorycontroller_.blockhistorycontroller.html#context" class="tsd-kind-icon">context</a>
 							</li>
 							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-inherited">
-								<a href="_currencyratecontroller_.currencyratecontroller.html#defaultconfig" class="tsd-kind-icon">default<wbr>Config</a>
+								<a href="_blockhistorycontroller_.blockhistorycontroller.html#defaultconfig" class="tsd-kind-icon">default<wbr>Config</a>
 							</li>
 							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-inherited">
-								<a href="_currencyratecontroller_.currencyratecontroller.html#defaultstate" class="tsd-kind-icon">default<wbr>State</a>
+								<a href="_blockhistorycontroller_.blockhistorycontroller.html#defaultstate" class="tsd-kind-icon">default<wbr>State</a>
 							</li>
 							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-inherited">
-								<a href="_currencyratecontroller_.currencyratecontroller.html#disabled" class="tsd-kind-icon">disabled</a>
+								<a href="_blockhistorycontroller_.blockhistorycontroller.html#disabled" class="tsd-kind-icon">disabled</a>
 							</li>
 							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-inherited tsd-is-static">
-								<a href="_currencyratecontroller_.currencyratecontroller.html#defaultmaxlisteners" class="tsd-kind-icon">default<wbr>Max<wbr>Listeners</a>
-							</li>
-							<li class=" tsd-kind-get-signature tsd-parent-kind-class tsd-is-inherited">
-								<a href="_currencyratecontroller_.currencyratecontroller.html#config" class="tsd-kind-icon">config</a>
+								<a href="_blockhistorycontroller_.blockhistorycontroller.html#defaultmaxlisteners" class="tsd-kind-icon">default<wbr>Max<wbr>Listeners</a>
 							</li>
 							<li class=" tsd-kind-set-signature tsd-parent-kind-class">
-								<a href="_currencyratecontroller_.currencyratecontroller.html#currency" class="tsd-kind-icon">currency</a>
+								<a href="_blockhistorycontroller_.blockhistorycontroller.html#blockdepth" class="tsd-kind-icon">block<wbr>Depth</a>
 							</li>
 							<li class=" tsd-kind-set-signature tsd-parent-kind-class">
-								<a href="_currencyratecontroller_.currencyratecontroller.html#interval" class="tsd-kind-icon">interval</a>
+								<a href="_blockhistorycontroller_.blockhistorycontroller.html#blocktracker" class="tsd-kind-icon">block<wbr>Tracker</a>
 							</li>
 							<li class=" tsd-kind-get-signature tsd-parent-kind-class tsd-is-inherited">
-								<a href="_currencyratecontroller_.currencyratecontroller.html#state" class="tsd-kind-icon">state</a>
+								<a href="_blockhistorycontroller_.blockhistorycontroller.html#config" class="tsd-kind-icon">config</a>
+							</li>
+							<li class=" tsd-kind-set-signature tsd-parent-kind-class">
+								<a href="_blockhistorycontroller_.blockhistorycontroller.html#provider" class="tsd-kind-icon">provider</a>
+							</li>
+							<li class=" tsd-kind-get-signature tsd-parent-kind-class tsd-is-inherited">
+								<a href="_blockhistorycontroller_.blockhistorycontroller.html#state" class="tsd-kind-icon">state</a>
 							</li>
 							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-overwrite tsd-is-inherited">
-								<a href="_currencyratecontroller_.currencyratecontroller.html#addlistener" class="tsd-kind-icon">add<wbr>Listener</a>
+								<a href="_blockhistorycontroller_.blockhistorycontroller.html#addlistener" class="tsd-kind-icon">add<wbr>Listener</a>
 							</li>
 							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-inherited">
-								<a href="_currencyratecontroller_.currencyratecontroller.html#configure" class="tsd-kind-icon">configure</a>
+								<a href="_blockhistorycontroller_.blockhistorycontroller.html#configure" class="tsd-kind-icon">configure</a>
 							</li>
 							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-overwrite tsd-is-inherited">
-								<a href="_currencyratecontroller_.currencyratecontroller.html#emit" class="tsd-kind-icon">emit</a>
+								<a href="_blockhistorycontroller_.blockhistorycontroller.html#emit" class="tsd-kind-icon">emit</a>
 							</li>
 							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-overwrite tsd-is-inherited">
-								<a href="_currencyratecontroller_.currencyratecontroller.html#eventnames" class="tsd-kind-icon">event<wbr>Names</a>
-							</li>
-							<li class=" tsd-kind-method tsd-parent-kind-class">
-								<a href="_currencyratecontroller_.currencyratecontroller.html#fetchexchangerate" class="tsd-kind-icon">fetch<wbr>Exchange<wbr>Rate</a>
+								<a href="_blockhistorycontroller_.blockhistorycontroller.html#eventnames" class="tsd-kind-icon">event<wbr>Names</a>
 							</li>
 							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-overwrite tsd-is-inherited">
-								<a href="_currencyratecontroller_.currencyratecontroller.html#getmaxlisteners" class="tsd-kind-icon">get<wbr>Max<wbr>Listeners</a>
+								<a href="_blockhistorycontroller_.blockhistorycontroller.html#getmaxlisteners" class="tsd-kind-icon">get<wbr>Max<wbr>Listeners</a>
 							</li>
 							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-inherited tsd-is-protected">
-								<a href="_currencyratecontroller_.currencyratecontroller.html#initialize" class="tsd-kind-icon">initialize</a>
+								<a href="_blockhistorycontroller_.blockhistorycontroller.html#initialize" class="tsd-kind-icon">initialize</a>
 							</li>
 							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-overwrite tsd-is-inherited">
-								<a href="_currencyratecontroller_.currencyratecontroller.html#listenercount" class="tsd-kind-icon">listener<wbr>Count</a>
+								<a href="_blockhistorycontroller_.blockhistorycontroller.html#listenercount" class="tsd-kind-icon">listener<wbr>Count</a>
 							</li>
 							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-overwrite tsd-is-inherited">
-								<a href="_currencyratecontroller_.currencyratecontroller.html#listeners" class="tsd-kind-icon">listeners</a>
+								<a href="_blockhistorycontroller_.blockhistorycontroller.html#listeners" class="tsd-kind-icon">listeners</a>
 							</li>
 							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-inherited">
-								<a href="_currencyratecontroller_.currencyratecontroller.html#notify" class="tsd-kind-icon">notify</a>
+								<a href="_blockhistorycontroller_.blockhistorycontroller.html#notify" class="tsd-kind-icon">notify</a>
 							</li>
 							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-overwrite tsd-is-inherited">
-								<a href="_currencyratecontroller_.currencyratecontroller.html#off" class="tsd-kind-icon">off</a>
+								<a href="_blockhistorycontroller_.blockhistorycontroller.html#off" class="tsd-kind-icon">off</a>
 							</li>
 							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-overwrite tsd-is-inherited">
-								<a href="_currencyratecontroller_.currencyratecontroller.html#on" class="tsd-kind-icon">on</a>
+								<a href="_blockhistorycontroller_.blockhistorycontroller.html#on" class="tsd-kind-icon">on</a>
 							</li>
 							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-overwrite tsd-is-inherited">
-								<a href="_currencyratecontroller_.currencyratecontroller.html#once" class="tsd-kind-icon">once</a>
+								<a href="_blockhistorycontroller_.blockhistorycontroller.html#once" class="tsd-kind-icon">once</a>
 							</li>
 							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-overwrite tsd-is-inherited">
-								<a href="_currencyratecontroller_.currencyratecontroller.html#prependlistener" class="tsd-kind-icon">prepend<wbr>Listener</a>
+								<a href="_blockhistorycontroller_.blockhistorycontroller.html#prependlistener" class="tsd-kind-icon">prepend<wbr>Listener</a>
 							</li>
 							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-overwrite tsd-is-inherited">
-								<a href="_currencyratecontroller_.currencyratecontroller.html#prependoncelistener" class="tsd-kind-icon">prepend<wbr>Once<wbr>Listener</a>
+								<a href="_blockhistorycontroller_.blockhistorycontroller.html#prependoncelistener" class="tsd-kind-icon">prepend<wbr>Once<wbr>Listener</a>
 							</li>
 							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-overwrite tsd-is-inherited">
-								<a href="_currencyratecontroller_.currencyratecontroller.html#rawlisteners" class="tsd-kind-icon">raw<wbr>Listeners</a>
+								<a href="_blockhistorycontroller_.blockhistorycontroller.html#rawlisteners" class="tsd-kind-icon">raw<wbr>Listeners</a>
 							</li>
 							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-overwrite tsd-is-inherited">
-								<a href="_currencyratecontroller_.currencyratecontroller.html#removealllisteners" class="tsd-kind-icon">remove<wbr>All<wbr>Listeners</a>
+								<a href="_blockhistorycontroller_.blockhistorycontroller.html#removealllisteners" class="tsd-kind-icon">remove<wbr>All<wbr>Listeners</a>
 							</li>
 							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-overwrite tsd-is-inherited">
-								<a href="_currencyratecontroller_.currencyratecontroller.html#removelistener" class="tsd-kind-icon">remove<wbr>Listener</a>
+								<a href="_blockhistorycontroller_.blockhistorycontroller.html#removelistener" class="tsd-kind-icon">remove<wbr>Listener</a>
 							</li>
 							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-overwrite tsd-is-inherited">
-								<a href="_currencyratecontroller_.currencyratecontroller.html#setmaxlisteners" class="tsd-kind-icon">set<wbr>Max<wbr>Listeners</a>
+								<a href="_blockhistorycontroller_.blockhistorycontroller.html#setmaxlisteners" class="tsd-kind-icon">set<wbr>Max<wbr>Listeners</a>
 							</li>
 							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-inherited">
-								<a href="_currencyratecontroller_.currencyratecontroller.html#subscribe" class="tsd-kind-icon">subscribe</a>
+								<a href="_blockhistorycontroller_.blockhistorycontroller.html#subscribe" class="tsd-kind-icon">subscribe</a>
 							</li>
 							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-inherited">
-								<a href="_currencyratecontroller_.currencyratecontroller.html#unsubscribe" class="tsd-kind-icon">unsubscribe</a>
+								<a href="_blockhistorycontroller_.blockhistorycontroller.html#unsubscribe" class="tsd-kind-icon">unsubscribe</a>
 							</li>
 							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-inherited">
-								<a href="_currencyratecontroller_.currencyratecontroller.html#update" class="tsd-kind-icon">update</a>
-							</li>
-							<li class=" tsd-kind-method tsd-parent-kind-class">
-								<a href="_currencyratecontroller_.currencyratecontroller.html#updateexchangerate" class="tsd-kind-icon">update<wbr>Exchange<wbr>Rate</a>
+								<a href="_blockhistorycontroller_.blockhistorycontroller.html#update" class="tsd-kind-icon">update</a>
 							</li>
 							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-inherited tsd-is-static">
-								<a href="_currencyratecontroller_.currencyratecontroller.html#listenercount-1" class="tsd-kind-icon">listener<wbr>Count</a>
+								<a href="_blockhistorycontroller_.blockhistorycontroller.html#listenercount-1" class="tsd-kind-icon">listener<wbr>Count</a>
 							</li>
 						</ul>
 					</li>
 				</ul>
 				<ul class="after-current">
 					<li class=" tsd-kind-interface tsd-parent-kind-external-module">
-						<a href="../interfaces/_currencyratecontroller_.currencyrateconfig.html" class="tsd-kind-icon">Currency<wbr>Rate<wbr>Config</a>
+						<a href="../interfaces/_blockhistorycontroller_.block.html" class="tsd-kind-icon">Block</a>
 					</li>
 					<li class=" tsd-kind-interface tsd-parent-kind-external-module">
-						<a href="../interfaces/_currencyratecontroller_.currencyratestate.html" class="tsd-kind-icon">Currency<wbr>Rate<wbr>State</a>
+						<a href="../interfaces/_blockhistorycontroller_.blockhistoryconfig.html" class="tsd-kind-icon">Block<wbr>History<wbr>Config</a>
+					</li>
+					<li class=" tsd-kind-interface tsd-parent-kind-external-module">
+						<a href="../interfaces/_blockhistorycontroller_.blockhistorystate.html" class="tsd-kind-icon">Block<wbr>History<wbr>State</a>
 					</li>
 				</ul>
 			</nav>
