@@ -78,7 +78,7 @@
 							<li><a href="#composition">Composition</a></li>
 						</ul>
 					</li>
-					<li><a href="#typescript">TypeScript</a></li>
+					<li><a href="#why-typescript">TypeScript</a></li>
 					<li><a href="#license">License</a></li>
 				</ul>
 				<h2 id="usage">Usage</h2>
@@ -104,43 +104,34 @@
 				</ol>
 				<h2 id="modules">Modules</h2>
 				<p>The GABA engine consists of a collection of modules that each expose uniform APIs for common operations like configuration, state management, and subscription.</p>
-				<ul>
-					<li><p><strong>AddressBookController</strong></p>
-						<pre><code class="lang-ts">  <span class="hljs-keyword">import</span> AddressBookController <span class="hljs-keyword">from</span> <span class="hljs-string">'gaba'</span>;
+				<h3 id="addressbookcontroller">AddressBookController</h3>
+				<pre><code class="lang-ts"><span class="hljs-keyword">import</span> AddressBookController <span class="hljs-keyword">from</span> <span class="hljs-string">'gaba'</span>;
 </code></pre>
-						<p>  The AddressBookController exposes functions for managing a list of recipient addresses and associated nicknames.</p>
-					</li>
-					<li><p><strong>BlockHistoryController</strong></p>
-						<pre><code class="lang-ts">  <span class="hljs-keyword">import</span> BlockHistoryController <span class="hljs-keyword">from</span> <span class="hljs-string">'gaba'</span>;
+				<p>The AddressBookController exposes functions for managing a list of recipient addresses and associated nicknames.</p>
+				<h3 id="blockhistorycontroller">BlockHistoryController</h3>
+				<pre><code class="lang-ts"><span class="hljs-keyword">import</span> BlockHistoryController <span class="hljs-keyword">from</span> <span class="hljs-string">'gaba'</span>;
 </code></pre>
-						<p>  The BlockHistoryController maintains a set number of past blocks that are backfilled upon initialization.</p>
-					</li>
-					<li><p><strong>CurrencyRateController</strong></p>
-						<pre><code class="lang-ts">  <span class="hljs-keyword">import</span> CurrencyRateController <span class="hljs-keyword">from</span> <span class="hljs-string">'gaba'</span>;
+				<p>The BlockHistoryController maintains a set number of past blocks that are backfilled upon initialization.</p>
+				<h3 id="currencyratecontroller">CurrencyRateController</h3>
+				<pre><code class="lang-ts"><span class="hljs-keyword">import</span> CurrencyRateController <span class="hljs-keyword">from</span> <span class="hljs-string">'gaba'</span>;
 </code></pre>
-						<p>  The CurrencyRateController passively polls for an ETH-to-fiat exchange rate based on a chosen currency.</p>
-					</li>
-					<li><p><strong>NetworkStatusController</strong></p>
-						<pre><code class="lang-ts">  <span class="hljs-keyword">import</span> NetworkStatusController <span class="hljs-keyword">from</span> <span class="hljs-string">'gaba'</span>;
+				<p>The CurrencyRateController passively polls for an ETH-to-fiat exchange rate based on a chosen currency.</p>
+				<h3 id="networkstatuscontroller">NetworkStatusController</h3>
+				<pre><code class="lang-ts"><span class="hljs-keyword">import</span> NetworkStatusController <span class="hljs-keyword">from</span> <span class="hljs-string">'gaba'</span>;
 </code></pre>
-						<p>  The NetworkStatusController passively polls for the status of available provider networks. The Infura network is supported by default.</p>
-					</li>
-					<li><p><strong>PhishingController</strong></p>
-						<pre><code class="lang-ts">  <span class="hljs-keyword">import</span> PhishingController <span class="hljs-keyword">from</span> <span class="hljs-string">'gaba'</span>;
+				<p>The NetworkStatusController passively polls for the status of available provider networks. The Infura network is supported by default.</p>
+				<h3 id="phishingcontroller">PhishingController</h3>
+				<pre><code class="lang-ts"><span class="hljs-keyword">import</span> PhishingController <span class="hljs-keyword">from</span> <span class="hljs-string">'gaba'</span>;
 </code></pre>
-						<p>  The PhishingController passively polls for community-maintained lists of approved and unapproved website origins.</p>
-					</li>
-					<li><p><strong>ShapeShiftController</strong></p>
-						<pre><code class="lang-ts">  <span class="hljs-keyword">import</span> ShapeShiftController <span class="hljs-keyword">from</span> <span class="hljs-string">'gaba'</span>;
+				<p>The PhishingController passively polls for community-maintained lists of approved and unapproved website origins.</p>
+				<h3 id="shapeshiftcontroller">ShapeShiftController</h3>
+				<pre><code class="lang-ts"><span class="hljs-keyword">import</span> ShapeShiftController <span class="hljs-keyword">from</span> <span class="hljs-string">'gaba'</span>;
 </code></pre>
-						<p>  The ShapeShiftController exposes functions for creating ShapeShift purchases and tracks past transactions.</p>
-					</li>
-					<li><p><strong>TokenRatesController</strong></p>
-						<pre><code class="lang-ts">  <span class="hljs-keyword">import</span> TokenRatesController <span class="hljs-keyword">from</span> <span class="hljs-string">'gaba'</span>;
+				<p>The ShapeShiftController exposes functions for creating ShapeShift purchases and tracks past transactions.</p>
+				<h3 id="tokenratescontroller">TokenRatesController</h3>
+				<pre><code class="lang-ts"><span class="hljs-keyword">import</span> TokenRatesController <span class="hljs-keyword">from</span> <span class="hljs-string">'gaba'</span>;
 </code></pre>
-						<p>  The TokenRatesController passively polls for token-to-ETH exchange rates based on a list of available tokens.</p>
-					</li>
-				</ul>
+				<p>The TokenRatesController passively polls for token-to-ETH exchange rates based on a list of available tokens.</p>
 				<h2 id="concepts">Concepts</h2>
 				<p>Using GABA modules should be straightforward since each module exposes the same minimal API. The concepts detailed in this section form the entirety of the core API: knowing these concepts will allow you to fully use the GABA engine to build wallet data models.</p>
 				<h3 id="initialization">Initialization</h3>
@@ -210,17 +201,17 @@ controller.unsubscribe(onChange);
 <span class="hljs-built_in">console</span>.log(datamodel.flatState); <span class="hljs-comment">// {infura: {...}, contractExchangeRates: [...]}</span>
 </code></pre>
 				<p><strong>Advanced Note:</strong> The object used to initialize a ComposableController is cached as a <code>context</code> instance variable on both the ComposableController itself as well as all child GABA modules. This means that child modules can call methods on other sibling modules through the <code>context</code> variable, e.g. <code>this.context.someController.someMethod()</code>.</p>
-				<h2 id="typescript">TypeScript</h2>
+				<h2 id="why-typescript-">Why TypeScript?</h2>
 				<p>The GABA engine is written using <a href="https://www.typescriptlang.org/">TypeScript</a>. Despite its arguably steeper learning curve compared to JavaScript, TypeScript offers an objectively safer development experience that directly improves the reliability and maintainability of a large codebase.</p>
-				<p><strong>Eliminate unintentionally broken APIs</strong></p>
+				<h3 id="eliminate-unintentionally-broken-apis">Eliminate unintentionally broken APIs</h3>
 				<p>TypeScript eliminates the ability to introduce changes to a codebase that break the APIs between or within components. If the signature changes for a specific function in a given class, every use of that function will immediately fail to compile until updated to match the new signature. This same idea applies to every other construct of the language: if the type of a property on an object is changed from <code>string</code> to <code>boolean</code>, every invalid use of that property will immediately fail to compile, etc. This is one of the most powerful features of a statically typed language for a mission-critical, modular package like GABA: it&#39;s extremely difficult to unknowingly introduce side effects.</p>
-				<p><strong>Share custom types and interfaces</strong></p>
+				<h3 id="share-custom-types-and-interfaces">Share custom types and interfaces</h3>
 				<p>The ability to describe the shape that code must adhere to allows for the safe consumption and sharing of code without the need for duck typing. An underwhelming but point-driving comparison could be that TypeScript provides an enforced and very advanced form of JSDoc. Common or complex object formats with type-checked members can be shared and guaranteed across a codebase. This eliminates logic paths that only serve to check for the existence or the type of certain properties on an object, which usually account for a large portion of the code paths in a JavaScript application. Codebases become pragmatic and composable.</p>
-				<p><strong>Eliminate errors caused by misnamed code</strong></p>
+				<h3 id="eliminate-errors-caused-by-misnamed-code">Eliminate errors caused by misnamed code</h3>
 				<p>TypeScript exposes a powerful language services API used by most major editors for code introspection features such as member autocompletion. This drastically reduces the chance of misnaming a function or property from an imported module, and in the off chance that a typo or misnaming does occur, the codebase would again immediately fail to compile.</p>
-				<p><strong>Use transpiled language-forward features</strong></p>
+				<h3 id="use-transpiled-language-forward-features">Use transpiled language-forward features</h3>
 				<p>TypeScript automatically transpiles the latest ECMAScript language features to any desired target gracefully down to ES3. Microsoft directly monitors, supports, and heavily steers the implementation progress of the latest ES2018 specification through its development of TypeScript and adds opt-in support for features as their API churn settles down even before official TC39 finalization. This means that even implementation-heavy features like <code>async</code> / <code>await</code> are down-emitted without the hassle of manually managing polyfills.</p>
-				<p><strong>Other general OOP features</strong></p>
+				<h3 id="other-general-oop-features">Other general OOP features</h3>
 				<ul>
 					<li><a href="https://www.typescriptlang.org/docs/handbook/generics.html">Generics</a></li>
 					<li><a href="https://www.typescriptlang.org/docs/handbook/classes.html#public-private-and-protected-modifiers">Member visibility</a></li>
