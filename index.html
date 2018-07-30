@@ -105,6 +105,10 @@
 				</ol>
 				<h2 id="modules">Modules</h2>
 				<p>The GABA engine consists of a collection of modules that each expose uniform APIs for common operations like configuration, state management, and subscription.</p>
+				<h3 id="accounttrackercontroller">AccountTrackerController</h3>
+				<pre><code class="lang-ts"><span class="hljs-keyword">import</span> AccountTrackerController <span class="hljs-keyword">from</span> <span class="hljs-string">''</span>;
+</code></pre>
+				<p>The AccountTrackerController tracks information associated with specific Ethereum accounts.</p>
 				<h3 id="addressbookcontroller">AddressBookController</h3>
 				<pre><code class="lang-ts"><span class="hljs-keyword">import</span> AddressBookController <span class="hljs-keyword">from</span> <span class="hljs-string">'gaba'</span>;
 </code></pre>
@@ -117,6 +121,10 @@
 				<pre><code class="lang-ts"><span class="hljs-keyword">import</span> CurrencyRateController <span class="hljs-keyword">from</span> <span class="hljs-string">'gaba'</span>;
 </code></pre>
 				<p>The CurrencyRateController passively polls for an ETH-to-fiat exchange rate based on a chosen currency.</p>
+				<h3 id="networkcontroller">NetworkController</h3>
+				<pre><code class="lang-ts"><span class="hljs-keyword">import</span> NetworkController <span class="hljs-keyword">from</span> <span class="hljs-string">'gaba'</span>;
+</code></pre>
+				<p>The NetworkController is responsible for creating an underlying provider and for refreshing its configuration.</p>
 				<h3 id="networkstatuscontroller">NetworkStatusController</h3>
 				<pre><code class="lang-ts"><span class="hljs-keyword">import</span> NetworkStatusController <span class="hljs-keyword">from</span> <span class="hljs-string">'gaba'</span>;
 </code></pre>
@@ -125,6 +133,10 @@
 				<pre><code class="lang-ts"><span class="hljs-keyword">import</span> PhishingController <span class="hljs-keyword">from</span> <span class="hljs-string">'gaba'</span>;
 </code></pre>
 				<p>The PhishingController passively polls for community-maintained lists of approved and unapproved website origins.</p>
+				<h3 id="preferencescontroller">PreferencesController</h3>
+				<pre><code class="lang-ts"><span class="hljs-keyword">import</span> PreferencesController <span class="hljs-keyword">from</span> <span class="hljs-string">'gaba'</span>;
+</code></pre>
+				<p>The PreferencesController manages agnostic global settings and exposes convenience methods for updating them.</p>
 				<h3 id="shapeshiftcontroller">ShapeShiftController</h3>
 				<pre><code class="lang-ts"><span class="hljs-keyword">import</span> ShapeShiftController <span class="hljs-keyword">from</span> <span class="hljs-string">'gaba'</span>;
 </code></pre>
@@ -236,6 +248,9 @@ controller.unsubscribe(onChange);
 						<a href="globals.html"><em>Globals</em></a>
 					</li>
 					<li class=" tsd-kind-external-module">
+						<a href="modules/_accounttrackercontroller_.html">"<wbr>Account<wbr>Tracker<wbr>Controller"</a>
+					</li>
+					<li class=" tsd-kind-external-module">
 						<a href="modules/_addressbookcontroller_.html">"<wbr>Address<wbr>Book<wbr>Controller"</a>
 					</li>
 					<li class=" tsd-kind-external-module">
@@ -251,10 +266,16 @@ controller.unsubscribe(onChange);
 						<a href="modules/_currencyratecontroller_.html">"<wbr>Currency<wbr>Rate<wbr>Controller"</a>
 					</li>
 					<li class=" tsd-kind-external-module">
+						<a href="modules/_networkcontroller_.html">"<wbr>Network<wbr>Controller"</a>
+					</li>
+					<li class=" tsd-kind-external-module">
 						<a href="modules/_networkstatuscontroller_.html">"<wbr>Network<wbr>Status<wbr>Controller"</a>
 					</li>
 					<li class=" tsd-kind-external-module">
 						<a href="modules/_phishingcontroller_.html">"<wbr>Phishing<wbr>Controller"</a>
+					</li>
+					<li class=" tsd-kind-external-module">
+						<a href="modules/_preferencescontroller_.html">"<wbr>Preferences<wbr>Controller"</a>
 					</li>
 					<li class=" tsd-kind-external-module">
 						<a href="modules/_shapeshiftcontroller_.html">"<wbr>Shape<wbr>Shift<wbr>Controller"</a>
@@ -264,6 +285,9 @@ controller.unsubscribe(onChange);
 					</li>
 					<li class=" tsd-kind-external-module">
 						<a href="modules/_index_.html">"index"</a>
+					</li>
+					<li class=" tsd-kind-external-module">
+						<a href="modules/_util_.html">"util"</a>
 					</li>
 				</ul>
 			</nav>

@@ -3,7 +3,7 @@
 <head>
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<title>TokenRatesState | gaba</title>
+	<title>NetworkState | gaba</title>
 	<meta name="description" content="">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="stylesheet" href="../assets/css/main.css">
@@ -54,13 +54,13 @@
 					<a href="../globals.html">Globals</a>
 				</li>
 				<li>
-					<a href="../modules/_tokenratescontroller_.html">&quot;TokenRatesController&quot;</a>
+					<a href="../modules/_networkcontroller_.html">&quot;NetworkController&quot;</a>
 				</li>
 				<li>
-					<a href="_tokenratescontroller_.tokenratesstate.html">TokenRatesState</a>
+					<a href="_networkcontroller_.networkstate.html">NetworkState</a>
 				</li>
 			</ul>
-			<h1>Interface TokenRatesState</h1>
+			<h1>Interface NetworkState</h1>
 		</div>
 	</div>
 </header>
@@ -71,11 +71,14 @@
 				<div class="tsd-comment tsd-typography">
 					<dl class="tsd-comment-tags">
 						<dt>type</dt>
-						<dd><p>TokenRatesState</p>
-							<p>Token rates controller state</p>
+						<dd><p>NetworkState</p>
+							<p>Network controller state</p>
 						</dd>
 						<dt>property</dt>
-						<dd><p>contractExchangeRates - Hash of token contract addresses to exchange rates</p>
+						<dd><p>network - Network ID as per net_version</p>
+						</dd>
+						<dt>property</dt>
+						<dd><p>provider - RPC URL and network name provider settings</p>
 						</dd>
 					</dl>
 				</div>
@@ -87,7 +90,7 @@
 						<a href="_basecontroller_.basestate.html" class="tsd-signature-type">BaseState</a>
 						<ul class="tsd-hierarchy">
 							<li>
-								<span class="target">TokenRatesState</span>
+								<span class="target">NetworkState</span>
 							</li>
 						</ul>
 					</li>
@@ -100,8 +103,9 @@
 						<section class="tsd-index-section ">
 							<h3>Properties</h3>
 							<ul class="tsd-index-list">
-								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="_tokenratescontroller_.tokenratesstate.html#contractexchangerates" class="tsd-kind-icon">contract<wbr>Exchange<wbr>Rates</a></li>
-								<li class="tsd-kind-property tsd-parent-kind-interface tsd-is-inherited"><a href="_tokenratescontroller_.tokenratesstate.html#name" class="tsd-kind-icon">name</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-interface tsd-is-inherited"><a href="_networkcontroller_.networkstate.html#name" class="tsd-kind-icon">name</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="_networkcontroller_.networkstate.html#network" class="tsd-kind-icon">network</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="_networkcontroller_.networkstate.html#provider" class="tsd-kind-icon">provider</a></li>
 							</ul>
 						</section>
 					</div>
@@ -109,24 +113,6 @@
 			</section>
 			<section class="tsd-panel-group tsd-member-group ">
 				<h2>Properties</h2>
-				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
-					<a name="contractexchangerates" class="tsd-anchor"></a>
-					<h3>contract<wbr>Exchange<wbr>Rates</h3>
-					<div class="tsd-signature tsd-kind-icon">contract<wbr>Exchange<wbr>Rates<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">object</span></div>
-					<aside class="tsd-sources">
-						<ul>
-							<li>Defined in <a href="https://github.com/MetaMask/gaba/blob/7479d1f/src/TokenRatesController.ts#L44">TokenRatesController.ts:44</a></li>
-						</ul>
-					</aside>
-					<div class="tsd-type-declaration">
-						<h4>Type declaration</h4>
-						<ul class="tsd-parameters">
-							<li class="tsd-parameter-index-signature">
-								<h5><span class="tsd-signature-symbol">[</span>address: <span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">]: </span><span class="tsd-signature-type">number</span></h5>
-							</li>
-						</ul>
-					</div>
-				</section>
 				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface tsd-is-inherited">
 					<a name="name" class="tsd-anchor"></a>
 					<h3><span class="tsd-flag ts-flagOptional">Optional</span> name</h3>
@@ -137,6 +123,31 @@
 							<li>Defined in <a href="https://github.com/MetaMask/gaba/blob/7479d1f/src/BaseController.ts#L27">BaseController.ts:27</a></li>
 						</ul>
 					</aside>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
+					<a name="network" class="tsd-anchor"></a>
+					<h3>network</h3>
+					<div class="tsd-signature tsd-kind-icon">network<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in <a href="https://github.com/MetaMask/gaba/blob/7479d1f/src/NetworkController.ts#L42">NetworkController.ts:42</a></li>
+						</ul>
+					</aside>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
+					<a name="provider" class="tsd-anchor"></a>
+					<h3>provider</h3>
+					<div class="tsd-signature tsd-kind-icon">provider<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">object</span></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in <a href="https://github.com/MetaMask/gaba/blob/7479d1f/src/NetworkController.ts#L43">NetworkController.ts:43</a></li>
+						</ul>
+					</aside>
+					<div class="tsd-type-declaration">
+						<h4>Type declaration</h4>
+						<ul class="tsd-parameters">
+						</ul>
+					</div>
 				</section>
 			</section>
 		</div>
@@ -164,7 +175,7 @@
 					<li class=" tsd-kind-external-module">
 						<a href="../modules/_currencyratecontroller_.html">"<wbr>Currency<wbr>Rate<wbr>Controller"</a>
 					</li>
-					<li class=" tsd-kind-external-module">
+					<li class="current tsd-kind-external-module">
 						<a href="../modules/_networkcontroller_.html">"<wbr>Network<wbr>Controller"</a>
 					</li>
 					<li class=" tsd-kind-external-module">
@@ -179,7 +190,7 @@
 					<li class=" tsd-kind-external-module">
 						<a href="../modules/_shapeshiftcontroller_.html">"<wbr>Shape<wbr>Shift<wbr>Controller"</a>
 					</li>
-					<li class="current tsd-kind-external-module">
+					<li class=" tsd-kind-external-module">
 						<a href="../modules/_tokenratescontroller_.html">"<wbr>Token<wbr>Rates<wbr>Controller"</a>
 					</li>
 					<li class=" tsd-kind-external-module">
@@ -193,29 +204,35 @@
 			<nav class="tsd-navigation secondary menu-sticky">
 				<ul class="before-current">
 					<li class=" tsd-kind-class tsd-parent-kind-external-module">
-						<a href="../classes/_tokenratescontroller_.tokenratescontroller.html" class="tsd-kind-icon">Token<wbr>Rates<wbr>Controller</a>
+						<a href="../classes/_networkcontroller_.networkcontroller.html" class="tsd-kind-icon">Network<wbr>Controller</a>
 					</li>
 					<li class=" tsd-kind-interface tsd-parent-kind-external-module">
-						<a href="_tokenratescontroller_.token.html" class="tsd-kind-icon">Token</a>
-					</li>
-					<li class=" tsd-kind-interface tsd-parent-kind-external-module">
-						<a href="_tokenratescontroller_.tokenratesconfig.html" class="tsd-kind-icon">Token<wbr>Rates<wbr>Config</a>
+						<a href="_networkcontroller_.networkconfig.html" class="tsd-kind-icon">Network<wbr>Config</a>
 					</li>
 				</ul>
 				<ul class="current">
 					<li class="current tsd-kind-interface tsd-parent-kind-external-module">
-						<a href="_tokenratescontroller_.tokenratesstate.html" class="tsd-kind-icon">Token<wbr>Rates<wbr>State</a>
+						<a href="_networkcontroller_.networkstate.html" class="tsd-kind-icon">Network<wbr>State</a>
 						<ul>
-							<li class=" tsd-kind-property tsd-parent-kind-interface">
-								<a href="_tokenratescontroller_.tokenratesstate.html#contractexchangerates" class="tsd-kind-icon">contract<wbr>Exchange<wbr>Rates</a>
-							</li>
 							<li class=" tsd-kind-property tsd-parent-kind-interface tsd-is-inherited">
-								<a href="_tokenratescontroller_.tokenratesstate.html#name" class="tsd-kind-icon">name</a>
+								<a href="_networkcontroller_.networkstate.html#name" class="tsd-kind-icon">name</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-interface">
+								<a href="_networkcontroller_.networkstate.html#network" class="tsd-kind-icon">network</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-interface">
+								<a href="_networkcontroller_.networkstate.html#provider" class="tsd-kind-icon">provider</a>
 							</li>
 						</ul>
 					</li>
 				</ul>
 				<ul class="after-current">
+					<li class=" tsd-kind-interface tsd-parent-kind-external-module">
+						<a href="_networkcontroller_.providerconfig.html" class="tsd-kind-icon">Provider<wbr>Config</a>
+					</li>
+					<li class=" tsd-kind-type-alias tsd-parent-kind-external-module">
+						<a href="../modules/_networkcontroller_.html#networktype" class="tsd-kind-icon">Network<wbr>Type</a>
+					</li>
 				</ul>
 			</nav>
 		</div>

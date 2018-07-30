@@ -3,7 +3,7 @@
 <head>
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<title>NetworkStatusController | gaba</title>
+	<title>AccountTrackerController | gaba</title>
 	<meta name="description" content="">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="stylesheet" href="../assets/css/main.css">
@@ -54,13 +54,13 @@
 					<a href="../globals.html">Globals</a>
 				</li>
 				<li>
-					<a href="../modules/_networkstatuscontroller_.html">&quot;NetworkStatusController&quot;</a>
+					<a href="../modules/_accounttrackercontroller_.html">&quot;AccountTrackerController&quot;</a>
 				</li>
 				<li>
-					<a href="_networkstatuscontroller_.networkstatuscontroller.html">NetworkStatusController</a>
+					<a href="_accounttrackercontroller_.accounttrackercontroller.html">AccountTrackerController</a>
 				</li>
 			</ul>
-			<h1>Class NetworkStatusController</h1>
+			<h1>Class AccountTrackerController</h1>
 		</div>
 	</div>
 </header>
@@ -70,7 +70,7 @@
 			<section class="tsd-panel tsd-comment">
 				<div class="tsd-comment tsd-typography">
 					<div class="lead">
-						<p>Controller that passively polls on a set interval for network status of providers</p>
+						<p>Controller that tracks information associated with specific Ethereum accounts</p>
 					</div>
 				</div>
 			</section>
@@ -78,10 +78,10 @@
 				<h3>Hierarchy</h3>
 				<ul class="tsd-hierarchy">
 					<li>
-						<a href="_basecontroller_.basecontroller.html" class="tsd-signature-type">BaseController</a><span class="tsd-signature-symbol">&lt;</span><a href="../interfaces/_networkstatuscontroller_.networkstatusstate.html" class="tsd-signature-type">NetworkStatusState</a><span class="tsd-signature-symbol">, </span><a href="../interfaces/_networkstatuscontroller_.networkstatusconfig.html" class="tsd-signature-type">NetworkStatusConfig</a><span class="tsd-signature-symbol">&gt;</span>
+						<a href="_basecontroller_.basecontroller.html" class="tsd-signature-type">BaseController</a><span class="tsd-signature-symbol">&lt;</span><a href="../interfaces/_accounttrackercontroller_.accounttrackerstate.html" class="tsd-signature-type">AccountTrackerState</a><span class="tsd-signature-symbol">, </span><a href="../interfaces/_accounttrackercontroller_.accounttrackerconfig.html" class="tsd-signature-type">AccountTrackerConfig</a><span class="tsd-signature-symbol">&gt;</span>
 						<ul class="tsd-hierarchy">
 							<li>
-								<span class="target">NetworkStatusController</span>
+								<span class="target">AccountTrackerController</span>
 							</li>
 						</ul>
 					</li>
@@ -94,38 +94,40 @@
 						<section class="tsd-index-section ">
 							<h3>Constructors</h3>
 							<ul class="tsd-index-list">
-								<li class="tsd-kind-constructor tsd-parent-kind-class tsd-is-overwrite"><a href="_networkstatuscontroller_.networkstatuscontroller.html#constructor" class="tsd-kind-icon">constructor</a></li>
+								<li class="tsd-kind-constructor tsd-parent-kind-class tsd-is-overwrite"><a href="_accounttrackercontroller_.accounttrackercontroller.html#constructor" class="tsd-kind-icon">constructor</a></li>
 							</ul>
 						</section>
 						<section class="tsd-index-section tsd-is-inherited">
 							<h3>Properties</h3>
 							<ul class="tsd-index-list">
-								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-inherited"><a href="_networkstatuscontroller_.networkstatuscontroller.html#context" class="tsd-kind-icon">context</a></li>
-								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-inherited"><a href="_networkstatuscontroller_.networkstatuscontroller.html#defaultconfig" class="tsd-kind-icon">default<wbr>Config</a></li>
-								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-inherited"><a href="_networkstatuscontroller_.networkstatuscontroller.html#defaultstate" class="tsd-kind-icon">default<wbr>State</a></li>
-								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-inherited"><a href="_networkstatuscontroller_.networkstatuscontroller.html#disabled" class="tsd-kind-icon">disabled</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-inherited"><a href="_accounttrackercontroller_.accounttrackercontroller.html#context" class="tsd-kind-icon">context</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-inherited"><a href="_accounttrackercontroller_.accounttrackercontroller.html#defaultconfig" class="tsd-kind-icon">default<wbr>Config</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-inherited"><a href="_accounttrackercontroller_.accounttrackercontroller.html#defaultstate" class="tsd-kind-icon">default<wbr>State</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-inherited"><a href="_accounttrackercontroller_.accounttrackercontroller.html#disabled" class="tsd-kind-icon">disabled</a></li>
 							</ul>
 						</section>
 						<section class="tsd-index-section ">
 							<h3>Accessors</h3>
 							<ul class="tsd-index-list">
-								<li class="tsd-kind-get-signature tsd-parent-kind-class tsd-is-inherited"><a href="_networkstatuscontroller_.networkstatuscontroller.html#config" class="tsd-kind-icon">config</a></li>
-								<li class="tsd-kind-set-signature tsd-parent-kind-class"><a href="_networkstatuscontroller_.networkstatuscontroller.html#interval" class="tsd-kind-icon">interval</a></li>
-								<li class="tsd-kind-get-signature tsd-parent-kind-class tsd-is-inherited"><a href="_networkstatuscontroller_.networkstatuscontroller.html#state" class="tsd-kind-icon">state</a></li>
+								<li class="tsd-kind-set-signature tsd-parent-kind-class"><a href="_accounttrackercontroller_.accounttrackercontroller.html#blocktracker" class="tsd-kind-icon">block<wbr>Tracker</a></li>
+								<li class="tsd-kind-get-signature tsd-parent-kind-class tsd-is-inherited"><a href="_accounttrackercontroller_.accounttrackercontroller.html#config" class="tsd-kind-icon">config</a></li>
+								<li class="tsd-kind-set-signature tsd-parent-kind-class"><a href="_accounttrackercontroller_.accounttrackercontroller.html#provider" class="tsd-kind-icon">provider</a></li>
+								<li class="tsd-kind-get-signature tsd-parent-kind-class tsd-is-inherited"><a href="_accounttrackercontroller_.accounttrackercontroller.html#state" class="tsd-kind-icon">state</a></li>
 							</ul>
 						</section>
 						<section class="tsd-index-section ">
 							<h3>Methods</h3>
 							<ul class="tsd-index-list">
-								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-inherited"><a href="_networkstatuscontroller_.networkstatuscontroller.html#configure" class="tsd-kind-icon">configure</a></li>
-								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-inherited tsd-is-protected"><a href="_networkstatuscontroller_.networkstatuscontroller.html#initialize" class="tsd-kind-icon">initialize</a></li>
-								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-inherited"><a href="_networkstatuscontroller_.networkstatuscontroller.html#notify" class="tsd-kind-icon">notify</a></li>
-								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-inherited"><a href="_networkstatuscontroller_.networkstatuscontroller.html#oncomposed" class="tsd-kind-icon">on<wbr>Composed</a></li>
-								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-inherited"><a href="_networkstatuscontroller_.networkstatuscontroller.html#subscribe" class="tsd-kind-icon">subscribe</a></li>
-								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-inherited"><a href="_networkstatuscontroller_.networkstatuscontroller.html#unsubscribe" class="tsd-kind-icon">unsubscribe</a></li>
-								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-inherited"><a href="_networkstatuscontroller_.networkstatuscontroller.html#update" class="tsd-kind-icon">update</a></li>
-								<li class="tsd-kind-method tsd-parent-kind-class"><a href="_networkstatuscontroller_.networkstatuscontroller.html#updateinfurastatus" class="tsd-kind-icon">update<wbr>Infura<wbr>Status</a></li>
-								<li class="tsd-kind-method tsd-parent-kind-class"><a href="_networkstatuscontroller_.networkstatuscontroller.html#updatenetworkstatuses" class="tsd-kind-icon">update<wbr>Network<wbr>Statuses</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class"><a href="_accounttrackercontroller_.accounttrackercontroller.html#add" class="tsd-kind-icon">add</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-inherited"><a href="_accounttrackercontroller_.accounttrackercontroller.html#configure" class="tsd-kind-icon">configure</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-inherited tsd-is-protected"><a href="_accounttrackercontroller_.accounttrackercontroller.html#initialize" class="tsd-kind-icon">initialize</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-inherited"><a href="_accounttrackercontroller_.accounttrackercontroller.html#notify" class="tsd-kind-icon">notify</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-inherited"><a href="_accounttrackercontroller_.accounttrackercontroller.html#oncomposed" class="tsd-kind-icon">on<wbr>Composed</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class"><a href="_accounttrackercontroller_.accounttrackercontroller.html#remove" class="tsd-kind-icon">remove</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-inherited"><a href="_accounttrackercontroller_.accounttrackercontroller.html#subscribe" class="tsd-kind-icon">subscribe</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class"><a href="_accounttrackercontroller_.accounttrackercontroller.html#sync" class="tsd-kind-icon">sync</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-inherited"><a href="_accounttrackercontroller_.accounttrackercontroller.html#unsubscribe" class="tsd-kind-icon">unsubscribe</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-inherited"><a href="_accounttrackercontroller_.accounttrackercontroller.html#update" class="tsd-kind-icon">update</a></li>
 							</ul>
 						</section>
 					</div>
@@ -137,25 +139,25 @@
 					<a name="constructor" class="tsd-anchor"></a>
 					<h3>constructor</h3>
 					<ul class="tsd-signatures tsd-kind-constructor tsd-parent-kind-class tsd-is-overwrite">
-						<li class="tsd-signature tsd-kind-icon">new <wbr>Network<wbr>Status<wbr>Controller<span class="tsd-signature-symbol">(</span>state<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">Partial</span><span class="tsd-signature-symbol">&lt;</span><a href="../interfaces/_networkstatuscontroller_.networkstatusstate.html" class="tsd-signature-type">NetworkStatusState</a><span class="tsd-signature-symbol">&gt;</span>, config<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">Partial</span><span class="tsd-signature-symbol">&lt;</span><a href="../interfaces/_networkstatuscontroller_.networkstatusconfig.html" class="tsd-signature-type">NetworkStatusConfig</a><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="_networkstatuscontroller_.networkstatuscontroller.html" class="tsd-signature-type">NetworkStatusController</a></li>
+						<li class="tsd-signature tsd-kind-icon">new <wbr>Account<wbr>Tracker<wbr>Controller<span class="tsd-signature-symbol">(</span>state<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">Partial</span><span class="tsd-signature-symbol">&lt;</span><a href="../interfaces/_accounttrackercontroller_.accounttrackerstate.html" class="tsd-signature-type">AccountTrackerState</a><span class="tsd-signature-symbol">&gt;</span>, config<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">Partial</span><span class="tsd-signature-symbol">&lt;</span><a href="../interfaces/_accounttrackercontroller_.accounttrackerconfig.html" class="tsd-signature-type">AccountTrackerConfig</a><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="_accounttrackercontroller_.accounttrackercontroller.html" class="tsd-signature-type">AccountTrackerController</a></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<p>Overrides <a href="_basecontroller_.basecontroller.html">BaseController</a>.<a href="_basecontroller_.basecontroller.html#constructor">constructor</a></p>
 								<ul>
-									<li>Defined in <a href="https://github.com/MetaMask/gaba/blob/7479d1f/src/NetworkStatusController.ts#L54">NetworkStatusController.ts:54</a></li>
+									<li>Defined in <a href="https://github.com/MetaMask/gaba/blob/7479d1f/src/AccountTrackerController.ts#L75">AccountTrackerController.ts:75</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
 								<div class="lead">
-									<p>Creates a NetworkStatusController instance</p>
+									<p>Creates an AccountTrackerController instance</p>
 								</div>
 							</div>
 							<h4 class="tsd-parameters-title">Parameters</h4>
 							<ul class="tsd-parameters">
 								<li>
-									<h5><span class="tsd-flag ts-flagOptional">Optional</span> state: <span class="tsd-signature-type">Partial</span><span class="tsd-signature-symbol">&lt;</span><a href="../interfaces/_networkstatuscontroller_.networkstatusstate.html" class="tsd-signature-type">NetworkStatusState</a><span class="tsd-signature-symbol">&gt;</span></h5>
+									<h5><span class="tsd-flag ts-flagOptional">Optional</span> state: <span class="tsd-signature-type">Partial</span><span class="tsd-signature-symbol">&lt;</span><a href="../interfaces/_accounttrackercontroller_.accounttrackerstate.html" class="tsd-signature-type">AccountTrackerState</a><span class="tsd-signature-symbol">&gt;</span></h5>
 									<div class="tsd-comment tsd-typography">
 										<div class="lead">
 											<p>Initial state to set on this controller</p>
@@ -163,7 +165,7 @@
 									</div>
 								</li>
 								<li>
-									<h5><span class="tsd-flag ts-flagOptional">Optional</span> config: <span class="tsd-signature-type">Partial</span><span class="tsd-signature-symbol">&lt;</span><a href="../interfaces/_networkstatuscontroller_.networkstatusconfig.html" class="tsd-signature-type">NetworkStatusConfig</a><span class="tsd-signature-symbol">&gt;</span></h5>
+									<h5><span class="tsd-flag ts-flagOptional">Optional</span> config: <span class="tsd-signature-type">Partial</span><span class="tsd-signature-symbol">&lt;</span><a href="../interfaces/_accounttrackercontroller_.accounttrackerconfig.html" class="tsd-signature-type">AccountTrackerConfig</a><span class="tsd-signature-symbol">&gt;</span></h5>
 									<div class="tsd-comment tsd-typography">
 										<div class="lead">
 											<p>Initial options used to configure this controller</p>
@@ -171,7 +173,7 @@
 									</div>
 								</li>
 							</ul>
-							<h4 class="tsd-returns-title">Returns <a href="_networkstatuscontroller_.networkstatuscontroller.html" class="tsd-signature-type">NetworkStatusController</a></h4>
+							<h4 class="tsd-returns-title">Returns <a href="_accounttrackercontroller_.accounttrackercontroller.html" class="tsd-signature-type">AccountTrackerController</a></h4>
 						</li>
 					</ul>
 				</section>
@@ -199,7 +201,7 @@
 				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-inherited">
 					<a name="defaultconfig" class="tsd-anchor"></a>
 					<h3>default<wbr>Config</h3>
-					<div class="tsd-signature tsd-kind-icon">default<wbr>Config<span class="tsd-signature-symbol">:</span> <a href="../interfaces/_networkstatuscontroller_.networkstatusconfig.html" class="tsd-signature-type">NetworkStatusConfig</a><span class="tsd-signature-symbol"> =&nbsp;{} as C</span></div>
+					<div class="tsd-signature tsd-kind-icon">default<wbr>Config<span class="tsd-signature-symbol">:</span> <a href="../interfaces/_accounttrackercontroller_.accounttrackerconfig.html" class="tsd-signature-type">AccountTrackerConfig</a><span class="tsd-signature-symbol"> =&nbsp;{} as C</span></div>
 					<aside class="tsd-sources">
 						<p>Inherited from <a href="_basecontroller_.basecontroller.html">BaseController</a>.<a href="_basecontroller_.basecontroller.html#defaultconfig">defaultConfig</a></p>
 						<ul>
@@ -215,7 +217,7 @@
 				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-inherited">
 					<a name="defaultstate" class="tsd-anchor"></a>
 					<h3>default<wbr>State</h3>
-					<div class="tsd-signature tsd-kind-icon">default<wbr>State<span class="tsd-signature-symbol">:</span> <a href="../interfaces/_networkstatuscontroller_.networkstatusstate.html" class="tsd-signature-type">NetworkStatusState</a><span class="tsd-signature-symbol"> =&nbsp;{} as S</span></div>
+					<div class="tsd-signature tsd-kind-icon">default<wbr>State<span class="tsd-signature-symbol">:</span> <a href="../interfaces/_accounttrackercontroller_.accounttrackerstate.html" class="tsd-signature-type">AccountTrackerState</a><span class="tsd-signature-symbol"> =&nbsp;{} as S</span></div>
 					<aside class="tsd-sources">
 						<p>Inherited from <a href="_basecontroller_.basecontroller.html">BaseController</a>.<a href="_basecontroller_.basecontroller.html#defaultstate">defaultState</a></p>
 						<ul>
@@ -247,6 +249,39 @@
 			</section>
 			<section class="tsd-panel-group tsd-member-group ">
 				<h2>Accessors</h2>
+				<section class="tsd-panel tsd-member tsd-kind-set-signature tsd-parent-kind-class">
+					<a name="blocktracker" class="tsd-anchor"></a>
+					<h3>block<wbr>Tracker</h3>
+					<ul class="tsd-signatures tsd-kind-set-signature tsd-parent-kind-class">
+						<li class="tsd-signature tsd-kind-icon"><span class="tsd-signature-symbol">set</span> blockTracker<span class="tsd-signature-symbol">(</span>blockTracker<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">any</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/MetaMask/gaba/blob/7479d1f/src/AccountTrackerController.ts#L97">AccountTrackerController.ts:97</a></li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Sets a new BlockTracker instance</p>
+								</div>
+							</div>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>blockTracker: <span class="tsd-signature-type">any</span></h5>
+									<div class="tsd-comment tsd-typography">
+										<div class="lead">
+											<p>Contains methods for tracking blocks and querying the blockchain</p>
+										</div>
+									</div>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
+						</li>
+					</ul>
+				</section>
 				<section class="tsd-panel tsd-member tsd-kind-get-signature tsd-parent-kind-class tsd-is-inherited">
 					<a name="config" class="tsd-anchor"></a>
 					<h3>config</h3>
@@ -274,30 +309,30 @@
 					</ul>
 				</section>
 				<section class="tsd-panel tsd-member tsd-kind-set-signature tsd-parent-kind-class">
-					<a name="interval" class="tsd-anchor"></a>
-					<h3>interval</h3>
+					<a name="provider" class="tsd-anchor"></a>
+					<h3>provider</h3>
 					<ul class="tsd-signatures tsd-kind-set-signature tsd-parent-kind-class">
-						<li class="tsd-signature tsd-kind-icon"><span class="tsd-signature-symbol">set</span> interval<span class="tsd-signature-symbol">(</span>interval<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
+						<li class="tsd-signature tsd-kind-icon"><span class="tsd-signature-symbol">set</span> provider<span class="tsd-signature-symbol">(</span>provider<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">any</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/MetaMask/gaba/blob/7479d1f/src/NetworkStatusController.ts#L78">NetworkStatusController.ts:78</a></li>
+									<li>Defined in <a href="https://github.com/MetaMask/gaba/blob/7479d1f/src/AccountTrackerController.ts#L108">AccountTrackerController.ts:108</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
 								<div class="lead">
-									<p>Sets a new polling interval</p>
+									<p>Sets a new provider</p>
 								</div>
 							</div>
 							<h4 class="tsd-parameters-title">Parameters</h4>
 							<ul class="tsd-parameters">
 								<li>
-									<h5>interval: <span class="tsd-signature-type">number</span></h5>
+									<h5>provider: <span class="tsd-signature-type">any</span></h5>
 									<div class="tsd-comment tsd-typography">
 										<div class="lead">
-											<p>Polling interval used to fetch network status</p>
+											<p>Provider used to create a new underlying EthQuery instance</p>
 										</div>
 									</div>
 								</li>
@@ -335,11 +370,42 @@
 			</section>
 			<section class="tsd-panel-group tsd-member-group ">
 				<h2>Methods</h2>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class">
+					<a name="add" class="tsd-anchor"></a>
+					<h3>add</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
+						<li class="tsd-signature tsd-kind-icon">add<span class="tsd-signature-symbol">(</span>address<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/MetaMask/gaba/blob/7479d1f/src/AccountTrackerController.ts#L117">AccountTrackerController.ts:117</a></li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Tracks a new account, which will have a balance if the current network has a block</p>
+								</div>
+							</div>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>address: <span class="tsd-signature-type">string</span></h5>
+									<div class="tsd-comment tsd-typography">
+										<p>Hex address of a new account to add</p>
+									</div>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
+						</li>
+					</ul>
+				</section>
 				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-inherited">
 					<a name="configure" class="tsd-anchor"></a>
 					<h3>configure</h3>
 					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-inherited">
-						<li class="tsd-signature tsd-kind-icon">configure<span class="tsd-signature-symbol">(</span>config<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Partial</span><span class="tsd-signature-symbol">&lt;</span><a href="../interfaces/_networkstatuscontroller_.networkstatusconfig.html" class="tsd-signature-type">NetworkStatusConfig</a><span class="tsd-signature-symbol">&gt;</span>, overwrite<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">boolean</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
+						<li class="tsd-signature tsd-kind-icon">configure<span class="tsd-signature-symbol">(</span>config<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Partial</span><span class="tsd-signature-symbol">&lt;</span><a href="../interfaces/_accounttrackercontroller_.accounttrackerconfig.html" class="tsd-signature-type">AccountTrackerConfig</a><span class="tsd-signature-symbol">&gt;</span>, overwrite<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">boolean</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
@@ -357,7 +423,7 @@
 							<h4 class="tsd-parameters-title">Parameters</h4>
 							<ul class="tsd-parameters">
 								<li>
-									<h5>config: <span class="tsd-signature-type">Partial</span><span class="tsd-signature-symbol">&lt;</span><a href="../interfaces/_networkstatuscontroller_.networkstatusconfig.html" class="tsd-signature-type">NetworkStatusConfig</a><span class="tsd-signature-symbol">&gt;</span></h5>
+									<h5>config: <span class="tsd-signature-type">Partial</span><span class="tsd-signature-symbol">&lt;</span><a href="../interfaces/_accounttrackercontroller_.accounttrackerconfig.html" class="tsd-signature-type">AccountTrackerConfig</a><span class="tsd-signature-symbol">&gt;</span></h5>
 									<div class="tsd-comment tsd-typography">
 										<p>New configuration options</p>
 									</div>
@@ -446,11 +512,42 @@
 						</li>
 					</ul>
 				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class">
+					<a name="remove" class="tsd-anchor"></a>
+					<h3>remove</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
+						<li class="tsd-signature tsd-kind-icon">remove<span class="tsd-signature-symbol">(</span>address<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/MetaMask/gaba/blob/7479d1f/src/AccountTrackerController.ts#L129">AccountTrackerController.ts:129</a></li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Stops tracking an account</p>
+								</div>
+							</div>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>address: <span class="tsd-signature-type">string</span></h5>
+									<div class="tsd-comment tsd-typography">
+										<p>Hex address of a old account to remove</p>
+									</div>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
+						</li>
+					</ul>
+				</section>
 				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-inherited">
 					<a name="subscribe" class="tsd-anchor"></a>
 					<h3>subscribe</h3>
 					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-inherited">
-						<li class="tsd-signature tsd-kind-icon">subscribe<span class="tsd-signature-symbol">(</span>listener<span class="tsd-signature-symbol">: </span><a href="../modules/_basecontroller_.html#listener" class="tsd-signature-type">Listener</a><span class="tsd-signature-symbol">&lt;</span><a href="../interfaces/_networkstatuscontroller_.networkstatusstate.html" class="tsd-signature-type">NetworkStatusState</a><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
+						<li class="tsd-signature tsd-kind-icon">subscribe<span class="tsd-signature-symbol">(</span>listener<span class="tsd-signature-symbol">: </span><a href="../modules/_basecontroller_.html#listener" class="tsd-signature-type">Listener</a><span class="tsd-signature-symbol">&lt;</span><a href="../interfaces/_accounttrackercontroller_.accounttrackerstate.html" class="tsd-signature-type">AccountTrackerState</a><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
@@ -468,9 +565,40 @@
 							<h4 class="tsd-parameters-title">Parameters</h4>
 							<ul class="tsd-parameters">
 								<li>
-									<h5>listener: <a href="../modules/_basecontroller_.html#listener" class="tsd-signature-type">Listener</a><span class="tsd-signature-symbol">&lt;</span><a href="../interfaces/_networkstatuscontroller_.networkstatusstate.html" class="tsd-signature-type">NetworkStatusState</a><span class="tsd-signature-symbol">&gt;</span></h5>
+									<h5>listener: <a href="../modules/_basecontroller_.html#listener" class="tsd-signature-type">Listener</a><span class="tsd-signature-symbol">&lt;</span><a href="../interfaces/_accounttrackercontroller_.accounttrackerstate.html" class="tsd-signature-type">AccountTrackerState</a><span class="tsd-signature-symbol">&gt;</span></h5>
 									<div class="tsd-comment tsd-typography">
 										<p>Callback triggered when state changes</p>
+									</div>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class">
+					<a name="sync" class="tsd-anchor"></a>
+					<h3>sync</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
+						<li class="tsd-signature tsd-kind-icon">sync<span class="tsd-signature-symbol">(</span>addresses<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/MetaMask/gaba/blob/7479d1f/src/AccountTrackerController.ts#L140">AccountTrackerController.ts:140</a></li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Synchronizes the current address list with external identities</p>
+								</div>
+							</div>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>addresses: <span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">[]</span></h5>
+									<div class="tsd-comment tsd-typography">
+										<p>List of addresses to sync</p>
 									</div>
 								</li>
 							</ul>
@@ -482,7 +610,7 @@
 					<a name="unsubscribe" class="tsd-anchor"></a>
 					<h3>unsubscribe</h3>
 					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-inherited">
-						<li class="tsd-signature tsd-kind-icon">unsubscribe<span class="tsd-signature-symbol">(</span>listener<span class="tsd-signature-symbol">: </span><a href="../modules/_basecontroller_.html#listener" class="tsd-signature-type">Listener</a><span class="tsd-signature-symbol">&lt;</span><a href="../interfaces/_networkstatuscontroller_.networkstatusstate.html" class="tsd-signature-type">NetworkStatusState</a><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">boolean</span></li>
+						<li class="tsd-signature tsd-kind-icon">unsubscribe<span class="tsd-signature-symbol">(</span>listener<span class="tsd-signature-symbol">: </span><a href="../modules/_basecontroller_.html#listener" class="tsd-signature-type">Listener</a><span class="tsd-signature-symbol">&lt;</span><a href="../interfaces/_accounttrackercontroller_.accounttrackerstate.html" class="tsd-signature-type">AccountTrackerState</a><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">boolean</span></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
@@ -500,7 +628,7 @@
 							<h4 class="tsd-parameters-title">Parameters</h4>
 							<ul class="tsd-parameters">
 								<li>
-									<h5>listener: <a href="../modules/_basecontroller_.html#listener" class="tsd-signature-type">Listener</a><span class="tsd-signature-symbol">&lt;</span><a href="../interfaces/_networkstatuscontroller_.networkstatusstate.html" class="tsd-signature-type">NetworkStatusState</a><span class="tsd-signature-symbol">&gt;</span></h5>
+									<h5>listener: <a href="../modules/_basecontroller_.html#listener" class="tsd-signature-type">Listener</a><span class="tsd-signature-symbol">&lt;</span><a href="../interfaces/_accounttrackercontroller_.accounttrackerstate.html" class="tsd-signature-type">AccountTrackerState</a><span class="tsd-signature-symbol">&gt;</span></h5>
 									<div class="tsd-comment tsd-typography">
 										<p>Callback to remove</p>
 									</div>
@@ -517,7 +645,7 @@
 					<a name="update" class="tsd-anchor"></a>
 					<h3>update</h3>
 					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-inherited">
-						<li class="tsd-signature tsd-kind-icon">update<span class="tsd-signature-symbol">(</span>state<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Partial</span><span class="tsd-signature-symbol">&lt;</span><a href="../interfaces/_networkstatuscontroller_.networkstatusstate.html" class="tsd-signature-type">NetworkStatusState</a><span class="tsd-signature-symbol">&gt;</span>, overwrite<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">boolean</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
+						<li class="tsd-signature tsd-kind-icon">update<span class="tsd-signature-symbol">(</span>state<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Partial</span><span class="tsd-signature-symbol">&lt;</span><a href="../interfaces/_accounttrackercontroller_.accounttrackerstate.html" class="tsd-signature-type">AccountTrackerState</a><span class="tsd-signature-symbol">&gt;</span>, overwrite<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">boolean</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
@@ -535,7 +663,7 @@
 							<h4 class="tsd-parameters-title">Parameters</h4>
 							<ul class="tsd-parameters">
 								<li>
-									<h5>state: <span class="tsd-signature-type">Partial</span><span class="tsd-signature-symbol">&lt;</span><a href="../interfaces/_networkstatuscontroller_.networkstatusstate.html" class="tsd-signature-type">NetworkStatusState</a><span class="tsd-signature-symbol">&gt;</span></h5>
+									<h5>state: <span class="tsd-signature-type">Partial</span><span class="tsd-signature-symbol">&lt;</span><a href="../interfaces/_accounttrackercontroller_.accounttrackerstate.html" class="tsd-signature-type">AccountTrackerState</a><span class="tsd-signature-symbol">&gt;</span></h5>
 									<div class="tsd-comment tsd-typography">
 										<p>New state</p>
 									</div>
@@ -551,54 +679,6 @@
 						</li>
 					</ul>
 				</section>
-				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class">
-					<a name="updateinfurastatus" class="tsd-anchor"></a>
-					<h3>update<wbr>Infura<wbr>Status</h3>
-					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
-						<li class="tsd-signature tsd-kind-icon">update<wbr>Infura<wbr>Status<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><a href="../interfaces/_networkstatuscontroller_.networkstatus.html" class="tsd-signature-type">NetworkStatus</a><span class="tsd-signature-symbol">&gt;</span></li>
-					</ul>
-					<ul class="tsd-descriptions">
-						<li class="tsd-description">
-							<aside class="tsd-sources">
-								<ul>
-									<li>Defined in <a href="https://github.com/MetaMask/gaba/blob/7479d1f/src/NetworkStatusController.ts#L91">NetworkStatusController.ts:91</a></li>
-								</ul>
-							</aside>
-							<div class="tsd-comment tsd-typography">
-								<div class="lead">
-									<p>Fetches infura network status</p>
-								</div>
-							</div>
-							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><a href="../interfaces/_networkstatuscontroller_.networkstatus.html" class="tsd-signature-type">NetworkStatus</a><span class="tsd-signature-symbol">&gt;</span></h4>
-							<ul>
-								<li>Promise resolving to an infura network status object</li>
-							</ul>
-						</li>
-					</ul>
-				</section>
-				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class">
-					<a name="updatenetworkstatuses" class="tsd-anchor"></a>
-					<h3>update<wbr>Network<wbr>Statuses</h3>
-					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
-						<li class="tsd-signature tsd-kind-icon">update<wbr>Network<wbr>Statuses<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">void</span><span class="tsd-signature-symbol">&gt;</span></li>
-					</ul>
-					<ul class="tsd-descriptions">
-						<li class="tsd-description">
-							<aside class="tsd-sources">
-								<ul>
-									<li>Defined in <a href="https://github.com/MetaMask/gaba/blob/7479d1f/src/NetworkStatusController.ts#L107">NetworkStatusController.ts:107</a></li>
-								</ul>
-							</aside>
-							<div class="tsd-comment tsd-typography">
-								<div class="lead">
-									<p>Updates network status for all providers</p>
-								</div>
-							</div>
-							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">void</span><span class="tsd-signature-symbol">&gt;</span></h4>
-							<p>Promise resolving when this operation completes</p>
-						</li>
-					</ul>
-				</section>
 			</section>
 		</div>
 		<div class="col-4 col-menu menu-sticky-wrap menu-highlight">
@@ -607,7 +687,7 @@
 					<li class="globals  ">
 						<a href="../globals.html"><em>Globals</em></a>
 					</li>
-					<li class=" tsd-kind-external-module">
+					<li class="current tsd-kind-external-module">
 						<a href="../modules/_accounttrackercontroller_.html">"<wbr>Account<wbr>Tracker<wbr>Controller"</a>
 					</li>
 					<li class=" tsd-kind-external-module">
@@ -628,7 +708,7 @@
 					<li class=" tsd-kind-external-module">
 						<a href="../modules/_networkcontroller_.html">"<wbr>Network<wbr>Controller"</a>
 					</li>
-					<li class="current tsd-kind-external-module">
+					<li class=" tsd-kind-external-module">
 						<a href="../modules/_networkstatuscontroller_.html">"<wbr>Network<wbr>Status<wbr>Controller"</a>
 					</li>
 					<li class=" tsd-kind-external-module">
@@ -656,74 +736,74 @@
 				</ul>
 				<ul class="current">
 					<li class="current tsd-kind-class tsd-parent-kind-external-module">
-						<a href="_networkstatuscontroller_.networkstatuscontroller.html" class="tsd-kind-icon">Network<wbr>Status<wbr>Controller</a>
+						<a href="_accounttrackercontroller_.accounttrackercontroller.html" class="tsd-kind-icon">Account<wbr>Tracker<wbr>Controller</a>
 						<ul>
 							<li class=" tsd-kind-constructor tsd-parent-kind-class tsd-is-overwrite">
-								<a href="_networkstatuscontroller_.networkstatuscontroller.html#constructor" class="tsd-kind-icon">constructor</a>
+								<a href="_accounttrackercontroller_.accounttrackercontroller.html#constructor" class="tsd-kind-icon">constructor</a>
 							</li>
 							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-inherited">
-								<a href="_networkstatuscontroller_.networkstatuscontroller.html#context" class="tsd-kind-icon">context</a>
+								<a href="_accounttrackercontroller_.accounttrackercontroller.html#context" class="tsd-kind-icon">context</a>
 							</li>
 							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-inherited">
-								<a href="_networkstatuscontroller_.networkstatuscontroller.html#defaultconfig" class="tsd-kind-icon">default<wbr>Config</a>
+								<a href="_accounttrackercontroller_.accounttrackercontroller.html#defaultconfig" class="tsd-kind-icon">default<wbr>Config</a>
 							</li>
 							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-inherited">
-								<a href="_networkstatuscontroller_.networkstatuscontroller.html#defaultstate" class="tsd-kind-icon">default<wbr>State</a>
+								<a href="_accounttrackercontroller_.accounttrackercontroller.html#defaultstate" class="tsd-kind-icon">default<wbr>State</a>
 							</li>
 							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-inherited">
-								<a href="_networkstatuscontroller_.networkstatuscontroller.html#disabled" class="tsd-kind-icon">disabled</a>
-							</li>
-							<li class=" tsd-kind-get-signature tsd-parent-kind-class tsd-is-inherited">
-								<a href="_networkstatuscontroller_.networkstatuscontroller.html#config" class="tsd-kind-icon">config</a>
+								<a href="_accounttrackercontroller_.accounttrackercontroller.html#disabled" class="tsd-kind-icon">disabled</a>
 							</li>
 							<li class=" tsd-kind-set-signature tsd-parent-kind-class">
-								<a href="_networkstatuscontroller_.networkstatuscontroller.html#interval" class="tsd-kind-icon">interval</a>
+								<a href="_accounttrackercontroller_.accounttrackercontroller.html#blocktracker" class="tsd-kind-icon">block<wbr>Tracker</a>
 							</li>
 							<li class=" tsd-kind-get-signature tsd-parent-kind-class tsd-is-inherited">
-								<a href="_networkstatuscontroller_.networkstatuscontroller.html#state" class="tsd-kind-icon">state</a>
+								<a href="_accounttrackercontroller_.accounttrackercontroller.html#config" class="tsd-kind-icon">config</a>
+							</li>
+							<li class=" tsd-kind-set-signature tsd-parent-kind-class">
+								<a href="_accounttrackercontroller_.accounttrackercontroller.html#provider" class="tsd-kind-icon">provider</a>
+							</li>
+							<li class=" tsd-kind-get-signature tsd-parent-kind-class tsd-is-inherited">
+								<a href="_accounttrackercontroller_.accounttrackercontroller.html#state" class="tsd-kind-icon">state</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class">
+								<a href="_accounttrackercontroller_.accounttrackercontroller.html#add" class="tsd-kind-icon">add</a>
 							</li>
 							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-inherited">
-								<a href="_networkstatuscontroller_.networkstatuscontroller.html#configure" class="tsd-kind-icon">configure</a>
+								<a href="_accounttrackercontroller_.accounttrackercontroller.html#configure" class="tsd-kind-icon">configure</a>
 							</li>
 							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-inherited tsd-is-protected">
-								<a href="_networkstatuscontroller_.networkstatuscontroller.html#initialize" class="tsd-kind-icon">initialize</a>
+								<a href="_accounttrackercontroller_.accounttrackercontroller.html#initialize" class="tsd-kind-icon">initialize</a>
 							</li>
 							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-inherited">
-								<a href="_networkstatuscontroller_.networkstatuscontroller.html#notify" class="tsd-kind-icon">notify</a>
+								<a href="_accounttrackercontroller_.accounttrackercontroller.html#notify" class="tsd-kind-icon">notify</a>
 							</li>
 							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-inherited">
-								<a href="_networkstatuscontroller_.networkstatuscontroller.html#oncomposed" class="tsd-kind-icon">on<wbr>Composed</a>
-							</li>
-							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-inherited">
-								<a href="_networkstatuscontroller_.networkstatuscontroller.html#subscribe" class="tsd-kind-icon">subscribe</a>
-							</li>
-							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-inherited">
-								<a href="_networkstatuscontroller_.networkstatuscontroller.html#unsubscribe" class="tsd-kind-icon">unsubscribe</a>
-							</li>
-							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-inherited">
-								<a href="_networkstatuscontroller_.networkstatuscontroller.html#update" class="tsd-kind-icon">update</a>
+								<a href="_accounttrackercontroller_.accounttrackercontroller.html#oncomposed" class="tsd-kind-icon">on<wbr>Composed</a>
 							</li>
 							<li class=" tsd-kind-method tsd-parent-kind-class">
-								<a href="_networkstatuscontroller_.networkstatuscontroller.html#updateinfurastatus" class="tsd-kind-icon">update<wbr>Infura<wbr>Status</a>
+								<a href="_accounttrackercontroller_.accounttrackercontroller.html#remove" class="tsd-kind-icon">remove</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-inherited">
+								<a href="_accounttrackercontroller_.accounttrackercontroller.html#subscribe" class="tsd-kind-icon">subscribe</a>
 							</li>
 							<li class=" tsd-kind-method tsd-parent-kind-class">
-								<a href="_networkstatuscontroller_.networkstatuscontroller.html#updatenetworkstatuses" class="tsd-kind-icon">update<wbr>Network<wbr>Statuses</a>
+								<a href="_accounttrackercontroller_.accounttrackercontroller.html#sync" class="tsd-kind-icon">sync</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-inherited">
+								<a href="_accounttrackercontroller_.accounttrackercontroller.html#unsubscribe" class="tsd-kind-icon">unsubscribe</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-inherited">
+								<a href="_accounttrackercontroller_.accounttrackercontroller.html#update" class="tsd-kind-icon">update</a>
 							</li>
 						</ul>
 					</li>
 				</ul>
 				<ul class="after-current">
 					<li class=" tsd-kind-interface tsd-parent-kind-external-module">
-						<a href="../interfaces/_networkstatuscontroller_.networkstatus.html" class="tsd-kind-icon">Network<wbr>Status</a>
+						<a href="../interfaces/_accounttrackercontroller_.accounttrackerconfig.html" class="tsd-kind-icon">Account<wbr>Tracker<wbr>Config</a>
 					</li>
 					<li class=" tsd-kind-interface tsd-parent-kind-external-module">
-						<a href="../interfaces/_networkstatuscontroller_.networkstatusconfig.html" class="tsd-kind-icon">Network<wbr>Status<wbr>Config</a>
-					</li>
-					<li class=" tsd-kind-interface tsd-parent-kind-external-module">
-						<a href="../interfaces/_networkstatuscontroller_.networkstatusstate.html" class="tsd-kind-icon">Network<wbr>Status<wbr>State</a>
-					</li>
-					<li class=" tsd-kind-type-alias tsd-parent-kind-external-module">
-						<a href="../modules/_networkstatuscontroller_.html#status" class="tsd-kind-icon">Status</a>
+						<a href="../interfaces/_accounttrackercontroller_.accounttrackerstate.html" class="tsd-kind-icon">Account<wbr>Tracker<wbr>State</a>
 					</li>
 				</ul>
 			</nav>
