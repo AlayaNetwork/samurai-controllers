@@ -71,9 +71,14 @@
 						<section class="tsd-index-section ">
 							<h3>Functions</h3>
 							<ul class="tsd-index-list">
+								<li class="tsd-kind-function tsd-parent-kind-external-module"><a href="_util_.html#bntohex" class="tsd-kind-icon">BNTo<wbr>Hex</a></li>
+								<li class="tsd-kind-function tsd-parent-kind-external-module"><a href="_util_.html#fractionbn" class="tsd-kind-icon">fractionBN</a></li>
 								<li class="tsd-kind-function tsd-parent-kind-external-module"><a href="_util_.html#getbuyurl" class="tsd-kind-icon">get<wbr>BuyURL</a></li>
-								<li class="tsd-kind-function tsd-parent-kind-external-module"><a href="_util_.html#getgasprice" class="tsd-kind-icon">get<wbr>Gas<wbr>Price</a></li>
+								<li class="tsd-kind-function tsd-parent-kind-external-module"><a href="_util_.html#getetherscanurl" class="tsd-kind-icon">get<wbr>EtherscanURL</a></li>
+								<li class="tsd-kind-function tsd-parent-kind-external-module"><a href="_util_.html#hextobn" class="tsd-kind-icon">hex<wbr>ToBN</a></li>
+								<li class="tsd-kind-function tsd-parent-kind-external-module"><a href="_util_.html#normalizetransaction" class="tsd-kind-icon">normalize<wbr>Transaction</a></li>
 								<li class="tsd-kind-function tsd-parent-kind-external-module"><a href="_util_.html#safelyexecute" class="tsd-kind-icon">safely<wbr>Execute</a></li>
+								<li class="tsd-kind-function tsd-parent-kind-external-module"><a href="_util_.html#validatetransaction" class="tsd-kind-icon">validate<wbr>Transaction</a></li>
 							</ul>
 						</section>
 					</div>
@@ -81,6 +86,86 @@
 			</section>
 			<section class="tsd-panel-group tsd-member-group ">
 				<h2>Functions</h2>
+				<section class="tsd-panel tsd-member tsd-kind-function tsd-parent-kind-external-module">
+					<a name="bntohex" class="tsd-anchor"></a>
+					<h3>BNTo<wbr>Hex</h3>
+					<ul class="tsd-signatures tsd-kind-function tsd-parent-kind-external-module">
+						<li class="tsd-signature tsd-kind-icon">BNTo<wbr>Hex<span class="tsd-signature-symbol">(</span>inputBn<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">any</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">any</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/MetaMask/gaba/blob/26a8b6a/src/util.ts#L22">util.ts:22</a></li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Converts a BN object to a hex string with a &#39;0x&#39; prefix</p>
+								</div>
+							</div>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>inputBn: <span class="tsd-signature-type">any</span></h5>
+									<div class="tsd-comment tsd-typography">
+										<p>BN instance to convert to a hex string</p>
+									</div>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">any</span></h4>
+							<ul>
+								<li>&#39;0x&#39;-prefixed hex string</li>
+							</ul>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-function tsd-parent-kind-external-module">
+					<a name="fractionbn" class="tsd-anchor"></a>
+					<h3>fractionBN</h3>
+					<ul class="tsd-signatures tsd-kind-function tsd-parent-kind-external-module">
+						<li class="tsd-signature tsd-kind-icon">fractionBN<span class="tsd-signature-symbol">(</span>targetBN<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">any</span>, numerator<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">string</span>, denominator<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">any</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/MetaMask/gaba/blob/26a8b6a/src/util.ts#L34">util.ts:34</a></li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Used to multiply a BN by a fraction</p>
+								</div>
+							</div>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>targetBN: <span class="tsd-signature-type">any</span></h5>
+									<div class="tsd-comment tsd-typography">
+										<p>Number to multiply by a fraction</p>
+									</div>
+								</li>
+								<li>
+									<h5>numerator: <span class="tsd-signature-type">number</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">string</span></h5>
+									<div class="tsd-comment tsd-typography">
+										<p>Numerator of the fraction multiplier</p>
+									</div>
+								</li>
+								<li>
+									<h5>denominator: <span class="tsd-signature-type">number</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">string</span></h5>
+									<div class="tsd-comment tsd-typography">
+										<p>Denominator of the fraction multiplier</p>
+									</div>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">any</span></h4>
+							<ul>
+								<li>Product of the multiplication</li>
+							</ul>
+						</li>
+					</ul>
+				</section>
 				<section class="tsd-panel tsd-member tsd-kind-function tsd-parent-kind-external-module">
 					<a name="getbuyurl" class="tsd-anchor"></a>
 					<h3>get<wbr>BuyURL</h3>
@@ -91,7 +176,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/MetaMask/gaba/blob/4655194/src/util.ts#L15">util.ts:15</a></li>
+									<li>Defined in <a href="https://github.com/MetaMask/gaba/blob/26a8b6a/src/util.ts#L48">util.ts:48</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -131,35 +216,112 @@
 					</ul>
 				</section>
 				<section class="tsd-panel tsd-member tsd-kind-function tsd-parent-kind-external-module">
-					<a name="getgasprice" class="tsd-anchor"></a>
-					<h3>get<wbr>Gas<wbr>Price</h3>
+					<a name="getetherscanurl" class="tsd-anchor"></a>
+					<h3>get<wbr>EtherscanURL</h3>
 					<ul class="tsd-signatures tsd-kind-function tsd-parent-kind-external-module">
-						<li class="tsd-signature tsd-kind-icon">get<wbr>Gas<wbr>Price<span class="tsd-signature-symbol">(</span>recentBlocks<span class="tsd-signature-symbol">: </span><a href="../interfaces/_blockhistorycontroller_.block.html" class="tsd-signature-type">Block</a><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span></li>
+						<li class="tsd-signature tsd-kind-icon">get<wbr>EtherscanURL<span class="tsd-signature-symbol">(</span>networkCode<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">"https://api.etherscan.io/api"</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">"https://api-ropsten.etherscan.io/api"</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">"https://api-rinkeby.etherscan.io/api"</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">"https://api-kovan.etherscan.io/api"</span></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/MetaMask/gaba/blob/4655194/src/util.ts#L35">util.ts:35</a></li>
+									<li>Defined in <a href="https://github.com/MetaMask/gaba/blob/26a8b6a/src/util.ts#L68">util.ts:68</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
 								<div class="lead">
-									<p>Calculates lowest gas price that would&#39;ve been included in 50% of recent blocks</p>
+									<p>Return a URL that can be used to make API requests against Etherscan</p>
 								</div>
 							</div>
 							<h4 class="tsd-parameters-title">Parameters</h4>
 							<ul class="tsd-parameters">
 								<li>
-									<h5>recentBlocks: <a href="../interfaces/_blockhistorycontroller_.block.html" class="tsd-signature-type">Block</a><span class="tsd-signature-symbol">[]</span></h5>
+									<h5><span class="tsd-flag ts-flagDefault value">Default value</span> networkCode: <span class="tsd-signature-type">string</span><span class="tsd-signature-symbol"> =&nbsp;&quot;1&quot;</span></h5>
 									<div class="tsd-comment tsd-typography">
-										<p>List of recent blocks</p>
+										<p>Network code of desired network</p>
 									</div>
 								</li>
 							</ul>
-							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">string</span></h4>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">undefined</span>
+								<span class="tsd-signature-symbol"> | </span>
+								<span class="tsd-signature-type">"https://api.etherscan.io/api"</span>
+								<span class="tsd-signature-symbol"> | </span>
+								<span class="tsd-signature-type">"https://api-ropsten.etherscan.io/api"</span>
+								<span class="tsd-signature-symbol"> | </span>
+								<span class="tsd-signature-type">"https://api-rinkeby.etherscan.io/api"</span>
+								<span class="tsd-signature-symbol"> | </span>
+								<span class="tsd-signature-type">"https://api-kovan.etherscan.io/api"</span>
+							</h4>
 							<ul>
-								<li>Gas price based on recent blocks</li>
+								<li>URL to query Etherscan API</li>
+							</ul>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-function tsd-parent-kind-external-module">
+					<a name="hextobn" class="tsd-anchor"></a>
+					<h3>hex<wbr>ToBN</h3>
+					<ul class="tsd-signatures tsd-kind-function tsd-parent-kind-external-module">
+						<li class="tsd-signature tsd-kind-icon">hex<wbr>ToBN<span class="tsd-signature-symbol">(</span>inputHex<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">any</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/MetaMask/gaba/blob/26a8b6a/src/util.ts#L88">util.ts:88</a></li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Converts a hex string to a BN object</p>
+								</div>
+							</div>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>inputHex: <span class="tsd-signature-type">string</span></h5>
+									<div class="tsd-comment tsd-typography">
+										<p>Number represented as a hex string</p>
+									</div>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">any</span></h4>
+							<ul>
+								<li>A BN instance</li>
+							</ul>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-function tsd-parent-kind-external-module">
+					<a name="normalizetransaction" class="tsd-anchor"></a>
+					<h3>normalize<wbr>Transaction</h3>
+					<ul class="tsd-signatures tsd-kind-function tsd-parent-kind-external-module">
+						<li class="tsd-signature tsd-kind-icon">normalize<wbr>Transaction<span class="tsd-signature-symbol">(</span>transaction<span class="tsd-signature-symbol">: </span><a href="../interfaces/_transactioncontroller_.transaction.html" class="tsd-signature-type">Transaction</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="../interfaces/_transactioncontroller_.transaction.html" class="tsd-signature-type">Transaction</a></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/MetaMask/gaba/blob/26a8b6a/src/util.ts#L98">util.ts:98</a></li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Normalizes properties on a Transaction object</p>
+								</div>
+							</div>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>transaction: <a href="../interfaces/_transactioncontroller_.transaction.html" class="tsd-signature-type">Transaction</a></h5>
+									<div class="tsd-comment tsd-typography">
+										<p>Transaction object to normalize</p>
+									</div>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <a href="../interfaces/_transactioncontroller_.transaction.html" class="tsd-signature-type">Transaction</a></h4>
+							<ul>
+								<li>Normalized Transaction object</li>
 							</ul>
 						</li>
 					</ul>
@@ -174,7 +336,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/MetaMask/gaba/blob/4655194/src/util.ts#L63">util.ts:63</a></li>
+									<li>Defined in <a href="https://github.com/MetaMask/gaba/blob/26a8b6a/src/util.ts#L115">util.ts:115</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -205,8 +367,40 @@
 							</ul>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">any</span><span class="tsd-signature-symbol">&gt;</span></h4>
 							<ul>
-								<li>Result of the asynchronous operation</li>
+								<li>Promise resolving to the result of the async operation</li>
 							</ul>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-function tsd-parent-kind-external-module">
+					<a name="validatetransaction" class="tsd-anchor"></a>
+					<h3>validate<wbr>Transaction</h3>
+					<ul class="tsd-signatures tsd-kind-function tsd-parent-kind-external-module">
+						<li class="tsd-signature tsd-kind-icon">validate<wbr>Transaction<span class="tsd-signature-symbol">(</span>transaction<span class="tsd-signature-symbol">: </span><a href="../interfaces/_transactioncontroller_.transaction.html" class="tsd-signature-type">Transaction</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/MetaMask/gaba/blob/26a8b6a/src/util.ts#L129">util.ts:129</a></li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Validates a Transaction object for required properties and throws in
+									the event of any validation error.</p>
+								</div>
+							</div>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>transaction: <a href="../interfaces/_transactioncontroller_.transaction.html" class="tsd-signature-type">Transaction</a></h5>
+									<div class="tsd-comment tsd-typography">
+										<p>Transaction object to validate</p>
+									</div>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
 						</li>
 					</ul>
 				</section>
@@ -258,6 +452,9 @@
 						<a href="_tokenratescontroller_.html">"<wbr>Token<wbr>Rates<wbr>Controller"</a>
 					</li>
 					<li class=" tsd-kind-external-module">
+						<a href="_transactioncontroller_.html">"<wbr>Transaction<wbr>Controller"</a>
+					</li>
+					<li class=" tsd-kind-external-module">
 						<a href="_index_.html">"index"</a>
 					</li>
 					<li class="current tsd-kind-external-module">
@@ -268,13 +465,28 @@
 			<nav class="tsd-navigation secondary menu-sticky">
 				<ul class="before-current">
 					<li class=" tsd-kind-function tsd-parent-kind-external-module">
+						<a href="_util_.html#bntohex" class="tsd-kind-icon">BNTo<wbr>Hex</a>
+					</li>
+					<li class=" tsd-kind-function tsd-parent-kind-external-module">
+						<a href="_util_.html#fractionbn" class="tsd-kind-icon">fractionBN</a>
+					</li>
+					<li class=" tsd-kind-function tsd-parent-kind-external-module">
 						<a href="_util_.html#getbuyurl" class="tsd-kind-icon">get<wbr>BuyURL</a>
 					</li>
 					<li class=" tsd-kind-function tsd-parent-kind-external-module">
-						<a href="_util_.html#getgasprice" class="tsd-kind-icon">get<wbr>Gas<wbr>Price</a>
+						<a href="_util_.html#getetherscanurl" class="tsd-kind-icon">get<wbr>EtherscanURL</a>
+					</li>
+					<li class=" tsd-kind-function tsd-parent-kind-external-module">
+						<a href="_util_.html#hextobn" class="tsd-kind-icon">hex<wbr>ToBN</a>
+					</li>
+					<li class=" tsd-kind-function tsd-parent-kind-external-module">
+						<a href="_util_.html#normalizetransaction" class="tsd-kind-icon">normalize<wbr>Transaction</a>
 					</li>
 					<li class=" tsd-kind-function tsd-parent-kind-external-module">
 						<a href="_util_.html#safelyexecute" class="tsd-kind-icon">safely<wbr>Execute</a>
+					</li>
+					<li class=" tsd-kind-function tsd-parent-kind-external-module">
+						<a href="_util_.html#validatetransaction" class="tsd-kind-icon">validate<wbr>Transaction</a>
 					</li>
 				</ul>
 			</nav>

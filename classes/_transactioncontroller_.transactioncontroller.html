@@ -3,7 +3,7 @@
 <head>
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<title>TokenRatesController | gaba</title>
+	<title>TransactionController | gaba</title>
 	<meta name="description" content="">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="stylesheet" href="../assets/css/main.css">
@@ -54,13 +54,13 @@
 					<a href="../globals.html">Globals</a>
 				</li>
 				<li>
-					<a href="../modules/_tokenratescontroller_.html">&quot;TokenRatesController&quot;</a>
+					<a href="../modules/_transactioncontroller_.html">&quot;TransactionController&quot;</a>
 				</li>
 				<li>
-					<a href="_tokenratescontroller_.tokenratescontroller.html">TokenRatesController</a>
+					<a href="_transactioncontroller_.transactioncontroller.html">TransactionController</a>
 				</li>
 			</ul>
-			<h1>Class TokenRatesController</h1>
+			<h1>Class TransactionController</h1>
 		</div>
 	</div>
 </header>
@@ -70,7 +70,7 @@
 			<section class="tsd-panel tsd-comment">
 				<div class="tsd-comment tsd-typography">
 					<div class="lead">
-						<p>Controller that passively polls on a set interval for token-to-fiat exchange rates</p>
+						<p>Controller responsible for submitting and managing transactions</p>
 					</div>
 				</div>
 			</section>
@@ -78,10 +78,10 @@
 				<h3>Hierarchy</h3>
 				<ul class="tsd-hierarchy">
 					<li>
-						<a href="_basecontroller_.basecontroller.html" class="tsd-signature-type">BaseController</a><span class="tsd-signature-symbol">&lt;</span><a href="../interfaces/_tokenratescontroller_.tokenratesstate.html" class="tsd-signature-type">TokenRatesState</a><span class="tsd-signature-symbol">, </span><a href="../interfaces/_tokenratescontroller_.tokenratesconfig.html" class="tsd-signature-type">TokenRatesConfig</a><span class="tsd-signature-symbol">&gt;</span>
+						<a href="_basecontroller_.basecontroller.html" class="tsd-signature-type">BaseController</a><span class="tsd-signature-symbol">&lt;</span><a href="../interfaces/_transactioncontroller_.transactionstate.html" class="tsd-signature-type">TransactionState</a><span class="tsd-signature-symbol">, </span><a href="../interfaces/_transactioncontroller_.transactionconfig.html" class="tsd-signature-type">TransactionConfig</a><span class="tsd-signature-symbol">&gt;</span>
 						<ul class="tsd-hierarchy">
 							<li>
-								<span class="target">TokenRatesController</span>
+								<span class="target">TransactionController</span>
 							</li>
 						</ul>
 					</li>
@@ -94,40 +94,46 @@
 						<section class="tsd-index-section ">
 							<h3>Constructors</h3>
 							<ul class="tsd-index-list">
-								<li class="tsd-kind-constructor tsd-parent-kind-class tsd-is-overwrite"><a href="_tokenratescontroller_.tokenratescontroller.html#constructor" class="tsd-kind-icon">constructor</a></li>
+								<li class="tsd-kind-constructor tsd-parent-kind-class tsd-is-overwrite"><a href="_transactioncontroller_.transactioncontroller.html#constructor" class="tsd-kind-icon">constructor</a></li>
 							</ul>
 						</section>
 						<section class="tsd-index-section ">
 							<h3>Properties</h3>
 							<ul class="tsd-index-list">
-								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-inherited"><a href="_tokenratescontroller_.tokenratescontroller.html#context" class="tsd-kind-icon">context</a></li>
-								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-inherited"><a href="_tokenratescontroller_.tokenratescontroller.html#defaultconfig" class="tsd-kind-icon">default<wbr>Config</a></li>
-								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-inherited"><a href="_tokenratescontroller_.tokenratescontroller.html#defaultstate" class="tsd-kind-icon">default<wbr>State</a></li>
-								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-inherited"><a href="_tokenratescontroller_.tokenratescontroller.html#disabled" class="tsd-kind-icon">disabled</a></li>
-								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-overwrite"><a href="_tokenratescontroller_.tokenratescontroller.html#requiredcontrollers" class="tsd-kind-icon">required<wbr>Controllers</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-inherited"><a href="_transactioncontroller_.transactioncontroller.html#context" class="tsd-kind-icon">context</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-inherited"><a href="_transactioncontroller_.transactioncontroller.html#defaultconfig" class="tsd-kind-icon">default<wbr>Config</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-inherited"><a href="_transactioncontroller_.transactioncontroller.html#defaultstate" class="tsd-kind-icon">default<wbr>State</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-inherited"><a href="_transactioncontroller_.transactioncontroller.html#disabled" class="tsd-kind-icon">disabled</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-class"><a href="_transactioncontroller_.transactioncontroller.html#hub" class="tsd-kind-icon">hub</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-overwrite"><a href="_transactioncontroller_.transactioncontroller.html#requiredcontrollers" class="tsd-kind-icon">required<wbr>Controllers</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-class"><a href="_transactioncontroller_.transactioncontroller.html#sign" class="tsd-kind-icon">sign</a></li>
 							</ul>
 						</section>
 						<section class="tsd-index-section ">
 							<h3>Accessors</h3>
 							<ul class="tsd-index-list">
-								<li class="tsd-kind-get-signature tsd-parent-kind-class tsd-is-inherited"><a href="_tokenratescontroller_.tokenratescontroller.html#config" class="tsd-kind-icon">config</a></li>
-								<li class="tsd-kind-set-signature tsd-parent-kind-class"><a href="_tokenratescontroller_.tokenratescontroller.html#interval" class="tsd-kind-icon">interval</a></li>
-								<li class="tsd-kind-get-signature tsd-parent-kind-class tsd-is-inherited"><a href="_tokenratescontroller_.tokenratescontroller.html#state" class="tsd-kind-icon">state</a></li>
-								<li class="tsd-kind-set-signature tsd-parent-kind-class"><a href="_tokenratescontroller_.tokenratescontroller.html#tokens" class="tsd-kind-icon">tokens</a></li>
+								<li class="tsd-kind-get-signature tsd-parent-kind-class tsd-is-inherited"><a href="_transactioncontroller_.transactioncontroller.html#config" class="tsd-kind-icon">config</a></li>
+								<li class="tsd-kind-set-signature tsd-parent-kind-class"><a href="_transactioncontroller_.transactioncontroller.html#interval" class="tsd-kind-icon">interval</a></li>
+								<li class="tsd-kind-set-signature tsd-parent-kind-class"><a href="_transactioncontroller_.transactioncontroller.html#provider" class="tsd-kind-icon">provider</a></li>
+								<li class="tsd-kind-get-signature tsd-parent-kind-class tsd-is-inherited"><a href="_transactioncontroller_.transactioncontroller.html#state" class="tsd-kind-icon">state</a></li>
 							</ul>
 						</section>
 						<section class="tsd-index-section ">
 							<h3>Methods</h3>
 							<ul class="tsd-index-list">
-								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-inherited"><a href="_tokenratescontroller_.tokenratescontroller.html#configure" class="tsd-kind-icon">configure</a></li>
-								<li class="tsd-kind-method tsd-parent-kind-class"><a href="_tokenratescontroller_.tokenratescontroller.html#fetchexchangerate" class="tsd-kind-icon">fetch<wbr>Exchange<wbr>Rate</a></li>
-								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-inherited tsd-is-protected"><a href="_tokenratescontroller_.tokenratescontroller.html#initialize" class="tsd-kind-icon">initialize</a></li>
-								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-inherited"><a href="_tokenratescontroller_.tokenratescontroller.html#notify" class="tsd-kind-icon">notify</a></li>
-								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-overwrite"><a href="_tokenratescontroller_.tokenratescontroller.html#oncomposed" class="tsd-kind-icon">on<wbr>Composed</a></li>
-								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-inherited"><a href="_tokenratescontroller_.tokenratescontroller.html#subscribe" class="tsd-kind-icon">subscribe</a></li>
-								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-inherited"><a href="_tokenratescontroller_.tokenratescontroller.html#unsubscribe" class="tsd-kind-icon">unsubscribe</a></li>
-								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-inherited"><a href="_tokenratescontroller_.tokenratescontroller.html#update" class="tsd-kind-icon">update</a></li>
-								<li class="tsd-kind-method tsd-parent-kind-class"><a href="_tokenratescontroller_.tokenratescontroller.html#updateexchangerates" class="tsd-kind-icon">update<wbr>Exchange<wbr>Rates</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class"><a href="_transactioncontroller_.transactioncontroller.html#addtransaction" class="tsd-kind-icon">add<wbr>Transaction</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class"><a href="_transactioncontroller_.transactioncontroller.html#approvetransaction" class="tsd-kind-icon">approve<wbr>Transaction</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class"><a href="_transactioncontroller_.transactioncontroller.html#canceltransaction" class="tsd-kind-icon">cancel<wbr>Transaction</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-inherited"><a href="_transactioncontroller_.transactioncontroller.html#configure" class="tsd-kind-icon">configure</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-inherited tsd-is-protected"><a href="_transactioncontroller_.transactioncontroller.html#initialize" class="tsd-kind-icon">initialize</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-inherited"><a href="_transactioncontroller_.transactioncontroller.html#notify" class="tsd-kind-icon">notify</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-inherited"><a href="_transactioncontroller_.transactioncontroller.html#oncomposed" class="tsd-kind-icon">on<wbr>Composed</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class"><a href="_transactioncontroller_.transactioncontroller.html#querytransactionstatuses" class="tsd-kind-icon">query<wbr>Transaction<wbr>Statuses</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-inherited"><a href="_transactioncontroller_.transactioncontroller.html#subscribe" class="tsd-kind-icon">subscribe</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-inherited"><a href="_transactioncontroller_.transactioncontroller.html#unsubscribe" class="tsd-kind-icon">unsubscribe</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-inherited"><a href="_transactioncontroller_.transactioncontroller.html#update" class="tsd-kind-icon">update</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class"><a href="_transactioncontroller_.transactioncontroller.html#updatetransaction" class="tsd-kind-icon">update<wbr>Transaction</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class"><a href="_transactioncontroller_.transactioncontroller.html#wipetransactions" class="tsd-kind-icon">wipe<wbr>Transactions</a></li>
 							</ul>
 						</section>
 					</div>
@@ -139,25 +145,25 @@
 					<a name="constructor" class="tsd-anchor"></a>
 					<h3>constructor</h3>
 					<ul class="tsd-signatures tsd-kind-constructor tsd-parent-kind-class tsd-is-overwrite">
-						<li class="tsd-signature tsd-kind-icon">new <wbr>Token<wbr>Rates<wbr>Controller<span class="tsd-signature-symbol">(</span>state<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">Partial</span><span class="tsd-signature-symbol">&lt;</span><a href="../interfaces/_tokenratescontroller_.tokenratesstate.html" class="tsd-signature-type">TokenRatesState</a><span class="tsd-signature-symbol">&gt;</span>, config<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">Partial</span><span class="tsd-signature-symbol">&lt;</span><a href="../interfaces/_tokenratescontroller_.tokenratesconfig.html" class="tsd-signature-type">TokenRatesConfig</a><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="_tokenratescontroller_.tokenratescontroller.html" class="tsd-signature-type">TokenRatesController</a></li>
+						<li class="tsd-signature tsd-kind-icon">new <wbr>Transaction<wbr>Controller<span class="tsd-signature-symbol">(</span>state<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">Partial</span><span class="tsd-signature-symbol">&lt;</span><a href="../interfaces/_transactioncontroller_.transactionstate.html" class="tsd-signature-type">TransactionState</a><span class="tsd-signature-symbol">&gt;</span>, config<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">Partial</span><span class="tsd-signature-symbol">&lt;</span><a href="../interfaces/_transactioncontroller_.transactionconfig.html" class="tsd-signature-type">TransactionConfig</a><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="_transactioncontroller_.transactioncontroller.html" class="tsd-signature-type">TransactionController</a></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<p>Overrides <a href="_basecontroller_.basecontroller.html">BaseController</a>.<a href="_basecontroller_.basecontroller.html#constructor">constructor</a></p>
 								<ul>
-									<li>Defined in <a href="https://github.com/MetaMask/gaba/blob/26a8b6a/src/TokenRatesController.ts#L59">TokenRatesController.ts:59</a></li>
+									<li>Defined in <a href="https://github.com/MetaMask/gaba/blob/26a8b6a/src/TransactionController.ts#L180">TransactionController.ts:180</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
 								<div class="lead">
-									<p>Creates a TokenRatesController instance</p>
+									<p>Creates a TransactionController instance</p>
 								</div>
 							</div>
 							<h4 class="tsd-parameters-title">Parameters</h4>
 							<ul class="tsd-parameters">
 								<li>
-									<h5><span class="tsd-flag ts-flagOptional">Optional</span> state: <span class="tsd-signature-type">Partial</span><span class="tsd-signature-symbol">&lt;</span><a href="../interfaces/_tokenratescontroller_.tokenratesstate.html" class="tsd-signature-type">TokenRatesState</a><span class="tsd-signature-symbol">&gt;</span></h5>
+									<h5><span class="tsd-flag ts-flagOptional">Optional</span> state: <span class="tsd-signature-type">Partial</span><span class="tsd-signature-symbol">&lt;</span><a href="../interfaces/_transactioncontroller_.transactionstate.html" class="tsd-signature-type">TransactionState</a><span class="tsd-signature-symbol">&gt;</span></h5>
 									<div class="tsd-comment tsd-typography">
 										<div class="lead">
 											<p>Initial state to set on this controller</p>
@@ -165,7 +171,7 @@
 									</div>
 								</li>
 								<li>
-									<h5><span class="tsd-flag ts-flagOptional">Optional</span> config: <span class="tsd-signature-type">Partial</span><span class="tsd-signature-symbol">&lt;</span><a href="../interfaces/_tokenratescontroller_.tokenratesconfig.html" class="tsd-signature-type">TokenRatesConfig</a><span class="tsd-signature-symbol">&gt;</span></h5>
+									<h5><span class="tsd-flag ts-flagOptional">Optional</span> config: <span class="tsd-signature-type">Partial</span><span class="tsd-signature-symbol">&lt;</span><a href="../interfaces/_transactioncontroller_.transactionconfig.html" class="tsd-signature-type">TransactionConfig</a><span class="tsd-signature-symbol">&gt;</span></h5>
 									<div class="tsd-comment tsd-typography">
 										<div class="lead">
 											<p>Initial options used to configure this controller</p>
@@ -173,7 +179,7 @@
 									</div>
 								</li>
 							</ul>
-							<h4 class="tsd-returns-title">Returns <a href="_tokenratescontroller_.tokenratescontroller.html" class="tsd-signature-type">TokenRatesController</a></h4>
+							<h4 class="tsd-returns-title">Returns <a href="_transactioncontroller_.transactioncontroller.html" class="tsd-signature-type">TransactionController</a></h4>
 						</li>
 					</ul>
 				</section>
@@ -201,7 +207,7 @@
 				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-inherited">
 					<a name="defaultconfig" class="tsd-anchor"></a>
 					<h3>default<wbr>Config</h3>
-					<div class="tsd-signature tsd-kind-icon">default<wbr>Config<span class="tsd-signature-symbol">:</span> <a href="../interfaces/_tokenratescontroller_.tokenratesconfig.html" class="tsd-signature-type">TokenRatesConfig</a><span class="tsd-signature-symbol"> =&nbsp;{} as C</span></div>
+					<div class="tsd-signature tsd-kind-icon">default<wbr>Config<span class="tsd-signature-symbol">:</span> <a href="../interfaces/_transactioncontroller_.transactionconfig.html" class="tsd-signature-type">TransactionConfig</a><span class="tsd-signature-symbol"> =&nbsp;{} as C</span></div>
 					<aside class="tsd-sources">
 						<p>Inherited from <a href="_basecontroller_.basecontroller.html">BaseController</a>.<a href="_basecontroller_.basecontroller.html#defaultconfig">defaultConfig</a></p>
 						<ul>
@@ -217,7 +223,7 @@
 				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-inherited">
 					<a name="defaultstate" class="tsd-anchor"></a>
 					<h3>default<wbr>State</h3>
-					<div class="tsd-signature tsd-kind-icon">default<wbr>State<span class="tsd-signature-symbol">:</span> <a href="../interfaces/_tokenratescontroller_.tokenratesstate.html" class="tsd-signature-type">TokenRatesState</a><span class="tsd-signature-symbol"> =&nbsp;{} as S</span></div>
+					<div class="tsd-signature tsd-kind-icon">default<wbr>State<span class="tsd-signature-symbol">:</span> <a href="../interfaces/_transactioncontroller_.transactionstate.html" class="tsd-signature-type">TransactionState</a><span class="tsd-signature-symbol"> =&nbsp;{} as S</span></div>
 					<aside class="tsd-sources">
 						<p>Inherited from <a href="_basecontroller_.basecontroller.html">BaseController</a>.<a href="_basecontroller_.basecontroller.html#defaultstate">defaultState</a></p>
 						<ul>
@@ -246,19 +252,49 @@
 						</div>
 					</div>
 				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class">
+					<a name="hub" class="tsd-anchor"></a>
+					<h3>hub</h3>
+					<div class="tsd-signature tsd-kind-icon">hub<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">EventEmitter</span><span class="tsd-signature-symbol"> =&nbsp;new EventEmitter()</span></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in <a href="https://github.com/MetaMask/gaba/blob/26a8b6a/src/TransactionController.ts#L170">TransactionController.ts:170</a></li>
+						</ul>
+					</aside>
+					<div class="tsd-comment tsd-typography">
+						<div class="lead">
+							<p>EventEmitter instance used to listen to specific transactional events</p>
+						</div>
+					</div>
+				</section>
 				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-overwrite">
 					<a name="requiredcontrollers" class="tsd-anchor"></a>
 					<h3>required<wbr>Controllers</h3>
-					<div class="tsd-signature tsd-kind-icon">required<wbr>Controllers<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol"> =&nbsp;[&#x27;PreferencesController&#x27;]</span></div>
+					<div class="tsd-signature tsd-kind-icon">required<wbr>Controllers<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol"> =&nbsp;[&#x27;BlockHistoryController&#x27;, &#x27;NetworkController&#x27;, &#x27;PreferencesController&#x27;]</span></div>
 					<aside class="tsd-sources">
 						<p>Overrides <a href="_basecontroller_.basecontroller.html">BaseController</a>.<a href="_basecontroller_.basecontroller.html#requiredcontrollers">requiredControllers</a></p>
 						<ul>
-							<li>Defined in <a href="https://github.com/MetaMask/gaba/blob/26a8b6a/src/TokenRatesController.ts#L59">TokenRatesController.ts:59</a></li>
+							<li>Defined in <a href="https://github.com/MetaMask/gaba/blob/26a8b6a/src/TransactionController.ts#L175">TransactionController.ts:175</a></li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
 						<div class="lead">
 							<p>List of required sibling controllers this controller needs to function</p>
+						</div>
+					</div>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class">
+					<a name="sign" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagOptional">Optional</span> sign</h3>
+					<div class="tsd-signature tsd-kind-icon">sign<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">function</span></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in <a href="https://github.com/MetaMask/gaba/blob/26a8b6a/src/TransactionController.ts#L180">TransactionController.ts:180</a></li>
+						</ul>
+					</aside>
+					<div class="tsd-comment tsd-typography">
+						<div class="lead">
+							<p>Method used to sign transactions</p>
 						</div>
 					</div>
 				</section>
@@ -301,7 +337,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/MetaMask/gaba/blob/26a8b6a/src/TokenRatesController.ts#L82">TokenRatesController.ts:82</a></li>
+									<li>Defined in <a href="https://github.com/MetaMask/gaba/blob/26a8b6a/src/TransactionController.ts#L207">TransactionController.ts:207</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -315,7 +351,40 @@
 									<h5>interval: <span class="tsd-signature-type">number</span></h5>
 									<div class="tsd-comment tsd-typography">
 										<div class="lead">
-											<p>Polling interval used to fetch new token rates</p>
+											<p>Polling interval used to fetch new exchange rate</p>
+										</div>
+									</div>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-set-signature tsd-parent-kind-class">
+					<a name="provider" class="tsd-anchor"></a>
+					<h3>provider</h3>
+					<ul class="tsd-signatures tsd-kind-set-signature tsd-parent-kind-class">
+						<li class="tsd-signature tsd-kind-icon"><span class="tsd-signature-symbol">set</span> provider<span class="tsd-signature-symbol">(</span>provider<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">any</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/MetaMask/gaba/blob/26a8b6a/src/TransactionController.ts#L220">TransactionController.ts:220</a></li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Sets a new provider</p>
+								</div>
+							</div>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>provider: <span class="tsd-signature-type">any</span></h5>
+									<div class="tsd-comment tsd-typography">
+										<div class="lead">
+											<p>Provider used to create a new underlying EthQuery instance</p>
 										</div>
 									</div>
 								</li>
@@ -350,32 +419,113 @@
 						</li>
 					</ul>
 				</section>
-				<section class="tsd-panel tsd-member tsd-kind-set-signature tsd-parent-kind-class">
-					<a name="tokens" class="tsd-anchor"></a>
-					<h3>tokens</h3>
-					<ul class="tsd-signatures tsd-kind-set-signature tsd-parent-kind-class">
-						<li class="tsd-signature tsd-kind-icon"><span class="tsd-signature-symbol">set</span> tokens<span class="tsd-signature-symbol">(</span>tokens<span class="tsd-signature-symbol">: </span><a href="../interfaces/_tokenratescontroller_.token.html" class="tsd-signature-type">Token</a><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
+			</section>
+			<section class="tsd-panel-group tsd-member-group ">
+				<h2>Methods</h2>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class">
+					<a name="addtransaction" class="tsd-anchor"></a>
+					<h3>add<wbr>Transaction</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
+						<li class="tsd-signature tsd-kind-icon">add<wbr>Transaction<span class="tsd-signature-symbol">(</span>transaction<span class="tsd-signature-symbol">: </span><a href="../interfaces/_transactioncontroller_.transaction.html" class="tsd-signature-type">Transaction</a>, origin<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">Object</span><span class="tsd-signature-symbol">&gt;</span></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/MetaMask/gaba/blob/26a8b6a/src/TokenRatesController.ts#L95">TokenRatesController.ts:95</a></li>
+									<li>Defined in <a href="https://github.com/MetaMask/gaba/blob/26a8b6a/src/TransactionController.ts#L233">TransactionController.ts:233</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
 								<div class="lead">
-									<p>Sets a new token list to track prices</p>
+									<p>Add a new unapproved transaction to state. Parameters will be validated, a
+										unique transaction id will be generated, and gas and gasPrice will be calculated
+									if not provided. If A <code>&lt;tx.id&gt;:unapproved</code> hub event will be emitted once added.</p>
 								</div>
 							</div>
 							<h4 class="tsd-parameters-title">Parameters</h4>
 							<ul class="tsd-parameters">
 								<li>
-									<h5>tokens: <a href="../interfaces/_tokenratescontroller_.token.html" class="tsd-signature-type">Token</a><span class="tsd-signature-symbol">[]</span></h5>
+									<h5>transaction: <a href="../interfaces/_transactioncontroller_.transaction.html" class="tsd-signature-type">Transaction</a></h5>
 									<div class="tsd-comment tsd-typography">
-										<div class="lead">
-											<p>List of tokens to track exchange rates for</p>
-										</div>
+										<p>Transaction object to add</p>
+									</div>
+								</li>
+								<li>
+									<h5><span class="tsd-flag ts-flagOptional">Optional</span> origin: <span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">string</span></h5>
+									<div class="tsd-comment tsd-typography">
+										<p>Domain origin to append to the generated TransactionMeta</p>
+									</div>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">Object</span><span class="tsd-signature-symbol">&gt;</span></h4>
+							<ul>
+								<li>Promise resolving to the transaction hash if approved or an Error if rejected or failed</li>
+							</ul>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class">
+					<a name="approvetransaction" class="tsd-anchor"></a>
+					<h3>approve<wbr>Transaction</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
+						<li class="tsd-signature tsd-kind-icon">approve<wbr>Transaction<span class="tsd-signature-symbol">(</span>transactionID<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">void</span><span class="tsd-signature-symbol">&gt;</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/MetaMask/gaba/blob/26a8b6a/src/TransactionController.ts#L286">TransactionController.ts:286</a></li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Approves a transaction and updates it&#39;s status in state. If this is not a
+										retry transaction, a nonce will be generated. The transaction is signed
+										using the sign configuration property, then published to the blockchain.
+									A <code>&lt;tx.id&gt;:finished</code> hub event is fired after success or failure.</p>
+								</div>
+							</div>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>transactionID: <span class="tsd-signature-type">string</span></h5>
+									<div class="tsd-comment tsd-typography">
+										<p>ID of the transaction to approve</p>
+									</div>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">void</span><span class="tsd-signature-symbol">&gt;</span></h4>
+							<ul>
+								<li>Promise resolving when this operation completes</li>
+							</ul>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class">
+					<a name="canceltransaction" class="tsd-anchor"></a>
+					<h3>cancel<wbr>Transaction</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
+						<li class="tsd-signature tsd-kind-icon">cancel<wbr>Transaction<span class="tsd-signature-symbol">(</span>transactionID<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/MetaMask/gaba/blob/26a8b6a/src/TransactionController.ts#L328">TransactionController.ts:328</a></li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Cancels a transaction based on its ID by setting its status to &quot;rejected&quot;
+									and emitting a <code>&lt;tx.id&gt;:finished</code> hub event.</p>
+								</div>
+							</div>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>transactionID: <span class="tsd-signature-type">string</span></h5>
+									<div class="tsd-comment tsd-typography">
+										<p>ID of the transaction to cancel</p>
 									</div>
 								</li>
 							</ul>
@@ -383,14 +533,11 @@
 						</li>
 					</ul>
 				</section>
-			</section>
-			<section class="tsd-panel-group tsd-member-group ">
-				<h2>Methods</h2>
 				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-inherited">
 					<a name="configure" class="tsd-anchor"></a>
 					<h3>configure</h3>
 					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-inherited">
-						<li class="tsd-signature tsd-kind-icon">configure<span class="tsd-signature-symbol">(</span>config<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Partial</span><span class="tsd-signature-symbol">&lt;</span><a href="../interfaces/_tokenratescontroller_.tokenratesconfig.html" class="tsd-signature-type">TokenRatesConfig</a><span class="tsd-signature-symbol">&gt;</span>, overwrite<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">boolean</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
+						<li class="tsd-signature tsd-kind-icon">configure<span class="tsd-signature-symbol">(</span>config<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Partial</span><span class="tsd-signature-symbol">&lt;</span><a href="../interfaces/_transactioncontroller_.transactionconfig.html" class="tsd-signature-type">TransactionConfig</a><span class="tsd-signature-symbol">&gt;</span>, overwrite<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">boolean</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
@@ -408,7 +555,7 @@
 							<h4 class="tsd-parameters-title">Parameters</h4>
 							<ul class="tsd-parameters">
 								<li>
-									<h5>config: <span class="tsd-signature-type">Partial</span><span class="tsd-signature-symbol">&lt;</span><a href="../interfaces/_tokenratescontroller_.tokenratesconfig.html" class="tsd-signature-type">TokenRatesConfig</a><span class="tsd-signature-symbol">&gt;</span></h5>
+									<h5>config: <span class="tsd-signature-type">Partial</span><span class="tsd-signature-symbol">&lt;</span><a href="../interfaces/_transactioncontroller_.transactionconfig.html" class="tsd-signature-type">TransactionConfig</a><span class="tsd-signature-symbol">&gt;</span></h5>
 									<div class="tsd-comment tsd-typography">
 										<p>New configuration options</p>
 									</div>
@@ -421,40 +568,6 @@
 								</li>
 							</ul>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
-						</li>
-					</ul>
-				</section>
-				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class">
-					<a name="fetchexchangerate" class="tsd-anchor"></a>
-					<h3>fetch<wbr>Exchange<wbr>Rate</h3>
-					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
-						<li class="tsd-signature tsd-kind-icon">fetch<wbr>Exchange<wbr>Rate<span class="tsd-signature-symbol">(</span>address<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">&gt;</span></li>
-					</ul>
-					<ul class="tsd-descriptions">
-						<li class="tsd-description">
-							<aside class="tsd-sources">
-								<ul>
-									<li>Defined in <a href="https://github.com/MetaMask/gaba/blob/26a8b6a/src/TokenRatesController.ts#L106">TokenRatesController.ts:106</a></li>
-								</ul>
-							</aside>
-							<div class="tsd-comment tsd-typography">
-								<div class="lead">
-									<p>Fetches a token exchange rate by address</p>
-								</div>
-							</div>
-							<h4 class="tsd-parameters-title">Parameters</h4>
-							<ul class="tsd-parameters">
-								<li>
-									<h5>address: <span class="tsd-signature-type">string</span></h5>
-									<div class="tsd-comment tsd-typography">
-										<p>Token contract address</p>
-									</div>
-								</li>
-							</ul>
-							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">&gt;</span></h4>
-							<ul>
-								<li>Promise resolving to exchange rate for given contract address</li>
-							</ul>
 						</li>
 					</ul>
 				</section>
@@ -509,18 +622,18 @@
 						</li>
 					</ul>
 				</section>
-				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-overwrite">
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-inherited">
 					<a name="oncomposed" class="tsd-anchor"></a>
 					<h3>on<wbr>Composed</h3>
-					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-overwrite">
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-inherited">
 						<li class="tsd-signature tsd-kind-icon">on<wbr>Composed<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
-								<p>Overrides <a href="_basecontroller_.basecontroller.html">BaseController</a>.<a href="_basecontroller_.basecontroller.html#oncomposed">onComposed</a></p>
+								<p>Inherited from <a href="_basecontroller_.basecontroller.html">BaseController</a>.<a href="_basecontroller_.basecontroller.html#oncomposed">onComposed</a></p>
 								<ul>
-									<li>Defined in <a href="https://github.com/MetaMask/gaba/blob/26a8b6a/src/TokenRatesController.ts#L116">TokenRatesController.ts:116</a></li>
+									<li>Defined in <a href="https://github.com/MetaMask/gaba/blob/26a8b6a/src/BaseController.ts#L146">BaseController.ts:146</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -533,11 +646,37 @@
 						</li>
 					</ul>
 				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class">
+					<a name="querytransactionstatuses" class="tsd-anchor"></a>
+					<h3>query<wbr>Transaction<wbr>Statuses</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
+						<li class="tsd-signature tsd-kind-icon">query<wbr>Transaction<wbr>Statuses<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">void</span><span class="tsd-signature-symbol">&gt;</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/MetaMask/gaba/blob/26a8b6a/src/TransactionController.ts#L345">TransactionController.ts:345</a></li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Resiliently checks all submitted transactions for confirmations in the past 100
+									blocks and updates their state accordingly</p>
+								</div>
+							</div>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">void</span><span class="tsd-signature-symbol">&gt;</span></h4>
+							<ul>
+								<li>Promise resolving when this operation completes</li>
+							</ul>
+						</li>
+					</ul>
+				</section>
 				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-inherited">
 					<a name="subscribe" class="tsd-anchor"></a>
 					<h3>subscribe</h3>
 					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-inherited">
-						<li class="tsd-signature tsd-kind-icon">subscribe<span class="tsd-signature-symbol">(</span>listener<span class="tsd-signature-symbol">: </span><a href="../modules/_basecontroller_.html#listener" class="tsd-signature-type">Listener</a><span class="tsd-signature-symbol">&lt;</span><a href="../interfaces/_tokenratescontroller_.tokenratesstate.html" class="tsd-signature-type">TokenRatesState</a><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
+						<li class="tsd-signature tsd-kind-icon">subscribe<span class="tsd-signature-symbol">(</span>listener<span class="tsd-signature-symbol">: </span><a href="../modules/_basecontroller_.html#listener" class="tsd-signature-type">Listener</a><span class="tsd-signature-symbol">&lt;</span><a href="../interfaces/_transactioncontroller_.transactionstate.html" class="tsd-signature-type">TransactionState</a><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
@@ -555,7 +694,7 @@
 							<h4 class="tsd-parameters-title">Parameters</h4>
 							<ul class="tsd-parameters">
 								<li>
-									<h5>listener: <a href="../modules/_basecontroller_.html#listener" class="tsd-signature-type">Listener</a><span class="tsd-signature-symbol">&lt;</span><a href="../interfaces/_tokenratescontroller_.tokenratesstate.html" class="tsd-signature-type">TokenRatesState</a><span class="tsd-signature-symbol">&gt;</span></h5>
+									<h5>listener: <a href="../modules/_basecontroller_.html#listener" class="tsd-signature-type">Listener</a><span class="tsd-signature-symbol">&lt;</span><a href="../interfaces/_transactioncontroller_.transactionstate.html" class="tsd-signature-type">TransactionState</a><span class="tsd-signature-symbol">&gt;</span></h5>
 									<div class="tsd-comment tsd-typography">
 										<p>Callback triggered when state changes</p>
 									</div>
@@ -569,7 +708,7 @@
 					<a name="unsubscribe" class="tsd-anchor"></a>
 					<h3>unsubscribe</h3>
 					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-inherited">
-						<li class="tsd-signature tsd-kind-icon">unsubscribe<span class="tsd-signature-symbol">(</span>listener<span class="tsd-signature-symbol">: </span><a href="../modules/_basecontroller_.html#listener" class="tsd-signature-type">Listener</a><span class="tsd-signature-symbol">&lt;</span><a href="../interfaces/_tokenratescontroller_.tokenratesstate.html" class="tsd-signature-type">TokenRatesState</a><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">boolean</span></li>
+						<li class="tsd-signature tsd-kind-icon">unsubscribe<span class="tsd-signature-symbol">(</span>listener<span class="tsd-signature-symbol">: </span><a href="../modules/_basecontroller_.html#listener" class="tsd-signature-type">Listener</a><span class="tsd-signature-symbol">&lt;</span><a href="../interfaces/_transactioncontroller_.transactionstate.html" class="tsd-signature-type">TransactionState</a><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">boolean</span></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
@@ -587,7 +726,7 @@
 							<h4 class="tsd-parameters-title">Parameters</h4>
 							<ul class="tsd-parameters">
 								<li>
-									<h5>listener: <a href="../modules/_basecontroller_.html#listener" class="tsd-signature-type">Listener</a><span class="tsd-signature-symbol">&lt;</span><a href="../interfaces/_tokenratescontroller_.tokenratesstate.html" class="tsd-signature-type">TokenRatesState</a><span class="tsd-signature-symbol">&gt;</span></h5>
+									<h5>listener: <a href="../modules/_basecontroller_.html#listener" class="tsd-signature-type">Listener</a><span class="tsd-signature-symbol">&lt;</span><a href="../interfaces/_transactioncontroller_.transactionstate.html" class="tsd-signature-type">TransactionState</a><span class="tsd-signature-symbol">&gt;</span></h5>
 									<div class="tsd-comment tsd-typography">
 										<p>Callback to remove</p>
 									</div>
@@ -604,7 +743,7 @@
 					<a name="update" class="tsd-anchor"></a>
 					<h3>update</h3>
 					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-inherited">
-						<li class="tsd-signature tsd-kind-icon">update<span class="tsd-signature-symbol">(</span>state<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Partial</span><span class="tsd-signature-symbol">&lt;</span><a href="../interfaces/_tokenratescontroller_.tokenratesstate.html" class="tsd-signature-type">TokenRatesState</a><span class="tsd-signature-symbol">&gt;</span>, overwrite<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">boolean</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
+						<li class="tsd-signature tsd-kind-icon">update<span class="tsd-signature-symbol">(</span>state<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Partial</span><span class="tsd-signature-symbol">&lt;</span><a href="../interfaces/_transactioncontroller_.transactionstate.html" class="tsd-signature-type">TransactionState</a><span class="tsd-signature-symbol">&gt;</span>, overwrite<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">boolean</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
@@ -622,7 +761,7 @@
 							<h4 class="tsd-parameters-title">Parameters</h4>
 							<ul class="tsd-parameters">
 								<li>
-									<h5>state: <span class="tsd-signature-type">Partial</span><span class="tsd-signature-symbol">&lt;</span><a href="../interfaces/_tokenratescontroller_.tokenratesstate.html" class="tsd-signature-type">TokenRatesState</a><span class="tsd-signature-symbol">&gt;</span></h5>
+									<h5>state: <span class="tsd-signature-type">Partial</span><span class="tsd-signature-symbol">&lt;</span><a href="../interfaces/_transactioncontroller_.transactionstate.html" class="tsd-signature-type">TransactionState</a><span class="tsd-signature-symbol">&gt;</span></h5>
 									<div class="tsd-comment tsd-typography">
 										<p>New state</p>
 									</div>
@@ -639,25 +778,55 @@
 					</ul>
 				</section>
 				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class">
-					<a name="updateexchangerates" class="tsd-anchor"></a>
-					<h3>update<wbr>Exchange<wbr>Rates</h3>
+					<a name="updatetransaction" class="tsd-anchor"></a>
+					<h3>update<wbr>Transaction</h3>
 					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
-						<li class="tsd-signature tsd-kind-icon">update<wbr>Exchange<wbr>Rates<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">void</span><span class="tsd-signature-symbol">&gt;</span></li>
+						<li class="tsd-signature tsd-kind-icon">update<wbr>Transaction<span class="tsd-signature-symbol">(</span>transactionMeta<span class="tsd-signature-symbol">: </span><a href="../interfaces/_transactioncontroller_.transactionmeta.html" class="tsd-signature-type">TransactionMeta</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/MetaMask/gaba/blob/26a8b6a/src/TokenRatesController.ts#L129">TokenRatesController.ts:129</a></li>
+									<li>Defined in <a href="https://github.com/MetaMask/gaba/blob/26a8b6a/src/TransactionController.ts#L383">TransactionController.ts:383</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
 								<div class="lead">
-									<p>Updates exchange rates for all tokens</p>
+									<p>Updates an existing transaction in state</p>
 								</div>
 							</div>
-							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">void</span><span class="tsd-signature-symbol">&gt;</span></h4>
-							<p>Promise resolving when this operation completes</p>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>transactionMeta: <a href="../interfaces/_transactioncontroller_.transactionmeta.html" class="tsd-signature-type">TransactionMeta</a></h5>
+									<div class="tsd-comment tsd-typography">
+										<p>New transaction meta to store in state</p>
+									</div>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class">
+					<a name="wipetransactions" class="tsd-anchor"></a>
+					<h3>wipe<wbr>Transactions</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
+						<li class="tsd-signature tsd-kind-icon">wipe<wbr>Transactions<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/MetaMask/gaba/blob/26a8b6a/src/TransactionController.ts#L395">TransactionController.ts:395</a></li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Removes all transactions from state based on the current network</p>
+								</div>
+							</div>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
 						</li>
 					</ul>
 				</section>
@@ -705,10 +874,10 @@
 					<li class=" tsd-kind-external-module">
 						<a href="../modules/_shapeshiftcontroller_.html">"<wbr>Shape<wbr>Shift<wbr>Controller"</a>
 					</li>
-					<li class="current tsd-kind-external-module">
+					<li class=" tsd-kind-external-module">
 						<a href="../modules/_tokenratescontroller_.html">"<wbr>Token<wbr>Rates<wbr>Controller"</a>
 					</li>
-					<li class=" tsd-kind-external-module">
+					<li class="current tsd-kind-external-module">
 						<a href="../modules/_transactioncontroller_.html">"<wbr>Transaction<wbr>Controller"</a>
 					</li>
 					<li class=" tsd-kind-external-module">
@@ -724,77 +893,98 @@
 				</ul>
 				<ul class="current">
 					<li class="current tsd-kind-class tsd-parent-kind-external-module">
-						<a href="_tokenratescontroller_.tokenratescontroller.html" class="tsd-kind-icon">Token<wbr>Rates<wbr>Controller</a>
+						<a href="_transactioncontroller_.transactioncontroller.html" class="tsd-kind-icon">Transaction<wbr>Controller</a>
 						<ul>
 							<li class=" tsd-kind-constructor tsd-parent-kind-class tsd-is-overwrite">
-								<a href="_tokenratescontroller_.tokenratescontroller.html#constructor" class="tsd-kind-icon">constructor</a>
+								<a href="_transactioncontroller_.transactioncontroller.html#constructor" class="tsd-kind-icon">constructor</a>
 							</li>
 							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-inherited">
-								<a href="_tokenratescontroller_.tokenratescontroller.html#context" class="tsd-kind-icon">context</a>
+								<a href="_transactioncontroller_.transactioncontroller.html#context" class="tsd-kind-icon">context</a>
 							</li>
 							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-inherited">
-								<a href="_tokenratescontroller_.tokenratescontroller.html#defaultconfig" class="tsd-kind-icon">default<wbr>Config</a>
+								<a href="_transactioncontroller_.transactioncontroller.html#defaultconfig" class="tsd-kind-icon">default<wbr>Config</a>
 							</li>
 							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-inherited">
-								<a href="_tokenratescontroller_.tokenratescontroller.html#defaultstate" class="tsd-kind-icon">default<wbr>State</a>
+								<a href="_transactioncontroller_.transactioncontroller.html#defaultstate" class="tsd-kind-icon">default<wbr>State</a>
 							</li>
 							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-inherited">
-								<a href="_tokenratescontroller_.tokenratescontroller.html#disabled" class="tsd-kind-icon">disabled</a>
+								<a href="_transactioncontroller_.transactioncontroller.html#disabled" class="tsd-kind-icon">disabled</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-class">
+								<a href="_transactioncontroller_.transactioncontroller.html#hub" class="tsd-kind-icon">hub</a>
 							</li>
 							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-overwrite">
-								<a href="_tokenratescontroller_.tokenratescontroller.html#requiredcontrollers" class="tsd-kind-icon">required<wbr>Controllers</a>
+								<a href="_transactioncontroller_.transactioncontroller.html#requiredcontrollers" class="tsd-kind-icon">required<wbr>Controllers</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-class">
+								<a href="_transactioncontroller_.transactioncontroller.html#sign" class="tsd-kind-icon">sign</a>
 							</li>
 							<li class=" tsd-kind-get-signature tsd-parent-kind-class tsd-is-inherited">
-								<a href="_tokenratescontroller_.tokenratescontroller.html#config" class="tsd-kind-icon">config</a>
+								<a href="_transactioncontroller_.transactioncontroller.html#config" class="tsd-kind-icon">config</a>
 							</li>
 							<li class=" tsd-kind-set-signature tsd-parent-kind-class">
-								<a href="_tokenratescontroller_.tokenratescontroller.html#interval" class="tsd-kind-icon">interval</a>
+								<a href="_transactioncontroller_.transactioncontroller.html#interval" class="tsd-kind-icon">interval</a>
+							</li>
+							<li class=" tsd-kind-set-signature tsd-parent-kind-class">
+								<a href="_transactioncontroller_.transactioncontroller.html#provider" class="tsd-kind-icon">provider</a>
 							</li>
 							<li class=" tsd-kind-get-signature tsd-parent-kind-class tsd-is-inherited">
-								<a href="_tokenratescontroller_.tokenratescontroller.html#state" class="tsd-kind-icon">state</a>
-							</li>
-							<li class=" tsd-kind-set-signature tsd-parent-kind-class">
-								<a href="_tokenratescontroller_.tokenratescontroller.html#tokens" class="tsd-kind-icon">tokens</a>
-							</li>
-							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-inherited">
-								<a href="_tokenratescontroller_.tokenratescontroller.html#configure" class="tsd-kind-icon">configure</a>
+								<a href="_transactioncontroller_.transactioncontroller.html#state" class="tsd-kind-icon">state</a>
 							</li>
 							<li class=" tsd-kind-method tsd-parent-kind-class">
-								<a href="_tokenratescontroller_.tokenratescontroller.html#fetchexchangerate" class="tsd-kind-icon">fetch<wbr>Exchange<wbr>Rate</a>
+								<a href="_transactioncontroller_.transactioncontroller.html#addtransaction" class="tsd-kind-icon">add<wbr>Transaction</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class">
+								<a href="_transactioncontroller_.transactioncontroller.html#approvetransaction" class="tsd-kind-icon">approve<wbr>Transaction</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class">
+								<a href="_transactioncontroller_.transactioncontroller.html#canceltransaction" class="tsd-kind-icon">cancel<wbr>Transaction</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-inherited">
+								<a href="_transactioncontroller_.transactioncontroller.html#configure" class="tsd-kind-icon">configure</a>
 							</li>
 							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-inherited tsd-is-protected">
-								<a href="_tokenratescontroller_.tokenratescontroller.html#initialize" class="tsd-kind-icon">initialize</a>
+								<a href="_transactioncontroller_.transactioncontroller.html#initialize" class="tsd-kind-icon">initialize</a>
 							</li>
 							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-inherited">
-								<a href="_tokenratescontroller_.tokenratescontroller.html#notify" class="tsd-kind-icon">notify</a>
-							</li>
-							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-overwrite">
-								<a href="_tokenratescontroller_.tokenratescontroller.html#oncomposed" class="tsd-kind-icon">on<wbr>Composed</a>
+								<a href="_transactioncontroller_.transactioncontroller.html#notify" class="tsd-kind-icon">notify</a>
 							</li>
 							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-inherited">
-								<a href="_tokenratescontroller_.tokenratescontroller.html#subscribe" class="tsd-kind-icon">subscribe</a>
-							</li>
-							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-inherited">
-								<a href="_tokenratescontroller_.tokenratescontroller.html#unsubscribe" class="tsd-kind-icon">unsubscribe</a>
-							</li>
-							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-inherited">
-								<a href="_tokenratescontroller_.tokenratescontroller.html#update" class="tsd-kind-icon">update</a>
+								<a href="_transactioncontroller_.transactioncontroller.html#oncomposed" class="tsd-kind-icon">on<wbr>Composed</a>
 							</li>
 							<li class=" tsd-kind-method tsd-parent-kind-class">
-								<a href="_tokenratescontroller_.tokenratescontroller.html#updateexchangerates" class="tsd-kind-icon">update<wbr>Exchange<wbr>Rates</a>
+								<a href="_transactioncontroller_.transactioncontroller.html#querytransactionstatuses" class="tsd-kind-icon">query<wbr>Transaction<wbr>Statuses</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-inherited">
+								<a href="_transactioncontroller_.transactioncontroller.html#subscribe" class="tsd-kind-icon">subscribe</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-inherited">
+								<a href="_transactioncontroller_.transactioncontroller.html#unsubscribe" class="tsd-kind-icon">unsubscribe</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-inherited">
+								<a href="_transactioncontroller_.transactioncontroller.html#update" class="tsd-kind-icon">update</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class">
+								<a href="_transactioncontroller_.transactioncontroller.html#updatetransaction" class="tsd-kind-icon">update<wbr>Transaction</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class">
+								<a href="_transactioncontroller_.transactioncontroller.html#wipetransactions" class="tsd-kind-icon">wipe<wbr>Transactions</a>
 							</li>
 						</ul>
 					</li>
 				</ul>
 				<ul class="after-current">
 					<li class=" tsd-kind-interface tsd-parent-kind-external-module">
-						<a href="../interfaces/_tokenratescontroller_.token.html" class="tsd-kind-icon">Token</a>
+						<a href="../interfaces/_transactioncontroller_.transaction.html" class="tsd-kind-icon">Transaction</a>
 					</li>
 					<li class=" tsd-kind-interface tsd-parent-kind-external-module">
-						<a href="../interfaces/_tokenratescontroller_.tokenratesconfig.html" class="tsd-kind-icon">Token<wbr>Rates<wbr>Config</a>
+						<a href="../interfaces/_transactioncontroller_.transactionconfig.html" class="tsd-kind-icon">Transaction<wbr>Config</a>
 					</li>
 					<li class=" tsd-kind-interface tsd-parent-kind-external-module">
-						<a href="../interfaces/_tokenratescontroller_.tokenratesstate.html" class="tsd-kind-icon">Token<wbr>Rates<wbr>State</a>
+						<a href="../interfaces/_transactioncontroller_.transactionmeta.html" class="tsd-kind-icon">Transaction<wbr>Meta</a>
+					</li>
+					<li class=" tsd-kind-interface tsd-parent-kind-external-module">
+						<a href="../interfaces/_transactioncontroller_.transactionstate.html" class="tsd-kind-icon">Transaction<wbr>State</a>
 					</li>
 				</ul>
 			</nav>

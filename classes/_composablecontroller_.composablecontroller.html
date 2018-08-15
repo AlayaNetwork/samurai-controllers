@@ -78,7 +78,7 @@
 				<h3>Hierarchy</h3>
 				<ul class="tsd-hierarchy">
 					<li>
-						<a href="_basecontroller_.basecontroller.html" class="tsd-signature-type">BaseController</a><span class="tsd-signature-symbol">&lt;</span><a href="../interfaces/_basecontroller_.basestate.html" class="tsd-signature-type">BaseState</a><span class="tsd-signature-symbol">, </span><a href="../interfaces/_basecontroller_.baseconfig.html" class="tsd-signature-type">BaseConfig</a><span class="tsd-signature-symbol">&gt;</span>
+						<a href="_basecontroller_.basecontroller.html" class="tsd-signature-type">BaseController</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">any</span><span class="tsd-signature-symbol">, </span><span class="tsd-signature-type">any</span><span class="tsd-signature-symbol">&gt;</span>
 						<ul class="tsd-hierarchy">
 							<li>
 								<span class="target">ComposableController</span>
@@ -104,6 +104,7 @@
 								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-inherited"><a href="_composablecontroller_.composablecontroller.html#defaultconfig" class="tsd-kind-icon">default<wbr>Config</a></li>
 								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-inherited"><a href="_composablecontroller_.composablecontroller.html#defaultstate" class="tsd-kind-icon">default<wbr>State</a></li>
 								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-inherited"><a href="_composablecontroller_.composablecontroller.html#disabled" class="tsd-kind-icon">disabled</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-inherited"><a href="_composablecontroller_.composablecontroller.html#requiredcontrollers" class="tsd-kind-icon">required<wbr>Controllers</a></li>
 							</ul>
 						</section>
 						<section class="tsd-index-section ">
@@ -136,14 +137,14 @@
 					<a name="constructor" class="tsd-anchor"></a>
 					<h3>constructor</h3>
 					<ul class="tsd-signatures tsd-kind-constructor tsd-parent-kind-class tsd-is-overwrite">
-						<li class="tsd-signature tsd-kind-icon">new <wbr>Composable<wbr>Controller<span class="tsd-signature-symbol">(</span>controllers<span class="tsd-signature-symbol">?: </span><a href="../interfaces/_composablecontroller_.childcontrollercontext.html" class="tsd-signature-type">ChildControllerContext</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="_composablecontroller_.composablecontroller.html" class="tsd-signature-type">ComposableController</a></li>
+						<li class="tsd-signature tsd-kind-icon">new <wbr>Composable<wbr>Controller<span class="tsd-signature-symbol">(</span>controllers<span class="tsd-signature-symbol">?: </span><a href="../modules/_composablecontroller_.html#controllerlist" class="tsd-signature-type">ControllerList</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="_composablecontroller_.composablecontroller.html" class="tsd-signature-type">ComposableController</a></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<p>Overrides <a href="_basecontroller_.basecontroller.html">BaseController</a>.<a href="_basecontroller_.basecontroller.html#constructor">constructor</a></p>
 								<ul>
-									<li>Defined in <a href="https://github.com/MetaMask/gaba/blob/4655194/src/ComposableController.ts#L17">ComposableController.ts:17</a></li>
+									<li>Defined in <a href="https://github.com/MetaMask/gaba/blob/26a8b6a/src/ComposableController.ts#L24">ComposableController.ts:24</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -154,7 +155,7 @@
 							<h4 class="tsd-parameters-title">Parameters</h4>
 							<ul class="tsd-parameters">
 								<li>
-									<h5><span class="tsd-flag ts-flagDefault value">Default value</span> controllers: <a href="../interfaces/_composablecontroller_.childcontrollercontext.html" class="tsd-signature-type">ChildControllerContext</a><span class="tsd-signature-symbol"> =&nbsp;{}</span></h5>
+									<h5><span class="tsd-flag ts-flagDefault value">Default value</span> controllers: <a href="../modules/_composablecontroller_.html#controllerlist" class="tsd-signature-type">ControllerList</a><span class="tsd-signature-symbol"> =&nbsp;[]</span></h5>
 									<div class="tsd-comment tsd-typography">
 										<div class="lead">
 											<p>Map of names to controller instances</p>
@@ -176,7 +177,7 @@
 					<aside class="tsd-sources">
 						<p>Overrides <a href="_basecontroller_.basecontroller.html">BaseController</a>.<a href="_basecontroller_.basecontroller.html#context">context</a></p>
 						<ul>
-							<li>Defined in <a href="https://github.com/MetaMask/gaba/blob/4655194/src/ComposableController.ts#L17">ComposableController.ts:17</a></li>
+							<li>Defined in <a href="https://github.com/MetaMask/gaba/blob/26a8b6a/src/ComposableController.ts#L24">ComposableController.ts:24</a></li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
@@ -188,11 +189,11 @@
 				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-inherited">
 					<a name="defaultconfig" class="tsd-anchor"></a>
 					<h3>default<wbr>Config</h3>
-					<div class="tsd-signature tsd-kind-icon">default<wbr>Config<span class="tsd-signature-symbol">:</span> <a href="../interfaces/_basecontroller_.baseconfig.html" class="tsd-signature-type">BaseConfig</a><span class="tsd-signature-symbol"> =&nbsp;{} as C</span></div>
+					<div class="tsd-signature tsd-kind-icon">default<wbr>Config<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">any</span><span class="tsd-signature-symbol"> =&nbsp;{} as C</span></div>
 					<aside class="tsd-sources">
 						<p>Inherited from <a href="_basecontroller_.basecontroller.html">BaseController</a>.<a href="_basecontroller_.basecontroller.html#defaultconfig">defaultConfig</a></p>
 						<ul>
-							<li>Defined in <a href="https://github.com/MetaMask/gaba/blob/4655194/src/BaseController.ts#L44">BaseController.ts:44</a></li>
+							<li>Defined in <a href="https://github.com/MetaMask/gaba/blob/26a8b6a/src/BaseController.ts#L44">BaseController.ts:44</a></li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
@@ -204,11 +205,11 @@
 				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-inherited">
 					<a name="defaultstate" class="tsd-anchor"></a>
 					<h3>default<wbr>State</h3>
-					<div class="tsd-signature tsd-kind-icon">default<wbr>State<span class="tsd-signature-symbol">:</span> <a href="../interfaces/_basecontroller_.basestate.html" class="tsd-signature-type">BaseState</a><span class="tsd-signature-symbol"> =&nbsp;{} as S</span></div>
+					<div class="tsd-signature tsd-kind-icon">default<wbr>State<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">any</span><span class="tsd-signature-symbol"> =&nbsp;{} as S</span></div>
 					<aside class="tsd-sources">
 						<p>Inherited from <a href="_basecontroller_.basecontroller.html">BaseController</a>.<a href="_basecontroller_.basecontroller.html#defaultstate">defaultState</a></p>
 						<ul>
-							<li>Defined in <a href="https://github.com/MetaMask/gaba/blob/4655194/src/BaseController.ts#L49">BaseController.ts:49</a></li>
+							<li>Defined in <a href="https://github.com/MetaMask/gaba/blob/26a8b6a/src/BaseController.ts#L49">BaseController.ts:49</a></li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
@@ -224,12 +225,28 @@
 					<aside class="tsd-sources">
 						<p>Inherited from <a href="_basecontroller_.basecontroller.html">BaseController</a>.<a href="_basecontroller_.basecontroller.html#disabled">disabled</a></p>
 						<ul>
-							<li>Defined in <a href="https://github.com/MetaMask/gaba/blob/4655194/src/BaseController.ts#L54">BaseController.ts:54</a></li>
+							<li>Defined in <a href="https://github.com/MetaMask/gaba/blob/26a8b6a/src/BaseController.ts#L54">BaseController.ts:54</a></li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
 						<div class="lead">
 							<p>Determines if listeners are notified of state changes</p>
+						</div>
+					</div>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-inherited">
+					<a name="requiredcontrollers" class="tsd-anchor"></a>
+					<h3>required<wbr>Controllers</h3>
+					<div class="tsd-signature tsd-kind-icon">required<wbr>Controllers<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol"> =&nbsp;[]</span></div>
+					<aside class="tsd-sources">
+						<p>Inherited from <a href="_basecontroller_.basecontroller.html">BaseController</a>.<a href="_basecontroller_.basecontroller.html#requiredcontrollers">requiredControllers</a></p>
+						<ul>
+							<li>Defined in <a href="https://github.com/MetaMask/gaba/blob/26a8b6a/src/BaseController.ts#L59">BaseController.ts:59</a></li>
+						</ul>
+					</aside>
+					<div class="tsd-comment tsd-typography">
+						<div class="lead">
+							<p>List of required sibling controllers this controller needs to function</p>
 						</div>
 					</div>
 				</section>
@@ -247,7 +264,7 @@
 							<aside class="tsd-sources">
 								<p>Inherited from <a href="_basecontroller_.basecontroller.html">BaseController</a>.<a href="_basecontroller_.basecontroller.html#config">config</a></p>
 								<ul>
-									<li>Defined in <a href="https://github.com/MetaMask/gaba/blob/4655194/src/BaseController.ts#L96">BaseController.ts:96</a></li>
+									<li>Defined in <a href="https://github.com/MetaMask/gaba/blob/26a8b6a/src/BaseController.ts#L101">BaseController.ts:101</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -266,48 +283,52 @@
 					<a name="controllers" class="tsd-anchor"></a>
 					<h3>controllers</h3>
 					<ul class="tsd-signatures tsd-kind-accessor tsd-parent-kind-class">
-						<li class="tsd-signature tsd-kind-icon"><span class="tsd-signature-symbol">get</span> controllers<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="../interfaces/_composablecontroller_.childcontrollercontext.html" class="tsd-signature-type">ChildControllerContext</a></li>
-						<li class="tsd-signature tsd-kind-icon"><span class="tsd-signature-symbol">set</span> controllers<span class="tsd-signature-symbol">(</span>controllers<span class="tsd-signature-symbol">: </span><a href="../interfaces/_composablecontroller_.childcontrollercontext.html" class="tsd-signature-type">ChildControllerContext</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
+						<li class="tsd-signature tsd-kind-icon"><span class="tsd-signature-symbol">get</span> controllers<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="_basecontroller_.basecontroller.html" class="tsd-signature-type">BaseController</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">any</span><span class="tsd-signature-symbol">, </span><span class="tsd-signature-type">any</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol">[]</span></li>
+						<li class="tsd-signature tsd-kind-icon"><span class="tsd-signature-symbol">set</span> controllers<span class="tsd-signature-symbol">(</span>controllers<span class="tsd-signature-symbol">: </span><a href="../modules/_composablecontroller_.html#controllerlist" class="tsd-signature-type">ControllerList</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/MetaMask/gaba/blob/4655194/src/ComposableController.ts#L35">ComposableController.ts:35</a></li>
+									<li>Defined in <a href="https://github.com/MetaMask/gaba/blob/26a8b6a/src/ComposableController.ts#L42">ComposableController.ts:42</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
 								<div class="lead">
-									<p>Get current map of child composed store instances</p>
+									<p>Get current list of child composed store instances</p>
 								</div>
 							</div>
-							<h4 class="tsd-returns-title">Returns <a href="../interfaces/_composablecontroller_.childcontrollercontext.html" class="tsd-signature-type">ChildControllerContext</a></h4>
-							<p>Map of names to controller instances</p>
+							<h4 class="tsd-returns-title">Returns <a href="_basecontroller_.basecontroller.html" class="tsd-signature-type">BaseController</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">any</span><span class="tsd-signature-symbol">, </span><span class="tsd-signature-type">any</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol">[]</span></h4>
+							<ul>
+								<li>List of names to controller instances</li>
+							</ul>
 						</li>
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/MetaMask/gaba/blob/4655194/src/ComposableController.ts#L44">ComposableController.ts:44</a></li>
+									<li>Defined in <a href="https://github.com/MetaMask/gaba/blob/26a8b6a/src/ComposableController.ts#L51">ComposableController.ts:51</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
 								<div class="lead">
-									<p>Set new map of controller instances</p>
+									<p>Set new list of controller instances</p>
 								</div>
 							</div>
 							<h4 class="tsd-parameters-title">Parameters</h4>
 							<ul class="tsd-parameters">
 								<li>
-									<h5>controllers: <a href="../interfaces/_composablecontroller_.childcontrollercontext.html" class="tsd-signature-type">ChildControllerContext</a></h5>
+									<h5>controllers: <a href="../modules/_composablecontroller_.html#controllerlist" class="tsd-signature-type">ControllerList</a></h5>
 									<div class="tsd-comment tsd-typography">
 										<div class="lead">
-											<p>Map of names to controller instsances</p>
+											<p>List of names to controller instsances</p>
 										</div>
 									</div>
 								</li>
 							</ul>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
-							<p>Map of names to controller instances</p>
+							<ul>
+								<li>List of names to controller instances</li>
+							</ul>
 						</li>
 					</ul>
 				</section>
@@ -321,7 +342,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/MetaMask/gaba/blob/4655194/src/ComposableController.ts#L66">ComposableController.ts:66</a></li>
+									<li>Defined in <a href="https://github.com/MetaMask/gaba/blob/26a8b6a/src/ComposableController.ts#L78">ComposableController.ts:78</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -332,7 +353,9 @@
 								</div>
 							</div>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">object</span></h4>
-							<p>Merged state representation of all child controllers</p>
+							<ul>
+								<li>Merged state representation of all child controllers</li>
+							</ul>
 							<ul class="tsd-parameters">
 							</ul>
 						</li>
@@ -349,7 +372,7 @@
 							<aside class="tsd-sources">
 								<p>Inherited from <a href="_basecontroller_.basecontroller.html">BaseController</a>.<a href="_basecontroller_.basecontroller.html#state">state</a></p>
 								<ul>
-									<li>Defined in <a href="https://github.com/MetaMask/gaba/blob/4655194/src/BaseController.ts#L105">BaseController.ts:105</a></li>
+									<li>Defined in <a href="https://github.com/MetaMask/gaba/blob/26a8b6a/src/BaseController.ts#L110">BaseController.ts:110</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -371,14 +394,14 @@
 					<a name="configure" class="tsd-anchor"></a>
 					<h3>configure</h3>
 					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-inherited">
-						<li class="tsd-signature tsd-kind-icon">configure<span class="tsd-signature-symbol">(</span>config<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Partial</span><span class="tsd-signature-symbol">&lt;</span><a href="../interfaces/_basecontroller_.baseconfig.html" class="tsd-signature-type">BaseConfig</a><span class="tsd-signature-symbol">&gt;</span>, overwrite<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">boolean</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
+						<li class="tsd-signature tsd-kind-icon">configure<span class="tsd-signature-symbol">(</span>config<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Partial</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">any</span><span class="tsd-signature-symbol">&gt;</span>, overwrite<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">boolean</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<p>Inherited from <a href="_basecontroller_.basecontroller.html">BaseController</a>.<a href="_basecontroller_.basecontroller.html#configure">configure</a></p>
 								<ul>
-									<li>Defined in <a href="https://github.com/MetaMask/gaba/blob/4655194/src/BaseController.ts#L115">BaseController.ts:115</a></li>
+									<li>Defined in <a href="https://github.com/MetaMask/gaba/blob/26a8b6a/src/BaseController.ts#L120">BaseController.ts:120</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -389,7 +412,7 @@
 							<h4 class="tsd-parameters-title">Parameters</h4>
 							<ul class="tsd-parameters">
 								<li>
-									<h5>config: <span class="tsd-signature-type">Partial</span><span class="tsd-signature-symbol">&lt;</span><a href="../interfaces/_basecontroller_.baseconfig.html" class="tsd-signature-type">BaseConfig</a><span class="tsd-signature-symbol">&gt;</span></h5>
+									<h5>config: <span class="tsd-signature-type">Partial</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">any</span><span class="tsd-signature-symbol">&gt;</span></h5>
 									<div class="tsd-comment tsd-typography">
 										<p>New configuration options</p>
 									</div>
@@ -416,7 +439,7 @@
 							<aside class="tsd-sources">
 								<p>Inherited from <a href="_basecontroller_.basecontroller.html">BaseController</a>.<a href="_basecontroller_.basecontroller.html#initialize">initialize</a></p>
 								<ul>
-									<li>Defined in <a href="https://github.com/MetaMask/gaba/blob/4655194/src/BaseController.ts#L83">BaseController.ts:83</a></li>
+									<li>Defined in <a href="https://github.com/MetaMask/gaba/blob/26a8b6a/src/BaseController.ts#L88">BaseController.ts:88</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -427,7 +450,9 @@
 								</div>
 							</div>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">this</span></h4>
-							<p>This controller instance</p>
+							<ul>
+								<li>This controller instance</li>
+							</ul>
 						</li>
 					</ul>
 				</section>
@@ -442,7 +467,7 @@
 							<aside class="tsd-sources">
 								<p>Inherited from <a href="_basecontroller_.basecontroller.html">BaseController</a>.<a href="_basecontroller_.basecontroller.html#notify">notify</a></p>
 								<ul>
-									<li>Defined in <a href="https://github.com/MetaMask/gaba/blob/4655194/src/BaseController.ts#L128">BaseController.ts:128</a></li>
+									<li>Defined in <a href="https://github.com/MetaMask/gaba/blob/26a8b6a/src/BaseController.ts#L133">BaseController.ts:133</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -465,7 +490,7 @@
 							<aside class="tsd-sources">
 								<p>Inherited from <a href="_basecontroller_.basecontroller.html">BaseController</a>.<a href="_basecontroller_.basecontroller.html#oncomposed">onComposed</a></p>
 								<ul>
-									<li>Defined in <a href="https://github.com/MetaMask/gaba/blob/4655194/src/BaseController.ts#L141">BaseController.ts:141</a></li>
+									<li>Defined in <a href="https://github.com/MetaMask/gaba/blob/26a8b6a/src/BaseController.ts#L146">BaseController.ts:146</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -482,14 +507,14 @@
 					<a name="subscribe" class="tsd-anchor"></a>
 					<h3>subscribe</h3>
 					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-inherited">
-						<li class="tsd-signature tsd-kind-icon">subscribe<span class="tsd-signature-symbol">(</span>listener<span class="tsd-signature-symbol">: </span><a href="../modules/_basecontroller_.html#listener" class="tsd-signature-type">Listener</a><span class="tsd-signature-symbol">&lt;</span><a href="../interfaces/_basecontroller_.basestate.html" class="tsd-signature-type">BaseState</a><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
+						<li class="tsd-signature tsd-kind-icon">subscribe<span class="tsd-signature-symbol">(</span>listener<span class="tsd-signature-symbol">: </span><a href="../modules/_basecontroller_.html#listener" class="tsd-signature-type">Listener</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">any</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<p>Inherited from <a href="_basecontroller_.basecontroller.html">BaseController</a>.<a href="_basecontroller_.basecontroller.html#subscribe">subscribe</a></p>
 								<ul>
-									<li>Defined in <a href="https://github.com/MetaMask/gaba/blob/4655194/src/BaseController.ts#L150">BaseController.ts:150</a></li>
+									<li>Defined in <a href="https://github.com/MetaMask/gaba/blob/26a8b6a/src/BaseController.ts#L159">BaseController.ts:159</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -500,7 +525,7 @@
 							<h4 class="tsd-parameters-title">Parameters</h4>
 							<ul class="tsd-parameters">
 								<li>
-									<h5>listener: <a href="../modules/_basecontroller_.html#listener" class="tsd-signature-type">Listener</a><span class="tsd-signature-symbol">&lt;</span><a href="../interfaces/_basecontroller_.basestate.html" class="tsd-signature-type">BaseState</a><span class="tsd-signature-symbol">&gt;</span></h5>
+									<h5>listener: <a href="../modules/_basecontroller_.html#listener" class="tsd-signature-type">Listener</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">any</span><span class="tsd-signature-symbol">&gt;</span></h5>
 									<div class="tsd-comment tsd-typography">
 										<p>Callback triggered when state changes</p>
 									</div>
@@ -514,14 +539,14 @@
 					<a name="unsubscribe" class="tsd-anchor"></a>
 					<h3>unsubscribe</h3>
 					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-inherited">
-						<li class="tsd-signature tsd-kind-icon">unsubscribe<span class="tsd-signature-symbol">(</span>listener<span class="tsd-signature-symbol">: </span><a href="../modules/_basecontroller_.html#listener" class="tsd-signature-type">Listener</a><span class="tsd-signature-symbol">&lt;</span><a href="../interfaces/_basecontroller_.basestate.html" class="tsd-signature-type">BaseState</a><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">boolean</span></li>
+						<li class="tsd-signature tsd-kind-icon">unsubscribe<span class="tsd-signature-symbol">(</span>listener<span class="tsd-signature-symbol">: </span><a href="../modules/_basecontroller_.html#listener" class="tsd-signature-type">Listener</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">any</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">boolean</span></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<p>Inherited from <a href="_basecontroller_.basecontroller.html">BaseController</a>.<a href="_basecontroller_.basecontroller.html#unsubscribe">unsubscribe</a></p>
 								<ul>
-									<li>Defined in <a href="https://github.com/MetaMask/gaba/blob/4655194/src/BaseController.ts#L160">BaseController.ts:160</a></li>
+									<li>Defined in <a href="https://github.com/MetaMask/gaba/blob/26a8b6a/src/BaseController.ts#L169">BaseController.ts:169</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -532,7 +557,7 @@
 							<h4 class="tsd-parameters-title">Parameters</h4>
 							<ul class="tsd-parameters">
 								<li>
-									<h5>listener: <a href="../modules/_basecontroller_.html#listener" class="tsd-signature-type">Listener</a><span class="tsd-signature-symbol">&lt;</span><a href="../interfaces/_basecontroller_.basestate.html" class="tsd-signature-type">BaseState</a><span class="tsd-signature-symbol">&gt;</span></h5>
+									<h5>listener: <a href="../modules/_basecontroller_.html#listener" class="tsd-signature-type">Listener</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">any</span><span class="tsd-signature-symbol">&gt;</span></h5>
 									<div class="tsd-comment tsd-typography">
 										<p>Callback to remove</p>
 									</div>
@@ -549,14 +574,14 @@
 					<a name="update" class="tsd-anchor"></a>
 					<h3>update</h3>
 					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-inherited">
-						<li class="tsd-signature tsd-kind-icon">update<span class="tsd-signature-symbol">(</span>state<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Partial</span><span class="tsd-signature-symbol">&lt;</span><a href="../interfaces/_basecontroller_.basestate.html" class="tsd-signature-type">BaseState</a><span class="tsd-signature-symbol">&gt;</span>, overwrite<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">boolean</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
+						<li class="tsd-signature tsd-kind-icon">update<span class="tsd-signature-symbol">(</span>state<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Partial</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">any</span><span class="tsd-signature-symbol">&gt;</span>, overwrite<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">boolean</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<p>Inherited from <a href="_basecontroller_.basecontroller.html">BaseController</a>.<a href="_basecontroller_.basecontroller.html#update">update</a></p>
 								<ul>
-									<li>Defined in <a href="https://github.com/MetaMask/gaba/blob/4655194/src/BaseController.ts#L172">BaseController.ts:172</a></li>
+									<li>Defined in <a href="https://github.com/MetaMask/gaba/blob/26a8b6a/src/BaseController.ts#L181">BaseController.ts:181</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -567,7 +592,7 @@
 							<h4 class="tsd-parameters-title">Parameters</h4>
 							<ul class="tsd-parameters">
 								<li>
-									<h5>state: <span class="tsd-signature-type">Partial</span><span class="tsd-signature-symbol">&lt;</span><a href="../interfaces/_basecontroller_.basestate.html" class="tsd-signature-type">BaseState</a><span class="tsd-signature-symbol">&gt;</span></h5>
+									<h5>state: <span class="tsd-signature-type">Partial</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">any</span><span class="tsd-signature-symbol">&gt;</span></h5>
 									<div class="tsd-comment tsd-typography">
 										<p>New state</p>
 									</div>
@@ -631,6 +656,9 @@
 						<a href="../modules/_tokenratescontroller_.html">"<wbr>Token<wbr>Rates<wbr>Controller"</a>
 					</li>
 					<li class=" tsd-kind-external-module">
+						<a href="../modules/_transactioncontroller_.html">"<wbr>Transaction<wbr>Controller"</a>
+					</li>
+					<li class=" tsd-kind-external-module">
 						<a href="../modules/_index_.html">"index"</a>
 					</li>
 					<li class=" tsd-kind-external-module">
@@ -659,6 +687,9 @@
 							</li>
 							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-inherited">
 								<a href="_composablecontroller_.composablecontroller.html#disabled" class="tsd-kind-icon">disabled</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-inherited">
+								<a href="_composablecontroller_.composablecontroller.html#requiredcontrollers" class="tsd-kind-icon">required<wbr>Controllers</a>
 							</li>
 							<li class=" tsd-kind-get-signature tsd-parent-kind-class tsd-is-inherited">
 								<a href="_composablecontroller_.composablecontroller.html#config" class="tsd-kind-icon">config</a>
@@ -699,6 +730,9 @@
 				<ul class="after-current">
 					<li class=" tsd-kind-interface tsd-parent-kind-external-module">
 						<a href="../interfaces/_composablecontroller_.childcontrollercontext.html" class="tsd-kind-icon">Child<wbr>Controller<wbr>Context</a>
+					</li>
+					<li class=" tsd-kind-type-alias tsd-parent-kind-external-module">
+						<a href="../modules/_composablecontroller_.html#controllerlist" class="tsd-kind-icon">Controller<wbr>List</a>
 					</li>
 				</ul>
 			</nav>
