@@ -60,7 +60,7 @@
 					<a href="_basecontroller_.basecontroller.html">BaseController</a>
 				</li>
 			</ul>
-			<h1>Class BaseController&lt;S, C&gt;</h1>
+			<h1>Class BaseController&lt;C, S&gt;</h1>
 		</div>
 	</div>
 </header>
@@ -78,10 +78,10 @@
 				<h3>Type parameters</h3>
 				<ul class="tsd-type-parameters">
 					<li>
-						<h4>S<span class="tsd-signature-symbol">: </span><a href="../interfaces/_basecontroller_.basestate.html" class="tsd-signature-type">BaseState</a></h4>
+						<h4>C<span class="tsd-signature-symbol">: </span><a href="../interfaces/_basecontroller_.baseconfig.html" class="tsd-signature-type">BaseConfig</a></h4>
 					</li>
 					<li>
-						<h4>C<span class="tsd-signature-symbol">: </span><a href="../interfaces/_basecontroller_.baseconfig.html" class="tsd-signature-type">BaseConfig</a></h4>
+						<h4>S<span class="tsd-signature-symbol">: </span><a href="../interfaces/_basecontroller_.basestate.html" class="tsd-signature-type">BaseState</a></h4>
 					</li>
 				</ul>
 			</section>
@@ -182,13 +182,13 @@
 					<a name="constructor" class="tsd-anchor"></a>
 					<h3>constructor</h3>
 					<ul class="tsd-signatures tsd-kind-constructor tsd-parent-kind-class">
-						<li class="tsd-signature tsd-kind-icon">new <wbr>Base<wbr>Controller<span class="tsd-signature-symbol">(</span>state<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">Partial</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">S</span><span class="tsd-signature-symbol">&gt;</span>, config<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">Partial</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">C</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="_basecontroller_.basecontroller.html" class="tsd-signature-type">BaseController</a></li>
+						<li class="tsd-signature tsd-kind-icon">new <wbr>Base<wbr>Controller<span class="tsd-signature-symbol">(</span>config<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">Partial</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">C</span><span class="tsd-signature-symbol">&gt;</span>, state<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">Partial</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">S</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="_basecontroller_.basecontroller.html" class="tsd-signature-type">BaseController</a></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/MetaMask/gaba/blob/9e88867/src/BaseController.ts#L65">BaseController.ts:65</a></li>
+									<li>Defined in <a href="https://github.com/MetaMask/gaba/blob/3b24d2d/src/BaseController.ts#L65">BaseController.ts:65</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -200,18 +200,18 @@
 							<h4 class="tsd-parameters-title">Parameters</h4>
 							<ul class="tsd-parameters">
 								<li>
-									<h5><span class="tsd-flag ts-flagDefault value">Default value</span> state: <span class="tsd-signature-type">Partial</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">S</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol"> =&nbsp;{} as S</span></h5>
-									<div class="tsd-comment tsd-typography">
-										<div class="lead">
-											<p>Initial state to set on this controller</p>
-										</div>
-									</div>
-								</li>
-								<li>
 									<h5><span class="tsd-flag ts-flagDefault value">Default value</span> config: <span class="tsd-signature-type">Partial</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">C</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol"> =&nbsp;{} as C</span></h5>
 									<div class="tsd-comment tsd-typography">
 										<div class="lead">
 											<p>Initial options used to configure this controller</p>
+										</div>
+									</div>
+								</li>
+								<li>
+									<h5><span class="tsd-flag ts-flagDefault value">Default value</span> state: <span class="tsd-signature-type">Partial</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">S</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol"> =&nbsp;{} as S</span></h5>
+									<div class="tsd-comment tsd-typography">
+										<div class="lead">
+											<p>Initial state to set on this controller</p>
 										</div>
 									</div>
 								</li>
@@ -229,7 +229,7 @@
 					<div class="tsd-signature tsd-kind-icon">context<span class="tsd-signature-symbol">:</span> <a href="../interfaces/_composablecontroller_.childcontrollercontext.html" class="tsd-signature-type">ChildControllerContext</a></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/MetaMask/gaba/blob/9e88867/src/BaseController.ts#L39">BaseController.ts:39</a></li>
+							<li>Defined in <a href="https://github.com/MetaMask/gaba/blob/3b24d2d/src/BaseController.ts#L39">BaseController.ts:39</a></li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
@@ -246,7 +246,7 @@
 					<div class="tsd-signature tsd-kind-icon">default<wbr>Config<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">C</span><span class="tsd-signature-symbol"> =&nbsp;{} as C</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/MetaMask/gaba/blob/9e88867/src/BaseController.ts#L44">BaseController.ts:44</a></li>
+							<li>Defined in <a href="https://github.com/MetaMask/gaba/blob/3b24d2d/src/BaseController.ts#L44">BaseController.ts:44</a></li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
@@ -261,7 +261,7 @@
 					<div class="tsd-signature tsd-kind-icon">default<wbr>State<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">S</span><span class="tsd-signature-symbol"> =&nbsp;{} as S</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/MetaMask/gaba/blob/9e88867/src/BaseController.ts#L49">BaseController.ts:49</a></li>
+							<li>Defined in <a href="https://github.com/MetaMask/gaba/blob/3b24d2d/src/BaseController.ts#L49">BaseController.ts:49</a></li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
@@ -276,7 +276,7 @@
 					<div class="tsd-signature tsd-kind-icon">disabled<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">boolean</span><span class="tsd-signature-symbol"> =&nbsp;false</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/MetaMask/gaba/blob/9e88867/src/BaseController.ts#L54">BaseController.ts:54</a></li>
+							<li>Defined in <a href="https://github.com/MetaMask/gaba/blob/3b24d2d/src/BaseController.ts#L54">BaseController.ts:54</a></li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
@@ -291,7 +291,7 @@
 					<div class="tsd-signature tsd-kind-icon">required<wbr>Controllers<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol"> =&nbsp;[]</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/MetaMask/gaba/blob/9e88867/src/BaseController.ts#L59">BaseController.ts:59</a></li>
+							<li>Defined in <a href="https://github.com/MetaMask/gaba/blob/3b24d2d/src/BaseController.ts#L59">BaseController.ts:59</a></li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
@@ -313,7 +313,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/MetaMask/gaba/blob/9e88867/src/BaseController.ts#L101">BaseController.ts:101</a></li>
+									<li>Defined in <a href="https://github.com/MetaMask/gaba/blob/3b24d2d/src/BaseController.ts#L101">BaseController.ts:101</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -338,7 +338,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/MetaMask/gaba/blob/9e88867/src/BaseController.ts#L110">BaseController.ts:110</a></li>
+									<li>Defined in <a href="https://github.com/MetaMask/gaba/blob/3b24d2d/src/BaseController.ts#L110">BaseController.ts:110</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -366,7 +366,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/MetaMask/gaba/blob/9e88867/src/BaseController.ts#L120">BaseController.ts:120</a></li>
+									<li>Defined in <a href="https://github.com/MetaMask/gaba/blob/3b24d2d/src/BaseController.ts#L120">BaseController.ts:120</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -403,7 +403,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/MetaMask/gaba/blob/9e88867/src/BaseController.ts#L88">BaseController.ts:88</a></li>
+									<li>Defined in <a href="https://github.com/MetaMask/gaba/blob/3b24d2d/src/BaseController.ts#L88">BaseController.ts:88</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -430,7 +430,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/MetaMask/gaba/blob/9e88867/src/BaseController.ts#L133">BaseController.ts:133</a></li>
+									<li>Defined in <a href="https://github.com/MetaMask/gaba/blob/3b24d2d/src/BaseController.ts#L133">BaseController.ts:133</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -452,7 +452,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/MetaMask/gaba/blob/9e88867/src/BaseController.ts#L146">BaseController.ts:146</a></li>
+									<li>Defined in <a href="https://github.com/MetaMask/gaba/blob/3b24d2d/src/BaseController.ts#L146">BaseController.ts:146</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -475,7 +475,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/MetaMask/gaba/blob/9e88867/src/BaseController.ts#L159">BaseController.ts:159</a></li>
+									<li>Defined in <a href="https://github.com/MetaMask/gaba/blob/3b24d2d/src/BaseController.ts#L159">BaseController.ts:159</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -506,7 +506,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/MetaMask/gaba/blob/9e88867/src/BaseController.ts#L169">BaseController.ts:169</a></li>
+									<li>Defined in <a href="https://github.com/MetaMask/gaba/blob/3b24d2d/src/BaseController.ts#L169">BaseController.ts:169</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -540,7 +540,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/MetaMask/gaba/blob/9e88867/src/BaseController.ts#L181">BaseController.ts:181</a></li>
+									<li>Defined in <a href="https://github.com/MetaMask/gaba/blob/3b24d2d/src/BaseController.ts#L181">BaseController.ts:181</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
