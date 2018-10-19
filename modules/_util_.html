@@ -75,6 +75,7 @@
 								<li class="tsd-kind-function tsd-parent-kind-external-module"><a href="_util_.html#fractionbn" class="tsd-kind-icon">fractionBN</a></li>
 								<li class="tsd-kind-function tsd-parent-kind-external-module"><a href="_util_.html#getbuyurl" class="tsd-kind-icon">get<wbr>BuyURL</a></li>
 								<li class="tsd-kind-function tsd-parent-kind-external-module"><a href="_util_.html#hextobn" class="tsd-kind-icon">hex<wbr>ToBN</a></li>
+								<li class="tsd-kind-function tsd-parent-kind-external-module"><a href="_util_.html#managecollectibleimage" class="tsd-kind-icon">manage<wbr>Collectible<wbr>Image</a></li>
 								<li class="tsd-kind-function tsd-parent-kind-external-module"><a href="_util_.html#normalizetransaction" class="tsd-kind-icon">normalize<wbr>Transaction</a></li>
 								<li class="tsd-kind-function tsd-parent-kind-external-module"><a href="_util_.html#safelyexecute" class="tsd-kind-icon">safely<wbr>Execute</a></li>
 								<li class="tsd-kind-function tsd-parent-kind-external-module"><a href="_util_.html#validatetransaction" class="tsd-kind-icon">validate<wbr>Transaction</a></li>
@@ -95,7 +96,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/MetaMask/gaba/blob/5127547/src/util.ts#L22">util.ts:22</a></li>
+									<li>Defined in <a href="https://github.com/MetaMask/gaba/blob/4633480/src/util.ts#L22">util.ts:22</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -129,7 +130,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/MetaMask/gaba/blob/5127547/src/util.ts#L34">util.ts:34</a></li>
+									<li>Defined in <a href="https://github.com/MetaMask/gaba/blob/4633480/src/util.ts#L34">util.ts:34</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -175,7 +176,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/MetaMask/gaba/blob/5127547/src/util.ts#L48">util.ts:48</a></li>
+									<li>Defined in <a href="https://github.com/MetaMask/gaba/blob/4633480/src/util.ts#L48">util.ts:48</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -224,7 +225,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/MetaMask/gaba/blob/5127547/src/util.ts#L69">util.ts:69</a></li>
+									<li>Defined in <a href="https://github.com/MetaMask/gaba/blob/4633480/src/util.ts#L69">util.ts:69</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -249,6 +250,46 @@
 					</ul>
 				</section>
 				<section class="tsd-panel tsd-member tsd-kind-function tsd-parent-kind-external-module">
+					<a name="managecollectibleimage" class="tsd-anchor"></a>
+					<h3>manage<wbr>Collectible<wbr>Image</h3>
+					<ul class="tsd-signatures tsd-kind-function tsd-parent-kind-external-module">
+						<li class="tsd-signature tsd-kind-icon">manage<wbr>Collectible<wbr>Image<span class="tsd-signature-symbol">(</span>address<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span>, image<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/MetaMask/gaba/blob/4633480/src/util.ts#L141">util.ts:141</a></li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Modifies collectible images URI in case is necessary</p>
+								</div>
+							</div>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>address: <span class="tsd-signature-type">string</span></h5>
+									<div class="tsd-comment tsd-typography">
+										<p>Collectible address</p>
+									</div>
+								</li>
+								<li>
+									<h5>image: <span class="tsd-signature-type">string</span></h5>
+									<div class="tsd-comment tsd-typography">
+										<p>Initial image URI given by collectible tokenURI</p>
+									</div>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">string</span></h4>
+							<ul>
+								<li>Modified image URI</li>
+							</ul>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-function tsd-parent-kind-external-module">
 					<a name="normalizetransaction" class="tsd-anchor"></a>
 					<h3>normalize<wbr>Transaction</h3>
 					<ul class="tsd-signatures tsd-kind-function tsd-parent-kind-external-module">
@@ -258,7 +299,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/MetaMask/gaba/blob/5127547/src/util.ts#L79">util.ts:79</a></li>
+									<li>Defined in <a href="https://github.com/MetaMask/gaba/blob/4633480/src/util.ts#L79">util.ts:79</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -292,7 +333,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/MetaMask/gaba/blob/5127547/src/util.ts#L96">util.ts:96</a></li>
+									<li>Defined in <a href="https://github.com/MetaMask/gaba/blob/4633480/src/util.ts#L96">util.ts:96</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -338,7 +379,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/MetaMask/gaba/blob/5127547/src/util.ts#L110">util.ts:110</a></li>
+									<li>Defined in <a href="https://github.com/MetaMask/gaba/blob/4633480/src/util.ts#L110">util.ts:110</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -375,7 +416,13 @@
 						<a href="_addressbookcontroller_.html">"<wbr>Address<wbr>Book<wbr>Controller"</a>
 					</li>
 					<li class=" tsd-kind-external-module">
+						<a href="_assetscontractcontroller_.html">"<wbr>Assets<wbr>Contract<wbr>Controller"</a>
+					</li>
+					<li class=" tsd-kind-external-module">
 						<a href="_assetscontroller_.html">"<wbr>Assets<wbr>Controller"</a>
+					</li>
+					<li class=" tsd-kind-external-module">
+						<a href="_assetsdetectioncontroller_.html">"<wbr>Assets<wbr>Detection<wbr>Controller"</a>
 					</li>
 					<li class=" tsd-kind-external-module">
 						<a href="_basecontroller_.html">"<wbr>Base<wbr>Controller"</a>
@@ -408,6 +455,9 @@
 						<a href="_shapeshiftcontroller_.html">"<wbr>Shape<wbr>Shift<wbr>Controller"</a>
 					</li>
 					<li class=" tsd-kind-external-module">
+						<a href="_tokenbalancescontroller_.html">"<wbr>Token<wbr>Balances<wbr>Controller"</a>
+					</li>
+					<li class=" tsd-kind-external-module">
 						<a href="_tokenratescontroller_.html">"<wbr>Token<wbr>Rates<wbr>Controller"</a>
 					</li>
 					<li class=" tsd-kind-external-module">
@@ -434,6 +484,9 @@
 					</li>
 					<li class=" tsd-kind-function tsd-parent-kind-external-module">
 						<a href="_util_.html#hextobn" class="tsd-kind-icon">hex<wbr>ToBN</a>
+					</li>
+					<li class=" tsd-kind-function tsd-parent-kind-external-module">
+						<a href="_util_.html#managecollectibleimage" class="tsd-kind-icon">manage<wbr>Collectible<wbr>Image</a>
 					</li>
 					<li class=" tsd-kind-function tsd-parent-kind-external-module">
 						<a href="_util_.html#normalizetransaction" class="tsd-kind-icon">normalize<wbr>Transaction</a>
