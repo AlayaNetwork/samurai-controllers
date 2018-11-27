@@ -70,7 +70,8 @@
 			<section class="tsd-panel tsd-comment">
 				<div class="tsd-comment tsd-typography">
 					<div class="lead">
-						<p>Controller that passively polls on a set interval for an ETH-to-fiat exchange rate</p>
+						<p>Controller that passively polls on a set interval for an exchange rate from the current base
+						asset to the current currency</p>
 					</div>
 				</div>
 			</section>
@@ -112,8 +113,9 @@
 							<h3>Accessors</h3>
 							<ul class="tsd-index-list">
 								<li class="tsd-kind-get-signature tsd-parent-kind-class tsd-is-inherited"><a href="_currencyratecontroller_.currencyratecontroller.html#config" class="tsd-kind-icon">config</a></li>
-								<li class="tsd-kind-set-signature tsd-parent-kind-class"><a href="_currencyratecontroller_.currencyratecontroller.html#currency" class="tsd-kind-icon">currency</a></li>
+								<li class="tsd-kind-set-signature tsd-parent-kind-class"><a href="_currencyratecontroller_.currencyratecontroller.html#currentcurrency" class="tsd-kind-icon">current<wbr>Currency</a></li>
 								<li class="tsd-kind-set-signature tsd-parent-kind-class"><a href="_currencyratecontroller_.currencyratecontroller.html#interval" class="tsd-kind-icon">interval</a></li>
+								<li class="tsd-kind-set-signature tsd-parent-kind-class"><a href="_currencyratecontroller_.currencyratecontroller.html#nativecurrency" class="tsd-kind-icon">native<wbr>Currency</a></li>
 								<li class="tsd-kind-get-signature tsd-parent-kind-class tsd-is-inherited"><a href="_currencyratecontroller_.currencyratecontroller.html#state" class="tsd-kind-icon">state</a></li>
 							</ul>
 						</section>
@@ -128,7 +130,6 @@
 								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-inherited"><a href="_currencyratecontroller_.currencyratecontroller.html#subscribe" class="tsd-kind-icon">subscribe</a></li>
 								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-inherited"><a href="_currencyratecontroller_.currencyratecontroller.html#unsubscribe" class="tsd-kind-icon">unsubscribe</a></li>
 								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-inherited"><a href="_currencyratecontroller_.currencyratecontroller.html#update" class="tsd-kind-icon">update</a></li>
-								<li class="tsd-kind-method tsd-parent-kind-class"><a href="_currencyratecontroller_.currencyratecontroller.html#updatecurrency" class="tsd-kind-icon">update<wbr>Currency</a></li>
 								<li class="tsd-kind-method tsd-parent-kind-class"><a href="_currencyratecontroller_.currencyratecontroller.html#updateexchangerate" class="tsd-kind-icon">update<wbr>Exchange<wbr>Rate</a></li>
 							</ul>
 						</section>
@@ -148,7 +149,7 @@
 							<aside class="tsd-sources">
 								<p>Overrides <a href="_basecontroller_.basecontroller.html">BaseController</a>.<a href="_basecontroller_.basecontroller.html#constructor">constructor</a></p>
 								<ul>
-									<li>Defined in <a href="https://github.com/MetaMask/gaba/blob/e2098be/src/CurrencyRateController.ts#L47">CurrencyRateController.ts:47</a></li>
+									<li>Defined in <a href="https://github.com/MetaMask/gaba/blob/7472822/src/CurrencyRateController.ts#L56">CurrencyRateController.ts:56</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -189,7 +190,7 @@
 					<aside class="tsd-sources">
 						<p>Inherited from <a href="_basecontroller_.basecontroller.html">BaseController</a>.<a href="_basecontroller_.basecontroller.html#context">context</a></p>
 						<ul>
-							<li>Defined in <a href="https://github.com/MetaMask/gaba/blob/e2098be/src/BaseController.ts#L39">BaseController.ts:39</a></li>
+							<li>Defined in <a href="https://github.com/MetaMask/gaba/blob/7472822/src/BaseController.ts#L39">BaseController.ts:39</a></li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
@@ -207,7 +208,7 @@
 					<aside class="tsd-sources">
 						<p>Inherited from <a href="_basecontroller_.basecontroller.html">BaseController</a>.<a href="_basecontroller_.basecontroller.html#defaultconfig">defaultConfig</a></p>
 						<ul>
-							<li>Defined in <a href="https://github.com/MetaMask/gaba/blob/e2098be/src/BaseController.ts#L44">BaseController.ts:44</a></li>
+							<li>Defined in <a href="https://github.com/MetaMask/gaba/blob/7472822/src/BaseController.ts#L44">BaseController.ts:44</a></li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
@@ -223,7 +224,7 @@
 					<aside class="tsd-sources">
 						<p>Inherited from <a href="_basecontroller_.basecontroller.html">BaseController</a>.<a href="_basecontroller_.basecontroller.html#defaultstate">defaultState</a></p>
 						<ul>
-							<li>Defined in <a href="https://github.com/MetaMask/gaba/blob/e2098be/src/BaseController.ts#L49">BaseController.ts:49</a></li>
+							<li>Defined in <a href="https://github.com/MetaMask/gaba/blob/7472822/src/BaseController.ts#L49">BaseController.ts:49</a></li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
@@ -239,7 +240,7 @@
 					<aside class="tsd-sources">
 						<p>Inherited from <a href="_basecontroller_.basecontroller.html">BaseController</a>.<a href="_basecontroller_.basecontroller.html#disabled">disabled</a></p>
 						<ul>
-							<li>Defined in <a href="https://github.com/MetaMask/gaba/blob/e2098be/src/BaseController.ts#L54">BaseController.ts:54</a></li>
+							<li>Defined in <a href="https://github.com/MetaMask/gaba/blob/7472822/src/BaseController.ts#L54">BaseController.ts:54</a></li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
@@ -255,7 +256,7 @@
 					<aside class="tsd-sources">
 						<p>Overrides <a href="_basecontroller_.basecontroller.html">BaseController</a>.<a href="_basecontroller_.basecontroller.html#name">name</a></p>
 						<ul>
-							<li>Defined in <a href="https://github.com/MetaMask/gaba/blob/e2098be/src/CurrencyRateController.ts#L47">CurrencyRateController.ts:47</a></li>
+							<li>Defined in <a href="https://github.com/MetaMask/gaba/blob/7472822/src/CurrencyRateController.ts#L56">CurrencyRateController.ts:56</a></li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
@@ -271,7 +272,7 @@
 					<aside class="tsd-sources">
 						<p>Inherited from <a href="_basecontroller_.basecontroller.html">BaseController</a>.<a href="_basecontroller_.basecontroller.html#requiredcontrollers">requiredControllers</a></p>
 						<ul>
-							<li>Defined in <a href="https://github.com/MetaMask/gaba/blob/e2098be/src/BaseController.ts#L64">BaseController.ts:64</a></li>
+							<li>Defined in <a href="https://github.com/MetaMask/gaba/blob/7472822/src/BaseController.ts#L64">BaseController.ts:64</a></li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
@@ -294,7 +295,7 @@
 							<aside class="tsd-sources">
 								<p>Inherited from <a href="_basecontroller_.basecontroller.html">BaseController</a>.<a href="_basecontroller_.basecontroller.html#config">config</a></p>
 								<ul>
-									<li>Defined in <a href="https://github.com/MetaMask/gaba/blob/e2098be/src/BaseController.ts#L106">BaseController.ts:106</a></li>
+									<li>Defined in <a href="https://github.com/MetaMask/gaba/blob/7472822/src/BaseController.ts#L106">BaseController.ts:106</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -310,27 +311,27 @@
 					</ul>
 				</section>
 				<section class="tsd-panel tsd-member tsd-kind-set-signature tsd-parent-kind-class">
-					<a name="currency" class="tsd-anchor"></a>
-					<h3>currency</h3>
+					<a name="currentcurrency" class="tsd-anchor"></a>
+					<h3>current<wbr>Currency</h3>
 					<ul class="tsd-signatures tsd-kind-set-signature tsd-parent-kind-class">
-						<li class="tsd-signature tsd-kind-icon"><span class="tsd-signature-symbol">set</span> currency<span class="tsd-signature-symbol">(</span>currency<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
+						<li class="tsd-signature tsd-kind-icon"><span class="tsd-signature-symbol">set</span> currentCurrency<span class="tsd-signature-symbol">(</span>currentCurrency<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/MetaMask/gaba/blob/e2098be/src/CurrencyRateController.ts#L87">CurrencyRateController.ts:87</a></li>
+									<li>Defined in <a href="https://github.com/MetaMask/gaba/blob/7472822/src/CurrencyRateController.ts#L85">CurrencyRateController.ts:85</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
 								<div class="lead">
-									<p>Sets a currency to track a exchange rate for</p>
+									<p>Sets a currency to track</p>
 								</div>
 							</div>
 							<h4 class="tsd-parameters-title">Parameters</h4>
 							<ul class="tsd-parameters">
 								<li>
-									<h5>currency: <span class="tsd-signature-type">string</span></h5>
+									<h5>currentCurrency: <span class="tsd-signature-type">string</span></h5>
 									<div class="tsd-comment tsd-typography">
 										<div class="lead">
 											<p>ISO 4217 currency code</p>
@@ -352,7 +353,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/MetaMask/gaba/blob/e2098be/src/CurrencyRateController.ts#L74">CurrencyRateController.ts:74</a></li>
+									<li>Defined in <a href="https://github.com/MetaMask/gaba/blob/7472822/src/CurrencyRateController.ts#L105">CurrencyRateController.ts:105</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -375,6 +376,39 @@
 						</li>
 					</ul>
 				</section>
+				<section class="tsd-panel tsd-member tsd-kind-set-signature tsd-parent-kind-class">
+					<a name="nativecurrency" class="tsd-anchor"></a>
+					<h3>native<wbr>Currency</h3>
+					<ul class="tsd-signatures tsd-kind-set-signature tsd-parent-kind-class">
+						<li class="tsd-signature tsd-kind-icon"><span class="tsd-signature-symbol">set</span> nativeCurrency<span class="tsd-signature-symbol">(</span>symbol<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/MetaMask/gaba/blob/7472822/src/CurrencyRateController.ts#L95">CurrencyRateController.ts:95</a></li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Sets a new native currency</p>
+								</div>
+							</div>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>symbol: <span class="tsd-signature-type">string</span></h5>
+									<div class="tsd-comment tsd-typography">
+										<div class="lead">
+											<p>Symbol for the base asset</p>
+										</div>
+									</div>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
+						</li>
+					</ul>
+				</section>
 				<section class="tsd-panel tsd-member tsd-kind-get-signature tsd-parent-kind-class tsd-is-inherited">
 					<a name="state" class="tsd-anchor"></a>
 					<h3>state</h3>
@@ -386,7 +420,7 @@
 							<aside class="tsd-sources">
 								<p>Inherited from <a href="_basecontroller_.basecontroller.html">BaseController</a>.<a href="_basecontroller_.basecontroller.html#state">state</a></p>
 								<ul>
-									<li>Defined in <a href="https://github.com/MetaMask/gaba/blob/e2098be/src/BaseController.ts#L115">BaseController.ts:115</a></li>
+									<li>Defined in <a href="https://github.com/MetaMask/gaba/blob/7472822/src/BaseController.ts#L115">BaseController.ts:115</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -415,7 +449,7 @@
 							<aside class="tsd-sources">
 								<p>Inherited from <a href="_basecontroller_.basecontroller.html">BaseController</a>.<a href="_basecontroller_.basecontroller.html#configure">configure</a></p>
 								<ul>
-									<li>Defined in <a href="https://github.com/MetaMask/gaba/blob/e2098be/src/BaseController.ts#L125">BaseController.ts:125</a></li>
+									<li>Defined in <a href="https://github.com/MetaMask/gaba/blob/7472822/src/BaseController.ts#L125">BaseController.ts:125</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -446,13 +480,13 @@
 					<a name="fetchexchangerate" class="tsd-anchor"></a>
 					<h3>fetch<wbr>Exchange<wbr>Rate</h3>
 					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
-						<li class="tsd-signature tsd-kind-icon">fetch<wbr>Exchange<wbr>Rate<span class="tsd-signature-symbol">(</span>currency<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><a href="../interfaces/_currencyratecontroller_.currencyratestate.html" class="tsd-signature-type">CurrencyRateState</a><span class="tsd-signature-symbol">&gt;</span></li>
+						<li class="tsd-signature tsd-kind-icon">fetch<wbr>Exchange<wbr>Rate<span class="tsd-signature-symbol">(</span>currency<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span>, nativeCurrency<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><a href="../interfaces/_currencyratecontroller_.currencyratestate.html" class="tsd-signature-type">CurrencyRateState</a><span class="tsd-signature-symbol">&gt;</span></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/MetaMask/gaba/blob/e2098be/src/CurrencyRateController.ts#L98">CurrencyRateController.ts:98</a></li>
+									<li>Defined in <a href="https://github.com/MetaMask/gaba/blob/7472822/src/CurrencyRateController.ts#L120">CurrencyRateController.ts:120</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -468,10 +502,16 @@
 										<p>ISO 4217 currency code</p>
 									</div>
 								</li>
+								<li>
+									<h5><span class="tsd-flag ts-flagDefault value">Default value</span> nativeCurrency: <span class="tsd-signature-type">string</span><span class="tsd-signature-symbol"> =&nbsp;this.activeNativeCurrency</span></h5>
+									<div class="tsd-comment tsd-typography">
+										<p>Symbol for base asset</p>
+									</div>
+								</li>
 							</ul>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><a href="../interfaces/_currencyratecontroller_.currencyratestate.html" class="tsd-signature-type">CurrencyRateState</a><span class="tsd-signature-symbol">&gt;</span></h4>
 							<ul>
-								<li>Promise resolving to exchange rate for given currecy</li>
+								<li>Promise resolving to exchange rate for given currency</li>
 							</ul>
 						</li>
 					</ul>
@@ -487,7 +527,7 @@
 							<aside class="tsd-sources">
 								<p>Inherited from <a href="_basecontroller_.basecontroller.html">BaseController</a>.<a href="_basecontroller_.basecontroller.html#initialize">initialize</a></p>
 								<ul>
-									<li>Defined in <a href="https://github.com/MetaMask/gaba/blob/e2098be/src/BaseController.ts#L93">BaseController.ts:93</a></li>
+									<li>Defined in <a href="https://github.com/MetaMask/gaba/blob/7472822/src/BaseController.ts#L93">BaseController.ts:93</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -515,7 +555,7 @@
 							<aside class="tsd-sources">
 								<p>Inherited from <a href="_basecontroller_.basecontroller.html">BaseController</a>.<a href="_basecontroller_.basecontroller.html#notify">notify</a></p>
 								<ul>
-									<li>Defined in <a href="https://github.com/MetaMask/gaba/blob/e2098be/src/BaseController.ts#L138">BaseController.ts:138</a></li>
+									<li>Defined in <a href="https://github.com/MetaMask/gaba/blob/7472822/src/BaseController.ts#L138">BaseController.ts:138</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -538,7 +578,7 @@
 							<aside class="tsd-sources">
 								<p>Inherited from <a href="_basecontroller_.basecontroller.html">BaseController</a>.<a href="_basecontroller_.basecontroller.html#oncomposed">onComposed</a></p>
 								<ul>
-									<li>Defined in <a href="https://github.com/MetaMask/gaba/blob/e2098be/src/BaseController.ts#L151">BaseController.ts:151</a></li>
+									<li>Defined in <a href="https://github.com/MetaMask/gaba/blob/7472822/src/BaseController.ts#L151">BaseController.ts:151</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -562,7 +602,7 @@
 							<aside class="tsd-sources">
 								<p>Inherited from <a href="_basecontroller_.basecontroller.html">BaseController</a>.<a href="_basecontroller_.basecontroller.html#subscribe">subscribe</a></p>
 								<ul>
-									<li>Defined in <a href="https://github.com/MetaMask/gaba/blob/e2098be/src/BaseController.ts#L164">BaseController.ts:164</a></li>
+									<li>Defined in <a href="https://github.com/MetaMask/gaba/blob/7472822/src/BaseController.ts#L164">BaseController.ts:164</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -594,7 +634,7 @@
 							<aside class="tsd-sources">
 								<p>Inherited from <a href="_basecontroller_.basecontroller.html">BaseController</a>.<a href="_basecontroller_.basecontroller.html#unsubscribe">unsubscribe</a></p>
 								<ul>
-									<li>Defined in <a href="https://github.com/MetaMask/gaba/blob/e2098be/src/BaseController.ts#L174">BaseController.ts:174</a></li>
+									<li>Defined in <a href="https://github.com/MetaMask/gaba/blob/7472822/src/BaseController.ts#L174">BaseController.ts:174</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -629,7 +669,7 @@
 							<aside class="tsd-sources">
 								<p>Inherited from <a href="_basecontroller_.basecontroller.html">BaseController</a>.<a href="_basecontroller_.basecontroller.html#update">update</a></p>
 								<ul>
-									<li>Defined in <a href="https://github.com/MetaMask/gaba/blob/e2098be/src/BaseController.ts#L186">BaseController.ts:186</a></li>
+									<li>Defined in <a href="https://github.com/MetaMask/gaba/blob/7472822/src/BaseController.ts#L186">BaseController.ts:186</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -657,40 +697,6 @@
 					</ul>
 				</section>
 				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class">
-					<a name="updatecurrency" class="tsd-anchor"></a>
-					<h3>update<wbr>Currency</h3>
-					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
-						<li class="tsd-signature tsd-kind-icon">update<wbr>Currency<span class="tsd-signature-symbol">(</span>currency<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><a href="../interfaces/_currencyratecontroller_.currencyratestate.html" class="tsd-signature-type">CurrencyRateState</a><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">void</span><span class="tsd-signature-symbol">&gt;</span></li>
-					</ul>
-					<ul class="tsd-descriptions">
-						<li class="tsd-description">
-							<aside class="tsd-sources">
-								<ul>
-									<li>Defined in <a href="https://github.com/MetaMask/gaba/blob/e2098be/src/CurrencyRateController.ts#L114">CurrencyRateController.ts:114</a></li>
-								</ul>
-							</aside>
-							<div class="tsd-comment tsd-typography">
-								<div class="lead">
-									<p>Sets a new currency to track and fetches its exchange rate</p>
-								</div>
-							</div>
-							<h4 class="tsd-parameters-title">Parameters</h4>
-							<ul class="tsd-parameters">
-								<li>
-									<h5>currency: <span class="tsd-signature-type">string</span></h5>
-									<div class="tsd-comment tsd-typography">
-										<p>ISO 4217 currency code</p>
-									</div>
-								</li>
-							</ul>
-							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><a href="../interfaces/_currencyratecontroller_.currencyratestate.html" class="tsd-signature-type">CurrencyRateState</a><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">void</span><span class="tsd-signature-symbol">&gt;</span></h4>
-							<ul>
-								<li>Promise resolving to exchange rate for given currecy</li>
-							</ul>
-						</li>
-					</ul>
-				</section>
-				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class">
 					<a name="updateexchangerate" class="tsd-anchor"></a>
 					<h3>update<wbr>Exchange<wbr>Rate</h3>
 					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
@@ -700,7 +706,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/MetaMask/gaba/blob/e2098be/src/CurrencyRateController.ts#L124">CurrencyRateController.ts:124</a></li>
+									<li>Defined in <a href="https://github.com/MetaMask/gaba/blob/7472822/src/CurrencyRateController.ts#L136">CurrencyRateController.ts:136</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -815,10 +821,13 @@
 								<a href="_currencyratecontroller_.currencyratecontroller.html#config" class="tsd-kind-icon">config</a>
 							</li>
 							<li class=" tsd-kind-set-signature tsd-parent-kind-class">
-								<a href="_currencyratecontroller_.currencyratecontroller.html#currency" class="tsd-kind-icon">currency</a>
+								<a href="_currencyratecontroller_.currencyratecontroller.html#currentcurrency" class="tsd-kind-icon">current<wbr>Currency</a>
 							</li>
 							<li class=" tsd-kind-set-signature tsd-parent-kind-class">
 								<a href="_currencyratecontroller_.currencyratecontroller.html#interval" class="tsd-kind-icon">interval</a>
+							</li>
+							<li class=" tsd-kind-set-signature tsd-parent-kind-class">
+								<a href="_currencyratecontroller_.currencyratecontroller.html#nativecurrency" class="tsd-kind-icon">native<wbr>Currency</a>
 							</li>
 							<li class=" tsd-kind-get-signature tsd-parent-kind-class tsd-is-inherited">
 								<a href="_currencyratecontroller_.currencyratecontroller.html#state" class="tsd-kind-icon">state</a>
@@ -846,9 +855,6 @@
 							</li>
 							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-inherited">
 								<a href="_currencyratecontroller_.currencyratecontroller.html#update" class="tsd-kind-icon">update</a>
-							</li>
-							<li class=" tsd-kind-method tsd-parent-kind-class">
-								<a href="_currencyratecontroller_.currencyratecontroller.html#updatecurrency" class="tsd-kind-icon">update<wbr>Currency</a>
 							</li>
 							<li class=" tsd-kind-method tsd-parent-kind-class">
 								<a href="_currencyratecontroller_.currencyratecontroller.html#updateexchangerate" class="tsd-kind-icon">update<wbr>Exchange<wbr>Rate</a>

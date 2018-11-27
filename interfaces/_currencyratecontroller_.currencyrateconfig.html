@@ -75,10 +75,13 @@
 							<p>Currency rate controller configuration</p>
 						</dd>
 						<dt>property</dt>
-						<dd><p>currency - Currently-active ISO 4217 currency code</p>
+						<dd><p>currentCurrency - Currently-active ISO 4217 currency code</p>
 						</dd>
 						<dt>property</dt>
 						<dd><p>interval - Polling interval used to fetch new currency rate</p>
+						</dd>
+						<dt>property</dt>
+						<dd><p>nativeCurrency - Symbol for the base asset used for conversion</p>
 						</dd>
 					</dl>
 				</div>
@@ -103,9 +106,10 @@
 						<section class="tsd-index-section ">
 							<h3>Properties</h3>
 							<ul class="tsd-index-list">
-								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="_currencyratecontroller_.currencyrateconfig.html#currency" class="tsd-kind-icon">currency</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="_currencyratecontroller_.currencyrateconfig.html#currentcurrency" class="tsd-kind-icon">current<wbr>Currency</a></li>
 								<li class="tsd-kind-property tsd-parent-kind-interface tsd-is-inherited"><a href="_currencyratecontroller_.currencyrateconfig.html#disabled" class="tsd-kind-icon">disabled</a></li>
 								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="_currencyratecontroller_.currencyrateconfig.html#interval" class="tsd-kind-icon">interval</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="_currencyratecontroller_.currencyrateconfig.html#nativecurrency" class="tsd-kind-icon">native<wbr>Currency</a></li>
 							</ul>
 						</section>
 					</div>
@@ -114,12 +118,12 @@
 			<section class="tsd-panel-group tsd-member-group ">
 				<h2>Properties</h2>
 				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
-					<a name="currency" class="tsd-anchor"></a>
-					<h3>currency</h3>
-					<div class="tsd-signature tsd-kind-icon">currency<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span></div>
+					<a name="currentcurrency" class="tsd-anchor"></a>
+					<h3>current<wbr>Currency</h3>
+					<div class="tsd-signature tsd-kind-icon">current<wbr>Currency<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/MetaMask/gaba/blob/e2098be/src/CurrencyRateController.ts#L14">CurrencyRateController.ts:14</a></li>
+							<li>Defined in <a href="https://github.com/MetaMask/gaba/blob/7472822/src/CurrencyRateController.ts#L15">CurrencyRateController.ts:15</a></li>
 						</ul>
 					</aside>
 				</section>
@@ -130,7 +134,7 @@
 					<aside class="tsd-sources">
 						<p>Inherited from <a href="_basecontroller_.baseconfig.html">BaseConfig</a>.<a href="_basecontroller_.baseconfig.html#disabled">disabled</a></p>
 						<ul>
-							<li>Defined in <a href="https://github.com/MetaMask/gaba/blob/e2098be/src/BaseController.ts#L16">BaseController.ts:16</a></li>
+							<li>Defined in <a href="https://github.com/MetaMask/gaba/blob/7472822/src/BaseController.ts#L16">BaseController.ts:16</a></li>
 						</ul>
 					</aside>
 				</section>
@@ -140,7 +144,17 @@
 					<div class="tsd-signature tsd-kind-icon">interval<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">number</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/MetaMask/gaba/blob/e2098be/src/CurrencyRateController.ts#L15">CurrencyRateController.ts:15</a></li>
+							<li>Defined in <a href="https://github.com/MetaMask/gaba/blob/7472822/src/CurrencyRateController.ts#L16">CurrencyRateController.ts:16</a></li>
+						</ul>
+					</aside>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
+					<a name="nativecurrency" class="tsd-anchor"></a>
+					<h3>native<wbr>Currency</h3>
+					<div class="tsd-signature tsd-kind-icon">native<wbr>Currency<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in <a href="https://github.com/MetaMask/gaba/blob/7472822/src/CurrencyRateController.ts#L17">CurrencyRateController.ts:17</a></li>
 						</ul>
 					</aside>
 				</section>
@@ -225,13 +239,16 @@
 						<a href="_currencyratecontroller_.currencyrateconfig.html" class="tsd-kind-icon">Currency<wbr>Rate<wbr>Config</a>
 						<ul>
 							<li class=" tsd-kind-property tsd-parent-kind-interface">
-								<a href="_currencyratecontroller_.currencyrateconfig.html#currency" class="tsd-kind-icon">currency</a>
+								<a href="_currencyratecontroller_.currencyrateconfig.html#currentcurrency" class="tsd-kind-icon">current<wbr>Currency</a>
 							</li>
 							<li class=" tsd-kind-property tsd-parent-kind-interface tsd-is-inherited">
 								<a href="_currencyratecontroller_.currencyrateconfig.html#disabled" class="tsd-kind-icon">disabled</a>
 							</li>
 							<li class=" tsd-kind-property tsd-parent-kind-interface">
 								<a href="_currencyratecontroller_.currencyrateconfig.html#interval" class="tsd-kind-icon">interval</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-interface">
+								<a href="_currencyratecontroller_.currencyrateconfig.html#nativecurrency" class="tsd-kind-icon">native<wbr>Currency</a>
 							</li>
 						</ul>
 					</li>

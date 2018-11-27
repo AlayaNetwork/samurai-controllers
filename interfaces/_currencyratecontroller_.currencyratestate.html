@@ -78,10 +78,13 @@
 						<dd><p>conversionDate - Timestamp of conversion rate expressed in ms since UNIX epoch</p>
 						</dd>
 						<dt>property</dt>
-						<dd><p>conversionRate - Conversion rate from ETH to the selected currency</p>
+						<dd><p>conversionRate - Conversion rate from current base asset to the current currency</p>
 						</dd>
 						<dt>property</dt>
 						<dd><p>currentCurrency - Currently-active ISO 4217 currency code</p>
+						</dd>
+						<dt>property</dt>
+						<dd><p>nativeCurrency - Symbol for the base asset used for conversion</p>
 						</dd>
 					</dl>
 				</div>
@@ -110,6 +113,7 @@
 								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="_currencyratecontroller_.currencyratestate.html#conversionrate" class="tsd-kind-icon">conversion<wbr>Rate</a></li>
 								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="_currencyratecontroller_.currencyratestate.html#currentcurrency" class="tsd-kind-icon">current<wbr>Currency</a></li>
 								<li class="tsd-kind-property tsd-parent-kind-interface tsd-is-inherited"><a href="_currencyratecontroller_.currencyratestate.html#name" class="tsd-kind-icon">name</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="_currencyratecontroller_.currencyratestate.html#nativecurrency" class="tsd-kind-icon">native<wbr>Currency</a></li>
 							</ul>
 						</section>
 					</div>
@@ -123,7 +127,7 @@
 					<div class="tsd-signature tsd-kind-icon">conversion<wbr>Date<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">number</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/MetaMask/gaba/blob/e2098be/src/CurrencyRateController.ts#L28">CurrencyRateController.ts:28</a></li>
+							<li>Defined in <a href="https://github.com/MetaMask/gaba/blob/7472822/src/CurrencyRateController.ts#L31">CurrencyRateController.ts:31</a></li>
 						</ul>
 					</aside>
 				</section>
@@ -133,7 +137,7 @@
 					<div class="tsd-signature tsd-kind-icon">conversion<wbr>Rate<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">number</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/MetaMask/gaba/blob/e2098be/src/CurrencyRateController.ts#L29">CurrencyRateController.ts:29</a></li>
+							<li>Defined in <a href="https://github.com/MetaMask/gaba/blob/7472822/src/CurrencyRateController.ts#L32">CurrencyRateController.ts:32</a></li>
 						</ul>
 					</aside>
 				</section>
@@ -143,7 +147,7 @@
 					<div class="tsd-signature tsd-kind-icon">current<wbr>Currency<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/MetaMask/gaba/blob/e2098be/src/CurrencyRateController.ts#L30">CurrencyRateController.ts:30</a></li>
+							<li>Defined in <a href="https://github.com/MetaMask/gaba/blob/7472822/src/CurrencyRateController.ts#L33">CurrencyRateController.ts:33</a></li>
 						</ul>
 					</aside>
 				</section>
@@ -154,7 +158,17 @@
 					<aside class="tsd-sources">
 						<p>Inherited from <a href="_basecontroller_.basestate.html">BaseState</a>.<a href="_basecontroller_.basestate.html#name">name</a></p>
 						<ul>
-							<li>Defined in <a href="https://github.com/MetaMask/gaba/blob/e2098be/src/BaseController.ts#L27">BaseController.ts:27</a></li>
+							<li>Defined in <a href="https://github.com/MetaMask/gaba/blob/7472822/src/BaseController.ts#L27">BaseController.ts:27</a></li>
+						</ul>
+					</aside>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
+					<a name="nativecurrency" class="tsd-anchor"></a>
+					<h3>native<wbr>Currency</h3>
+					<div class="tsd-signature tsd-kind-icon">native<wbr>Currency<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in <a href="https://github.com/MetaMask/gaba/blob/7472822/src/CurrencyRateController.ts#L34">CurrencyRateController.ts:34</a></li>
 						</ul>
 					</aside>
 				</section>
@@ -252,6 +266,9 @@
 							</li>
 							<li class=" tsd-kind-property tsd-parent-kind-interface tsd-is-inherited">
 								<a href="_currencyratecontroller_.currencyratestate.html#name" class="tsd-kind-icon">name</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-interface">
+								<a href="_currencyratecontroller_.currencyratestate.html#nativecurrency" class="tsd-kind-icon">native<wbr>Currency</a>
 							</li>
 						</ul>
 					</li>
