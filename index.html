@@ -79,6 +79,7 @@
 						</ul>
 					</li>
 					<li><a href="#why-typescript">TypeScript</a></li>
+					<li><a href="#linking-during-development">Linking</a></li>
 					<li><a href="#api-documentation">API documentation</a></li>
 					<li><a href="#license">License</a></li>
 				</ul>
@@ -250,6 +251,18 @@ controller.unsubscribe(onChange);
 					<li>Superset of JavaScript, so all JS is valid TS</li>
 				</ul>
 				<p>All of these features of a statically-typed language like TypeScript combine to form codebases consisting of strict contractural relationships between every module in an application. Changes are less intimidating since unnoticed side effects are difficult to introduce, documentation can be generated with less verbose syntax (TSDoc is JSDoc without the types since it can infer them), editors provide autocompletion of both public module members and of local and NPM dependencies, and an upgrade to TypeScript can be incremental as demonstrated in this PR.</p>
+				<h2 id="linking-during-development">Linking during development</h2>
+				<p>Linking GABA into other projects involves a special NPM command to ensure that dependencies are not duplicated. This is because GABA ships modules that are transpiled but not bundled, and <a href="https://github.com/npm/npm/issues/7742">NPM does not deduplicate</a> linked dependency trees.</p>
+				<ol>
+					<li><p>Link GABA.</p>
+						<pre><code class="lang-sh"> $ npm run build:link
+</code></pre>
+					</li>
+					<li><p>Link into other projects.</p>
+						<pre><code class="lang-sh"> $ npm link gaba
+</code></pre>
+					</li>
+				</ol>
 				<h2 id="api-documentation">API documentation</h2>
 				<p>API documentation is auto-generated for the GABA package on every commit to the <code>master</code> branch.</p>
 				<p><a href="https://metamask.github.io/gaba/">View API documentation</a></p>
