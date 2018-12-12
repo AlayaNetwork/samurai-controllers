@@ -3,7 +3,7 @@
 <head>
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<title>EthPhishingResponse | gaba</title>
+	<title>Balanc3Response | gaba</title>
 	<meta name="description" content="">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="stylesheet" href="../assets/css/main.css">
@@ -54,13 +54,13 @@
 					<a href="../globals.html">Globals</a>
 				</li>
 				<li>
-					<a href="../modules/_phishingcontroller_.html">&quot;PhishingController&quot;</a>
+					<a href="../modules/_tokenratescontroller_.html">&quot;TokenRatesController&quot;</a>
 				</li>
 				<li>
-					<a href="_phishingcontroller_.ethphishingresponse.html">EthPhishingResponse</a>
+					<a href="_tokenratescontroller_.balanc3response.html">Balanc3Response</a>
 				</li>
 			</ul>
-			<h1>Interface EthPhishingResponse</h1>
+			<h1>Interface Balanc3Response</h1>
 		</div>
 	</div>
 </header>
@@ -71,24 +71,11 @@
 				<div class="tsd-comment tsd-typography">
 					<dl class="tsd-comment-tags">
 						<dt>type</dt>
-						<dd><p>EthPhishingResponse</p>
-							<p>Configuration response from the eth-phishing-detect package
-							consisting of approved and unapproved website origins</p>
+						<dd><p>Balanc3Response</p>
+							<p>Balanc3 API response representation</p>
 						</dd>
 						<dt>property</dt>
-						<dd><p>blacklist - List of unapproved origins</p>
-						</dd>
-						<dt>property</dt>
-						<dd><p>fuzzylist - List of fuzzy-matched unapproved origins</p>
-						</dd>
-						<dt>property</dt>
-						<dd><p>tolerance - Fuzzy match tolerance level</p>
-						</dd>
-						<dt>property</dt>
-						<dd><p>version - Versin number of this configuration</p>
-						</dd>
-						<dt>property</dt>
-						<dd><p>whitelist - List of approved origins</p>
+						<dd><p>prices - Array of prices, corresponding to objects with pair and price</p>
 						</dd>
 					</dl>
 				</div>
@@ -97,7 +84,7 @@
 				<h3>Hierarchy</h3>
 				<ul class="tsd-hierarchy">
 					<li>
-						<span class="target">EthPhishingResponse</span>
+						<span class="target">Balanc3Response</span>
 					</li>
 				</ul>
 			</section>
@@ -108,11 +95,7 @@
 						<section class="tsd-index-section ">
 							<h3>Properties</h3>
 							<ul class="tsd-index-list">
-								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="_phishingcontroller_.ethphishingresponse.html#blacklist" class="tsd-kind-icon">blacklist</a></li>
-								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="_phishingcontroller_.ethphishingresponse.html#fuzzylist" class="tsd-kind-icon">fuzzylist</a></li>
-								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="_phishingcontroller_.ethphishingresponse.html#tolerance" class="tsd-kind-icon">tolerance</a></li>
-								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="_phishingcontroller_.ethphishingresponse.html#version" class="tsd-kind-icon">version</a></li>
-								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="_phishingcontroller_.ethphishingresponse.html#whitelist" class="tsd-kind-icon">whitelist</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="_tokenratescontroller_.balanc3response.html#prices" class="tsd-kind-icon">prices</a></li>
 							</ul>
 						</section>
 					</div>
@@ -121,52 +104,12 @@
 			<section class="tsd-panel-group tsd-member-group ">
 				<h2>Properties</h2>
 				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
-					<a name="blacklist" class="tsd-anchor"></a>
-					<h3>blacklist</h3>
-					<div class="tsd-signature tsd-kind-icon">blacklist<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">[]</span></div>
+					<a name="prices" class="tsd-anchor"></a>
+					<h3>prices</h3>
+					<div class="tsd-signature tsd-kind-icon">prices<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">Array</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">object</span><span class="tsd-signature-symbol">&gt;</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/MetaMask/gaba/blob/a8a797c/src/PhishingController.ts#L21">PhishingController.ts:21</a></li>
-						</ul>
-					</aside>
-				</section>
-				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
-					<a name="fuzzylist" class="tsd-anchor"></a>
-					<h3>fuzzylist</h3>
-					<div class="tsd-signature tsd-kind-icon">fuzzylist<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">[]</span></div>
-					<aside class="tsd-sources">
-						<ul>
-							<li>Defined in <a href="https://github.com/MetaMask/gaba/blob/a8a797c/src/PhishingController.ts#L22">PhishingController.ts:22</a></li>
-						</ul>
-					</aside>
-				</section>
-				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
-					<a name="tolerance" class="tsd-anchor"></a>
-					<h3>tolerance</h3>
-					<div class="tsd-signature tsd-kind-icon">tolerance<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">number</span></div>
-					<aside class="tsd-sources">
-						<ul>
-							<li>Defined in <a href="https://github.com/MetaMask/gaba/blob/a8a797c/src/PhishingController.ts#L23">PhishingController.ts:23</a></li>
-						</ul>
-					</aside>
-				</section>
-				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
-					<a name="version" class="tsd-anchor"></a>
-					<h3>version</h3>
-					<div class="tsd-signature tsd-kind-icon">version<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">number</span></div>
-					<aside class="tsd-sources">
-						<ul>
-							<li>Defined in <a href="https://github.com/MetaMask/gaba/blob/a8a797c/src/PhishingController.ts#L24">PhishingController.ts:24</a></li>
-						</ul>
-					</aside>
-				</section>
-				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
-					<a name="whitelist" class="tsd-anchor"></a>
-					<h3>whitelist</h3>
-					<div class="tsd-signature tsd-kind-icon">whitelist<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">[]</span></div>
-					<aside class="tsd-sources">
-						<ul>
-							<li>Defined in <a href="https://github.com/MetaMask/gaba/blob/a8a797c/src/PhishingController.ts#L25">PhishingController.ts:25</a></li>
+							<li>Defined in <a href="https://github.com/MetaMask/gaba/blob/a8a797c/src/TokenRatesController.ts#L16">TokenRatesController.ts:16</a></li>
 						</ul>
 					</aside>
 				</section>
@@ -217,7 +160,7 @@
 					<li class=" tsd-kind-external-module">
 						<a href="../modules/_personalmessagemanager_.html">"<wbr>Personal<wbr>Message<wbr>Manager"</a>
 					</li>
-					<li class="current tsd-kind-external-module">
+					<li class=" tsd-kind-external-module">
 						<a href="../modules/_phishingcontroller_.html">"<wbr>Phishing<wbr>Controller"</a>
 					</li>
 					<li class=" tsd-kind-external-module">
@@ -229,7 +172,7 @@
 					<li class=" tsd-kind-external-module">
 						<a href="../modules/_tokenbalancescontroller_.html">"<wbr>Token<wbr>Balances<wbr>Controller"</a>
 					</li>
-					<li class=" tsd-kind-external-module">
+					<li class="current tsd-kind-external-module">
 						<a href="../modules/_tokenratescontroller_.html">"<wbr>Token<wbr>Rates<wbr>Controller"</a>
 					</li>
 					<li class=" tsd-kind-external-module">
@@ -249,37 +192,28 @@
 			<nav class="tsd-navigation secondary menu-sticky">
 				<ul class="before-current">
 					<li class=" tsd-kind-class tsd-parent-kind-external-module">
-						<a href="../classes/_phishingcontroller_.phishingcontroller.html" class="tsd-kind-icon">Phishing<wbr>Controller</a>
+						<a href="../classes/_tokenratescontroller_.tokenratescontroller.html" class="tsd-kind-icon">Token<wbr>Rates<wbr>Controller</a>
 					</li>
 				</ul>
 				<ul class="current">
 					<li class="current tsd-kind-interface tsd-parent-kind-external-module">
-						<a href="_phishingcontroller_.ethphishingresponse.html" class="tsd-kind-icon">Eth<wbr>Phishing<wbr>Response</a>
+						<a href="_tokenratescontroller_.balanc3response.html" class="tsd-kind-icon">Balanc3<wbr>Response</a>
 						<ul>
 							<li class=" tsd-kind-property tsd-parent-kind-interface">
-								<a href="_phishingcontroller_.ethphishingresponse.html#blacklist" class="tsd-kind-icon">blacklist</a>
-							</li>
-							<li class=" tsd-kind-property tsd-parent-kind-interface">
-								<a href="_phishingcontroller_.ethphishingresponse.html#fuzzylist" class="tsd-kind-icon">fuzzylist</a>
-							</li>
-							<li class=" tsd-kind-property tsd-parent-kind-interface">
-								<a href="_phishingcontroller_.ethphishingresponse.html#tolerance" class="tsd-kind-icon">tolerance</a>
-							</li>
-							<li class=" tsd-kind-property tsd-parent-kind-interface">
-								<a href="_phishingcontroller_.ethphishingresponse.html#version" class="tsd-kind-icon">version</a>
-							</li>
-							<li class=" tsd-kind-property tsd-parent-kind-interface">
-								<a href="_phishingcontroller_.ethphishingresponse.html#whitelist" class="tsd-kind-icon">whitelist</a>
+								<a href="_tokenratescontroller_.balanc3response.html#prices" class="tsd-kind-icon">prices</a>
 							</li>
 						</ul>
 					</li>
 				</ul>
 				<ul class="after-current">
 					<li class=" tsd-kind-interface tsd-parent-kind-external-module">
-						<a href="_phishingcontroller_.phishingconfig.html" class="tsd-kind-icon">Phishing<wbr>Config</a>
+						<a href="_tokenratescontroller_.token.html" class="tsd-kind-icon">Token</a>
 					</li>
 					<li class=" tsd-kind-interface tsd-parent-kind-external-module">
-						<a href="_phishingcontroller_.phishingstate.html" class="tsd-kind-icon">Phishing<wbr>State</a>
+						<a href="_tokenratescontroller_.tokenratesconfig.html" class="tsd-kind-icon">Token<wbr>Rates<wbr>Config</a>
+					</li>
+					<li class=" tsd-kind-interface tsd-parent-kind-external-module">
+						<a href="_tokenratescontroller_.tokenratesstate.html" class="tsd-kind-icon">Token<wbr>Rates<wbr>State</a>
 					</li>
 				</ul>
 			</nav>
