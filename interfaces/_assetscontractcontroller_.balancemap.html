@@ -3,7 +3,7 @@
 <head>
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<title>ShapeShiftTransaction | gaba</title>
+	<title>BalanceMap | gaba</title>
 	<meta name="description" content="">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="stylesheet" href="../assets/css/main.css">
@@ -54,13 +54,13 @@
 					<a href="../globals.html">Globals</a>
 				</li>
 				<li>
-					<a href="../modules/_shapeshiftcontroller_.html">&quot;ShapeShiftController&quot;</a>
+					<a href="../modules/_assetscontractcontroller_.html">&quot;AssetsContractController&quot;</a>
 				</li>
 				<li>
-					<a href="_shapeshiftcontroller_.shapeshifttransaction.html">ShapeShiftTransaction</a>
+					<a href="_assetscontractcontroller_.balancemap.html">BalanceMap</a>
 				</li>
 			</ul>
-			<h1>Interface ShapeShiftTransaction</h1>
+			<h1>Interface BalanceMap</h1>
 		</div>
 	</div>
 </header>
@@ -71,23 +71,11 @@
 				<div class="tsd-comment tsd-typography">
 					<dl class="tsd-comment-tags">
 						<dt>type</dt>
-						<dd><p>ShapeShiftTransaction</p>
-							<p>ShapeShift transaction object</p>
+						<dd><p>BalanceMap</p>
+							<p>Key value object containing the balance for each tokenAddress</p>
 						</dd>
 						<dt>property</dt>
-						<dd><p>depositAddress - Address where coins should be deposited</p>
-						</dd>
-						<dt>property</dt>
-						<dd><p>depositType - Abbreviation of the type of crypto currency to be deposited</p>
-						</dd>
-						<dt>property</dt>
-						<dd><p>key - Unique string to identify this transaction as a ShapeShift transaction</p>
-						</dd>
-						<dt>property</dt>
-						<dd><p>response - Populated with a ShapeShiftResponse object upon transaction completion</p>
-						</dd>
-						<dt>property</dt>
-						<dd><p>time - Timestamp when this transction was last updated</p>
+						<dd><p>[tokenAddress] - Address of the token</p>
 						</dd>
 					</dl>
 				</div>
@@ -96,79 +84,13 @@
 				<h3>Hierarchy</h3>
 				<ul class="tsd-hierarchy">
 					<li>
-						<span class="target">ShapeShiftTransaction</span>
+						<span class="target">BalanceMap</span>
 					</li>
 				</ul>
 			</section>
-			<section class="tsd-panel-group tsd-index-group">
-				<h2>Index</h2>
-				<section class="tsd-panel tsd-index-panel">
-					<div class="tsd-index-content">
-						<section class="tsd-index-section ">
-							<h3>Properties</h3>
-							<ul class="tsd-index-list">
-								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="_shapeshiftcontroller_.shapeshifttransaction.html#depositaddress" class="tsd-kind-icon">deposit<wbr>Address</a></li>
-								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="_shapeshiftcontroller_.shapeshifttransaction.html#deposittype" class="tsd-kind-icon">deposit<wbr>Type</a></li>
-								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="_shapeshiftcontroller_.shapeshifttransaction.html#key" class="tsd-kind-icon">key</a></li>
-								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="_shapeshiftcontroller_.shapeshifttransaction.html#response" class="tsd-kind-icon">response</a></li>
-								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="_shapeshiftcontroller_.shapeshifttransaction.html#time" class="tsd-kind-icon">time</a></li>
-							</ul>
-						</section>
-					</div>
-				</section>
-			</section>
-			<section class="tsd-panel-group tsd-member-group ">
-				<h2>Properties</h2>
-				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
-					<a name="depositaddress" class="tsd-anchor"></a>
-					<h3>deposit<wbr>Address</h3>
-					<div class="tsd-signature tsd-kind-icon">deposit<wbr>Address<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span></div>
-					<aside class="tsd-sources">
-						<ul>
-							<li>Defined in <a href="https://github.com/MetaMask/gaba/blob/0cb2e93/src/ShapeShiftController.ts#L17">ShapeShiftController.ts:17</a></li>
-						</ul>
-					</aside>
-				</section>
-				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
-					<a name="deposittype" class="tsd-anchor"></a>
-					<h3>deposit<wbr>Type</h3>
-					<div class="tsd-signature tsd-kind-icon">deposit<wbr>Type<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span></div>
-					<aside class="tsd-sources">
-						<ul>
-							<li>Defined in <a href="https://github.com/MetaMask/gaba/blob/0cb2e93/src/ShapeShiftController.ts#L18">ShapeShiftController.ts:18</a></li>
-						</ul>
-					</aside>
-				</section>
-				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
-					<a name="key" class="tsd-anchor"></a>
-					<h3>key</h3>
-					<div class="tsd-signature tsd-kind-icon">key<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span></div>
-					<aside class="tsd-sources">
-						<ul>
-							<li>Defined in <a href="https://github.com/MetaMask/gaba/blob/0cb2e93/src/ShapeShiftController.ts#L19">ShapeShiftController.ts:19</a></li>
-						</ul>
-					</aside>
-				</section>
-				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
-					<a name="response" class="tsd-anchor"></a>
-					<h3><span class="tsd-flag ts-flagOptional">Optional</span> response</h3>
-					<div class="tsd-signature tsd-kind-icon">response<span class="tsd-signature-symbol">:</span> <a href="_shapeshiftcontroller_.shapeshiftresponse.html" class="tsd-signature-type">ShapeShiftResponse</a></div>
-					<aside class="tsd-sources">
-						<ul>
-							<li>Defined in <a href="https://github.com/MetaMask/gaba/blob/0cb2e93/src/ShapeShiftController.ts#L20">ShapeShiftController.ts:20</a></li>
-						</ul>
-					</aside>
-				</section>
-				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
-					<a name="time" class="tsd-anchor"></a>
-					<h3>time</h3>
-					<div class="tsd-signature tsd-kind-icon">time<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">number</span></div>
-					<aside class="tsd-sources">
-						<ul>
-							<li>Defined in <a href="https://github.com/MetaMask/gaba/blob/0cb2e93/src/ShapeShiftController.ts#L21">ShapeShiftController.ts:21</a></li>
-						</ul>
-					</aside>
-				</section>
+			<section class="tsd-panel tsd-kind-interface tsd-parent-kind-external-module">
+				<h3 class="tsd-before-signature">Indexable</h3>
+				<div class="tsd-signature tsd-kind-icon"><span class="tsd-signature-symbol">[</span>tokenAddress: <span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">]: </span><span class="tsd-signature-type">string</span></div>
 			</section>
 		</div>
 		<div class="col-4 col-menu menu-sticky-wrap menu-highlight">
@@ -183,7 +105,7 @@
 					<li class=" tsd-kind-external-module">
 						<a href="../modules/_addressbookcontroller_.html">"<wbr>Address<wbr>Book<wbr>Controller"</a>
 					</li>
-					<li class=" tsd-kind-external-module">
+					<li class="current tsd-kind-external-module">
 						<a href="../modules/_assetscontractcontroller_.html">"<wbr>Assets<wbr>Contract<wbr>Controller"</a>
 					</li>
 					<li class=" tsd-kind-external-module">
@@ -222,7 +144,7 @@
 					<li class=" tsd-kind-external-module">
 						<a href="../modules/_preferencescontroller_.html">"<wbr>Preferences<wbr>Controller"</a>
 					</li>
-					<li class="current tsd-kind-external-module">
+					<li class=" tsd-kind-external-module">
 						<a href="../modules/_shapeshiftcontroller_.html">"<wbr>Shape<wbr>Shift<wbr>Controller"</a>
 					</li>
 					<li class=" tsd-kind-external-module">
@@ -248,38 +170,15 @@
 			<nav class="tsd-navigation secondary menu-sticky">
 				<ul class="before-current">
 					<li class=" tsd-kind-class tsd-parent-kind-external-module">
-						<a href="../classes/_shapeshiftcontroller_.shapeshiftcontroller.html" class="tsd-kind-icon">Shape<wbr>Shift<wbr>Controller</a>
+						<a href="../classes/_assetscontractcontroller_.assetscontractcontroller.html" class="tsd-kind-icon">Assets<wbr>Contract<wbr>Controller</a>
 					</li>
 					<li class=" tsd-kind-interface tsd-parent-kind-external-module">
-						<a href="_shapeshiftcontroller_.shapeshiftconfig.html" class="tsd-kind-icon">Shape<wbr>Shift<wbr>Config</a>
-					</li>
-					<li class=" tsd-kind-interface tsd-parent-kind-external-module">
-						<a href="_shapeshiftcontroller_.shapeshiftresponse.html" class="tsd-kind-icon">Shape<wbr>Shift<wbr>Response</a>
-					</li>
-					<li class=" tsd-kind-interface tsd-parent-kind-external-module">
-						<a href="_shapeshiftcontroller_.shapeshiftstate.html" class="tsd-kind-icon">Shape<wbr>Shift<wbr>State</a>
+						<a href="_assetscontractcontroller_.assetscontractconfig.html" class="tsd-kind-icon">Assets<wbr>Contract<wbr>Config</a>
 					</li>
 				</ul>
 				<ul class="current">
 					<li class="current tsd-kind-interface tsd-parent-kind-external-module">
-						<a href="_shapeshiftcontroller_.shapeshifttransaction.html" class="tsd-kind-icon">Shape<wbr>Shift<wbr>Transaction</a>
-						<ul>
-							<li class=" tsd-kind-property tsd-parent-kind-interface">
-								<a href="_shapeshiftcontroller_.shapeshifttransaction.html#depositaddress" class="tsd-kind-icon">deposit<wbr>Address</a>
-							</li>
-							<li class=" tsd-kind-property tsd-parent-kind-interface">
-								<a href="_shapeshiftcontroller_.shapeshifttransaction.html#deposittype" class="tsd-kind-icon">deposit<wbr>Type</a>
-							</li>
-							<li class=" tsd-kind-property tsd-parent-kind-interface">
-								<a href="_shapeshiftcontroller_.shapeshifttransaction.html#key" class="tsd-kind-icon">key</a>
-							</li>
-							<li class=" tsd-kind-property tsd-parent-kind-interface">
-								<a href="_shapeshiftcontroller_.shapeshifttransaction.html#response" class="tsd-kind-icon">response</a>
-							</li>
-							<li class=" tsd-kind-property tsd-parent-kind-interface">
-								<a href="_shapeshiftcontroller_.shapeshifttransaction.html#time" class="tsd-kind-icon">time</a>
-							</li>
-						</ul>
+						<a href="_assetscontractcontroller_.balancemap.html" class="tsd-kind-icon">Balance<wbr>Map</a>
 					</li>
 				</ul>
 				<ul class="after-current">
