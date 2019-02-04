@@ -78,13 +78,16 @@
 						<dd><p>address - Hex address of a ERC721 contract</p>
 						</dd>
 						<dt>property</dt>
-						<dd><p>tokenId - The NFT identifier</p>
+						<dd><p>description - The collectible description</p>
+						</dd>
+						<dt>property</dt>
+						<dd><p>image - URI of custom collectible image associated with this tokenId</p>
 						</dd>
 						<dt>property</dt>
 						<dd><p>name - Name associated with this tokenId and contract address</p>
 						</dd>
 						<dt>property</dt>
-						<dd><p>image - URI of custom NFT image associated with this tokenId</p>
+						<dd><p>tokenId - The collectible identifier</p>
 						</dd>
 					</dl>
 				</div>
@@ -105,6 +108,7 @@
 							<h3>Properties</h3>
 							<ul class="tsd-index-list">
 								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="_assetscontroller_.collectible.html#address" class="tsd-kind-icon">address</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="_assetscontroller_.collectible.html#description" class="tsd-kind-icon">description</a></li>
 								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="_assetscontroller_.collectible.html#image" class="tsd-kind-icon">image</a></li>
 								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="_assetscontroller_.collectible.html#name" class="tsd-kind-icon">name</a></li>
 								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="_assetscontroller_.collectible.html#tokenid" class="tsd-kind-icon">token<wbr>Id</a></li>
@@ -121,27 +125,37 @@
 					<div class="tsd-signature tsd-kind-icon">address<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/MetaMask/gaba/blob/e24d35a/src/AssetsController.ts#L24">AssetsController.ts:24</a></li>
+							<li>Defined in <a href="https://github.com/MetaMask/gaba/blob/22091e2/src/AssetsController.ts#L24">AssetsController.ts:24</a></li>
+						</ul>
+					</aside>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
+					<a name="description" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagOptional">Optional</span> description</h3>
+					<div class="tsd-signature tsd-kind-icon">description<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">string</span></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in <a href="https://github.com/MetaMask/gaba/blob/22091e2/src/AssetsController.ts#L25">AssetsController.ts:25</a></li>
 						</ul>
 					</aside>
 				</section>
 				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
 					<a name="image" class="tsd-anchor"></a>
-					<h3>image</h3>
-					<div class="tsd-signature tsd-kind-icon">image<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span></div>
+					<h3><span class="tsd-flag ts-flagOptional">Optional</span> image</h3>
+					<div class="tsd-signature tsd-kind-icon">image<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">string</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/MetaMask/gaba/blob/e24d35a/src/AssetsController.ts#L27">AssetsController.ts:27</a></li>
+							<li>Defined in <a href="https://github.com/MetaMask/gaba/blob/22091e2/src/AssetsController.ts#L26">AssetsController.ts:26</a></li>
 						</ul>
 					</aside>
 				</section>
 				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
 					<a name="name" class="tsd-anchor"></a>
-					<h3>name</h3>
-					<div class="tsd-signature tsd-kind-icon">name<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span></div>
+					<h3><span class="tsd-flag ts-flagOptional">Optional</span> name</h3>
+					<div class="tsd-signature tsd-kind-icon">name<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">string</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/MetaMask/gaba/blob/e24d35a/src/AssetsController.ts#L26">AssetsController.ts:26</a></li>
+							<li>Defined in <a href="https://github.com/MetaMask/gaba/blob/22091e2/src/AssetsController.ts#L27">AssetsController.ts:27</a></li>
 						</ul>
 					</aside>
 				</section>
@@ -151,7 +165,7 @@
 					<div class="tsd-signature tsd-kind-icon">token<wbr>Id<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">number</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/MetaMask/gaba/blob/e24d35a/src/AssetsController.ts#L25">AssetsController.ts:25</a></li>
+							<li>Defined in <a href="https://github.com/MetaMask/gaba/blob/22091e2/src/AssetsController.ts#L28">AssetsController.ts:28</a></li>
 						</ul>
 					</aside>
 				</section>
@@ -237,6 +251,9 @@
 						<a href="../classes/_assetscontroller_.assetscontroller.html" class="tsd-kind-icon">Assets<wbr>Controller</a>
 					</li>
 					<li class=" tsd-kind-interface tsd-parent-kind-external-module">
+						<a href="_assetscontroller_.apicollectiblecontractresponse.html" class="tsd-kind-icon">Api<wbr>Collectible<wbr>Contract<wbr>Response</a>
+					</li>
+					<li class=" tsd-kind-interface tsd-parent-kind-external-module">
 						<a href="_assetscontroller_.assetsconfig.html" class="tsd-kind-icon">Assets<wbr>Config</a>
 					</li>
 					<li class=" tsd-kind-interface tsd-parent-kind-external-module">
@@ -249,6 +266,9 @@
 						<ul>
 							<li class=" tsd-kind-property tsd-parent-kind-interface">
 								<a href="_assetscontroller_.collectible.html#address" class="tsd-kind-icon">address</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-interface">
+								<a href="_assetscontroller_.collectible.html#description" class="tsd-kind-icon">description</a>
 							</li>
 							<li class=" tsd-kind-property tsd-parent-kind-interface">
 								<a href="_assetscontroller_.collectible.html#image" class="tsd-kind-icon">image</a>
@@ -267,10 +287,7 @@
 						<a href="_assetscontroller_.collectiblecontract.html" class="tsd-kind-icon">Collectible<wbr>Contract</a>
 					</li>
 					<li class=" tsd-kind-interface tsd-parent-kind-external-module">
-						<a href="_assetscontroller_.collectiblecustominformation.html" class="tsd-kind-icon">Collectible<wbr>Custom<wbr>Information</a>
-					</li>
-					<li class=" tsd-kind-interface tsd-parent-kind-external-module">
-						<a href="_assetscontroller_.mappedcontract.html" class="tsd-kind-icon">Mapped<wbr>Contract</a>
+						<a href="_assetscontroller_.collectibleinformation.html" class="tsd-kind-icon">Collectible<wbr>Information</a>
 					</li>
 				</ul>
 			</nav>
