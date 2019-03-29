@@ -107,7 +107,7 @@
 				<h2 id="modules">Modules</h2>
 				<p>The GABA engine consists of a collection of modules that each expose uniform APIs for common operations like configuration, state management, and subscription.</p>
 				<h3 id="accounttrackercontroller">AccountTrackerController</h3>
-				<pre><code class="lang-ts"><span class="hljs-keyword">import</span> AccountTrackerController <span class="hljs-keyword">from</span> <span class="hljs-string">''</span>;
+				<pre><code class="lang-ts"><span class="hljs-keyword">import</span> AccountTrackerController <span class="hljs-keyword">from</span> <span class="hljs-string">'gaba'</span>;
 </code></pre>
 				<p>The AccountTrackerController tracks information associated with specific Ethereum accounts.</p>
 				<h3 id="addressbookcontroller">AddressBookController</h3>
@@ -117,7 +117,7 @@
 				<h3 id="composablecontroller">ComposableController</h3>
 				<pre><code class="lang-ts"><span class="hljs-keyword">import</span> ComposableController <span class="hljs-keyword">from</span> <span class="hljs-string">'gaba'</span>;
 </code></pre>
-				<p>The ComposableController can be used to compose mutiple controllers together into a single controller.</p>
+				<p>The ComposableController can be used to compose multiple controllers together into a single controller.</p>
 				<h3 id="currencyratecontroller">CurrencyRateController</h3>
 				<pre><code class="lang-ts"><span class="hljs-keyword">import</span> CurrencyRateController <span class="hljs-keyword">from</span> <span class="hljs-string">'gaba'</span>;
 </code></pre>
@@ -161,13 +161,13 @@
 				<h2 id="concepts">Concepts</h2>
 				<p>Using GABA modules should be straightforward since each module exposes the same minimal API. The concepts detailed in this section form the entirety of the core API: knowing these concepts will allow you to fully use the GABA engine to build wallet data models.</p>
 				<h3 id="initialization">Initialization</h3>
-				<p>Each GABA module can be initialized with an optional initial state argument and an optional initial configuration argument:</p>
-				<pre><code class="lang-ts"><span class="hljs-keyword">const</span> controller = <span class="hljs-keyword">new</span> Controller(&lt;initial_state&gt;, &lt;initial_config&gt;)
+				<p>Each GABA module can be initialized with an optional initial configuration argument and an optional initial state argument:</p>
+				<pre><code class="lang-ts"><span class="hljs-keyword">const</span> controller = <span class="hljs-keyword">new</span> Controller(&lt;initial_config&gt;, &lt;initial_state&gt;)
 </code></pre>
 				<p>Data passed into a module as initial state will be merged with that module&#39;s default state; likewise, options passed into a module as initial configuration will be merged with that module&#39;s default configuration.</p>
 				<h3 id="configuration">Configuration</h3>
-				<p>As mentioned in the <a href="#initialization">initialization section</a>, a GABA module can be configured during initialization by passing in a configuration object as a second argument:</p>
-				<pre><code class="lang-ts"><span class="hljs-keyword">const</span> controller = <span class="hljs-keyword">new</span> Controller(&lt;initial_state&gt;, &lt;initial_config&gt;)
+				<p>As mentioned in the <a href="#initialization">initialization section</a>, a GABA module can be configured during initialization by passing in a configuration object as its first argument:</p>
+				<pre><code class="lang-ts"><span class="hljs-keyword">const</span> controller = <span class="hljs-keyword">new</span> Controller(&lt;initial_config&gt;, &lt;initial_state&gt;)
 </code></pre>
 				<p>A GABA module can also be configured (or reconfigured) after initialization by passing a configuration object to its <code>configure</code> method:</p>
 				<pre><code class="lang-ts"><span class="hljs-keyword">const</span> controller = <span class="hljs-keyword">new</span> Controller()
