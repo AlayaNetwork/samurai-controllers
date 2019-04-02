@@ -3,7 +3,7 @@
 <head>
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<title>NetworkState | gaba</title>
+	<title>MethodData | gaba</title>
 	<meta name="description" content="">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="stylesheet" href="../assets/css/main.css">
@@ -54,13 +54,13 @@
 					<a href="../globals.html">Globals</a>
 				</li>
 				<li>
-					<a href="../modules/_networkcontroller_.html">&quot;NetworkController&quot;</a>
+					<a href="../modules/_transactioncontroller_.html">&quot;TransactionController&quot;</a>
 				</li>
 				<li>
-					<a href="_networkcontroller_.networkstate.html">NetworkState</a>
+					<a href="_transactioncontroller_.methoddata.html">MethodData</a>
 				</li>
 			</ul>
-			<h1>Interface NetworkState</h1>
+			<h1>Interface MethodData</h1>
 		</div>
 	</div>
 </header>
@@ -71,14 +71,14 @@
 				<div class="tsd-comment tsd-typography">
 					<dl class="tsd-comment-tags">
 						<dt>type</dt>
-						<dd><p>NetworkState</p>
-							<p>Network controller state</p>
+						<dd><p>MethodData</p>
+							<p>Method data registry object</p>
 						</dd>
 						<dt>property</dt>
-						<dd><p>network - Network ID as per net_version</p>
+						<dd><p>registryMethod - Registry method raw string</p>
 						</dd>
 						<dt>property</dt>
-						<dd><p>provider - RPC URL and network name provider settings</p>
+						<dd><p>parsedRegistryMethod - Registry method object, containing name and method arguments</p>
 						</dd>
 					</dl>
 				</div>
@@ -87,12 +87,7 @@
 				<h3>Hierarchy</h3>
 				<ul class="tsd-hierarchy">
 					<li>
-						<a href="_basecontroller_.basestate.html" class="tsd-signature-type">BaseState</a>
-						<ul class="tsd-hierarchy">
-							<li>
-								<span class="target">NetworkState</span>
-							</li>
-						</ul>
+						<span class="target">MethodData</span>
 					</li>
 				</ul>
 			</section>
@@ -103,9 +98,8 @@
 						<section class="tsd-index-section ">
 							<h3>Properties</h3>
 							<ul class="tsd-index-list">
-								<li class="tsd-kind-property tsd-parent-kind-interface tsd-is-inherited"><a href="_networkcontroller_.networkstate.html#name" class="tsd-kind-icon">name</a></li>
-								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="_networkcontroller_.networkstate.html#network" class="tsd-kind-icon">network</a></li>
-								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="_networkcontroller_.networkstate.html#provider" class="tsd-kind-icon">provider</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="_transactioncontroller_.methoddata.html#parsedregistrymethod" class="tsd-kind-icon">parsed<wbr>Registry<wbr>Method</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="_transactioncontroller_.methoddata.html#registrymethod" class="tsd-kind-icon">registry<wbr>Method</a></li>
 							</ul>
 						</section>
 					</div>
@@ -113,41 +107,25 @@
 			</section>
 			<section class="tsd-panel-group tsd-member-group ">
 				<h2>Properties</h2>
-				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface tsd-is-inherited">
-					<a name="name" class="tsd-anchor"></a>
-					<h3><span class="tsd-flag ts-flagOptional">Optional</span> name</h3>
-					<div class="tsd-signature tsd-kind-icon">name<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">string</span></div>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
+					<a name="parsedregistrymethod" class="tsd-anchor"></a>
+					<h3>parsed<wbr>Registry<wbr>Method</h3>
+					<div class="tsd-signature tsd-kind-icon">parsed<wbr>Registry<wbr>Method<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">object</span></div>
 					<aside class="tsd-sources">
-						<p>Inherited from <a href="_basecontroller_.basestate.html">BaseState</a>.<a href="_basecontroller_.basestate.html#name">name</a></p>
 						<ul>
-							<li>Defined in <a href="https://github.com/MetaMask/gaba/blob/001d533/src/BaseController.ts#L27">BaseController.ts:27</a></li>
+							<li>Defined in <a href="https://github.com/MetaMask/gaba/blob/001d533/src/TransactionController.ts#L157">TransactionController.ts:157</a></li>
 						</ul>
 					</aside>
 				</section>
 				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
-					<a name="network" class="tsd-anchor"></a>
-					<h3>network</h3>
-					<div class="tsd-signature tsd-kind-icon">network<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span></div>
+					<a name="registrymethod" class="tsd-anchor"></a>
+					<h3>registry<wbr>Method</h3>
+					<div class="tsd-signature tsd-kind-icon">registry<wbr>Method<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/MetaMask/gaba/blob/001d533/src/NetworkController.ts#L43">NetworkController.ts:43</a></li>
+							<li>Defined in <a href="https://github.com/MetaMask/gaba/blob/001d533/src/TransactionController.ts#L156">TransactionController.ts:156</a></li>
 						</ul>
 					</aside>
-				</section>
-				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
-					<a name="provider" class="tsd-anchor"></a>
-					<h3>provider</h3>
-					<div class="tsd-signature tsd-kind-icon">provider<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">object</span></div>
-					<aside class="tsd-sources">
-						<ul>
-							<li>Defined in <a href="https://github.com/MetaMask/gaba/blob/001d533/src/NetworkController.ts#L44">NetworkController.ts:44</a></li>
-						</ul>
-					</aside>
-					<div class="tsd-type-declaration">
-						<h4>Type declaration</h4>
-						<ul class="tsd-parameters">
-						</ul>
-					</div>
 				</section>
 			</section>
 		</div>
@@ -187,7 +165,7 @@
 					<li class=" tsd-kind-external-module">
 						<a href="../modules/_messagemanager_.html">"<wbr>Message<wbr>Manager"</a>
 					</li>
-					<li class="current tsd-kind-external-module">
+					<li class=" tsd-kind-external-module">
 						<a href="../modules/_networkcontroller_.html">"<wbr>Network<wbr>Controller"</a>
 					</li>
 					<li class=" tsd-kind-external-module">
@@ -211,7 +189,7 @@
 					<li class=" tsd-kind-external-module">
 						<a href="../modules/_tokenratescontroller_.html">"<wbr>Token<wbr>Rates<wbr>Controller"</a>
 					</li>
-					<li class=" tsd-kind-external-module">
+					<li class="current tsd-kind-external-module">
 						<a href="../modules/_transactioncontroller_.html">"<wbr>Transaction<wbr>Controller"</a>
 					</li>
 					<li class=" tsd-kind-external-module">
@@ -228,34 +206,40 @@
 			<nav class="tsd-navigation secondary menu-sticky">
 				<ul class="before-current">
 					<li class=" tsd-kind-class tsd-parent-kind-external-module">
-						<a href="../classes/_networkcontroller_.networkcontroller.html" class="tsd-kind-icon">Network<wbr>Controller</a>
+						<a href="../classes/_transactioncontroller_.transactioncontroller.html" class="tsd-kind-icon">Transaction<wbr>Controller</a>
 					</li>
 					<li class=" tsd-kind-interface tsd-parent-kind-external-module">
-						<a href="_networkcontroller_.networkconfig.html" class="tsd-kind-icon">Network<wbr>Config</a>
+						<a href="_transactioncontroller_.etherscantransactionmeta.html" class="tsd-kind-icon">Etherscan<wbr>Transaction<wbr>Meta</a>
 					</li>
 				</ul>
 				<ul class="current">
 					<li class="current tsd-kind-interface tsd-parent-kind-external-module">
-						<a href="_networkcontroller_.networkstate.html" class="tsd-kind-icon">Network<wbr>State</a>
+						<a href="_transactioncontroller_.methoddata.html" class="tsd-kind-icon">Method<wbr>Data</a>
 						<ul>
-							<li class=" tsd-kind-property tsd-parent-kind-interface tsd-is-inherited">
-								<a href="_networkcontroller_.networkstate.html#name" class="tsd-kind-icon">name</a>
+							<li class=" tsd-kind-property tsd-parent-kind-interface">
+								<a href="_transactioncontroller_.methoddata.html#parsedregistrymethod" class="tsd-kind-icon">parsed<wbr>Registry<wbr>Method</a>
 							</li>
 							<li class=" tsd-kind-property tsd-parent-kind-interface">
-								<a href="_networkcontroller_.networkstate.html#network" class="tsd-kind-icon">network</a>
-							</li>
-							<li class=" tsd-kind-property tsd-parent-kind-interface">
-								<a href="_networkcontroller_.networkstate.html#provider" class="tsd-kind-icon">provider</a>
+								<a href="_transactioncontroller_.methoddata.html#registrymethod" class="tsd-kind-icon">registry<wbr>Method</a>
 							</li>
 						</ul>
 					</li>
 				</ul>
 				<ul class="after-current">
 					<li class=" tsd-kind-interface tsd-parent-kind-external-module">
-						<a href="_networkcontroller_.providerconfig.html" class="tsd-kind-icon">Provider<wbr>Config</a>
+						<a href="_transactioncontroller_.result.html" class="tsd-kind-icon">Result</a>
 					</li>
-					<li class=" tsd-kind-type-alias tsd-parent-kind-external-module">
-						<a href="../modules/_networkcontroller_.html#networktype" class="tsd-kind-icon">Network<wbr>Type</a>
+					<li class=" tsd-kind-interface tsd-parent-kind-external-module">
+						<a href="_transactioncontroller_.transaction.html" class="tsd-kind-icon">Transaction</a>
+					</li>
+					<li class=" tsd-kind-interface tsd-parent-kind-external-module">
+						<a href="_transactioncontroller_.transactionconfig.html" class="tsd-kind-icon">Transaction<wbr>Config</a>
+					</li>
+					<li class=" tsd-kind-interface tsd-parent-kind-external-module">
+						<a href="_transactioncontroller_.transactionmeta.html" class="tsd-kind-icon">Transaction<wbr>Meta</a>
+					</li>
+					<li class=" tsd-kind-interface tsd-parent-kind-external-module">
+						<a href="_transactioncontroller_.transactionstate.html" class="tsd-kind-icon">Transaction<wbr>State</a>
 					</li>
 				</ul>
 			</nav>
