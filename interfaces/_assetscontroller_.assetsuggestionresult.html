@@ -3,7 +3,7 @@
 <head>
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<title>AddressBookState | gaba</title>
+	<title>AssetSuggestionResult | gaba</title>
 	<meta name="description" content="">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="stylesheet" href="../assets/css/main.css">
@@ -54,13 +54,13 @@
 					<a href="../globals.html">Globals</a>
 				</li>
 				<li>
-					<a href="../modules/_addressbookcontroller_.html">&quot;AddressBookController&quot;</a>
+					<a href="../modules/_assetscontroller_.html">&quot;AssetsController&quot;</a>
 				</li>
 				<li>
-					<a href="_addressbookcontroller_.addressbookstate.html">AddressBookState</a>
+					<a href="_assetscontroller_.assetsuggestionresult.html">AssetSuggestionResult</a>
 				</li>
 			</ul>
-			<h1>Interface AddressBookState</h1>
+			<h1>Interface AssetSuggestionResult</h1>
 		</div>
 	</div>
 </header>
@@ -71,11 +71,13 @@
 				<div class="tsd-comment tsd-typography">
 					<dl class="tsd-comment-tags">
 						<dt>type</dt>
-						<dd><p>AddressBookState</p>
-							<p>Address book controller state</p>
+						<dd><p>AssetSuggestionResult</p>
 						</dd>
 						<dt>property</dt>
-						<dd><p>addressBook - Array of contact entry objects</p>
+						<dd><p>result - Promise resolving to a new suggested asset address</p>
+						</dd>
+						<dt>property</dt>
+						<dd><p>suggestedAssetMeta - Meta information about this new suggested asset</p>
 						</dd>
 					</dl>
 				</div>
@@ -84,12 +86,7 @@
 				<h3>Hierarchy</h3>
 				<ul class="tsd-hierarchy">
 					<li>
-						<a href="_basecontroller_.basestate.html" class="tsd-signature-type">BaseState</a>
-						<ul class="tsd-hierarchy">
-							<li>
-								<span class="target">AddressBookState</span>
-							</li>
-						</ul>
+						<span class="target">AssetSuggestionResult</span>
 					</li>
 				</ul>
 			</section>
@@ -100,8 +97,8 @@
 						<section class="tsd-index-section ">
 							<h3>Properties</h3>
 							<ul class="tsd-index-list">
-								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="_addressbookcontroller_.addressbookstate.html#addressbook" class="tsd-kind-icon">address<wbr>Book</a></li>
-								<li class="tsd-kind-property tsd-parent-kind-interface tsd-is-inherited"><a href="_addressbookcontroller_.addressbookstate.html#name" class="tsd-kind-icon">name</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="_assetscontroller_.assetsuggestionresult.html#result" class="tsd-kind-icon">result</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="_assetscontroller_.assetsuggestionresult.html#suggestedassetmeta" class="tsd-kind-icon">suggested<wbr>Asset<wbr>Meta</a></li>
 							</ul>
 						</section>
 					</div>
@@ -110,23 +107,22 @@
 			<section class="tsd-panel-group tsd-member-group ">
 				<h2>Properties</h2>
 				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
-					<a name="addressbook" class="tsd-anchor"></a>
-					<h3>address<wbr>Book</h3>
-					<div class="tsd-signature tsd-kind-icon">address<wbr>Book<span class="tsd-signature-symbol">:</span> <a href="_addressbookcontroller_.contactentry.html" class="tsd-signature-type">ContactEntry</a><span class="tsd-signature-symbol">[]</span></div>
+					<a name="result" class="tsd-anchor"></a>
+					<h3>result</h3>
+					<div class="tsd-signature tsd-kind-icon">result<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">&gt;</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/MetaMask/gaba/blob/7c312ee/src/AddressBookController.ts#L26">AddressBookController.ts:26</a></li>
+							<li>Defined in <a href="https://github.com/MetaMask/gaba/blob/7c312ee/src/AssetsController.ts#L108">AssetsController.ts:108</a></li>
 						</ul>
 					</aside>
 				</section>
-				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface tsd-is-inherited">
-					<a name="name" class="tsd-anchor"></a>
-					<h3><span class="tsd-flag ts-flagOptional">Optional</span> name</h3>
-					<div class="tsd-signature tsd-kind-icon">name<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">string</span></div>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
+					<a name="suggestedassetmeta" class="tsd-anchor"></a>
+					<h3>suggested<wbr>Asset<wbr>Meta</h3>
+					<div class="tsd-signature tsd-kind-icon">suggested<wbr>Asset<wbr>Meta<span class="tsd-signature-symbol">:</span> <a href="_assetscontroller_.suggestedassetmeta.html" class="tsd-signature-type">SuggestedAssetMeta</a></div>
 					<aside class="tsd-sources">
-						<p>Inherited from <a href="_basecontroller_.basestate.html">BaseState</a>.<a href="_basecontroller_.basestate.html#name">name</a></p>
 						<ul>
-							<li>Defined in <a href="https://github.com/MetaMask/gaba/blob/7c312ee/src/BaseController.ts#L27">BaseController.ts:27</a></li>
+							<li>Defined in <a href="https://github.com/MetaMask/gaba/blob/7c312ee/src/AssetsController.ts#L109">AssetsController.ts:109</a></li>
 						</ul>
 					</aside>
 				</section>
@@ -141,13 +137,13 @@
 					<li class=" tsd-kind-external-module">
 						<a href="../modules/_accounttrackercontroller_.html">"<wbr>Account<wbr>Tracker<wbr>Controller"</a>
 					</li>
-					<li class="current tsd-kind-external-module">
+					<li class=" tsd-kind-external-module">
 						<a href="../modules/_addressbookcontroller_.html">"<wbr>Address<wbr>Book<wbr>Controller"</a>
 					</li>
 					<li class=" tsd-kind-external-module">
 						<a href="../modules/_assetscontractcontroller_.html">"<wbr>Assets<wbr>Contract<wbr>Controller"</a>
 					</li>
-					<li class=" tsd-kind-external-module">
+					<li class="current tsd-kind-external-module">
 						<a href="../modules/_assetscontroller_.html">"<wbr>Assets<wbr>Controller"</a>
 					</li>
 					<li class=" tsd-kind-external-module">
@@ -209,25 +205,43 @@
 			<nav class="tsd-navigation secondary menu-sticky">
 				<ul class="before-current">
 					<li class=" tsd-kind-class tsd-parent-kind-external-module">
-						<a href="../classes/_addressbookcontroller_.addressbookcontroller.html" class="tsd-kind-icon">Address<wbr>Book<wbr>Controller</a>
+						<a href="../classes/_assetscontroller_.assetscontroller.html" class="tsd-kind-icon">Assets<wbr>Controller</a>
+					</li>
+					<li class=" tsd-kind-interface tsd-parent-kind-external-module">
+						<a href="_assetscontroller_.apicollectiblecontractresponse.html" class="tsd-kind-icon">Api<wbr>Collectible<wbr>Contract<wbr>Response</a>
 					</li>
 				</ul>
 				<ul class="current">
 					<li class="current tsd-kind-interface tsd-parent-kind-external-module">
-						<a href="_addressbookcontroller_.addressbookstate.html" class="tsd-kind-icon">Address<wbr>Book<wbr>State</a>
+						<a href="_assetscontroller_.assetsuggestionresult.html" class="tsd-kind-icon">Asset<wbr>Suggestion<wbr>Result</a>
 						<ul>
 							<li class=" tsd-kind-property tsd-parent-kind-interface">
-								<a href="_addressbookcontroller_.addressbookstate.html#addressbook" class="tsd-kind-icon">address<wbr>Book</a>
+								<a href="_assetscontroller_.assetsuggestionresult.html#result" class="tsd-kind-icon">result</a>
 							</li>
-							<li class=" tsd-kind-property tsd-parent-kind-interface tsd-is-inherited">
-								<a href="_addressbookcontroller_.addressbookstate.html#name" class="tsd-kind-icon">name</a>
+							<li class=" tsd-kind-property tsd-parent-kind-interface">
+								<a href="_assetscontroller_.assetsuggestionresult.html#suggestedassetmeta" class="tsd-kind-icon">suggested<wbr>Asset<wbr>Meta</a>
 							</li>
 						</ul>
 					</li>
 				</ul>
 				<ul class="after-current">
 					<li class=" tsd-kind-interface tsd-parent-kind-external-module">
-						<a href="_addressbookcontroller_.contactentry.html" class="tsd-kind-icon">Contact<wbr>Entry</a>
+						<a href="_assetscontroller_.assetsconfig.html" class="tsd-kind-icon">Assets<wbr>Config</a>
+					</li>
+					<li class=" tsd-kind-interface tsd-parent-kind-external-module">
+						<a href="_assetscontroller_.assetsstate.html" class="tsd-kind-icon">Assets<wbr>State</a>
+					</li>
+					<li class=" tsd-kind-interface tsd-parent-kind-external-module">
+						<a href="_assetscontroller_.collectible.html" class="tsd-kind-icon">Collectible</a>
+					</li>
+					<li class=" tsd-kind-interface tsd-parent-kind-external-module">
+						<a href="_assetscontroller_.collectiblecontract.html" class="tsd-kind-icon">Collectible<wbr>Contract</a>
+					</li>
+					<li class=" tsd-kind-interface tsd-parent-kind-external-module">
+						<a href="_assetscontroller_.collectibleinformation.html" class="tsd-kind-icon">Collectible<wbr>Information</a>
+					</li>
+					<li class=" tsd-kind-interface tsd-parent-kind-external-module">
+						<a href="_assetscontroller_.suggestedassetmeta.html" class="tsd-kind-icon">Suggested<wbr>Asset<wbr>Meta</a>
 					</li>
 				</ul>
 			</nav>
