@@ -77,6 +77,9 @@
 						<dt>property</dt>
 						<dd><p>phishing - eth-phishing-detect configuration</p>
 						</dd>
+						<dt>property</dt>
+						<dd><p>whitelist - array of temporarily-approved origins</p>
+						</dd>
 					</dl>
 				</div>
 			</section>
@@ -102,6 +105,7 @@
 							<ul class="tsd-index-list">
 								<li class="tsd-kind-property tsd-parent-kind-interface tsd-is-inherited"><a href="_phishingcontroller_.phishingstate.html#name" class="tsd-kind-icon">name</a></li>
 								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="_phishingcontroller_.phishingstate.html#phishing" class="tsd-kind-icon">phishing</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="_phishingcontroller_.phishingstate.html#whitelist" class="tsd-kind-icon">whitelist</a></li>
 							</ul>
 						</section>
 					</div>
@@ -116,7 +120,7 @@
 					<aside class="tsd-sources">
 						<p>Inherited from <a href="_basecontroller_.basestate.html">BaseState</a>.<a href="_basecontroller_.basestate.html#name">name</a></p>
 						<ul>
-							<li>Defined in <a href="https://github.com/MetaMask/gaba/blob/2aa0121/src/BaseController.ts#L27">BaseController.ts:27</a></li>
+							<li>Defined in <a href="https://github.com/MetaMask/gaba/blob/e2dce07/src/BaseController.ts#L27">BaseController.ts:27</a></li>
 						</ul>
 					</aside>
 				</section>
@@ -126,7 +130,17 @@
 					<div class="tsd-signature tsd-kind-icon">phishing<span class="tsd-signature-symbol">:</span> <a href="_phishingcontroller_.ethphishingresponse.html" class="tsd-signature-type">EthPhishingResponse</a></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/MetaMask/gaba/blob/2aa0121/src/PhishingController.ts#L47">PhishingController.ts:47</a></li>
+							<li>Defined in <a href="https://github.com/MetaMask/gaba/blob/e2dce07/src/PhishingController.ts#L48">PhishingController.ts:48</a></li>
+						</ul>
+					</aside>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
+					<a name="whitelist" class="tsd-anchor"></a>
+					<h3>whitelist</h3>
+					<div class="tsd-signature tsd-kind-icon">whitelist<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">[]</span></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in <a href="https://github.com/MetaMask/gaba/blob/e2dce07/src/PhishingController.ts#L49">PhishingController.ts:49</a></li>
 						</ul>
 					</aside>
 				</section>
@@ -227,6 +241,9 @@
 							</li>
 							<li class=" tsd-kind-property tsd-parent-kind-interface">
 								<a href="_phishingcontroller_.phishingstate.html#phishing" class="tsd-kind-icon">phishing</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-interface">
+								<a href="_phishingcontroller_.phishingstate.html#whitelist" class="tsd-kind-icon">whitelist</a>
 							</li>
 						</ul>
 					</li>
