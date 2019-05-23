@@ -3,7 +3,7 @@
 <head>
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<title>KeyringState | gaba</title>
+	<title>FrequentRpc | gaba</title>
 	<meta name="description" content="">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="stylesheet" href="../assets/css/main.css">
@@ -54,13 +54,13 @@
 					<a href="../globals.html">Globals</a>
 				</li>
 				<li>
-					<a href="../modules/_keyringcontroller_.html">&quot;KeyringController&quot;</a>
+					<a href="../modules/_preferencescontroller_.html">&quot;PreferencesController&quot;</a>
 				</li>
 				<li>
-					<a href="_keyringcontroller_.keyringstate.html">KeyringState</a>
+					<a href="_preferencescontroller_.frequentrpc.html">FrequentRpc</a>
 				</li>
 			</ul>
-			<h1>Interface KeyringState</h1>
+			<h1>Interface FrequentRpc</h1>
 		</div>
 	</div>
 </header>
@@ -69,16 +69,24 @@
 		<div class="col-8 col-content">
 			<section class="tsd-panel tsd-comment">
 				<div class="tsd-comment tsd-typography">
+					<div class="lead">
+						<p>Custom RPC network information</p>
+					</div>
 					<dl class="tsd-comment-tags">
-						<dt>type</dt>
-						<dd><p>KeyringState</p>
-							<p>Keyring controller state</p>
+						<dt>param</dt>
+						<dd><p>RPC target URL</p>
 						</dd>
-						<dt>property</dt>
-						<dd><p>vault - Encrypted string representing keyring data</p>
+						<dt>param</dt>
+						<dd><p>Network ID as per EIP-155</p>
 						</dd>
-						<dt>property</dt>
-						<dd><p>keyrings - Group of accounts</p>
+						<dt>param</dt>
+						<dd><p>Currency ticker</p>
+						</dd>
+						<dt>param</dt>
+						<dd><p>Personalized network name</p>
+						</dd>
+						<dt>param</dt>
+						<dd><p>Personalized preferences</p>
 						</dd>
 					</dl>
 				</div>
@@ -87,12 +95,7 @@
 				<h3>Hierarchy</h3>
 				<ul class="tsd-hierarchy">
 					<li>
-						<a href="_basecontroller_.basestate.html" class="tsd-signature-type">BaseState</a>
-						<ul class="tsd-hierarchy">
-							<li>
-								<span class="target">KeyringState</span>
-							</li>
-						</ul>
+						<span class="target">FrequentRpc</span>
 					</li>
 				</ul>
 			</section>
@@ -103,9 +106,11 @@
 						<section class="tsd-index-section ">
 							<h3>Properties</h3>
 							<ul class="tsd-index-list">
-								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="_keyringcontroller_.keyringstate.html#keyrings" class="tsd-kind-icon">keyrings</a></li>
-								<li class="tsd-kind-property tsd-parent-kind-interface tsd-is-inherited"><a href="_keyringcontroller_.keyringstate.html#name" class="tsd-kind-icon">name</a></li>
-								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="_keyringcontroller_.keyringstate.html#vault" class="tsd-kind-icon">vault</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="_preferencescontroller_.frequentrpc.html#chainid" class="tsd-kind-icon">chain<wbr>Id</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="_preferencescontroller_.frequentrpc.html#nickname" class="tsd-kind-icon">nickname</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="_preferencescontroller_.frequentrpc.html#rpcprefs" class="tsd-kind-icon">rpc<wbr>Prefs</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="_preferencescontroller_.frequentrpc.html#rpcurl" class="tsd-kind-icon">rpc<wbr>Url</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="_preferencescontroller_.frequentrpc.html#ticker" class="tsd-kind-icon">ticker</a></li>
 							</ul>
 						</section>
 					</div>
@@ -114,33 +119,52 @@
 			<section class="tsd-panel-group tsd-member-group ">
 				<h2>Properties</h2>
 				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
-					<a name="keyrings" class="tsd-anchor"></a>
-					<h3>keyrings</h3>
-					<div class="tsd-signature tsd-kind-icon">keyrings<span class="tsd-signature-symbol">:</span> <a href="_keyringcontroller_.keyring.html" class="tsd-signature-type">Keyring</a><span class="tsd-signature-symbol">[]</span></div>
+					<a name="chainid" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagOptional">Optional</span> chain<wbr>Id</h3>
+					<div class="tsd-signature tsd-kind-icon">chain<wbr>Id<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">number</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/MetaMask/gaba/blob/b66e775/src/KeyringController.ts#L48">KeyringController.ts:48</a></li>
-						</ul>
-					</aside>
-				</section>
-				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface tsd-is-inherited">
-					<a name="name" class="tsd-anchor"></a>
-					<h3><span class="tsd-flag ts-flagOptional">Optional</span> name</h3>
-					<div class="tsd-signature tsd-kind-icon">name<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">string</span></div>
-					<aside class="tsd-sources">
-						<p>Inherited from <a href="_basecontroller_.basestate.html">BaseState</a>.<a href="_basecontroller_.basestate.html#name">name</a></p>
-						<ul>
-							<li>Defined in <a href="https://github.com/MetaMask/gaba/blob/b66e775/src/BaseController.ts#L27">BaseController.ts:27</a></li>
+							<li>Defined in <a href="https://github.com/MetaMask/gaba/blob/b66e775/src/PreferencesController.ts#L17">PreferencesController.ts:17</a></li>
 						</ul>
 					</aside>
 				</section>
 				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
-					<a name="vault" class="tsd-anchor"></a>
-					<h3><span class="tsd-flag ts-flagOptional">Optional</span> vault</h3>
-					<div class="tsd-signature tsd-kind-icon">vault<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">string</span></div>
+					<a name="nickname" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagOptional">Optional</span> nickname</h3>
+					<div class="tsd-signature tsd-kind-icon">nickname<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">string</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/MetaMask/gaba/blob/b66e775/src/KeyringController.ts#L47">KeyringController.ts:47</a></li>
+							<li>Defined in <a href="https://github.com/MetaMask/gaba/blob/b66e775/src/PreferencesController.ts#L18">PreferencesController.ts:18</a></li>
+						</ul>
+					</aside>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
+					<a name="rpcprefs" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagOptional">Optional</span> rpc<wbr>Prefs</h3>
+					<div class="tsd-signature tsd-kind-icon">rpc<wbr>Prefs<span class="tsd-signature-symbol">:</span> <a href="_preferencescontroller_.rpcpreferences.html" class="tsd-signature-type">RpcPreferences</a></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in <a href="https://github.com/MetaMask/gaba/blob/b66e775/src/PreferencesController.ts#L20">PreferencesController.ts:20</a></li>
+						</ul>
+					</aside>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
+					<a name="rpcurl" class="tsd-anchor"></a>
+					<h3>rpc<wbr>Url</h3>
+					<div class="tsd-signature tsd-kind-icon">rpc<wbr>Url<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in <a href="https://github.com/MetaMask/gaba/blob/b66e775/src/PreferencesController.ts#L16">PreferencesController.ts:16</a></li>
+						</ul>
+					</aside>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
+					<a name="ticker" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagOptional">Optional</span> ticker</h3>
+					<div class="tsd-signature tsd-kind-icon">ticker<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">string</span></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in <a href="https://github.com/MetaMask/gaba/blob/b66e775/src/PreferencesController.ts#L19">PreferencesController.ts:19</a></li>
 						</ul>
 					</aside>
 				</section>
@@ -176,7 +200,7 @@
 					<li class=" tsd-kind-external-module">
 						<a href="../modules/_currencyratecontroller_.html">"<wbr>Currency<wbr>Rate<wbr>Controller"</a>
 					</li>
-					<li class="current tsd-kind-external-module">
+					<li class=" tsd-kind-external-module">
 						<a href="../modules/_keyringcontroller_.html">"<wbr>Keyring<wbr>Controller"</a>
 					</li>
 					<li class=" tsd-kind-external-module">
@@ -194,7 +218,7 @@
 					<li class=" tsd-kind-external-module">
 						<a href="../modules/_phishingcontroller_.html">"<wbr>Phishing<wbr>Controller"</a>
 					</li>
-					<li class=" tsd-kind-external-module">
+					<li class="current tsd-kind-external-module">
 						<a href="../modules/_preferencescontroller_.html">"<wbr>Preferences<wbr>Controller"</a>
 					</li>
 					<li class=" tsd-kind-external-module">
@@ -222,42 +246,39 @@
 			</nav>
 			<nav class="tsd-navigation secondary menu-sticky">
 				<ul class="before-current">
-					<li class=" tsd-kind-enum tsd-parent-kind-external-module">
-						<a href="../enums/_keyringcontroller_.keyringtypes.html" class="tsd-kind-icon">Keyring<wbr>Types</a>
-					</li>
 					<li class=" tsd-kind-class tsd-parent-kind-external-module">
-						<a href="../classes/_keyringcontroller_.keyringcontroller.html" class="tsd-kind-icon">Keyring<wbr>Controller</a>
-					</li>
-					<li class=" tsd-kind-interface tsd-parent-kind-external-module">
-						<a href="_keyringcontroller_.keyring.html" class="tsd-kind-icon">Keyring</a>
-					</li>
-					<li class=" tsd-kind-interface tsd-parent-kind-external-module">
-						<a href="_keyringcontroller_.keyringconfig.html" class="tsd-kind-icon">Keyring<wbr>Config</a>
-					</li>
-					<li class=" tsd-kind-interface tsd-parent-kind-external-module">
-						<a href="_keyringcontroller_.keyringmemstate.html" class="tsd-kind-icon">Keyring<wbr>Mem<wbr>State</a>
-					</li>
-					<li class=" tsd-kind-interface tsd-parent-kind-external-module">
-						<a href="_keyringcontroller_.keyringobject.html" class="tsd-kind-icon">Keyring<wbr>Object</a>
+						<a href="../classes/_preferencescontroller_.preferencescontroller.html" class="tsd-kind-icon">Preferences<wbr>Controller</a>
 					</li>
 				</ul>
 				<ul class="current">
 					<li class="current tsd-kind-interface tsd-parent-kind-external-module">
-						<a href="_keyringcontroller_.keyringstate.html" class="tsd-kind-icon">Keyring<wbr>State</a>
+						<a href="_preferencescontroller_.frequentrpc.html" class="tsd-kind-icon">Frequent<wbr>Rpc</a>
 						<ul>
 							<li class=" tsd-kind-property tsd-parent-kind-interface">
-								<a href="_keyringcontroller_.keyringstate.html#keyrings" class="tsd-kind-icon">keyrings</a>
-							</li>
-							<li class=" tsd-kind-property tsd-parent-kind-interface tsd-is-inherited">
-								<a href="_keyringcontroller_.keyringstate.html#name" class="tsd-kind-icon">name</a>
+								<a href="_preferencescontroller_.frequentrpc.html#chainid" class="tsd-kind-icon">chain<wbr>Id</a>
 							</li>
 							<li class=" tsd-kind-property tsd-parent-kind-interface">
-								<a href="_keyringcontroller_.keyringstate.html#vault" class="tsd-kind-icon">vault</a>
+								<a href="_preferencescontroller_.frequentrpc.html#nickname" class="tsd-kind-icon">nickname</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-interface">
+								<a href="_preferencescontroller_.frequentrpc.html#rpcprefs" class="tsd-kind-icon">rpc<wbr>Prefs</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-interface">
+								<a href="_preferencescontroller_.frequentrpc.html#rpcurl" class="tsd-kind-icon">rpc<wbr>Url</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-interface">
+								<a href="_preferencescontroller_.frequentrpc.html#ticker" class="tsd-kind-icon">ticker</a>
 							</li>
 						</ul>
 					</li>
 				</ul>
 				<ul class="after-current">
+					<li class=" tsd-kind-interface tsd-parent-kind-external-module">
+						<a href="_preferencescontroller_.preferencesstate.html" class="tsd-kind-icon">Preferences<wbr>State</a>
+					</li>
+					<li class=" tsd-kind-interface tsd-parent-kind-external-module">
+						<a href="_preferencescontroller_.rpcpreferences.html" class="tsd-kind-icon">Rpc<wbr>Preferences</a>
+					</li>
 				</ul>
 			</nav>
 		</div>
