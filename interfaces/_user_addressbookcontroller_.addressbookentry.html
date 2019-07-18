@@ -3,7 +3,7 @@
 <head>
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<title>TypedMessageParams | gaba</title>
+	<title>AddressBookEntry | gaba</title>
 	<meta name="description" content="">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="stylesheet" href="../assets/css/main.css">
@@ -54,13 +54,13 @@
 					<a href="../globals.html">Globals</a>
 				</li>
 				<li>
-					<a href="../modules/_message_manager_typedmessagemanager_.html">&quot;message-manager/TypedMessageManager&quot;</a>
+					<a href="../modules/_user_addressbookcontroller_.html">&quot;user/AddressBookController&quot;</a>
 				</li>
 				<li>
-					<a href="_message_manager_typedmessagemanager_.typedmessageparams.html">TypedMessageParams</a>
+					<a href="_user_addressbookcontroller_.addressbookentry.html">AddressBookEntry</a>
 				</li>
 			</ul>
-			<h1>Interface TypedMessageParams</h1>
+			<h1>Interface AddressBookEntry</h1>
 		</div>
 	</div>
 </header>
@@ -71,18 +71,20 @@
 				<div class="tsd-comment tsd-typography">
 					<dl class="tsd-comment-tags">
 						<dt>type</dt>
-						<dd><p>TypedMessageParams</p>
-							<p>Represents the parameters to pass to the eth_signTypedData method once the signature request is approved.</p>
+						<dd><p>AddressBookEntry</p>
+							<p>AddressBookEntry representation</p>
 						</dd>
 						<dt>property</dt>
-						<dd><p>data - A hex string conversion of the raw buffer or an object containing data of the signature
-							request depending on version</p>
+						<dd><p>address - Hex address of a recipient account</p>
 						</dd>
 						<dt>property</dt>
-						<dd><p>from - Address to sign this message from</p>
+						<dd><p>name - Nickname associated with this address</p>
 						</dd>
 						<dt>property</dt>
-						<dd><p>origin? - Added for request origin identification</p>
+						<dd><p>chainId - Chain id identifies the current chain</p>
+						</dd>
+						<dt>property</dt>
+						<dd><p>memo - User&#39;s note about address</p>
 						</dd>
 					</dl>
 				</div>
@@ -91,12 +93,7 @@
 				<h3>Hierarchy</h3>
 				<ul class="tsd-hierarchy">
 					<li>
-						<a href="_message_manager_messagemanager_.messageparams.html" class="tsd-signature-type">MessageParams</a>
-						<ul class="tsd-hierarchy">
-							<li>
-								<span class="target">TypedMessageParams</span>
-							</li>
-						</ul>
+						<span class="target">AddressBookEntry</span>
 					</li>
 				</ul>
 			</section>
@@ -107,9 +104,10 @@
 						<section class="tsd-index-section ">
 							<h3>Properties</h3>
 							<ul class="tsd-index-list">
-								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="_message_manager_typedmessagemanager_.typedmessageparams.html#data" class="tsd-kind-icon">data</a></li>
-								<li class="tsd-kind-property tsd-parent-kind-interface tsd-is-inherited"><a href="_message_manager_typedmessagemanager_.typedmessageparams.html#from" class="tsd-kind-icon">from</a></li>
-								<li class="tsd-kind-property tsd-parent-kind-interface tsd-is-inherited"><a href="_message_manager_typedmessagemanager_.typedmessageparams.html#origin" class="tsd-kind-icon">origin</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="_user_addressbookcontroller_.addressbookentry.html#address" class="tsd-kind-icon">address</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="_user_addressbookcontroller_.addressbookentry.html#chainid" class="tsd-kind-icon">chain<wbr>Id</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="_user_addressbookcontroller_.addressbookentry.html#memo" class="tsd-kind-icon">memo</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="_user_addressbookcontroller_.addressbookentry.html#name" class="tsd-kind-icon">name</a></li>
 							</ul>
 						</section>
 					</div>
@@ -118,34 +116,42 @@
 			<section class="tsd-panel-group tsd-member-group ">
 				<h2>Properties</h2>
 				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
-					<a name="data" class="tsd-anchor"></a>
-					<h3>data</h3>
-					<div class="tsd-signature tsd-kind-icon">data<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">any</span><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">string</span></div>
+					<a name="address" class="tsd-anchor"></a>
+					<h3>address</h3>
+					<div class="tsd-signature tsd-kind-icon">address<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/MetaMask/gaba/blob/60144ed/src/message-manager/TypedMessageManager.ts#L39">message-manager/TypedMessageManager.ts:39</a></li>
+							<li>Defined in <a href="https://github.com/MetaMask/gaba/blob/60144ed/src/user/AddressBookController.ts#L29">user/AddressBookController.ts:29</a></li>
 						</ul>
 					</aside>
 				</section>
-				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface tsd-is-inherited">
-					<a name="from" class="tsd-anchor"></a>
-					<h3>from</h3>
-					<div class="tsd-signature tsd-kind-icon">from<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span></div>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
+					<a name="chainid" class="tsd-anchor"></a>
+					<h3>chain<wbr>Id</h3>
+					<div class="tsd-signature tsd-kind-icon">chain<wbr>Id<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">number</span></div>
 					<aside class="tsd-sources">
-						<p>Inherited from <a href="_message_manager_messagemanager_.messageparams.html">MessageParams</a>.<a href="_message_manager_messagemanager_.messageparams.html#from">from</a></p>
 						<ul>
-							<li>Defined in <a href="https://github.com/MetaMask/gaba/blob/60144ed/src/message-manager/MessageManager.ts#L43">message-manager/MessageManager.ts:43</a></li>
+							<li>Defined in <a href="https://github.com/MetaMask/gaba/blob/60144ed/src/user/AddressBookController.ts#L31">user/AddressBookController.ts:31</a></li>
 						</ul>
 					</aside>
 				</section>
-				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface tsd-is-inherited">
-					<a name="origin" class="tsd-anchor"></a>
-					<h3><span class="tsd-flag ts-flagOptional">Optional</span> origin</h3>
-					<div class="tsd-signature tsd-kind-icon">origin<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">string</span></div>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
+					<a name="memo" class="tsd-anchor"></a>
+					<h3>memo</h3>
+					<div class="tsd-signature tsd-kind-icon">memo<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span></div>
 					<aside class="tsd-sources">
-						<p>Inherited from <a href="_message_manager_messagemanager_.messageparams.html">MessageParams</a>.<a href="_message_manager_messagemanager_.messageparams.html#origin">origin</a></p>
 						<ul>
-							<li>Defined in <a href="https://github.com/MetaMask/gaba/blob/60144ed/src/message-manager/MessageManager.ts#L44">message-manager/MessageManager.ts:44</a></li>
+							<li>Defined in <a href="https://github.com/MetaMask/gaba/blob/60144ed/src/user/AddressBookController.ts#L32">user/AddressBookController.ts:32</a></li>
+						</ul>
+					</aside>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
+					<a name="name" class="tsd-anchor"></a>
+					<h3>name</h3>
+					<div class="tsd-signature tsd-kind-icon">name<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in <a href="https://github.com/MetaMask/gaba/blob/60144ed/src/user/AddressBookController.ts#L30">user/AddressBookController.ts:30</a></li>
 						</ul>
 					</aside>
 				</section>
@@ -196,7 +202,7 @@
 					<li class=" tsd-kind-external-module">
 						<a href="../modules/_message_manager_personalmessagemanager_.html">"message-<wbr>manager/<wbr>Personal<wbr>Message<wbr>Manager"</a>
 					</li>
-					<li class="current tsd-kind-external-module">
+					<li class=" tsd-kind-external-module">
 						<a href="../modules/_message_manager_typedmessagemanager_.html">"message-<wbr>manager/<wbr>Typed<wbr>Message<wbr>Manager"</a>
 					</li>
 					<li class=" tsd-kind-external-module">
@@ -214,7 +220,7 @@
 					<li class=" tsd-kind-external-module">
 						<a href="../modules/_transaction_transactioncontroller_.html">"transaction/<wbr>Transaction<wbr>Controller"</a>
 					</li>
-					<li class=" tsd-kind-external-module">
+					<li class="current tsd-kind-external-module">
 						<a href="../modules/_user_addressbookcontroller_.html">"user/<wbr>Address<wbr>Book<wbr>Controller"</a>
 					</li>
 					<li class=" tsd-kind-external-module">
@@ -228,31 +234,34 @@
 			<nav class="tsd-navigation secondary menu-sticky">
 				<ul class="before-current">
 					<li class=" tsd-kind-class tsd-parent-kind-external-module">
-						<a href="../classes/_message_manager_typedmessagemanager_.typedmessagemanager.html" class="tsd-kind-icon">Typed<wbr>Message<wbr>Manager</a>
-					</li>
-					<li class=" tsd-kind-interface tsd-parent-kind-external-module">
-						<a href="_message_manager_typedmessagemanager_.typedmessage.html" class="tsd-kind-icon">Typed<wbr>Message</a>
+						<a href="../classes/_user_addressbookcontroller_.addressbookcontroller.html" class="tsd-kind-icon">Address<wbr>Book<wbr>Controller</a>
 					</li>
 				</ul>
 				<ul class="current">
 					<li class="current tsd-kind-interface tsd-parent-kind-external-module">
-						<a href="_message_manager_typedmessagemanager_.typedmessageparams.html" class="tsd-kind-icon">Typed<wbr>Message<wbr>Params</a>
+						<a href="_user_addressbookcontroller_.addressbookentry.html" class="tsd-kind-icon">Address<wbr>Book<wbr>Entry</a>
 						<ul>
 							<li class=" tsd-kind-property tsd-parent-kind-interface">
-								<a href="_message_manager_typedmessagemanager_.typedmessageparams.html#data" class="tsd-kind-icon">data</a>
+								<a href="_user_addressbookcontroller_.addressbookentry.html#address" class="tsd-kind-icon">address</a>
 							</li>
-							<li class=" tsd-kind-property tsd-parent-kind-interface tsd-is-inherited">
-								<a href="_message_manager_typedmessagemanager_.typedmessageparams.html#from" class="tsd-kind-icon">from</a>
+							<li class=" tsd-kind-property tsd-parent-kind-interface">
+								<a href="_user_addressbookcontroller_.addressbookentry.html#chainid" class="tsd-kind-icon">chain<wbr>Id</a>
 							</li>
-							<li class=" tsd-kind-property tsd-parent-kind-interface tsd-is-inherited">
-								<a href="_message_manager_typedmessagemanager_.typedmessageparams.html#origin" class="tsd-kind-icon">origin</a>
+							<li class=" tsd-kind-property tsd-parent-kind-interface">
+								<a href="_user_addressbookcontroller_.addressbookentry.html#memo" class="tsd-kind-icon">memo</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-interface">
+								<a href="_user_addressbookcontroller_.addressbookentry.html#name" class="tsd-kind-icon">name</a>
 							</li>
 						</ul>
 					</li>
 				</ul>
 				<ul class="after-current">
 					<li class=" tsd-kind-interface tsd-parent-kind-external-module">
-						<a href="_message_manager_typedmessagemanager_.typedmessageparamsmetamask.html" class="tsd-kind-icon">Typed<wbr>Message<wbr>Params<wbr>Metamask</a>
+						<a href="_user_addressbookcontroller_.addressbookstate.html" class="tsd-kind-icon">Address<wbr>Book<wbr>State</a>
+					</li>
+					<li class=" tsd-kind-interface tsd-parent-kind-external-module">
+						<a href="_user_addressbookcontroller_.contactentry.html" class="tsd-kind-icon">Contact<wbr>Entry</a>
 					</li>
 				</ul>
 			</nav>
