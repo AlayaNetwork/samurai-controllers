@@ -66,9 +66,7 @@
 				<p>The <strong>GABA</strong> engine is a collection of platform-agnostic modules for creating secure data models for cryptocurrency wallets.</p>
 				<p><a href="https://travis-ci.org/MetaMask/gaba"><img src="https://travis-ci.org/MetaMask/gaba.svg?branch=master" alt="Build Status"></a>
 				<a href="https://codecov.io/gh/MetaMask/gaba"><img src="https://codecov.io/gh/MetaMask/gaba/branch/master/graph/badge.svg" alt="codecov"></a></p>
-				<a href="#table-of-contents" id="table-of-contents" style="color: inherit; text-decoration: none;">
-					<h2>Table of Contents</h2>
-				</a>
+				<h2 id="table-of-contents">Table of Contents</h2>
 				<ul>
 					<li><a href="#usage">Usage</a></li>
 					<li><a href="#modules">Modules</a></li>
@@ -85,14 +83,13 @@
 					<li><a href="#api-documentation">API documentation</a></li>
 					<li><a href="#license">License</a></li>
 				</ul>
-				<a href="#usage" id="usage" style="color: inherit; text-decoration: none;">
-					<h2>Usage</h2>
-				</a>
+				<h2 id="usage">Usage</h2>
 				<ol>
 					<li><p>Install the package.</p>
-					<pre><code> npm <span class="hljs-selector-tag">i</span> gaba</code></pre></li>
+						<pre><code> npm <span class="hljs-selector-tag">i</span> gaba
+</code></pre></li>
 					<li><p>Compose stores to create a data model.</p>
-						<pre><code class="language-js"> <span class="hljs-keyword">import</span> {
+						<pre><code class="lang-js"> <span class="hljs-keyword">import</span> {
      ComposableController,
      NetworkStatusController,
      TokenRatesController
@@ -103,132 +100,114 @@
      <span class="hljs-keyword">new</span> TokenRatesController()
  ]);
 
- datamodel.subscribe(<span class="hljs-function">(<span class="hljs-params">state</span>) =&gt;</span> {<span class="hljs-comment">/* data model has changed */</span>});</code></pre>
+ datamodel.subscribe(<span class="hljs-function">(<span class="hljs-params">state</span>) =&gt;</span> {<span class="hljs-comment">/* data model has changed */</span>});
+</code></pre>
 					</li>
 				</ol>
-				<a href="#modules" id="modules" style="color: inherit; text-decoration: none;">
-					<h2>Modules</h2>
-				</a>
+				<h2 id="modules">Modules</h2>
 				<p>The GABA engine consists of a collection of modules that each expose uniform APIs for common operations like configuration, state management, and subscription.</p>
-				<a href="#accounttrackercontroller" id="accounttrackercontroller" style="color: inherit; text-decoration: none;">
-					<h3>AccountTrackerController</h3>
-				</a>
-				<pre><code class="language-ts"><span class="hljs-keyword">import</span> AccountTrackerController <span class="hljs-keyword">from</span> <span class="hljs-string">'gaba'</span>;</code></pre>
+				<h3 id="accounttrackercontroller">AccountTrackerController</h3>
+				<pre><code class="lang-ts"><span class="hljs-keyword">import</span> AccountTrackerController <span class="hljs-keyword">from</span> <span class="hljs-string">'gaba'</span>;
+</code></pre>
 				<p>The AccountTrackerController tracks information associated with specific Ethereum accounts.</p>
-				<a href="#addressbookcontroller" id="addressbookcontroller" style="color: inherit; text-decoration: none;">
-					<h3>AddressBookController</h3>
-				</a>
-				<pre><code class="language-ts"><span class="hljs-keyword">import</span> AddressBookController <span class="hljs-keyword">from</span> <span class="hljs-string">'gaba'</span>;</code></pre>
+				<h3 id="addressbookcontroller">AddressBookController</h3>
+				<pre><code class="lang-ts"><span class="hljs-keyword">import</span> AddressBookController <span class="hljs-keyword">from</span> <span class="hljs-string">'gaba'</span>;
+</code></pre>
 				<p>The AddressBookController exposes functions for managing a list of recipient addresses and associated nicknames.</p>
-				<a href="#composablecontroller" id="composablecontroller" style="color: inherit; text-decoration: none;">
-					<h3>ComposableController</h3>
-				</a>
-				<pre><code class="language-ts"><span class="hljs-keyword">import</span> ComposableController <span class="hljs-keyword">from</span> <span class="hljs-string">'gaba'</span>;</code></pre>
+				<h3 id="composablecontroller">ComposableController</h3>
+				<pre><code class="lang-ts"><span class="hljs-keyword">import</span> ComposableController <span class="hljs-keyword">from</span> <span class="hljs-string">'gaba'</span>;
+</code></pre>
 				<p>The ComposableController can be used to compose multiple controllers together into a single controller.</p>
-				<a href="#currencyratecontroller" id="currencyratecontroller" style="color: inherit; text-decoration: none;">
-					<h3>CurrencyRateController</h3>
-				</a>
-				<pre><code class="language-ts"><span class="hljs-keyword">import</span> CurrencyRateController <span class="hljs-keyword">from</span> <span class="hljs-string">'gaba'</span>;</code></pre>
+				<h3 id="currencyratecontroller">CurrencyRateController</h3>
+				<pre><code class="lang-ts"><span class="hljs-keyword">import</span> CurrencyRateController <span class="hljs-keyword">from</span> <span class="hljs-string">'gaba'</span>;
+</code></pre>
 				<p>The CurrencyRateController passively polls for an ETH-to-fiat exchange rate based on a chosen currency.</p>
-				<a href="#keyringcontroller" id="keyringcontroller" style="color: inherit; text-decoration: none;">
-					<h3>KeyringController</h3>
-				</a>
-				<pre><code class="language-ts"><span class="hljs-keyword">import</span> KeyringController <span class="hljs-keyword">from</span> <span class="hljs-string">'gaba'</span>;</code></pre>
+				<h3 id="keyringcontroller">KeyringController</h3>
+				<pre><code class="lang-ts"><span class="hljs-keyword">import</span> KeyringController <span class="hljs-keyword">from</span> <span class="hljs-string">'gaba'</span>;
+</code></pre>
 				<p>The KeyringController is responsible for establishing and managing Ethereum address-based identities.</p>
-				<a href="#networkcontroller" id="networkcontroller" style="color: inherit; text-decoration: none;">
-					<h3>NetworkController</h3>
-				</a>
-				<pre><code class="language-ts"><span class="hljs-keyword">import</span> NetworkController <span class="hljs-keyword">from</span> <span class="hljs-string">'gaba'</span>;</code></pre>
+				<h3 id="networkcontroller">NetworkController</h3>
+				<pre><code class="lang-ts"><span class="hljs-keyword">import</span> NetworkController <span class="hljs-keyword">from</span> <span class="hljs-string">'gaba'</span>;
+</code></pre>
 				<p>The NetworkController is responsible for creating an underlying provider and for refreshing its configuration.</p>
-				<a href="#networkstatuscontroller" id="networkstatuscontroller" style="color: inherit; text-decoration: none;">
-					<h3>NetworkStatusController</h3>
-				</a>
-				<pre><code class="language-ts"><span class="hljs-keyword">import</span> NetworkStatusController <span class="hljs-keyword">from</span> <span class="hljs-string">'gaba'</span>;</code></pre>
+				<h3 id="networkstatuscontroller">NetworkStatusController</h3>
+				<pre><code class="lang-ts"><span class="hljs-keyword">import</span> NetworkStatusController <span class="hljs-keyword">from</span> <span class="hljs-string">'gaba'</span>;
+</code></pre>
 				<p>The NetworkStatusController passively polls for the status of available provider networks. The Infura network is supported by default.</p>
-				<a href="#phishingcontroller" id="phishingcontroller" style="color: inherit; text-decoration: none;">
-					<h3>PhishingController</h3>
-				</a>
-				<pre><code class="language-ts"><span class="hljs-keyword">import</span> PhishingController <span class="hljs-keyword">from</span> <span class="hljs-string">'gaba'</span>;</code></pre>
+				<h3 id="phishingcontroller">PhishingController</h3>
+				<pre><code class="lang-ts"><span class="hljs-keyword">import</span> PhishingController <span class="hljs-keyword">from</span> <span class="hljs-string">'gaba'</span>;
+</code></pre>
 				<p>The PhishingController passively polls for community-maintained lists of approved and unapproved website origins.</p>
-				<a href="#preferencescontroller" id="preferencescontroller" style="color: inherit; text-decoration: none;">
-					<h3>PreferencesController</h3>
-				</a>
-				<pre><code class="language-ts"><span class="hljs-keyword">import</span> PreferencesController <span class="hljs-keyword">from</span> <span class="hljs-string">'gaba'</span>;</code></pre>
+				<h3 id="preferencescontroller">PreferencesController</h3>
+				<pre><code class="lang-ts"><span class="hljs-keyword">import</span> PreferencesController <span class="hljs-keyword">from</span> <span class="hljs-string">'gaba'</span>;
+</code></pre>
 				<p>The PreferencesController manages agnostic global settings and exposes convenience methods for updating them.</p>
-				<a href="#shapeshiftcontroller" id="shapeshiftcontroller" style="color: inherit; text-decoration: none;">
-					<h3>ShapeShiftController</h3>
-				</a>
-				<pre><code class="language-ts"><span class="hljs-keyword">import</span> ShapeShiftController <span class="hljs-keyword">from</span> <span class="hljs-string">'gaba'</span>;</code></pre>
+				<h3 id="shapeshiftcontroller">ShapeShiftController</h3>
+				<pre><code class="lang-ts"><span class="hljs-keyword">import</span> ShapeShiftController <span class="hljs-keyword">from</span> <span class="hljs-string">'gaba'</span>;
+</code></pre>
 				<p>The ShapeShiftController exposes functions for creating ShapeShift purchases and tracks past transactions.</p>
-				<a href="#tokenratescontroller" id="tokenratescontroller" style="color: inherit; text-decoration: none;">
-					<h3>TokenRatesController</h3>
-				</a>
-				<pre><code class="language-ts"><span class="hljs-keyword">import</span> TokenRatesController <span class="hljs-keyword">from</span> <span class="hljs-string">'gaba'</span>;</code></pre>
+				<h3 id="tokenratescontroller">TokenRatesController</h3>
+				<pre><code class="lang-ts"><span class="hljs-keyword">import</span> TokenRatesController <span class="hljs-keyword">from</span> <span class="hljs-string">'gaba'</span>;
+</code></pre>
 				<p>The TokenRatesController passively polls on a set interval for token-to-fiat exchange rates.</p>
-				<a href="#transactioncontroller" id="transactioncontroller" style="color: inherit; text-decoration: none;">
-					<h3>TransactionController</h3>
-				</a>
-				<pre><code class="language-ts"><span class="hljs-keyword">import</span> TransactionController <span class="hljs-keyword">from</span> <span class="hljs-string">'gaba'</span>;</code></pre>
+				<h3 id="transactioncontroller">TransactionController</h3>
+				<pre><code class="lang-ts"><span class="hljs-keyword">import</span> TransactionController <span class="hljs-keyword">from</span> <span class="hljs-string">'gaba'</span>;
+</code></pre>
 				<p>The TransactionController is responsible for submitting and managing transactions.</p>
-				<a href="#util" id="util" style="color: inherit; text-decoration: none;">
-					<h3>util</h3>
-				</a>
-				<pre><code class="language-ts"><span class="hljs-keyword">import</span> util <span class="hljs-keyword">from</span> <span class="hljs-string">'gaba'</span>;</code></pre>
+				<h3 id="util">util</h3>
+				<pre><code class="lang-ts"><span class="hljs-keyword">import</span> util <span class="hljs-keyword">from</span> <span class="hljs-string">'gaba'</span>;
+</code></pre>
 				<p>The util module exposes a set of utility functions for common operations like gas estimation and generating crypto-buying URLs.</p>
-				<a href="#concepts" id="concepts" style="color: inherit; text-decoration: none;">
-					<h2>Concepts</h2>
-				</a>
+				<h2 id="concepts">Concepts</h2>
 				<p>Using GABA modules should be straightforward since each module exposes the same minimal API. The concepts detailed in this section form the entirety of the core API: knowing these concepts will allow you to fully use the GABA engine to build wallet data models.</p>
-				<a href="#initialization" id="initialization" style="color: inherit; text-decoration: none;">
-					<h3>Initialization</h3>
-				</a>
+				<h3 id="initialization">Initialization</h3>
 				<p>Each GABA module can be initialized with an optional initial configuration argument and an optional initial state argument:</p>
-				<pre><code class="language-ts"><span class="hljs-keyword">const</span> controller = <span class="hljs-keyword">new</span> Controller(&lt;initial_config&gt;, &lt;initial_state&gt;)</code></pre>
+				<pre><code class="lang-ts"><span class="hljs-keyword">const</span> controller = <span class="hljs-keyword">new</span> Controller(&lt;initial_config&gt;, &lt;initial_state&gt;)
+</code></pre>
 				<p>Data passed into a module as initial state will be merged with that module&#39;s default state; likewise, options passed into a module as initial configuration will be merged with that module&#39;s default configuration.</p>
-				<a href="#configuration" id="configuration" style="color: inherit; text-decoration: none;">
-					<h3>Configuration</h3>
-				</a>
+				<h3 id="configuration">Configuration</h3>
 				<p>As mentioned in the <a href="#initialization">initialization section</a>, a GABA module can be configured during initialization by passing in a configuration object as its first argument:</p>
-				<pre><code class="language-ts"><span class="hljs-keyword">const</span> controller = <span class="hljs-keyword">new</span> Controller(&lt;initial_config&gt;, &lt;initial_state&gt;)</code></pre>
+				<pre><code class="lang-ts"><span class="hljs-keyword">const</span> controller = <span class="hljs-keyword">new</span> Controller(&lt;initial_config&gt;, &lt;initial_state&gt;)
+</code></pre>
 				<p>A GABA module can also be configured (or reconfigured) after initialization by passing a configuration object to its <code>configure</code> method:</p>
-				<pre><code class="language-ts"><span class="hljs-keyword">const</span> controller = <span class="hljs-keyword">new</span> Controller()
-controller.configure({ foo: <span class="hljs-string">'bar'</span>, baz: <span class="hljs-string">'qux'</span> });</code></pre>
-				<p>Regardless of how a module is configured, whether it&#39;s during or after initialization, configuration options can always be accessed on a module as instance variables for convenience:</p>
-				<pre><code class="language-ts"><span class="hljs-keyword">const</span> controller = <span class="hljs-keyword">new</span> Controller()
+				<pre><code class="lang-ts"><span class="hljs-keyword">const</span> controller = <span class="hljs-keyword">new</span> Controller()
 controller.configure({ foo: <span class="hljs-string">'bar'</span>, baz: <span class="hljs-string">'qux'</span> });
-<span class="hljs-built_in">console</span>.log(controller.foo, controller.baz); <span class="hljs-comment">// "bar qux"</span></code></pre>
-				<a href="#state-management" id="state-management" style="color: inherit; text-decoration: none;">
-					<h3>State management</h3>
-				</a>
+</code></pre>
+				<p>Regardless of how a module is configured, whether it&#39;s during or after initialization, configuration options can always be accessed on a module as instance variables for convenience:</p>
+				<pre><code class="lang-ts"><span class="hljs-keyword">const</span> controller = <span class="hljs-keyword">new</span> Controller()
+controller.configure({ foo: <span class="hljs-string">'bar'</span>, baz: <span class="hljs-string">'qux'</span> });
+<span class="hljs-built_in">console</span>.log(controller.foo, controller.baz); <span class="hljs-comment">// "bar qux"</span>
+</code></pre>
+				<h3 id="state-management">State management</h3>
 				<p>The core purpose of every GABA module is to maintain an internal data object called &quot;state&quot;. Modules are like data stores: their internal state data can be updated directly by modifying the data itself or indirectly by calling API methods that in turn modify the data.</p>
 				<p>A GABA module&#39;s state can be directly modified by calling its <code>update</code> method and passing in a new data object. By default, this data object will be merged with the module&#39;s existing internal state; however, if the data object should overwrite the module&#39;s internal state, a second argument of <code>true</code> can be passed to the <code>update</code> method:</p>
-				<pre><code class="language-ts"><span class="hljs-keyword">const</span> controller = <span class="hljs-keyword">new</span> Controller();
+				<pre><code class="lang-ts"><span class="hljs-keyword">const</span> controller = <span class="hljs-keyword">new</span> Controller();
 controller.update({ foo: <span class="hljs-string">'bar'</span> }); <span class="hljs-comment">// merge with existing state</span>
-controller.update({ foo: <span class="hljs-string">'bar'</span> }, <span class="hljs-literal">true</span>); <span class="hljs-comment">// overwrite existing state</span></code></pre>
+controller.update({ foo: <span class="hljs-string">'bar'</span> }, <span class="hljs-literal">true</span>); <span class="hljs-comment">// overwrite existing state</span>
+</code></pre>
 				<p>A GABA module&#39;s state can be indirectly modified by calling any state-modifying API methods it may expose. For example, the AddressBookController exposes a <code>set</code> method that accepts a new address to save and an associated nickname; calling this method will internally update its <code>state.addressBook</code> array.</p>
 				<p>A GABA module&#39;s state can always be accessed by referencing the <code>state</code> instance variable for convenience:</p>
-				<pre><code class="language-ts"><span class="hljs-keyword">const</span> controller = <span class="hljs-keyword">new</span> Controller();
-<span class="hljs-built_in">console</span>.log(controller.state); <span class="hljs-comment">// { ... }</span></code></pre>
-				<a href="#subscription" id="subscription" style="color: inherit; text-decoration: none;">
-					<h3>Subscription</h3>
-				</a>
+				<pre><code class="lang-ts"><span class="hljs-keyword">const</span> controller = <span class="hljs-keyword">new</span> Controller();
+<span class="hljs-built_in">console</span>.log(controller.state); <span class="hljs-comment">// { ... }</span>
+</code></pre>
+				<h3 id="subscription">Subscription</h3>
 				<p>Since each GABA module maintains an internal state object, there should be a way to add listeners to be notified when state data changes. GABA modules expose two methods for subscription management, <code>subscribe</code> and <code>unsubscribe</code>.</p>
 				<p>Change handlers can be registered with a GABA module by passing a function to its <code>subscribe</code> method. This function will be called anytime the module&#39;s underlying state changes and will be passed the current state as its only function argument:</p>
-				<pre><code class="language-ts"><span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">onChange</span>(<span class="hljs-params">state</span>) </span>{ <span class="hljs-comment">/* state data changed */</span> }
+				<pre><code class="lang-ts"><span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">onChange</span>(<span class="hljs-params">state</span>) </span>{ <span class="hljs-comment">/* state data changed */</span> }
 <span class="hljs-keyword">const</span> controller = <span class="hljs-keyword">new</span> Controller();
-controller.subscribe(onChange);</code></pre>
+controller.subscribe(onChange);
+</code></pre>
 				<p>Change handlers can be removed from a GABA module by passing a function to its <code>unsubscribe</code> method. Any function passed to <code>unsubscribe</code> will be removed from the internal list of handlers and will no longer be called when state data changes:</p>
-				<pre><code class="language-ts"><span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">onChange</span>(<span class="hljs-params">state</span>) </span>{ <span class="hljs-comment">/* state data changed */</span> }
+				<pre><code class="lang-ts"><span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">onChange</span>(<span class="hljs-params">state</span>) </span>{ <span class="hljs-comment">/* state data changed */</span> }
 <span class="hljs-keyword">const</span> controller = <span class="hljs-keyword">new</span> Controller();
 controller.subscribe(onChange);
 <span class="hljs-comment">// ...</span>
-controller.unsubscribe(onChange);</code></pre>
-				<a href="#composition" id="composition" style="color: inherit; text-decoration: none;">
-					<h3>Composition</h3>
-				</a>
+controller.unsubscribe(onChange);
+</code></pre>
+				<h3 id="composition">Composition</h3>
 				<p>Because each GABA module maintains its own state and subscriptions, it would be tedious to initialize and subscribe to every available module independently. To solve this issue, the ComposableController can be used to compose multiple GABA modules into a single controller.</p>
 				<p>The ComposableController is initialized by passing an array of GABA module instances:</p>
-				<pre><code class="language-ts"><span class="hljs-keyword">import</span> {
+				<pre><code class="lang-ts"><span class="hljs-keyword">import</span> {
     ComposableController,
     NetworkStatusController,
     TokenRatesController
@@ -237,36 +216,27 @@ controller.unsubscribe(onChange);</code></pre>
 <span class="hljs-keyword">const</span> datamodel = <span class="hljs-keyword">new</span> ComposableController([
     <span class="hljs-keyword">new</span> NetworkStatusController(),
     <span class="hljs-keyword">new</span> TokenRatesController()
-]);</code></pre>
+]);
+</code></pre>
 				<p>The resulting composed module exposes the same APIs as every other GABA module for configuration, state management, and subscription:</p>
-				<pre><code class="language-ts">datamodel.subscribe(<span class="hljs-function">(<span class="hljs-params">state</span>) =&gt;</span> { <span class="hljs-comment">/* some child state has changed */</span> });</code></pre>
+				<pre><code class="lang-ts">datamodel.subscribe(<span class="hljs-function">(<span class="hljs-params">state</span>) =&gt;</span> { <span class="hljs-comment">/* some child state has changed */</span> });
+</code></pre>
 				<p>The internal state maintained by a ComposableController will be keyed by child controller class name. It&#39;s also possible to access the <code>flatState</code> instance variable that is a convenience accessor for merged child state:</p>
-				<pre><code class="language-ts"><span class="hljs-built_in">console</span>.log(datamodel.state); <span class="hljs-comment">// {NetworkController: {...}, TokenRatesController: {...}}</span>
-<span class="hljs-built_in">console</span>.log(datamodel.flatState); <span class="hljs-comment">// {infura: {...}, contractExchangeRates: [...]}</span></code></pre>
+				<pre><code class="lang-ts"><span class="hljs-built_in">console</span>.log(datamodel.state); <span class="hljs-comment">// {NetworkController: {...}, TokenRatesController: {...}}</span>
+<span class="hljs-built_in">console</span>.log(datamodel.flatState); <span class="hljs-comment">// {infura: {...}, contractExchangeRates: [...]}</span>
+</code></pre>
 				<p><strong>Advanced Note:</strong> The ComposableController builds a map of all child controllers keyed by controller name. This object is cached as a <code>context</code> instance variable on both the ComposableController itself as well as all child GABA modules. This means that child modules can call methods on other sibling modules through the <code>context</code> variable, e.g. <code>this.context.SomeController.someMethod()</code>.</p>
-				<a href="#why-typescript" id="why-typescript" style="color: inherit; text-decoration: none;">
-					<h2>Why TypeScript?</h2>
-				</a>
+				<h2 id="why-typescript-">Why TypeScript?</h2>
 				<p>The GABA engine is written using <a href="https://www.typescriptlang.org/">TypeScript</a>. Despite its arguably steeper learning curve compared to JavaScript, TypeScript offers an objectively safer development experience that directly improves the reliability and maintainability of a large codebase.</p>
-				<a href="#eliminate-unintentionally-broken-apis" id="eliminate-unintentionally-broken-apis" style="color: inherit; text-decoration: none;">
-					<h3>Eliminate unintentionally broken APIs</h3>
-				</a>
+				<h3 id="eliminate-unintentionally-broken-apis">Eliminate unintentionally broken APIs</h3>
 				<p>TypeScript eliminates the ability to introduce changes to a codebase that break the APIs between or within components. If the signature changes for a specific function in a given class, every use of that function will immediately fail to compile until updated to match the new signature. This same idea applies to every other construct of the language: if the type of a property on an object is changed from <code>string</code> to <code>boolean</code>, every invalid use of that property will immediately fail to compile, etc. This is one of the most powerful features of a statically typed language for a mission-critical, modular package like GABA: it&#39;s extremely difficult to unknowingly introduce side effects.</p>
-				<a href="#share-custom-types-and-interfaces" id="share-custom-types-and-interfaces" style="color: inherit; text-decoration: none;">
-					<h3>Share custom types and interfaces</h3>
-				</a>
+				<h3 id="share-custom-types-and-interfaces">Share custom types and interfaces</h3>
 				<p>The ability to describe the shape that code must adhere to allows for the safe consumption and sharing of code without the need for duck typing. An underwhelming but point-driving comparison could be that TypeScript provides an enforced and very advanced form of JSDoc. Common or complex object formats with type-checked members can be shared and guaranteed across a codebase. This eliminates logic paths that only serve to check for the existence or the type of certain properties on an object, which usually account for a large portion of the code paths in a JavaScript application. Codebases become pragmatic and composable.</p>
-				<a href="#eliminate-errors-caused-by-misnamed-code" id="eliminate-errors-caused-by-misnamed-code" style="color: inherit; text-decoration: none;">
-					<h3>Eliminate errors caused by misnamed code</h3>
-				</a>
+				<h3 id="eliminate-errors-caused-by-misnamed-code">Eliminate errors caused by misnamed code</h3>
 				<p>TypeScript exposes a powerful language services API used by most major editors for code introspection features such as member autocompletion. This drastically reduces the chance of misnaming a function or property from an imported module, and in the off chance that a typo or misnaming does occur, the codebase would again immediately fail to compile instead of causing a user-facing bug at runtime.</p>
-				<a href="#use-transpiled-language-forward-features" id="use-transpiled-language-forward-features" style="color: inherit; text-decoration: none;">
-					<h3>Use transpiled language-forward features</h3>
-				</a>
+				<h3 id="use-transpiled-language-forward-features">Use transpiled language-forward features</h3>
 				<p>TypeScript automatically transpiles the latest ECMAScript language features to any desired target gracefully down to ES3. Microsoft directly monitors, supports, and heavily steers the implementation progress of the latest ES2018 specification through its development of TypeScript and adds opt-in support for features as their API churn settles down even before official TC39 finalization. This means that even implementation-heavy features like <code>async</code> / <code>await</code> are down-emitted without the hassle of manually managing polyfills or build tools like babel.</p>
-				<a href="#other-general-oop-features" id="other-general-oop-features" style="color: inherit; text-decoration: none;">
-					<h3>Other general OOP features</h3>
-				</a>
+				<h3 id="other-general-oop-features">Other general OOP features</h3>
 				<ul>
 					<li><a href="https://www.typescriptlang.org/docs/handbook/generics.html">Generics</a></li>
 					<li><a href="https://www.typescriptlang.org/docs/handbook/classes.html#public-private-and-protected-modifiers">Member visibility</a></li>
@@ -277,26 +247,22 @@ controller.unsubscribe(onChange);</code></pre>
 					<li>Superset of JavaScript, so all JS is valid TS</li>
 				</ul>
 				<p>All of these features of a statically-typed language like TypeScript combine to form codebases consisting of strict contractural relationships between every module in an application. Changes are less intimidating since unnoticed side effects are difficult to introduce, documentation can be generated with less verbose syntax (TSDoc is JSDoc without the types since it can infer them), editors provide autocompletion of both public module members and of local and NPM dependencies, and an upgrade to TypeScript can be incremental as demonstrated in this PR.</p>
-				<a href="#linking-during-development" id="linking-during-development" style="color: inherit; text-decoration: none;">
-					<h2>Linking during development</h2>
-				</a>
+				<h2 id="linking-during-development">Linking during development</h2>
 				<p>Linking GABA into other projects involves a special NPM command to ensure that dependencies are not duplicated. This is because GABA ships modules that are transpiled but not bundled, and <a href="https://github.com/npm/npm/issues/7742">NPM does not deduplicate</a> linked dependency trees.</p>
 				<ol>
 					<li><p>Link GABA.</p>
-						<pre><code class="language-sh"> $ npm run build:link</code></pre>
+						<pre><code class="lang-sh"> $ npm run build:link
+</code></pre>
 					</li>
 					<li><p>Link into other projects.</p>
-						<pre><code class="language-sh"> $ npm link gaba</code></pre>
+						<pre><code class="lang-sh"> $ npm link gaba
+</code></pre>
 					</li>
 				</ol>
-				<a href="#api-documentation" id="api-documentation" style="color: inherit; text-decoration: none;">
-					<h2>API documentation</h2>
-				</a>
+				<h2 id="api-documentation">API documentation</h2>
 				<p>API documentation is auto-generated for the GABA package on every commit to the <code>master</code> branch.</p>
 				<p><a href="https://metamask.github.io/gaba/">View API documentation</a></p>
-				<a href="#license" id="license" style="color: inherit; text-decoration: none;">
-					<h2>License</h2>
-				</a>
+				<h2 id="license">License</h2>
 				<p><a href="./LICENSE">MIT</a></p>
 			</div>
 		</div>
@@ -393,7 +359,6 @@ controller.unsubscribe(onChange);</code></pre>
 				<li class="tsd-kind-function tsd-has-type-parameter"><span class="tsd-kind-icon">Function with type parameter</span></li>
 				<li class="tsd-kind-index-signature"><span class="tsd-kind-icon">Index signature</span></li>
 				<li class="tsd-kind-type-alias"><span class="tsd-kind-icon">Type alias</span></li>
-				<li class="tsd-kind-type-alias tsd-has-type-parameter"><span class="tsd-kind-icon">Type alias with type parameter</span></li>
 			</ul>
 			<ul class="tsd-legend">
 				<li class="tsd-kind-enum"><span class="tsd-kind-icon">Enumeration</span></li>
