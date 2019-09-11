@@ -3,7 +3,7 @@
 <head>
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<title>AddressBookController | gaba</title>
+	<title>EnsController | gaba</title>
 	<meta name="description" content="">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="stylesheet" href="../assets/css/main.css">
@@ -54,13 +54,13 @@
 					<a href="../globals.html">Globals</a>
 				</li>
 				<li>
-					<a href="../modules/_user_addressbookcontroller_.html">&quot;user/AddressBookController&quot;</a>
+					<a href="../modules/_third_party_enscontroller_.html">&quot;third-party/EnsController&quot;</a>
 				</li>
 				<li>
-					<a href="_user_addressbookcontroller_.addressbookcontroller.html">AddressBookController</a>
+					<a href="_third_party_enscontroller_.enscontroller.html">EnsController</a>
 				</li>
 			</ul>
-			<h1>Class AddressBookController</h1>
+			<h1>Class EnsController</h1>
 		</div>
 	</div>
 </header>
@@ -70,7 +70,8 @@
 			<section class="tsd-panel tsd-comment">
 				<div class="tsd-comment tsd-typography">
 					<div class="lead">
-						<p>Controller that manages a list of recipient addresses associated with nicknames</p>
+						<p>Controller that manages a list ENS names and their resolved addresses
+						by chainId. A null address indicates an unresolved ENS name.</p>
 					</div>
 				</div>
 			</section>
@@ -78,10 +79,10 @@
 				<h3>Hierarchy</h3>
 				<ul class="tsd-hierarchy">
 					<li>
-						<a href="_basecontroller_.basecontroller.html" class="tsd-signature-type">BaseController</a><span class="tsd-signature-symbol">&lt;</span><a href="../interfaces/_basecontroller_.baseconfig.html" class="tsd-signature-type">BaseConfig</a><span class="tsd-signature-symbol">, </span><a href="../interfaces/_user_addressbookcontroller_.addressbookstate.html" class="tsd-signature-type">AddressBookState</a><span class="tsd-signature-symbol">&gt;</span>
+						<a href="_basecontroller_.basecontroller.html" class="tsd-signature-type">BaseController</a><span class="tsd-signature-symbol">&lt;</span><a href="../interfaces/_basecontroller_.baseconfig.html" class="tsd-signature-type">BaseConfig</a><span class="tsd-signature-symbol">, </span><a href="../interfaces/_third_party_enscontroller_.ensstate.html" class="tsd-signature-type">EnsState</a><span class="tsd-signature-symbol">&gt;</span>
 						<ul class="tsd-hierarchy">
 							<li>
-								<span class="target">AddressBookController</span>
+								<span class="target">EnsController</span>
 							</li>
 						</ul>
 					</li>
@@ -94,40 +95,41 @@
 						<section class="tsd-index-section ">
 							<h3>Constructors</h3>
 							<ul class="tsd-index-list">
-								<li class="tsd-kind-constructor tsd-parent-kind-class tsd-is-overwrite"><a href="_user_addressbookcontroller_.addressbookcontroller.html#constructor" class="tsd-kind-icon">constructor</a></li>
+								<li class="tsd-kind-constructor tsd-parent-kind-class tsd-is-overwrite"><a href="_third_party_enscontroller_.enscontroller.html#constructor" class="tsd-kind-icon">constructor</a></li>
 							</ul>
 						</section>
 						<section class="tsd-index-section ">
 							<h3>Properties</h3>
 							<ul class="tsd-index-list">
-								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-inherited"><a href="_user_addressbookcontroller_.addressbookcontroller.html#context" class="tsd-kind-icon">context</a></li>
-								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-inherited"><a href="_user_addressbookcontroller_.addressbookcontroller.html#defaultconfig" class="tsd-kind-icon">default<wbr>Config</a></li>
-								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-inherited"><a href="_user_addressbookcontroller_.addressbookcontroller.html#defaultstate" class="tsd-kind-icon">default<wbr>State</a></li>
-								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-inherited"><a href="_user_addressbookcontroller_.addressbookcontroller.html#disabled" class="tsd-kind-icon">disabled</a></li>
-								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-overwrite"><a href="_user_addressbookcontroller_.addressbookcontroller.html#name" class="tsd-kind-icon">name</a></li>
-								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-inherited"><a href="_user_addressbookcontroller_.addressbookcontroller.html#requiredcontrollers" class="tsd-kind-icon">required<wbr>Controllers</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-inherited"><a href="_third_party_enscontroller_.enscontroller.html#context" class="tsd-kind-icon">context</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-inherited"><a href="_third_party_enscontroller_.enscontroller.html#defaultconfig" class="tsd-kind-icon">default<wbr>Config</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-inherited"><a href="_third_party_enscontroller_.enscontroller.html#defaultstate" class="tsd-kind-icon">default<wbr>State</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-inherited"><a href="_third_party_enscontroller_.enscontroller.html#disabled" class="tsd-kind-icon">disabled</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-overwrite"><a href="_third_party_enscontroller_.enscontroller.html#name" class="tsd-kind-icon">name</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-inherited"><a href="_third_party_enscontroller_.enscontroller.html#requiredcontrollers" class="tsd-kind-icon">required<wbr>Controllers</a></li>
 							</ul>
 						</section>
 						<section class="tsd-index-section tsd-is-inherited">
 							<h3>Accessors</h3>
 							<ul class="tsd-index-list">
-								<li class="tsd-kind-get-signature tsd-parent-kind-class tsd-is-inherited"><a href="_user_addressbookcontroller_.addressbookcontroller.html#config" class="tsd-kind-icon">config</a></li>
-								<li class="tsd-kind-get-signature tsd-parent-kind-class tsd-is-inherited"><a href="_user_addressbookcontroller_.addressbookcontroller.html#state" class="tsd-kind-icon">state</a></li>
+								<li class="tsd-kind-get-signature tsd-parent-kind-class tsd-is-inherited"><a href="_third_party_enscontroller_.enscontroller.html#config" class="tsd-kind-icon">config</a></li>
+								<li class="tsd-kind-get-signature tsd-parent-kind-class tsd-is-inherited"><a href="_third_party_enscontroller_.enscontroller.html#state" class="tsd-kind-icon">state</a></li>
 							</ul>
 						</section>
 						<section class="tsd-index-section ">
 							<h3>Methods</h3>
 							<ul class="tsd-index-list">
-								<li class="tsd-kind-method tsd-parent-kind-class"><a href="_user_addressbookcontroller_.addressbookcontroller.html#clear" class="tsd-kind-icon">clear</a></li>
-								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-inherited"><a href="_user_addressbookcontroller_.addressbookcontroller.html#configure" class="tsd-kind-icon">configure</a></li>
-								<li class="tsd-kind-method tsd-parent-kind-class"><a href="_user_addressbookcontroller_.addressbookcontroller.html#delete" class="tsd-kind-icon">delete</a></li>
-								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-inherited tsd-is-protected"><a href="_user_addressbookcontroller_.addressbookcontroller.html#initialize" class="tsd-kind-icon">initialize</a></li>
-								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-inherited"><a href="_user_addressbookcontroller_.addressbookcontroller.html#notify" class="tsd-kind-icon">notify</a></li>
-								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-inherited"><a href="_user_addressbookcontroller_.addressbookcontroller.html#oncomposed" class="tsd-kind-icon">on<wbr>Composed</a></li>
-								<li class="tsd-kind-method tsd-parent-kind-class"><a href="_user_addressbookcontroller_.addressbookcontroller.html#set" class="tsd-kind-icon">set</a></li>
-								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-inherited"><a href="_user_addressbookcontroller_.addressbookcontroller.html#subscribe" class="tsd-kind-icon">subscribe</a></li>
-								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-inherited"><a href="_user_addressbookcontroller_.addressbookcontroller.html#unsubscribe" class="tsd-kind-icon">unsubscribe</a></li>
-								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-inherited"><a href="_user_addressbookcontroller_.addressbookcontroller.html#update" class="tsd-kind-icon">update</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class"><a href="_third_party_enscontroller_.enscontroller.html#clear" class="tsd-kind-icon">clear</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-inherited"><a href="_third_party_enscontroller_.enscontroller.html#configure" class="tsd-kind-icon">configure</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class"><a href="_third_party_enscontroller_.enscontroller.html#delete" class="tsd-kind-icon">delete</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class"><a href="_third_party_enscontroller_.enscontroller.html#get" class="tsd-kind-icon">get</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-inherited tsd-is-protected"><a href="_third_party_enscontroller_.enscontroller.html#initialize" class="tsd-kind-icon">initialize</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-inherited"><a href="_third_party_enscontroller_.enscontroller.html#notify" class="tsd-kind-icon">notify</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-inherited"><a href="_third_party_enscontroller_.enscontroller.html#oncomposed" class="tsd-kind-icon">on<wbr>Composed</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class"><a href="_third_party_enscontroller_.enscontroller.html#set" class="tsd-kind-icon">set</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-inherited"><a href="_third_party_enscontroller_.enscontroller.html#subscribe" class="tsd-kind-icon">subscribe</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-inherited"><a href="_third_party_enscontroller_.enscontroller.html#unsubscribe" class="tsd-kind-icon">unsubscribe</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-inherited"><a href="_third_party_enscontroller_.enscontroller.html#update" class="tsd-kind-icon">update</a></li>
 							</ul>
 						</section>
 					</div>
@@ -139,19 +141,19 @@
 					<a name="constructor" class="tsd-anchor"></a>
 					<h3>constructor</h3>
 					<ul class="tsd-signatures tsd-kind-constructor tsd-parent-kind-class tsd-is-overwrite">
-						<li class="tsd-signature tsd-kind-icon">new <wbr>Address<wbr>Book<wbr>Controller<span class="tsd-signature-symbol">(</span>config<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">Partial</span><span class="tsd-signature-symbol">&lt;</span><a href="../interfaces/_basecontroller_.baseconfig.html" class="tsd-signature-type">BaseConfig</a><span class="tsd-signature-symbol">&gt;</span>, state<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">Partial</span><span class="tsd-signature-symbol">&lt;</span><a href="../interfaces/_user_addressbookcontroller_.addressbookstate.html" class="tsd-signature-type">AddressBookState</a><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="_user_addressbookcontroller_.addressbookcontroller.html" class="tsd-signature-type">AddressBookController</a></li>
+						<li class="tsd-signature tsd-kind-icon">new <wbr>Ens<wbr>Controller<span class="tsd-signature-symbol">(</span>config<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">Partial</span><span class="tsd-signature-symbol">&lt;</span><a href="../interfaces/_basecontroller_.baseconfig.html" class="tsd-signature-type">BaseConfig</a><span class="tsd-signature-symbol">&gt;</span>, state<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">Partial</span><span class="tsd-signature-symbol">&lt;</span><a href="../interfaces/_third_party_enscontroller_.ensstate.html" class="tsd-signature-type">EnsState</a><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="_third_party_enscontroller_.enscontroller.html" class="tsd-signature-type">EnsController</a></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<p>Overrides <a href="_basecontroller_.basecontroller.html">BaseController</a>.<a href="_basecontroller_.basecontroller.html#constructor">constructor</a></p>
 								<ul>
-									<li>Defined in <a href="https://github.com/MetaMask/gaba/blob/e68c476/src/user/AddressBookController.ts#L55">user/AddressBookController.ts:55</a></li>
+									<li>Defined in <a href="https://github.com/MetaMask/gaba/blob/e68c476/src/third-party/EnsController.ts#L39">third-party/EnsController.ts:39</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
 								<div class="lead">
-									<p>Creates an AddressBookController instance</p>
+									<p>Creates an EnsController instance</p>
 								</div>
 							</div>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -165,7 +167,7 @@
 									</div>
 								</li>
 								<li>
-									<h5><span class="tsd-flag ts-flagOptional">Optional</span> state: <span class="tsd-signature-type">Partial</span><span class="tsd-signature-symbol">&lt;</span><a href="../interfaces/_user_addressbookcontroller_.addressbookstate.html" class="tsd-signature-type">AddressBookState</a><span class="tsd-signature-symbol">&gt;</span></h5>
+									<h5><span class="tsd-flag ts-flagOptional">Optional</span> state: <span class="tsd-signature-type">Partial</span><span class="tsd-signature-symbol">&lt;</span><a href="../interfaces/_third_party_enscontroller_.ensstate.html" class="tsd-signature-type">EnsState</a><span class="tsd-signature-symbol">&gt;</span></h5>
 									<div class="tsd-comment tsd-typography">
 										<div class="lead">
 											<p>Initial state to set on this controller</p>
@@ -173,7 +175,7 @@
 									</div>
 								</li>
 							</ul>
-							<h4 class="tsd-returns-title">Returns <a href="_user_addressbookcontroller_.addressbookcontroller.html" class="tsd-signature-type">AddressBookController</a></h4>
+							<h4 class="tsd-returns-title">Returns <a href="_third_party_enscontroller_.enscontroller.html" class="tsd-signature-type">EnsController</a></h4>
 						</li>
 					</ul>
 				</section>
@@ -217,7 +219,7 @@
 				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-inherited">
 					<a name="defaultstate" class="tsd-anchor"></a>
 					<h3>default<wbr>State</h3>
-					<div class="tsd-signature tsd-kind-icon">default<wbr>State<span class="tsd-signature-symbol">:</span> <a href="../interfaces/_user_addressbookcontroller_.addressbookstate.html" class="tsd-signature-type">AddressBookState</a><span class="tsd-signature-symbol"> =&nbsp;{} as S</span></div>
+					<div class="tsd-signature tsd-kind-icon">default<wbr>State<span class="tsd-signature-symbol">:</span> <a href="../interfaces/_third_party_enscontroller_.ensstate.html" class="tsd-signature-type">EnsState</a><span class="tsd-signature-symbol"> =&nbsp;{} as S</span></div>
 					<aside class="tsd-sources">
 						<p>Inherited from <a href="_basecontroller_.basecontroller.html">BaseController</a>.<a href="_basecontroller_.basecontroller.html#defaultstate">defaultState</a></p>
 						<ul>
@@ -249,11 +251,11 @@
 				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-overwrite">
 					<a name="name" class="tsd-anchor"></a>
 					<h3>name</h3>
-					<div class="tsd-signature tsd-kind-icon">name<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span><span class="tsd-signature-symbol"> =&nbsp;&quot;AddressBookController&quot;</span></div>
+					<div class="tsd-signature tsd-kind-icon">name<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span><span class="tsd-signature-symbol"> =&nbsp;&quot;EnsController&quot;</span></div>
 					<aside class="tsd-sources">
 						<p>Overrides <a href="_basecontroller_.basecontroller.html">BaseController</a>.<a href="_basecontroller_.basecontroller.html#name">name</a></p>
 						<ul>
-							<li>Defined in <a href="https://github.com/MetaMask/gaba/blob/e68c476/src/user/AddressBookController.ts#L55">user/AddressBookController.ts:55</a></li>
+							<li>Defined in <a href="https://github.com/MetaMask/gaba/blob/e68c476/src/third-party/EnsController.ts#L39">third-party/EnsController.ts:39</a></li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
@@ -346,12 +348,12 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/MetaMask/gaba/blob/e68c476/src/user/AddressBookController.ts#L74">user/AddressBookController.ts:74</a></li>
+									<li>Defined in <a href="https://github.com/MetaMask/gaba/blob/e68c476/src/third-party/EnsController.ts#L58">third-party/EnsController.ts:58</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
 								<div class="lead">
-									<p>Remove all contract entries</p>
+									<p>Remove all chain Ids and ENS entries from state</p>
 								</div>
 							</div>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
@@ -406,33 +408,82 @@
 					<a name="delete" class="tsd-anchor"></a>
 					<h3>delete</h3>
 					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
-						<li class="tsd-signature tsd-kind-icon">delete<span class="tsd-signature-symbol">(</span>chainId<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span>, address<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">boolean</span></li>
+						<li class="tsd-signature tsd-kind-icon">delete<span class="tsd-signature-symbol">(</span>chainId<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span>, ensName<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">boolean</span></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/MetaMask/gaba/blob/e68c476/src/user/AddressBookController.ts#L83">user/AddressBookController.ts:83</a></li>
+									<li>Defined in <a href="https://github.com/MetaMask/gaba/blob/e68c476/src/third-party/EnsController.ts#L70">third-party/EnsController.ts:70</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
 								<div class="lead">
-									<p>Remove a contract entry by address</p>
+									<p>Delete an ENS entry.</p>
 								</div>
 							</div>
 							<h4 class="tsd-parameters-title">Parameters</h4>
 							<ul class="tsd-parameters">
 								<li>
 									<h5>chainId: <span class="tsd-signature-type">string</span></h5>
+									<div class="tsd-comment tsd-typography">
+										<p>Parent chain of the ENS entry to delete</p>
+									</div>
 								</li>
 								<li>
-									<h5>address: <span class="tsd-signature-type">string</span></h5>
+									<h5>ensName: <span class="tsd-signature-type">string</span></h5>
 									<div class="tsd-comment tsd-typography">
-										<p>Recipient address to delete</p>
+										<p>Name of the ENS entry to delete</p>
 									</div>
 								</li>
 							</ul>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">boolean</span></h4>
+							<ul>
+								<li>Boolean indicating if the entry was deleted</li>
+							</ul>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class">
+					<a name="get" class="tsd-anchor"></a>
+					<h3>get</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
+						<li class="tsd-signature tsd-kind-icon">get<span class="tsd-signature-symbol">(</span>chainId<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span>, ensName<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="../interfaces/_third_party_enscontroller_.ensentry.html" class="tsd-signature-type">EnsEntry</a><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">null</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/MetaMask/gaba/blob/e68c476/src/third-party/EnsController.ts#L99">third-party/EnsController.ts:99</a></li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Retrieve a DNS entry.</p>
+								</div>
+							</div>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>chainId: <span class="tsd-signature-type">string</span></h5>
+									<div class="tsd-comment tsd-typography">
+										<p>Parent chain of the ENS entry to retrieve</p>
+									</div>
+								</li>
+								<li>
+									<h5>ensName: <span class="tsd-signature-type">string</span></h5>
+									<div class="tsd-comment tsd-typography">
+										<p>Name of the ENS entry to retrieve</p>
+									</div>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <a href="../interfaces/_third_party_enscontroller_.ensentry.html" class="tsd-signature-type">EnsEntry</a>
+								<span class="tsd-signature-symbol"> | </span>
+								<span class="tsd-signature-type">null</span>
+							</h4>
+							<ul>
+								<li>The EnsEntry or null if it does not exist</li>
+							</ul>
 						</li>
 					</ul>
 				</section>
@@ -515,50 +566,45 @@
 					<a name="set" class="tsd-anchor"></a>
 					<h3>set</h3>
 					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
-						<li class="tsd-signature tsd-kind-icon">set<span class="tsd-signature-symbol">(</span>address<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span>, name<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span>, chainId<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">string</span>, memo<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">boolean</span></li>
+						<li class="tsd-signature tsd-kind-icon">set<span class="tsd-signature-symbol">(</span>chainId<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span>, ensName<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span>, address<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">null</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">boolean</span></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/MetaMask/gaba/blob/e68c476/src/user/AddressBookController.ts#L109">user/AddressBookController.ts:109</a></li>
+									<li>Defined in <a href="https://github.com/MetaMask/gaba/blob/e68c476/src/third-party/EnsController.ts#L118">third-party/EnsController.ts:118</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
 								<div class="lead">
-									<p>Add or update a contact entry by address</p>
+									<p>Add or update an ENS entry by chainId and ensName.</p>
 								</div>
+								<p>A null address indicates that the ENS name does not resolve.</p>
 							</div>
 							<h4 class="tsd-parameters-title">Parameters</h4>
 							<ul class="tsd-parameters">
 								<li>
-									<h5>address: <span class="tsd-signature-type">string</span></h5>
+									<h5>chainId: <span class="tsd-signature-type">string</span></h5>
 									<div class="tsd-comment tsd-typography">
-										<p>Recipient address to add or update</p>
+										<p>Id of the associated chain</p>
 									</div>
 								</li>
 								<li>
-									<h5>name: <span class="tsd-signature-type">string</span></h5>
+									<h5>ensName: <span class="tsd-signature-type">string</span></h5>
 									<div class="tsd-comment tsd-typography">
-										<p>Nickname to associate with this address</p>
+										<p>The ENS name</p>
 									</div>
 								</li>
 								<li>
-									<h5><span class="tsd-flag ts-flagDefault value">Default value</span> chainId: <span class="tsd-signature-type">string</span><span class="tsd-signature-symbol"> =&nbsp;&quot;1&quot;</span></h5>
+									<h5>address: <span class="tsd-signature-type">string</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">null</span></h5>
 									<div class="tsd-comment tsd-typography">
-										<p>Chain id identifies the current chain</p>
-									</div>
-								</li>
-								<li>
-									<h5><span class="tsd-flag ts-flagDefault value">Default value</span> memo: <span class="tsd-signature-type">string</span><span class="tsd-signature-symbol"> =&nbsp;&quot;&quot;</span></h5>
-									<div class="tsd-comment tsd-typography">
-										<p>User&#39;s note about address</p>
+										<p>Associated address (or null) to add or update</p>
 									</div>
 								</li>
 							</ul>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">boolean</span></h4>
 							<ul>
-								<li>Boolean indicating if the address was successfully set</li>
+								<li>Boolean indicating if the entry was set</li>
 							</ul>
 						</li>
 					</ul>
@@ -567,7 +613,7 @@
 					<a name="subscribe" class="tsd-anchor"></a>
 					<h3>subscribe</h3>
 					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-inherited">
-						<li class="tsd-signature tsd-kind-icon">subscribe<span class="tsd-signature-symbol">(</span>listener<span class="tsd-signature-symbol">: </span><a href="../modules/_basecontroller_.html#listener" class="tsd-signature-type">Listener</a><span class="tsd-signature-symbol">&lt;</span><a href="../interfaces/_user_addressbookcontroller_.addressbookstate.html" class="tsd-signature-type">AddressBookState</a><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
+						<li class="tsd-signature tsd-kind-icon">subscribe<span class="tsd-signature-symbol">(</span>listener<span class="tsd-signature-symbol">: </span><a href="../modules/_basecontroller_.html#listener" class="tsd-signature-type">Listener</a><span class="tsd-signature-symbol">&lt;</span><a href="../interfaces/_third_party_enscontroller_.ensstate.html" class="tsd-signature-type">EnsState</a><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
@@ -585,7 +631,7 @@
 							<h4 class="tsd-parameters-title">Parameters</h4>
 							<ul class="tsd-parameters">
 								<li>
-									<h5>listener: <a href="../modules/_basecontroller_.html#listener" class="tsd-signature-type">Listener</a><span class="tsd-signature-symbol">&lt;</span><a href="../interfaces/_user_addressbookcontroller_.addressbookstate.html" class="tsd-signature-type">AddressBookState</a><span class="tsd-signature-symbol">&gt;</span></h5>
+									<h5>listener: <a href="../modules/_basecontroller_.html#listener" class="tsd-signature-type">Listener</a><span class="tsd-signature-symbol">&lt;</span><a href="../interfaces/_third_party_enscontroller_.ensstate.html" class="tsd-signature-type">EnsState</a><span class="tsd-signature-symbol">&gt;</span></h5>
 									<div class="tsd-comment tsd-typography">
 										<p>Callback triggered when state changes</p>
 									</div>
@@ -599,7 +645,7 @@
 					<a name="unsubscribe" class="tsd-anchor"></a>
 					<h3>unsubscribe</h3>
 					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-inherited">
-						<li class="tsd-signature tsd-kind-icon">unsubscribe<span class="tsd-signature-symbol">(</span>listener<span class="tsd-signature-symbol">: </span><a href="../modules/_basecontroller_.html#listener" class="tsd-signature-type">Listener</a><span class="tsd-signature-symbol">&lt;</span><a href="../interfaces/_user_addressbookcontroller_.addressbookstate.html" class="tsd-signature-type">AddressBookState</a><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">boolean</span></li>
+						<li class="tsd-signature tsd-kind-icon">unsubscribe<span class="tsd-signature-symbol">(</span>listener<span class="tsd-signature-symbol">: </span><a href="../modules/_basecontroller_.html#listener" class="tsd-signature-type">Listener</a><span class="tsd-signature-symbol">&lt;</span><a href="../interfaces/_third_party_enscontroller_.ensstate.html" class="tsd-signature-type">EnsState</a><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">boolean</span></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
@@ -617,7 +663,7 @@
 							<h4 class="tsd-parameters-title">Parameters</h4>
 							<ul class="tsd-parameters">
 								<li>
-									<h5>listener: <a href="../modules/_basecontroller_.html#listener" class="tsd-signature-type">Listener</a><span class="tsd-signature-symbol">&lt;</span><a href="../interfaces/_user_addressbookcontroller_.addressbookstate.html" class="tsd-signature-type">AddressBookState</a><span class="tsd-signature-symbol">&gt;</span></h5>
+									<h5>listener: <a href="../modules/_basecontroller_.html#listener" class="tsd-signature-type">Listener</a><span class="tsd-signature-symbol">&lt;</span><a href="../interfaces/_third_party_enscontroller_.ensstate.html" class="tsd-signature-type">EnsState</a><span class="tsd-signature-symbol">&gt;</span></h5>
 									<div class="tsd-comment tsd-typography">
 										<p>Callback to remove</p>
 									</div>
@@ -634,7 +680,7 @@
 					<a name="update" class="tsd-anchor"></a>
 					<h3>update</h3>
 					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-inherited">
-						<li class="tsd-signature tsd-kind-icon">update<span class="tsd-signature-symbol">(</span>state<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Partial</span><span class="tsd-signature-symbol">&lt;</span><a href="../interfaces/_user_addressbookcontroller_.addressbookstate.html" class="tsd-signature-type">AddressBookState</a><span class="tsd-signature-symbol">&gt;</span>, overwrite<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">boolean</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
+						<li class="tsd-signature tsd-kind-icon">update<span class="tsd-signature-symbol">(</span>state<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Partial</span><span class="tsd-signature-symbol">&lt;</span><a href="../interfaces/_third_party_enscontroller_.ensstate.html" class="tsd-signature-type">EnsState</a><span class="tsd-signature-symbol">&gt;</span>, overwrite<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">boolean</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
@@ -652,7 +698,7 @@
 							<h4 class="tsd-parameters-title">Parameters</h4>
 							<ul class="tsd-parameters">
 								<li>
-									<h5>state: <span class="tsd-signature-type">Partial</span><span class="tsd-signature-symbol">&lt;</span><a href="../interfaces/_user_addressbookcontroller_.addressbookstate.html" class="tsd-signature-type">AddressBookState</a><span class="tsd-signature-symbol">&gt;</span></h5>
+									<h5>state: <span class="tsd-signature-type">Partial</span><span class="tsd-signature-symbol">&lt;</span><a href="../interfaces/_third_party_enscontroller_.ensstate.html" class="tsd-signature-type">EnsState</a><span class="tsd-signature-symbol">&gt;</span></h5>
 									<div class="tsd-comment tsd-typography">
 										<p>New state</p>
 									</div>
@@ -724,7 +770,7 @@
 					<li class=" tsd-kind-external-module">
 						<a href="../modules/_network_networkstatuscontroller_.html">"network/<wbr>Network<wbr>Status<wbr>Controller"</a>
 					</li>
-					<li class=" tsd-kind-external-module">
+					<li class="current tsd-kind-external-module">
 						<a href="../modules/_third_party_enscontroller_.html">"third-<wbr>party/<wbr>Ens<wbr>Controller"</a>
 					</li>
 					<li class=" tsd-kind-external-module">
@@ -736,7 +782,7 @@
 					<li class=" tsd-kind-external-module">
 						<a href="../modules/_transaction_transactioncontroller_.html">"transaction/<wbr>Transaction<wbr>Controller"</a>
 					</li>
-					<li class="current tsd-kind-external-module">
+					<li class=" tsd-kind-external-module">
 						<a href="../modules/_user_addressbookcontroller_.html">"user/<wbr>Address<wbr>Book<wbr>Controller"</a>
 					</li>
 					<li class=" tsd-kind-external-module">
@@ -752,77 +798,77 @@
 				</ul>
 				<ul class="current">
 					<li class="current tsd-kind-class tsd-parent-kind-external-module">
-						<a href="_user_addressbookcontroller_.addressbookcontroller.html" class="tsd-kind-icon">Address<wbr>Book<wbr>Controller</a>
+						<a href="_third_party_enscontroller_.enscontroller.html" class="tsd-kind-icon">Ens<wbr>Controller</a>
 						<ul>
 							<li class=" tsd-kind-constructor tsd-parent-kind-class tsd-is-overwrite">
-								<a href="_user_addressbookcontroller_.addressbookcontroller.html#constructor" class="tsd-kind-icon">constructor</a>
+								<a href="_third_party_enscontroller_.enscontroller.html#constructor" class="tsd-kind-icon">constructor</a>
 							</li>
 							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-inherited">
-								<a href="_user_addressbookcontroller_.addressbookcontroller.html#context" class="tsd-kind-icon">context</a>
+								<a href="_third_party_enscontroller_.enscontroller.html#context" class="tsd-kind-icon">context</a>
 							</li>
 							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-inherited">
-								<a href="_user_addressbookcontroller_.addressbookcontroller.html#defaultconfig" class="tsd-kind-icon">default<wbr>Config</a>
+								<a href="_third_party_enscontroller_.enscontroller.html#defaultconfig" class="tsd-kind-icon">default<wbr>Config</a>
 							</li>
 							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-inherited">
-								<a href="_user_addressbookcontroller_.addressbookcontroller.html#defaultstate" class="tsd-kind-icon">default<wbr>State</a>
+								<a href="_third_party_enscontroller_.enscontroller.html#defaultstate" class="tsd-kind-icon">default<wbr>State</a>
 							</li>
 							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-inherited">
-								<a href="_user_addressbookcontroller_.addressbookcontroller.html#disabled" class="tsd-kind-icon">disabled</a>
+								<a href="_third_party_enscontroller_.enscontroller.html#disabled" class="tsd-kind-icon">disabled</a>
 							</li>
 							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-overwrite">
-								<a href="_user_addressbookcontroller_.addressbookcontroller.html#name" class="tsd-kind-icon">name</a>
+								<a href="_third_party_enscontroller_.enscontroller.html#name" class="tsd-kind-icon">name</a>
 							</li>
 							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-inherited">
-								<a href="_user_addressbookcontroller_.addressbookcontroller.html#requiredcontrollers" class="tsd-kind-icon">required<wbr>Controllers</a>
+								<a href="_third_party_enscontroller_.enscontroller.html#requiredcontrollers" class="tsd-kind-icon">required<wbr>Controllers</a>
 							</li>
 							<li class=" tsd-kind-get-signature tsd-parent-kind-class tsd-is-inherited">
-								<a href="_user_addressbookcontroller_.addressbookcontroller.html#config" class="tsd-kind-icon">config</a>
+								<a href="_third_party_enscontroller_.enscontroller.html#config" class="tsd-kind-icon">config</a>
 							</li>
 							<li class=" tsd-kind-get-signature tsd-parent-kind-class tsd-is-inherited">
-								<a href="_user_addressbookcontroller_.addressbookcontroller.html#state" class="tsd-kind-icon">state</a>
+								<a href="_third_party_enscontroller_.enscontroller.html#state" class="tsd-kind-icon">state</a>
 							</li>
 							<li class=" tsd-kind-method tsd-parent-kind-class">
-								<a href="_user_addressbookcontroller_.addressbookcontroller.html#clear" class="tsd-kind-icon">clear</a>
+								<a href="_third_party_enscontroller_.enscontroller.html#clear" class="tsd-kind-icon">clear</a>
 							</li>
 							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-inherited">
-								<a href="_user_addressbookcontroller_.addressbookcontroller.html#configure" class="tsd-kind-icon">configure</a>
+								<a href="_third_party_enscontroller_.enscontroller.html#configure" class="tsd-kind-icon">configure</a>
 							</li>
 							<li class=" tsd-kind-method tsd-parent-kind-class">
-								<a href="_user_addressbookcontroller_.addressbookcontroller.html#delete" class="tsd-kind-icon">delete</a>
+								<a href="_third_party_enscontroller_.enscontroller.html#delete" class="tsd-kind-icon">delete</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class">
+								<a href="_third_party_enscontroller_.enscontroller.html#get" class="tsd-kind-icon">get</a>
 							</li>
 							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-inherited tsd-is-protected">
-								<a href="_user_addressbookcontroller_.addressbookcontroller.html#initialize" class="tsd-kind-icon">initialize</a>
+								<a href="_third_party_enscontroller_.enscontroller.html#initialize" class="tsd-kind-icon">initialize</a>
 							</li>
 							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-inherited">
-								<a href="_user_addressbookcontroller_.addressbookcontroller.html#notify" class="tsd-kind-icon">notify</a>
+								<a href="_third_party_enscontroller_.enscontroller.html#notify" class="tsd-kind-icon">notify</a>
 							</li>
 							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-inherited">
-								<a href="_user_addressbookcontroller_.addressbookcontroller.html#oncomposed" class="tsd-kind-icon">on<wbr>Composed</a>
+								<a href="_third_party_enscontroller_.enscontroller.html#oncomposed" class="tsd-kind-icon">on<wbr>Composed</a>
 							</li>
 							<li class=" tsd-kind-method tsd-parent-kind-class">
-								<a href="_user_addressbookcontroller_.addressbookcontroller.html#set" class="tsd-kind-icon">set</a>
+								<a href="_third_party_enscontroller_.enscontroller.html#set" class="tsd-kind-icon">set</a>
 							</li>
 							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-inherited">
-								<a href="_user_addressbookcontroller_.addressbookcontroller.html#subscribe" class="tsd-kind-icon">subscribe</a>
+								<a href="_third_party_enscontroller_.enscontroller.html#subscribe" class="tsd-kind-icon">subscribe</a>
 							</li>
 							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-inherited">
-								<a href="_user_addressbookcontroller_.addressbookcontroller.html#unsubscribe" class="tsd-kind-icon">unsubscribe</a>
+								<a href="_third_party_enscontroller_.enscontroller.html#unsubscribe" class="tsd-kind-icon">unsubscribe</a>
 							</li>
 							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-inherited">
-								<a href="_user_addressbookcontroller_.addressbookcontroller.html#update" class="tsd-kind-icon">update</a>
+								<a href="_third_party_enscontroller_.enscontroller.html#update" class="tsd-kind-icon">update</a>
 							</li>
 						</ul>
 					</li>
 				</ul>
 				<ul class="after-current">
 					<li class=" tsd-kind-interface tsd-parent-kind-external-module">
-						<a href="../interfaces/_user_addressbookcontroller_.addressbookentry.html" class="tsd-kind-icon">Address<wbr>Book<wbr>Entry</a>
+						<a href="../interfaces/_third_party_enscontroller_.ensentry.html" class="tsd-kind-icon">Ens<wbr>Entry</a>
 					</li>
 					<li class=" tsd-kind-interface tsd-parent-kind-external-module">
-						<a href="../interfaces/_user_addressbookcontroller_.addressbookstate.html" class="tsd-kind-icon">Address<wbr>Book<wbr>State</a>
-					</li>
-					<li class=" tsd-kind-interface tsd-parent-kind-external-module">
-						<a href="../interfaces/_user_addressbookcontroller_.contactentry.html" class="tsd-kind-icon">Contact<wbr>Entry</a>
+						<a href="../interfaces/_third_party_enscontroller_.ensstate.html" class="tsd-kind-icon">Ens<wbr>State</a>
 					</li>
 				</ul>
 			</nav>

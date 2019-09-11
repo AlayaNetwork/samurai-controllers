@@ -86,6 +86,9 @@
 						<dt>property</dt>
 						<dd><p>memo - User&#39;s note about address</p>
 						</dd>
+						<dt>property</dt>
+						<dd><p>isEns - is the entry an ENS name</p>
+						</dd>
 					</dl>
 				</div>
 			</section>
@@ -106,6 +109,7 @@
 							<ul class="tsd-index-list">
 								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="_user_addressbookcontroller_.addressbookentry.html#address" class="tsd-kind-icon">address</a></li>
 								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="_user_addressbookcontroller_.addressbookentry.html#chainid" class="tsd-kind-icon">chain<wbr>Id</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="_user_addressbookcontroller_.addressbookentry.html#isens" class="tsd-kind-icon">is<wbr>Ens</a></li>
 								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="_user_addressbookcontroller_.addressbookentry.html#memo" class="tsd-kind-icon">memo</a></li>
 								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="_user_addressbookcontroller_.addressbookentry.html#name" class="tsd-kind-icon">name</a></li>
 							</ul>
@@ -121,17 +125,27 @@
 					<div class="tsd-signature tsd-kind-icon">address<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/MetaMask/gaba/blob/8ae5ac3/src/user/AddressBookController.ts#L28">user/AddressBookController.ts:28</a></li>
+							<li>Defined in <a href="https://github.com/MetaMask/gaba/blob/e68c476/src/user/AddressBookController.ts#L30">user/AddressBookController.ts:30</a></li>
 						</ul>
 					</aside>
 				</section>
 				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
 					<a name="chainid" class="tsd-anchor"></a>
 					<h3>chain<wbr>Id</h3>
-					<div class="tsd-signature tsd-kind-icon">chain<wbr>Id<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">number</span></div>
+					<div class="tsd-signature tsd-kind-icon">chain<wbr>Id<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/MetaMask/gaba/blob/8ae5ac3/src/user/AddressBookController.ts#L30">user/AddressBookController.ts:30</a></li>
+							<li>Defined in <a href="https://github.com/MetaMask/gaba/blob/e68c476/src/user/AddressBookController.ts#L32">user/AddressBookController.ts:32</a></li>
+						</ul>
+					</aside>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
+					<a name="isens" class="tsd-anchor"></a>
+					<h3>is<wbr>Ens</h3>
+					<div class="tsd-signature tsd-kind-icon">is<wbr>Ens<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">boolean</span></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in <a href="https://github.com/MetaMask/gaba/blob/e68c476/src/user/AddressBookController.ts#L34">user/AddressBookController.ts:34</a></li>
 						</ul>
 					</aside>
 				</section>
@@ -141,7 +155,7 @@
 					<div class="tsd-signature tsd-kind-icon">memo<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/MetaMask/gaba/blob/8ae5ac3/src/user/AddressBookController.ts#L31">user/AddressBookController.ts:31</a></li>
+							<li>Defined in <a href="https://github.com/MetaMask/gaba/blob/e68c476/src/user/AddressBookController.ts#L33">user/AddressBookController.ts:33</a></li>
 						</ul>
 					</aside>
 				</section>
@@ -151,7 +165,7 @@
 					<div class="tsd-signature tsd-kind-icon">name<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/MetaMask/gaba/blob/8ae5ac3/src/user/AddressBookController.ts#L29">user/AddressBookController.ts:29</a></li>
+							<li>Defined in <a href="https://github.com/MetaMask/gaba/blob/e68c476/src/user/AddressBookController.ts#L31">user/AddressBookController.ts:31</a></li>
 						</ul>
 					</aside>
 				</section>
@@ -212,6 +226,9 @@
 						<a href="../modules/_network_networkstatuscontroller_.html">"network/<wbr>Network<wbr>Status<wbr>Controller"</a>
 					</li>
 					<li class=" tsd-kind-external-module">
+						<a href="../modules/_third_party_enscontroller_.html">"third-<wbr>party/<wbr>Ens<wbr>Controller"</a>
+					</li>
+					<li class=" tsd-kind-external-module">
 						<a href="../modules/_third_party_phishingcontroller_.html">"third-<wbr>party/<wbr>Phishing<wbr>Controller"</a>
 					</li>
 					<li class=" tsd-kind-external-module">
@@ -246,6 +263,9 @@
 							</li>
 							<li class=" tsd-kind-property tsd-parent-kind-interface">
 								<a href="_user_addressbookcontroller_.addressbookentry.html#chainid" class="tsd-kind-icon">chain<wbr>Id</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-interface">
+								<a href="_user_addressbookcontroller_.addressbookentry.html#isens" class="tsd-kind-icon">is<wbr>Ens</a>
 							</li>
 							<li class=" tsd-kind-property tsd-parent-kind-interface">
 								<a href="_user_addressbookcontroller_.addressbookentry.html#memo" class="tsd-kind-icon">memo</a>
