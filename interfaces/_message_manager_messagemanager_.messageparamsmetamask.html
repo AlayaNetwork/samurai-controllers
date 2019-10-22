@@ -72,11 +72,14 @@
 					<dl class="tsd-comment-tags">
 						<dt>type</dt>
 						<dd><p>MessageParamsMetamask</p>
-							<p>Represents the parameters to pass to the signing method once the signature request is approved
+							<p>Represents the parameters to pass to the eth_sign method once the signature request is approved
 							plus data added by MetaMask.</p>
 						</dd>
 						<dt>property</dt>
 						<dd><p>metamaskId - Added for tracking and identification within MetaMask</p>
+						</dd>
+						<dt>property</dt>
+						<dd><p>data - A hex string conversion of the raw buffer data of the signature request</p>
 						</dd>
 						<dt>property</dt>
 						<dd><p>from - Address to sign this message from</p>
@@ -91,18 +94,10 @@
 				<h3>Hierarchy</h3>
 				<ul class="tsd-hierarchy">
 					<li>
-						<a href="_message_manager_messagemanager_.messageparams.html" class="tsd-signature-type">MessageParams</a>
+						<a href="_message_manager_abstractmessagemanager_.abstractmessageparamsmetamask.html" class="tsd-signature-type">AbstractMessageParamsMetamask</a>
 						<ul class="tsd-hierarchy">
 							<li>
 								<span class="target">MessageParamsMetamask</span>
-								<ul class="tsd-hierarchy">
-									<li>
-										<a href="_message_manager_personalmessagemanager_.personalmessageparamsmetamask.html" class="tsd-signature-type">PersonalMessageParamsMetamask</a>
-									</li>
-									<li>
-										<a href="_message_manager_typedmessagemanager_.typedmessageparamsmetamask.html" class="tsd-signature-type">TypedMessageParamsMetamask</a>
-									</li>
-								</ul>
 							</li>
 						</ul>
 					</li>
@@ -115,8 +110,9 @@
 						<section class="tsd-index-section ">
 							<h3>Properties</h3>
 							<ul class="tsd-index-list">
+								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="_message_manager_messagemanager_.messageparamsmetamask.html#data" class="tsd-kind-icon">data</a></li>
 								<li class="tsd-kind-property tsd-parent-kind-interface tsd-is-inherited"><a href="_message_manager_messagemanager_.messageparamsmetamask.html#from" class="tsd-kind-icon">from</a></li>
-								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="_message_manager_messagemanager_.messageparamsmetamask.html#metamaskid" class="tsd-kind-icon">metamask<wbr>Id</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-interface tsd-is-inherited"><a href="_message_manager_messagemanager_.messageparamsmetamask.html#metamaskid" class="tsd-kind-icon">metamask<wbr>Id</a></li>
 								<li class="tsd-kind-property tsd-parent-kind-interface tsd-is-inherited"><a href="_message_manager_messagemanager_.messageparamsmetamask.html#origin" class="tsd-kind-icon">origin</a></li>
 							</ul>
 						</section>
@@ -125,24 +121,35 @@
 			</section>
 			<section class="tsd-panel-group tsd-member-group ">
 				<h2>Properties</h2>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
+					<a name="data" class="tsd-anchor"></a>
+					<h3>data</h3>
+					<div class="tsd-signature tsd-kind-icon">data<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in <a href="https://github.com/MetaMask/gaba/blob/dedada2/src/message-manager/MessageManager.ts#L51">message-manager/MessageManager.ts:51</a></li>
+						</ul>
+					</aside>
+				</section>
 				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface tsd-is-inherited">
 					<a name="from" class="tsd-anchor"></a>
 					<h3>from</h3>
 					<div class="tsd-signature tsd-kind-icon">from<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span></div>
 					<aside class="tsd-sources">
-						<p>Inherited from <a href="_message_manager_messagemanager_.messageparams.html">MessageParams</a>.<a href="_message_manager_messagemanager_.messageparams.html#from">from</a></p>
+						<p>Inherited from <a href="_message_manager_abstractmessagemanager_.abstractmessageparams.html">AbstractMessageParams</a>.<a href="_message_manager_abstractmessagemanager_.abstractmessageparams.html#from">from</a></p>
 						<ul>
-							<li>Defined in <a href="https://github.com/MetaMask/gaba/blob/e68c476/src/message-manager/MessageManager.ts#L43">message-manager/MessageManager.ts:43</a></li>
+							<li>Defined in <a href="https://github.com/MetaMask/gaba/blob/dedada2/src/message-manager/AbstractMessageManager.ts#L42">message-manager/AbstractMessageManager.ts:42</a></li>
 						</ul>
 					</aside>
 				</section>
-				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface tsd-is-inherited">
 					<a name="metamaskid" class="tsd-anchor"></a>
 					<h3>metamask<wbr>Id</h3>
 					<div class="tsd-signature tsd-kind-icon">metamask<wbr>Id<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span></div>
 					<aside class="tsd-sources">
+						<p>Inherited from <a href="_message_manager_abstractmessagemanager_.abstractmessageparamsmetamask.html">AbstractMessageParamsMetamask</a>.<a href="_message_manager_abstractmessagemanager_.abstractmessageparamsmetamask.html#metamaskid">metamaskId</a></p>
 						<ul>
-							<li>Defined in <a href="https://github.com/MetaMask/gaba/blob/e68c476/src/message-manager/MessageManager.ts#L58">message-manager/MessageManager.ts:58</a></li>
+							<li>Defined in <a href="https://github.com/MetaMask/gaba/blob/dedada2/src/message-manager/AbstractMessageManager.ts#L57">message-manager/AbstractMessageManager.ts:57</a></li>
 						</ul>
 					</aside>
 				</section>
@@ -151,9 +158,9 @@
 					<h3><span class="tsd-flag ts-flagOptional">Optional</span> origin</h3>
 					<div class="tsd-signature tsd-kind-icon">origin<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">string</span></div>
 					<aside class="tsd-sources">
-						<p>Inherited from <a href="_message_manager_messagemanager_.messageparams.html">MessageParams</a>.<a href="_message_manager_messagemanager_.messageparams.html#origin">origin</a></p>
+						<p>Inherited from <a href="_message_manager_abstractmessagemanager_.abstractmessageparams.html">AbstractMessageParams</a>.<a href="_message_manager_abstractmessagemanager_.abstractmessageparams.html#origin">origin</a></p>
 						<ul>
-							<li>Defined in <a href="https://github.com/MetaMask/gaba/blob/e68c476/src/message-manager/MessageManager.ts#L44">message-manager/MessageManager.ts:44</a></li>
+							<li>Defined in <a href="https://github.com/MetaMask/gaba/blob/dedada2/src/message-manager/AbstractMessageManager.ts#L43">message-manager/AbstractMessageManager.ts:43</a></li>
 						</ul>
 					</aside>
 				</section>
@@ -198,6 +205,9 @@
 					<li class=" tsd-kind-external-module">
 						<a href="../modules/_keyring_keyringcontroller_.html">"keyring/<wbr>Keyring<wbr>Controller"</a>
 					</li>
+					<li class=" tsd-kind-external-module">
+						<a href="../modules/_message_manager_abstractmessagemanager_.html">"message-<wbr>manager/<wbr>Abstract<wbr>Message<wbr>Manager"</a>
+					</li>
 					<li class="current tsd-kind-external-module">
 						<a href="../modules/_message_manager_messagemanager_.html">"message-<wbr>manager/<wbr>Message<wbr>Manager"</a>
 					</li>
@@ -238,14 +248,11 @@
 			</nav>
 			<nav class="tsd-navigation secondary menu-sticky">
 				<ul class="before-current">
-					<li class=" tsd-kind-class tsd-parent-kind-external-module tsd-has-type-parameter">
+					<li class=" tsd-kind-class tsd-parent-kind-external-module">
 						<a href="../classes/_message_manager_messagemanager_.messagemanager.html" class="tsd-kind-icon">Message<wbr>Manager</a>
 					</li>
 					<li class=" tsd-kind-interface tsd-parent-kind-external-module">
 						<a href="_message_manager_messagemanager_.message.html" class="tsd-kind-icon">Message</a>
-					</li>
-					<li class=" tsd-kind-interface tsd-parent-kind-external-module tsd-has-type-parameter">
-						<a href="_message_manager_messagemanager_.messagemanagerstate.html" class="tsd-kind-icon">Message<wbr>Manager<wbr>State</a>
 					</li>
 					<li class=" tsd-kind-interface tsd-parent-kind-external-module">
 						<a href="_message_manager_messagemanager_.messageparams.html" class="tsd-kind-icon">Message<wbr>Params</a>
@@ -255,10 +262,13 @@
 					<li class="current tsd-kind-interface tsd-parent-kind-external-module">
 						<a href="_message_manager_messagemanager_.messageparamsmetamask.html" class="tsd-kind-icon">Message<wbr>Params<wbr>Metamask</a>
 						<ul>
+							<li class=" tsd-kind-property tsd-parent-kind-interface">
+								<a href="_message_manager_messagemanager_.messageparamsmetamask.html#data" class="tsd-kind-icon">data</a>
+							</li>
 							<li class=" tsd-kind-property tsd-parent-kind-interface tsd-is-inherited">
 								<a href="_message_manager_messagemanager_.messageparamsmetamask.html#from" class="tsd-kind-icon">from</a>
 							</li>
-							<li class=" tsd-kind-property tsd-parent-kind-interface">
+							<li class=" tsd-kind-property tsd-parent-kind-interface tsd-is-inherited">
 								<a href="_message_manager_messagemanager_.messageparamsmetamask.html#metamaskid" class="tsd-kind-icon">metamask<wbr>Id</a>
 							</li>
 							<li class=" tsd-kind-property tsd-parent-kind-interface tsd-is-inherited">
@@ -268,9 +278,6 @@
 					</li>
 				</ul>
 				<ul class="after-current">
-					<li class=" tsd-kind-interface tsd-parent-kind-external-module">
-						<a href="_message_manager_messagemanager_.originalrequest.html" class="tsd-kind-icon">Original<wbr>Request</a>
-					</li>
 				</ul>
 			</nav>
 		</div>

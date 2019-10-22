@@ -3,7 +3,7 @@
 <head>
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<title>PreferencesController | gaba</title>
+	<title>AbstractMessageManager | gaba</title>
 	<meta name="description" content="">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="stylesheet" href="../assets/css/main.css">
@@ -54,13 +54,13 @@
 					<a href="../globals.html">Globals</a>
 				</li>
 				<li>
-					<a href="../modules/_user_preferencescontroller_.html">&quot;user/PreferencesController&quot;</a>
+					<a href="../modules/_message_manager_abstractmessagemanager_.html">&quot;message-manager/AbstractMessageManager&quot;</a>
 				</li>
 				<li>
-					<a href="_user_preferencescontroller_.preferencescontroller.html">PreferencesController</a>
+					<a href="_message_manager_abstractmessagemanager_.abstractmessagemanager.html">AbstractMessageManager</a>
 				</li>
 			</ul>
-			<h1>Class PreferencesController</h1>
+			<h1>Class AbstractMessageManager&lt;M, P, PM&gt;</h1>
 		</div>
 	</div>
 </header>
@@ -70,18 +70,43 @@
 			<section class="tsd-panel tsd-comment">
 				<div class="tsd-comment tsd-typography">
 					<div class="lead">
-						<p>Controller that stores shared settings and exposes convenience methods</p>
+						<p>Controller in charge of managing - storing, adding, removing, updating - Messages.</p>
 					</div>
 				</div>
+			</section>
+			<section class="tsd-panel tsd-type-parameters">
+				<h3>Type parameters</h3>
+				<ul class="tsd-type-parameters">
+					<li>
+						<h4>M<span class="tsd-signature-symbol">: </span><a href="../interfaces/_message_manager_abstractmessagemanager_.abstractmessage.html" class="tsd-signature-type">AbstractMessage</a></h4>
+					</li>
+					<li>
+						<h4>P<span class="tsd-signature-symbol">: </span><a href="../interfaces/_message_manager_abstractmessagemanager_.abstractmessageparams.html" class="tsd-signature-type">AbstractMessageParams</a></h4>
+					</li>
+					<li>
+						<h4>PM<span class="tsd-signature-symbol">: </span><a href="../interfaces/_message_manager_abstractmessagemanager_.abstractmessageparamsmetamask.html" class="tsd-signature-type">AbstractMessageParamsMetamask</a></h4>
+					</li>
+				</ul>
 			</section>
 			<section class="tsd-panel tsd-hierarchy">
 				<h3>Hierarchy</h3>
 				<ul class="tsd-hierarchy">
 					<li>
-						<a href="_basecontroller_.basecontroller.html" class="tsd-signature-type">BaseController</a><span class="tsd-signature-symbol">&lt;</span><a href="../interfaces/_basecontroller_.baseconfig.html" class="tsd-signature-type">BaseConfig</a><span class="tsd-signature-symbol">, </span><a href="../interfaces/_user_preferencescontroller_.preferencesstate.html" class="tsd-signature-type">PreferencesState</a><span class="tsd-signature-symbol">&gt;</span>
+						<a href="_basecontroller_.basecontroller.html" class="tsd-signature-type">BaseController</a><span class="tsd-signature-symbol">&lt;</span><a href="../interfaces/_basecontroller_.baseconfig.html" class="tsd-signature-type">BaseConfig</a><span class="tsd-signature-symbol">, </span><a href="../interfaces/_message_manager_abstractmessagemanager_.messagemanagerstate.html" class="tsd-signature-type">MessageManagerState</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">M</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol">&gt;</span>
 						<ul class="tsd-hierarchy">
 							<li>
-								<span class="target">PreferencesController</span>
+								<span class="target">AbstractMessageManager</span>
+								<ul class="tsd-hierarchy">
+									<li>
+										<a href="_message_manager_messagemanager_.messagemanager.html" class="tsd-signature-type">MessageManager</a>
+									</li>
+									<li>
+										<a href="_message_manager_personalmessagemanager_.personalmessagemanager.html" class="tsd-signature-type">PersonalMessageManager</a>
+									</li>
+									<li>
+										<a href="_message_manager_typedmessagemanager_.typedmessagemanager.html" class="tsd-signature-type">TypedMessageManager</a>
+									</li>
+								</ul>
 							</li>
 						</ul>
 					</li>
@@ -94,46 +119,51 @@
 						<section class="tsd-index-section ">
 							<h3>Constructors</h3>
 							<ul class="tsd-index-list">
-								<li class="tsd-kind-constructor tsd-parent-kind-class tsd-is-overwrite"><a href="_user_preferencescontroller_.preferencescontroller.html#constructor" class="tsd-kind-icon">constructor</a></li>
+								<li class="tsd-kind-constructor tsd-parent-kind-class tsd-is-overwrite"><a href="_message_manager_abstractmessagemanager_.abstractmessagemanager.html#constructor" class="tsd-kind-icon">constructor</a></li>
 							</ul>
 						</section>
 						<section class="tsd-index-section ">
 							<h3>Properties</h3>
 							<ul class="tsd-index-list">
-								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-inherited"><a href="_user_preferencescontroller_.preferencescontroller.html#context" class="tsd-kind-icon">context</a></li>
-								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-inherited"><a href="_user_preferencescontroller_.preferencescontroller.html#defaultconfig" class="tsd-kind-icon">default<wbr>Config</a></li>
-								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-inherited"><a href="_user_preferencescontroller_.preferencescontroller.html#defaultstate" class="tsd-kind-icon">default<wbr>State</a></li>
-								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-inherited"><a href="_user_preferencescontroller_.preferencescontroller.html#disabled" class="tsd-kind-icon">disabled</a></li>
-								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-overwrite"><a href="_user_preferencescontroller_.preferencescontroller.html#name" class="tsd-kind-icon">name</a></li>
-								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-inherited"><a href="_user_preferencescontroller_.preferencescontroller.html#requiredcontrollers" class="tsd-kind-icon">required<wbr>Controllers</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-inherited"><a href="_message_manager_abstractmessagemanager_.abstractmessagemanager.html#context" class="tsd-kind-icon">context</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-inherited"><a href="_message_manager_abstractmessagemanager_.abstractmessagemanager.html#defaultconfig" class="tsd-kind-icon">default<wbr>Config</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-inherited"><a href="_message_manager_abstractmessagemanager_.abstractmessagemanager.html#defaultstate" class="tsd-kind-icon">default<wbr>State</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-inherited"><a href="_message_manager_abstractmessagemanager_.abstractmessagemanager.html#disabled" class="tsd-kind-icon">disabled</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-class"><a href="_message_manager_abstractmessagemanager_.abstractmessagemanager.html#hub" class="tsd-kind-icon">hub</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-protected"><a href="_message_manager_abstractmessagemanager_.abstractmessagemanager.html#messages" class="tsd-kind-icon">messages</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-overwrite"><a href="_message_manager_abstractmessagemanager_.abstractmessagemanager.html#name" class="tsd-kind-icon">name</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-inherited"><a href="_message_manager_abstractmessagemanager_.abstractmessagemanager.html#requiredcontrollers" class="tsd-kind-icon">required<wbr>Controllers</a></li>
 							</ul>
 						</section>
 						<section class="tsd-index-section tsd-is-inherited">
 							<h3>Accessors</h3>
 							<ul class="tsd-index-list">
-								<li class="tsd-kind-get-signature tsd-parent-kind-class tsd-is-inherited"><a href="_user_preferencescontroller_.preferencescontroller.html#config" class="tsd-kind-icon">config</a></li>
-								<li class="tsd-kind-get-signature tsd-parent-kind-class tsd-is-inherited"><a href="_user_preferencescontroller_.preferencescontroller.html#state" class="tsd-kind-icon">state</a></li>
+								<li class="tsd-kind-get-signature tsd-parent-kind-class tsd-is-inherited"><a href="_message_manager_abstractmessagemanager_.abstractmessagemanager.html#config" class="tsd-kind-icon">config</a></li>
+								<li class="tsd-kind-get-signature tsd-parent-kind-class tsd-is-inherited"><a href="_message_manager_abstractmessagemanager_.abstractmessagemanager.html#state" class="tsd-kind-icon">state</a></li>
 							</ul>
 						</section>
 						<section class="tsd-index-section ">
 							<h3>Methods</h3>
 							<ul class="tsd-index-list">
-								<li class="tsd-kind-method tsd-parent-kind-class"><a href="_user_preferencescontroller_.preferencescontroller.html#addidentities" class="tsd-kind-icon">add<wbr>Identities</a></li>
-								<li class="tsd-kind-method tsd-parent-kind-class"><a href="_user_preferencescontroller_.preferencescontroller.html#addtofrequentrpclist" class="tsd-kind-icon">add<wbr>ToFrequent<wbr>Rpc<wbr>List</a></li>
-								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-inherited"><a href="_user_preferencescontroller_.preferencescontroller.html#configure" class="tsd-kind-icon">configure</a></li>
-								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-inherited tsd-is-protected"><a href="_user_preferencescontroller_.preferencescontroller.html#initialize" class="tsd-kind-icon">initialize</a></li>
-								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-inherited"><a href="_user_preferencescontroller_.preferencescontroller.html#notify" class="tsd-kind-icon">notify</a></li>
-								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-inherited"><a href="_user_preferencescontroller_.preferencescontroller.html#oncomposed" class="tsd-kind-icon">on<wbr>Composed</a></li>
-								<li class="tsd-kind-method tsd-parent-kind-class"><a href="_user_preferencescontroller_.preferencescontroller.html#removefromfrequentrpclist" class="tsd-kind-icon">remove<wbr>From<wbr>Frequent<wbr>Rpc<wbr>List</a></li>
-								<li class="tsd-kind-method tsd-parent-kind-class"><a href="_user_preferencescontroller_.preferencescontroller.html#removeidentity" class="tsd-kind-icon">remove<wbr>Identity</a></li>
-								<li class="tsd-kind-method tsd-parent-kind-class"><a href="_user_preferencescontroller_.preferencescontroller.html#setaccountlabel" class="tsd-kind-icon">set<wbr>Account<wbr>Label</a></li>
-								<li class="tsd-kind-method tsd-parent-kind-class"><a href="_user_preferencescontroller_.preferencescontroller.html#setfeatureflag" class="tsd-kind-icon">set<wbr>Feature<wbr>Flag</a></li>
-								<li class="tsd-kind-method tsd-parent-kind-class"><a href="_user_preferencescontroller_.preferencescontroller.html#setipfsgateway" class="tsd-kind-icon">set<wbr>Ipfs<wbr>Gateway</a></li>
-								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-inherited"><a href="_user_preferencescontroller_.preferencescontroller.html#subscribe" class="tsd-kind-icon">subscribe</a></li>
-								<li class="tsd-kind-method tsd-parent-kind-class"><a href="_user_preferencescontroller_.preferencescontroller.html#syncidentities" class="tsd-kind-icon">sync<wbr>Identities</a></li>
-								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-inherited"><a href="_user_preferencescontroller_.preferencescontroller.html#unsubscribe" class="tsd-kind-icon">unsubscribe</a></li>
-								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-inherited"><a href="_user_preferencescontroller_.preferencescontroller.html#update" class="tsd-kind-icon">update</a></li>
-								<li class="tsd-kind-method tsd-parent-kind-class"><a href="_user_preferencescontroller_.preferencescontroller.html#updateidentities" class="tsd-kind-icon">update<wbr>Identities</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class"><a href="_message_manager_abstractmessagemanager_.abstractmessagemanager.html#addmessage" class="tsd-kind-icon">add<wbr>Message</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class"><a href="_message_manager_abstractmessagemanager_.abstractmessagemanager.html#approvemessage" class="tsd-kind-icon">approve<wbr>Message</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-inherited"><a href="_message_manager_abstractmessagemanager_.abstractmessagemanager.html#configure" class="tsd-kind-icon">configure</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class"><a href="_message_manager_abstractmessagemanager_.abstractmessagemanager.html#getmessage" class="tsd-kind-icon">get<wbr>Message</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class"><a href="_message_manager_abstractmessagemanager_.abstractmessagemanager.html#getunapprovedmessages" class="tsd-kind-icon">get<wbr>Unapproved<wbr>Messages</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class"><a href="_message_manager_abstractmessagemanager_.abstractmessagemanager.html#getunapprovedmessagescount" class="tsd-kind-icon">get<wbr>Unapproved<wbr>Messages<wbr>Count</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-inherited tsd-is-protected"><a href="_message_manager_abstractmessagemanager_.abstractmessagemanager.html#initialize" class="tsd-kind-icon">initialize</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-inherited"><a href="_message_manager_abstractmessagemanager_.abstractmessagemanager.html#notify" class="tsd-kind-icon">notify</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-inherited"><a href="_message_manager_abstractmessagemanager_.abstractmessagemanager.html#oncomposed" class="tsd-kind-icon">on<wbr>Composed</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class"><a href="_message_manager_abstractmessagemanager_.abstractmessagemanager.html#prepmessageforsigning" class="tsd-kind-icon">prep<wbr>Message<wbr>For<wbr>Signing</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class"><a href="_message_manager_abstractmessagemanager_.abstractmessagemanager.html#rejectmessage" class="tsd-kind-icon">reject<wbr>Message</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-protected"><a href="_message_manager_abstractmessagemanager_.abstractmessagemanager.html#savemessagelist" class="tsd-kind-icon">save<wbr>Message<wbr>List</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-protected"><a href="_message_manager_abstractmessagemanager_.abstractmessagemanager.html#setmessagestatus" class="tsd-kind-icon">set<wbr>Message<wbr>Status</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class"><a href="_message_manager_abstractmessagemanager_.abstractmessagemanager.html#setmessagestatusapproved" class="tsd-kind-icon">set<wbr>Message<wbr>Status<wbr>Approved</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class"><a href="_message_manager_abstractmessagemanager_.abstractmessagemanager.html#setmessagestatussigned" class="tsd-kind-icon">set<wbr>Message<wbr>Status<wbr>Signed</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-inherited"><a href="_message_manager_abstractmessagemanager_.abstractmessagemanager.html#subscribe" class="tsd-kind-icon">subscribe</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-inherited"><a href="_message_manager_abstractmessagemanager_.abstractmessagemanager.html#unsubscribe" class="tsd-kind-icon">unsubscribe</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-inherited"><a href="_message_manager_abstractmessagemanager_.abstractmessagemanager.html#update" class="tsd-kind-icon">update</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-protected"><a href="_message_manager_abstractmessagemanager_.abstractmessagemanager.html#updatemessage" class="tsd-kind-icon">update<wbr>Message</a></li>
 							</ul>
 						</section>
 					</div>
@@ -145,19 +175,19 @@
 					<a name="constructor" class="tsd-anchor"></a>
 					<h3>constructor</h3>
 					<ul class="tsd-signatures tsd-kind-constructor tsd-parent-kind-class tsd-is-overwrite">
-						<li class="tsd-signature tsd-kind-icon">new <wbr>Preferences<wbr>Controller<span class="tsd-signature-symbol">(</span>config<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">Partial</span><span class="tsd-signature-symbol">&lt;</span><a href="../interfaces/_basecontroller_.baseconfig.html" class="tsd-signature-type">BaseConfig</a><span class="tsd-signature-symbol">&gt;</span>, state<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">Partial</span><span class="tsd-signature-symbol">&lt;</span><a href="../interfaces/_user_preferencescontroller_.preferencesstate.html" class="tsd-signature-type">PreferencesState</a><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="_user_preferencescontroller_.preferencescontroller.html" class="tsd-signature-type">PreferencesController</a></li>
+						<li class="tsd-signature tsd-kind-icon">new <wbr>Abstract<wbr>Message<wbr>Manager<span class="tsd-signature-symbol">(</span>config<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">Partial</span><span class="tsd-signature-symbol">&lt;</span><a href="../interfaces/_basecontroller_.baseconfig.html" class="tsd-signature-type">BaseConfig</a><span class="tsd-signature-symbol">&gt;</span>, state<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">Partial</span><span class="tsd-signature-symbol">&lt;</span><a href="../interfaces/_message_manager_abstractmessagemanager_.messagemanagerstate.html" class="tsd-signature-type">MessageManagerState</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">M</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="_message_manager_abstractmessagemanager_.abstractmessagemanager.html" class="tsd-signature-type">AbstractMessageManager</a></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<p>Overrides <a href="_basecontroller_.basecontroller.html">BaseController</a>.<a href="_basecontroller_.basecontroller.html#constructor">constructor</a></p>
 								<ul>
-									<li>Defined in <a href="https://github.com/MetaMask/gaba/blob/dedada2/src/user/PreferencesController.ts#L58">user/PreferencesController.ts:58</a></li>
+									<li>Defined in <a href="https://github.com/MetaMask/gaba/blob/dedada2/src/message-manager/AbstractMessageManager.ts#L137">message-manager/AbstractMessageManager.ts:137</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
 								<div class="lead">
-									<p>Creates a PreferencesController instance</p>
+									<p>Creates an AbstractMessageManager instance</p>
 								</div>
 							</div>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -171,7 +201,7 @@
 									</div>
 								</li>
 								<li>
-									<h5><span class="tsd-flag ts-flagOptional">Optional</span> state: <span class="tsd-signature-type">Partial</span><span class="tsd-signature-symbol">&lt;</span><a href="../interfaces/_user_preferencescontroller_.preferencesstate.html" class="tsd-signature-type">PreferencesState</a><span class="tsd-signature-symbol">&gt;</span></h5>
+									<h5><span class="tsd-flag ts-flagOptional">Optional</span> state: <span class="tsd-signature-type">Partial</span><span class="tsd-signature-symbol">&lt;</span><a href="../interfaces/_message_manager_abstractmessagemanager_.messagemanagerstate.html" class="tsd-signature-type">MessageManagerState</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">M</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol">&gt;</span></h5>
 									<div class="tsd-comment tsd-typography">
 										<div class="lead">
 											<p>Initial state to set on this controller</p>
@@ -179,7 +209,7 @@
 									</div>
 								</li>
 							</ul>
-							<h4 class="tsd-returns-title">Returns <a href="_user_preferencescontroller_.preferencescontroller.html" class="tsd-signature-type">PreferencesController</a></h4>
+							<h4 class="tsd-returns-title">Returns <a href="_message_manager_abstractmessagemanager_.abstractmessagemanager.html" class="tsd-signature-type">AbstractMessageManager</a></h4>
 						</li>
 					</ul>
 				</section>
@@ -223,7 +253,7 @@
 				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-inherited">
 					<a name="defaultstate" class="tsd-anchor"></a>
 					<h3>default<wbr>State</h3>
-					<div class="tsd-signature tsd-kind-icon">default<wbr>State<span class="tsd-signature-symbol">:</span> <a href="../interfaces/_user_preferencescontroller_.preferencesstate.html" class="tsd-signature-type">PreferencesState</a><span class="tsd-signature-symbol"> =&nbsp;{} as S</span></div>
+					<div class="tsd-signature tsd-kind-icon">default<wbr>State<span class="tsd-signature-symbol">:</span> <a href="../interfaces/_message_manager_abstractmessagemanager_.messagemanagerstate.html" class="tsd-signature-type">MessageManagerState</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">M</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol"> =&nbsp;{} as S</span></div>
 					<aside class="tsd-sources">
 						<p>Inherited from <a href="_basecontroller_.basecontroller.html">BaseController</a>.<a href="_basecontroller_.basecontroller.html#defaultstate">defaultState</a></p>
 						<ul>
@@ -252,14 +282,39 @@
 						</div>
 					</div>
 				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class">
+					<a name="hub" class="tsd-anchor"></a>
+					<h3>hub</h3>
+					<div class="tsd-signature tsd-kind-icon">hub<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">EventEmitter</span><span class="tsd-signature-symbol"> =&nbsp;new EventEmitter()</span></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in <a href="https://github.com/MetaMask/gaba/blob/dedada2/src/message-manager/AbstractMessageManager.ts#L132">message-manager/AbstractMessageManager.ts:132</a></li>
+						</ul>
+					</aside>
+					<div class="tsd-comment tsd-typography">
+						<div class="lead">
+							<p>EventEmitter instance used to listen to specific message events</p>
+						</div>
+					</div>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-protected">
+					<a name="messages" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagProtected">Protected</span> messages</h3>
+					<div class="tsd-signature tsd-kind-icon">messages<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">M</span><span class="tsd-signature-symbol">[]</span></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in <a href="https://github.com/MetaMask/gaba/blob/dedada2/src/message-manager/AbstractMessageManager.ts#L81">message-manager/AbstractMessageManager.ts:81</a></li>
+						</ul>
+					</aside>
+				</section>
 				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-overwrite">
 					<a name="name" class="tsd-anchor"></a>
 					<h3>name</h3>
-					<div class="tsd-signature tsd-kind-icon">name<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span><span class="tsd-signature-symbol"> =&nbsp;&quot;PreferencesController&quot;</span></div>
+					<div class="tsd-signature tsd-kind-icon">name<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span><span class="tsd-signature-symbol"> =&nbsp;&quot;AbstractMessageManager&quot;</span></div>
 					<aside class="tsd-sources">
 						<p>Overrides <a href="_basecontroller_.basecontroller.html">BaseController</a>.<a href="_basecontroller_.basecontroller.html#name">name</a></p>
 						<ul>
-							<li>Defined in <a href="https://github.com/MetaMask/gaba/blob/dedada2/src/user/PreferencesController.ts#L58">user/PreferencesController.ts:58</a></li>
+							<li>Defined in <a href="https://github.com/MetaMask/gaba/blob/dedada2/src/message-manager/AbstractMessageManager.ts#L137">message-manager/AbstractMessageManager.ts:137</a></li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
@@ -343,29 +398,30 @@
 			<section class="tsd-panel-group tsd-member-group ">
 				<h2>Methods</h2>
 				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class">
-					<a name="addidentities" class="tsd-anchor"></a>
-					<h3>add<wbr>Identities</h3>
+					<a name="addmessage" class="tsd-anchor"></a>
+					<h3>add<wbr>Message</h3>
 					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
-						<li class="tsd-signature tsd-kind-icon">add<wbr>Identities<span class="tsd-signature-symbol">(</span>addresses<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
+						<li class="tsd-signature tsd-kind-icon">add<wbr>Message<span class="tsd-signature-symbol">(</span>message<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">M</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/MetaMask/gaba/blob/dedada2/src/user/PreferencesController.ts#L84">user/PreferencesController.ts:84</a></li>
+									<li>Defined in <a href="https://github.com/MetaMask/gaba/blob/dedada2/src/message-manager/AbstractMessageManager.ts#L187">message-manager/AbstractMessageManager.ts:187</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
 								<div class="lead">
-									<p>Adds identities to state</p>
+									<p>Adds a passed Message to this.messages, and calls this.saveMessageList() to save
+									the unapproved Messages from that list to this.messages.</p>
 								</div>
 							</div>
 							<h4 class="tsd-parameters-title">Parameters</h4>
 							<ul class="tsd-parameters">
 								<li>
-									<h5>addresses: <span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">[]</span></h5>
+									<h5>message: <span class="tsd-signature-type">M</span></h5>
 									<div class="tsd-comment tsd-typography">
-										<p>List of addresses to use to generate new identities</p>
+										<p>The Message to add to this.messages</p>
 									</div>
 								</li>
 							</ul>
@@ -374,45 +430,38 @@
 					</ul>
 				</section>
 				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class">
-					<a name="addtofrequentrpclist" class="tsd-anchor"></a>
-					<h3>add<wbr>ToFrequent<wbr>Rpc<wbr>List</h3>
+					<a name="approvemessage" class="tsd-anchor"></a>
+					<h3>approve<wbr>Message</h3>
 					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
-						<li class="tsd-signature tsd-kind-icon">add<wbr>ToFrequent<wbr>Rpc<wbr>List<span class="tsd-signature-symbol">(</span>url<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span>, chainId<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">number</span>, ticker<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">string</span>, nickname<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">string</span>, rpcPrefs<span class="tsd-signature-symbol">?: </span><a href="../interfaces/_user_preferencescontroller_.rpcpreferences.html" class="tsd-signature-type">RpcPreferences</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
+						<li class="tsd-signature tsd-kind-icon">approve<wbr>Message<span class="tsd-signature-symbol">(</span>messageParams<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">PM</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">P</span><span class="tsd-signature-symbol">&gt;</span></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/MetaMask/gaba/blob/dedada2/src/user/PreferencesController.ts#L205">user/PreferencesController.ts:205</a></li>
+									<li>Defined in <a href="https://github.com/MetaMask/gaba/blob/dedada2/src/message-manager/AbstractMessageManager.ts#L212">message-manager/AbstractMessageManager.ts:212</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
 								<div class="lead">
-									<p>Adds custom RPC URL to state</p>
+									<p>Approves a Message. Sets the message status via a call to this.setMessageStatusApproved,
+									and returns a promise with any the message params modified for proper signing.</p>
 								</div>
 							</div>
 							<h4 class="tsd-parameters-title">Parameters</h4>
 							<ul class="tsd-parameters">
 								<li>
-									<h5>url: <span class="tsd-signature-type">string</span></h5>
+									<h5>messageParams: <span class="tsd-signature-type">PM</span></h5>
 									<div class="tsd-comment tsd-typography">
-										<p>Custom RPC URL</p>
+										<p>The messageParams to be used when signing method is called,
+										plus data added by MetaMask</p>
 									</div>
 								</li>
-								<li>
-									<h5><span class="tsd-flag ts-flagOptional">Optional</span> chainId: <span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">number</span></h5>
-								</li>
-								<li>
-									<h5><span class="tsd-flag ts-flagOptional">Optional</span> ticker: <span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">string</span></h5>
-								</li>
-								<li>
-									<h5><span class="tsd-flag ts-flagOptional">Optional</span> nickname: <span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">string</span></h5>
-								</li>
-								<li>
-									<h5><span class="tsd-flag ts-flagOptional">Optional</span> rpcPrefs: <a href="../interfaces/_user_preferencescontroller_.rpcpreferences.html" class="tsd-signature-type">RpcPreferences</a></h5>
-								</li>
 							</ul>
-							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">P</span><span class="tsd-signature-symbol">&gt;</span></h4>
+							<ul>
+								<li>Promise resolving to the messageParams with the metamaskId property removed</li>
+							</ul>
 						</li>
 					</ul>
 				</section>
@@ -457,6 +506,99 @@
 								</li>
 							</ul>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class">
+					<a name="getmessage" class="tsd-anchor"></a>
+					<h3>get<wbr>Message</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
+						<li class="tsd-signature tsd-kind-icon">get<wbr>Message<span class="tsd-signature-symbol">(</span>messageId<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">M</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/MetaMask/gaba/blob/dedada2/src/message-manager/AbstractMessageManager.ts#L200">message-manager/AbstractMessageManager.ts:200</a></li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Returns a specified Message.</p>
+								</div>
+							</div>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>messageId: <span class="tsd-signature-type">string</span></h5>
+									<div class="tsd-comment tsd-typography">
+										<p>The id of the Message to get</p>
+									</div>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">undefined</span>
+								<span class="tsd-signature-symbol"> | </span>
+								<span class="tsd-signature-type">M</span>
+							</h4>
+							<ul>
+								<li>The Message with the id that matches the passed messageId, or undefined
+								if no Message has that id.</li>
+							</ul>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class">
+					<a name="getunapprovedmessages" class="tsd-anchor"></a>
+					<h3>get<wbr>Unapproved<wbr>Messages</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
+						<li class="tsd-signature tsd-kind-icon">get<wbr>Unapproved<wbr>Messages<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">object</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/MetaMask/gaba/blob/dedada2/src/message-manager/AbstractMessageManager.ts#L171">message-manager/AbstractMessageManager.ts:171</a></li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>A getter for the &#39;unapproved&#39; Messages in state messages</p>
+								</div>
+							</div>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">object</span></h4>
+							<ul>
+								<li>An index of Message ids to Messages, for all &#39;unapproved&#39; Messages in this.messages</li>
+							</ul>
+							<ul class="tsd-parameters">
+								<li class="tsd-parameter-index-signature">
+									<h5><span class="tsd-signature-symbol">[</span>key: <span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">]: </span><span class="tsd-signature-type">M</span></h5>
+								</li>
+							</ul>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class">
+					<a name="getunapprovedmessagescount" class="tsd-anchor"></a>
+					<h3>get<wbr>Unapproved<wbr>Messages<wbr>Count</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
+						<li class="tsd-signature tsd-kind-icon">get<wbr>Unapproved<wbr>Messages<wbr>Count<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/MetaMask/gaba/blob/dedada2/src/message-manager/AbstractMessageManager.ts#L161">message-manager/AbstractMessageManager.ts:161</a></li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>A getter for the number of &#39;unapproved&#39; Messages in this.messages</p>
+								</div>
+							</div>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">number</span></h4>
+							<ul>
+								<li>The number of &#39;unapproved&#39; Messages in this.messages</li>
+							</ul>
 						</li>
 					</ul>
 				</section>
@@ -536,29 +678,123 @@
 					</ul>
 				</section>
 				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class">
-					<a name="removefromfrequentrpclist" class="tsd-anchor"></a>
-					<h3>remove<wbr>From<wbr>Frequent<wbr>Rpc<wbr>List</h3>
+					<a name="prepmessageforsigning" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagAbstract">Abstract</span> prep<wbr>Message<wbr>For<wbr>Signing</h3>
 					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
-						<li class="tsd-signature tsd-kind-icon">remove<wbr>From<wbr>Frequent<wbr>Rpc<wbr>List<span class="tsd-signature-symbol">(</span>url<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
+						<li class="tsd-signature tsd-kind-icon">prep<wbr>Message<wbr>For<wbr>Signing<span class="tsd-signature-symbol">(</span>messageParams<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">PM</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">P</span><span class="tsd-signature-symbol">&gt;</span></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/MetaMask/gaba/blob/dedada2/src/user/PreferencesController.ts#L223">user/PreferencesController.ts:223</a></li>
+									<li>Defined in <a href="https://github.com/MetaMask/gaba/blob/dedada2/src/message-manager/AbstractMessageManager.ts#L252">message-manager/AbstractMessageManager.ts:252</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
 								<div class="lead">
-									<p>Removes custom RPC URL from state</p>
+									<p>Removes the metamaskId property from passed messageParams and returns a promise which
+									resolves the updated messageParams</p>
 								</div>
 							</div>
 							<h4 class="tsd-parameters-title">Parameters</h4>
 							<ul class="tsd-parameters">
 								<li>
-									<h5>url: <span class="tsd-signature-type">string</span></h5>
+									<h5>messageParams: <span class="tsd-signature-type">PM</span></h5>
 									<div class="tsd-comment tsd-typography">
-										<p>Custom RPC URL</p>
+										<p>The messageParams to modify</p>
+									</div>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">P</span><span class="tsd-signature-symbol">&gt;</span></h4>
+							<ul>
+								<li>Promise resolving to the messageParams with the metamaskId property removed</li>
+							</ul>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class">
+					<a name="rejectmessage" class="tsd-anchor"></a>
+					<h3>reject<wbr>Message</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
+						<li class="tsd-signature tsd-kind-icon">reject<wbr>Message<span class="tsd-signature-symbol">(</span>messageId<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/MetaMask/gaba/blob/dedada2/src/message-manager/AbstractMessageManager.ts#L259">message-manager/AbstractMessageManager.ts:259</a></li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Sets a Message status to &#39;rejected&#39; via a call to this.setMessageStatus.</p>
+								</div>
+							</div>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>messageId: <span class="tsd-signature-type">string</span></h5>
+									<div class="tsd-comment tsd-typography">
+										<p>The id of the Message to reject.</p>
+									</div>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-protected">
+					<a name="savemessagelist" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagProtected">Protected</span> save<wbr>Message<wbr>List</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-protected">
+						<li class="tsd-signature tsd-kind-icon">save<wbr>Message<wbr>List<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/MetaMask/gaba/blob/dedada2/src/message-manager/AbstractMessageManager.ts#L87">message-manager/AbstractMessageManager.ts:87</a></li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Saves the unapproved messages, and their count to state</p>
+								</div>
+							</div>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-protected">
+					<a name="setmessagestatus" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagProtected">Protected</span> set<wbr>Message<wbr>Status</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-protected">
+						<li class="tsd-signature tsd-kind-icon">set<wbr>Message<wbr>Status<span class="tsd-signature-symbol">(</span>messageId<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span>, status<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/MetaMask/gaba/blob/dedada2/src/message-manager/AbstractMessageManager.ts#L100">message-manager/AbstractMessageManager.ts:100</a></li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Updates the status of a Message in this.messages</p>
+								</div>
+							</div>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>messageId: <span class="tsd-signature-type">string</span></h5>
+									<div class="tsd-comment tsd-typography">
+										<p>The id of the Message to update</p>
+									</div>
+								</li>
+								<li>
+									<h5>status: <span class="tsd-signature-type">string</span></h5>
+									<div class="tsd-comment tsd-typography">
+										<p>The new status of the Message</p>
 									</div>
 								</li>
 							</ul>
@@ -567,29 +803,29 @@
 					</ul>
 				</section>
 				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class">
-					<a name="removeidentity" class="tsd-anchor"></a>
-					<h3>remove<wbr>Identity</h3>
+					<a name="setmessagestatusapproved" class="tsd-anchor"></a>
+					<h3>set<wbr>Message<wbr>Status<wbr>Approved</h3>
 					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
-						<li class="tsd-signature tsd-kind-icon">remove<wbr>Identity<span class="tsd-signature-symbol">(</span>address<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
+						<li class="tsd-signature tsd-kind-icon">set<wbr>Message<wbr>Status<wbr>Approved<span class="tsd-signature-symbol">(</span>messageId<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/MetaMask/gaba/blob/dedada2/src/user/PreferencesController.ts#L103">user/PreferencesController.ts:103</a></li>
+									<li>Defined in <a href="https://github.com/MetaMask/gaba/blob/dedada2/src/message-manager/AbstractMessageManager.ts#L222">message-manager/AbstractMessageManager.ts:222</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
 								<div class="lead">
-									<p>Removes an identity from state</p>
+									<p>Sets a Message status to &#39;approved&#39; via a call to this.setMessageStatus.</p>
 								</div>
 							</div>
 							<h4 class="tsd-parameters-title">Parameters</h4>
 							<ul class="tsd-parameters">
 								<li>
-									<h5>address: <span class="tsd-signature-type">string</span></h5>
+									<h5>messageId: <span class="tsd-signature-type">string</span></h5>
 									<div class="tsd-comment tsd-typography">
-										<p>Address of the identity to remove</p>
+										<p>The id of the Message to approve</p>
 									</div>
 								</li>
 							</ul>
@@ -598,103 +834,37 @@
 					</ul>
 				</section>
 				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class">
-					<a name="setaccountlabel" class="tsd-anchor"></a>
-					<h3>set<wbr>Account<wbr>Label</h3>
+					<a name="setmessagestatussigned" class="tsd-anchor"></a>
+					<h3>set<wbr>Message<wbr>Status<wbr>Signed</h3>
 					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
-						<li class="tsd-signature tsd-kind-icon">set<wbr>Account<wbr>Label<span class="tsd-signature-symbol">(</span>address<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span>, label<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
+						<li class="tsd-signature tsd-kind-icon">set<wbr>Message<wbr>Status<wbr>Signed<span class="tsd-signature-symbol">(</span>messageId<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span>, rawSig<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/MetaMask/gaba/blob/dedada2/src/user/PreferencesController.ts#L122">user/PreferencesController.ts:122</a></li>
+									<li>Defined in <a href="https://github.com/MetaMask/gaba/blob/dedada2/src/message-manager/AbstractMessageManager.ts#L234">message-manager/AbstractMessageManager.ts:234</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
 								<div class="lead">
-									<p>Associates a new label with an identity</p>
+									<p>Sets a Message status to &#39;signed&#39; via a call to this.setMessageStatus and updates
+										that Message in this.messages by adding the raw signature data of the signature
+									request to the Message.</p>
 								</div>
 							</div>
 							<h4 class="tsd-parameters-title">Parameters</h4>
 							<ul class="tsd-parameters">
 								<li>
-									<h5>address: <span class="tsd-signature-type">string</span></h5>
+									<h5>messageId: <span class="tsd-signature-type">string</span></h5>
 									<div class="tsd-comment tsd-typography">
-										<p>Address of the identity to associate</p>
+										<p>The id of the Message to sign</p>
 									</div>
 								</li>
 								<li>
-									<h5>label: <span class="tsd-signature-type">string</span></h5>
+									<h5>rawSig: <span class="tsd-signature-type">string</span></h5>
 									<div class="tsd-comment tsd-typography">
-										<p>New label to assign</p>
-									</div>
-								</li>
-							</ul>
-							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
-						</li>
-					</ul>
-				</section>
-				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class">
-					<a name="setfeatureflag" class="tsd-anchor"></a>
-					<h3>set<wbr>Feature<wbr>Flag</h3>
-					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
-						<li class="tsd-signature tsd-kind-icon">set<wbr>Feature<wbr>Flag<span class="tsd-signature-symbol">(</span>feature<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span>, activated<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">boolean</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
-					</ul>
-					<ul class="tsd-descriptions">
-						<li class="tsd-description">
-							<aside class="tsd-sources">
-								<ul>
-									<li>Defined in <a href="https://github.com/MetaMask/gaba/blob/dedada2/src/user/PreferencesController.ts#L136">user/PreferencesController.ts:136</a></li>
-								</ul>
-							</aside>
-							<div class="tsd-comment tsd-typography">
-								<div class="lead">
-									<p>Enable or disable a specific feature flag</p>
-								</div>
-							</div>
-							<h4 class="tsd-parameters-title">Parameters</h4>
-							<ul class="tsd-parameters">
-								<li>
-									<h5>feature: <span class="tsd-signature-type">string</span></h5>
-									<div class="tsd-comment tsd-typography">
-										<p>Feature to toggle</p>
-									</div>
-								</li>
-								<li>
-									<h5>activated: <span class="tsd-signature-type">boolean</span></h5>
-									<div class="tsd-comment tsd-typography">
-										<p>Value to assign</p>
-									</div>
-								</li>
-							</ul>
-							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
-						</li>
-					</ul>
-				</section>
-				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class">
-					<a name="setipfsgateway" class="tsd-anchor"></a>
-					<h3>set<wbr>Ipfs<wbr>Gateway</h3>
-					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
-						<li class="tsd-signature tsd-kind-icon">set<wbr>Ipfs<wbr>Gateway<span class="tsd-signature-symbol">(</span>ipfsGateway<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
-					</ul>
-					<ul class="tsd-descriptions">
-						<li class="tsd-description">
-							<aside class="tsd-sources">
-								<ul>
-									<li>Defined in <a href="https://github.com/MetaMask/gaba/blob/dedada2/src/user/PreferencesController.ts#L239">user/PreferencesController.ts:239</a></li>
-								</ul>
-							</aside>
-							<div class="tsd-comment tsd-typography">
-								<div class="lead">
-									<p>Sets new IPFS gateway</p>
-								</div>
-							</div>
-							<h4 class="tsd-parameters-title">Parameters</h4>
-							<ul class="tsd-parameters">
-								<li>
-									<h5>ipfsGateway: <span class="tsd-signature-type">string</span></h5>
-									<div class="tsd-comment tsd-typography">
-										<p>IPFS gateway string</p>
+										<p>The raw data of the signature request</p>
 									</div>
 								</li>
 							</ul>
@@ -706,7 +876,7 @@
 					<a name="subscribe" class="tsd-anchor"></a>
 					<h3>subscribe</h3>
 					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-inherited">
-						<li class="tsd-signature tsd-kind-icon">subscribe<span class="tsd-signature-symbol">(</span>listener<span class="tsd-signature-symbol">: </span><a href="../modules/_basecontroller_.html#listener" class="tsd-signature-type">Listener</a><span class="tsd-signature-symbol">&lt;</span><a href="../interfaces/_user_preferencescontroller_.preferencesstate.html" class="tsd-signature-type">PreferencesState</a><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
+						<li class="tsd-signature tsd-kind-icon">subscribe<span class="tsd-signature-symbol">(</span>listener<span class="tsd-signature-symbol">: </span><a href="../modules/_basecontroller_.html#listener" class="tsd-signature-type">Listener</a><span class="tsd-signature-symbol">&lt;</span><a href="../interfaces/_message_manager_abstractmessagemanager_.messagemanagerstate.html" class="tsd-signature-type">MessageManagerState</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">M</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
@@ -724,7 +894,7 @@
 							<h4 class="tsd-parameters-title">Parameters</h4>
 							<ul class="tsd-parameters">
 								<li>
-									<h5>listener: <a href="../modules/_basecontroller_.html#listener" class="tsd-signature-type">Listener</a><span class="tsd-signature-symbol">&lt;</span><a href="../interfaces/_user_preferencescontroller_.preferencesstate.html" class="tsd-signature-type">PreferencesState</a><span class="tsd-signature-symbol">&gt;</span></h5>
+									<h5>listener: <a href="../modules/_basecontroller_.html#listener" class="tsd-signature-type">Listener</a><span class="tsd-signature-symbol">&lt;</span><a href="../interfaces/_message_manager_abstractmessagemanager_.messagemanagerstate.html" class="tsd-signature-type">MessageManagerState</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">M</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol">&gt;</span></h5>
 									<div class="tsd-comment tsd-typography">
 										<p>Callback triggered when state changes</p>
 									</div>
@@ -734,45 +904,11 @@
 						</li>
 					</ul>
 				</section>
-				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class">
-					<a name="syncidentities" class="tsd-anchor"></a>
-					<h3>sync<wbr>Identities</h3>
-					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
-						<li class="tsd-signature tsd-kind-icon">sync<wbr>Identities<span class="tsd-signature-symbol">(</span>addresses<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span></li>
-					</ul>
-					<ul class="tsd-descriptions">
-						<li class="tsd-description">
-							<aside class="tsd-sources">
-								<ul>
-									<li>Defined in <a href="https://github.com/MetaMask/gaba/blob/dedada2/src/user/PreferencesController.ts#L148">user/PreferencesController.ts:148</a></li>
-								</ul>
-							</aside>
-							<div class="tsd-comment tsd-typography">
-								<div class="lead">
-									<p>Synchronizes the current identity list with new identities</p>
-								</div>
-							</div>
-							<h4 class="tsd-parameters-title">Parameters</h4>
-							<ul class="tsd-parameters">
-								<li>
-									<h5>addresses: <span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">[]</span></h5>
-									<div class="tsd-comment tsd-typography">
-										<p>List of addresses corresponding to identities to sync</p>
-									</div>
-								</li>
-							</ul>
-							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">string</span></h4>
-							<ul>
-								<li>Newly-selected address after syncing</li>
-							</ul>
-						</li>
-					</ul>
-				</section>
 				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-inherited">
 					<a name="unsubscribe" class="tsd-anchor"></a>
 					<h3>unsubscribe</h3>
 					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-inherited">
-						<li class="tsd-signature tsd-kind-icon">unsubscribe<span class="tsd-signature-symbol">(</span>listener<span class="tsd-signature-symbol">: </span><a href="../modules/_basecontroller_.html#listener" class="tsd-signature-type">Listener</a><span class="tsd-signature-symbol">&lt;</span><a href="../interfaces/_user_preferencescontroller_.preferencesstate.html" class="tsd-signature-type">PreferencesState</a><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">boolean</span></li>
+						<li class="tsd-signature tsd-kind-icon">unsubscribe<span class="tsd-signature-symbol">(</span>listener<span class="tsd-signature-symbol">: </span><a href="../modules/_basecontroller_.html#listener" class="tsd-signature-type">Listener</a><span class="tsd-signature-symbol">&lt;</span><a href="../interfaces/_message_manager_abstractmessagemanager_.messagemanagerstate.html" class="tsd-signature-type">MessageManagerState</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">M</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">boolean</span></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
@@ -790,7 +926,7 @@
 							<h4 class="tsd-parameters-title">Parameters</h4>
 							<ul class="tsd-parameters">
 								<li>
-									<h5>listener: <a href="../modules/_basecontroller_.html#listener" class="tsd-signature-type">Listener</a><span class="tsd-signature-symbol">&lt;</span><a href="../interfaces/_user_preferencescontroller_.preferencesstate.html" class="tsd-signature-type">PreferencesState</a><span class="tsd-signature-symbol">&gt;</span></h5>
+									<h5>listener: <a href="../modules/_basecontroller_.html#listener" class="tsd-signature-type">Listener</a><span class="tsd-signature-symbol">&lt;</span><a href="../interfaces/_message_manager_abstractmessagemanager_.messagemanagerstate.html" class="tsd-signature-type">MessageManagerState</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">M</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol">&gt;</span></h5>
 									<div class="tsd-comment tsd-typography">
 										<p>Callback to remove</p>
 									</div>
@@ -807,7 +943,7 @@
 					<a name="update" class="tsd-anchor"></a>
 					<h3>update</h3>
 					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-inherited">
-						<li class="tsd-signature tsd-kind-icon">update<span class="tsd-signature-symbol">(</span>state<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Partial</span><span class="tsd-signature-symbol">&lt;</span><a href="../interfaces/_user_preferencescontroller_.preferencesstate.html" class="tsd-signature-type">PreferencesState</a><span class="tsd-signature-symbol">&gt;</span>, overwrite<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">boolean</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
+						<li class="tsd-signature tsd-kind-icon">update<span class="tsd-signature-symbol">(</span>state<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Partial</span><span class="tsd-signature-symbol">&lt;</span><a href="../interfaces/_message_manager_abstractmessagemanager_.messagemanagerstate.html" class="tsd-signature-type">MessageManagerState</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">M</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol">&gt;</span>, overwrite<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">boolean</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
@@ -825,7 +961,7 @@
 							<h4 class="tsd-parameters-title">Parameters</h4>
 							<ul class="tsd-parameters">
 								<li>
-									<h5>state: <span class="tsd-signature-type">Partial</span><span class="tsd-signature-symbol">&lt;</span><a href="../interfaces/_user_preferencescontroller_.preferencesstate.html" class="tsd-signature-type">PreferencesState</a><span class="tsd-signature-symbol">&gt;</span></h5>
+									<h5>state: <span class="tsd-signature-type">Partial</span><span class="tsd-signature-symbol">&lt;</span><a href="../interfaces/_message_manager_abstractmessagemanager_.messagemanagerstate.html" class="tsd-signature-type">MessageManagerState</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">M</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol">&gt;</span></h5>
 									<div class="tsd-comment tsd-typography">
 										<p>New state</p>
 									</div>
@@ -841,30 +977,31 @@
 						</li>
 					</ul>
 				</section>
-				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class">
-					<a name="updateidentities" class="tsd-anchor"></a>
-					<h3>update<wbr>Identities</h3>
-					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
-						<li class="tsd-signature tsd-kind-icon">update<wbr>Identities<span class="tsd-signature-symbol">(</span>addresses<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-protected">
+					<a name="updatemessage" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagProtected">Protected</span> update<wbr>Message</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-protected">
+						<li class="tsd-signature tsd-kind-icon">update<wbr>Message<span class="tsd-signature-symbol">(</span>message<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">M</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/MetaMask/gaba/blob/dedada2/src/user/PreferencesController.ts#L181">user/PreferencesController.ts:181</a></li>
+									<li>Defined in <a href="https://github.com/MetaMask/gaba/blob/dedada2/src/message-manager/AbstractMessageManager.ts#L120">message-manager/AbstractMessageManager.ts:120</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
 								<div class="lead">
-									<p>Generates and stores a new list of stored identities based on address</p>
+									<p>Sets a Message in this.messages to the passed Message if the ids are equal.
+									Then saves the unapprovedMessage list to storage</p>
 								</div>
 							</div>
 							<h4 class="tsd-parameters-title">Parameters</h4>
 							<ul class="tsd-parameters">
 								<li>
-									<h5>addresses: <span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">[]</span></h5>
+									<h5>message: <span class="tsd-signature-type">M</span></h5>
 									<div class="tsd-comment tsd-typography">
-										<p>List of addresses to use as a basis for each identity</p>
+										<p>A Message that will replace an existing Message (with the id) in this.messages</p>
 									</div>
 								</li>
 							</ul>
@@ -913,7 +1050,7 @@
 					<li class=" tsd-kind-external-module">
 						<a href="../modules/_keyring_keyringcontroller_.html">"keyring/<wbr>Keyring<wbr>Controller"</a>
 					</li>
-					<li class=" tsd-kind-external-module">
+					<li class="current tsd-kind-external-module">
 						<a href="../modules/_message_manager_abstractmessagemanager_.html">"message-<wbr>manager/<wbr>Abstract<wbr>Message<wbr>Manager"</a>
 					</li>
 					<li class=" tsd-kind-external-module">
@@ -946,7 +1083,7 @@
 					<li class=" tsd-kind-external-module">
 						<a href="../modules/_user_addressbookcontroller_.html">"user/<wbr>Address<wbr>Book<wbr>Controller"</a>
 					</li>
-					<li class="current tsd-kind-external-module">
+					<li class=" tsd-kind-external-module">
 						<a href="../modules/_user_preferencescontroller_.html">"user/<wbr>Preferences<wbr>Controller"</a>
 					</li>
 					<li class=" tsd-kind-external-module">
@@ -958,96 +1095,117 @@
 				<ul class="before-current">
 				</ul>
 				<ul class="current">
-					<li class="current tsd-kind-class tsd-parent-kind-external-module">
-						<a href="_user_preferencescontroller_.preferencescontroller.html" class="tsd-kind-icon">Preferences<wbr>Controller</a>
+					<li class="current tsd-kind-class tsd-parent-kind-external-module tsd-has-type-parameter">
+						<a href="_message_manager_abstractmessagemanager_.abstractmessagemanager.html" class="tsd-kind-icon">Abstract<wbr>Message<wbr>Manager</a>
 						<ul>
 							<li class=" tsd-kind-constructor tsd-parent-kind-class tsd-is-overwrite">
-								<a href="_user_preferencescontroller_.preferencescontroller.html#constructor" class="tsd-kind-icon">constructor</a>
+								<a href="_message_manager_abstractmessagemanager_.abstractmessagemanager.html#constructor" class="tsd-kind-icon">constructor</a>
 							</li>
 							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-inherited">
-								<a href="_user_preferencescontroller_.preferencescontroller.html#context" class="tsd-kind-icon">context</a>
+								<a href="_message_manager_abstractmessagemanager_.abstractmessagemanager.html#context" class="tsd-kind-icon">context</a>
 							</li>
 							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-inherited">
-								<a href="_user_preferencescontroller_.preferencescontroller.html#defaultconfig" class="tsd-kind-icon">default<wbr>Config</a>
+								<a href="_message_manager_abstractmessagemanager_.abstractmessagemanager.html#defaultconfig" class="tsd-kind-icon">default<wbr>Config</a>
 							</li>
 							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-inherited">
-								<a href="_user_preferencescontroller_.preferencescontroller.html#defaultstate" class="tsd-kind-icon">default<wbr>State</a>
+								<a href="_message_manager_abstractmessagemanager_.abstractmessagemanager.html#defaultstate" class="tsd-kind-icon">default<wbr>State</a>
 							</li>
 							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-inherited">
-								<a href="_user_preferencescontroller_.preferencescontroller.html#disabled" class="tsd-kind-icon">disabled</a>
+								<a href="_message_manager_abstractmessagemanager_.abstractmessagemanager.html#disabled" class="tsd-kind-icon">disabled</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-class">
+								<a href="_message_manager_abstractmessagemanager_.abstractmessagemanager.html#hub" class="tsd-kind-icon">hub</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-protected">
+								<a href="_message_manager_abstractmessagemanager_.abstractmessagemanager.html#messages" class="tsd-kind-icon">messages</a>
 							</li>
 							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-overwrite">
-								<a href="_user_preferencescontroller_.preferencescontroller.html#name" class="tsd-kind-icon">name</a>
+								<a href="_message_manager_abstractmessagemanager_.abstractmessagemanager.html#name" class="tsd-kind-icon">name</a>
 							</li>
 							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-inherited">
-								<a href="_user_preferencescontroller_.preferencescontroller.html#requiredcontrollers" class="tsd-kind-icon">required<wbr>Controllers</a>
+								<a href="_message_manager_abstractmessagemanager_.abstractmessagemanager.html#requiredcontrollers" class="tsd-kind-icon">required<wbr>Controllers</a>
 							</li>
 							<li class=" tsd-kind-get-signature tsd-parent-kind-class tsd-is-inherited">
-								<a href="_user_preferencescontroller_.preferencescontroller.html#config" class="tsd-kind-icon">config</a>
+								<a href="_message_manager_abstractmessagemanager_.abstractmessagemanager.html#config" class="tsd-kind-icon">config</a>
 							</li>
 							<li class=" tsd-kind-get-signature tsd-parent-kind-class tsd-is-inherited">
-								<a href="_user_preferencescontroller_.preferencescontroller.html#state" class="tsd-kind-icon">state</a>
+								<a href="_message_manager_abstractmessagemanager_.abstractmessagemanager.html#state" class="tsd-kind-icon">state</a>
 							</li>
 							<li class=" tsd-kind-method tsd-parent-kind-class">
-								<a href="_user_preferencescontroller_.preferencescontroller.html#addidentities" class="tsd-kind-icon">add<wbr>Identities</a>
+								<a href="_message_manager_abstractmessagemanager_.abstractmessagemanager.html#addmessage" class="tsd-kind-icon">add<wbr>Message</a>
 							</li>
 							<li class=" tsd-kind-method tsd-parent-kind-class">
-								<a href="_user_preferencescontroller_.preferencescontroller.html#addtofrequentrpclist" class="tsd-kind-icon">add<wbr>ToFrequent<wbr>Rpc<wbr>List</a>
+								<a href="_message_manager_abstractmessagemanager_.abstractmessagemanager.html#approvemessage" class="tsd-kind-icon">approve<wbr>Message</a>
 							</li>
 							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-inherited">
-								<a href="_user_preferencescontroller_.preferencescontroller.html#configure" class="tsd-kind-icon">configure</a>
+								<a href="_message_manager_abstractmessagemanager_.abstractmessagemanager.html#configure" class="tsd-kind-icon">configure</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class">
+								<a href="_message_manager_abstractmessagemanager_.abstractmessagemanager.html#getmessage" class="tsd-kind-icon">get<wbr>Message</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class">
+								<a href="_message_manager_abstractmessagemanager_.abstractmessagemanager.html#getunapprovedmessages" class="tsd-kind-icon">get<wbr>Unapproved<wbr>Messages</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class">
+								<a href="_message_manager_abstractmessagemanager_.abstractmessagemanager.html#getunapprovedmessagescount" class="tsd-kind-icon">get<wbr>Unapproved<wbr>Messages<wbr>Count</a>
 							</li>
 							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-inherited tsd-is-protected">
-								<a href="_user_preferencescontroller_.preferencescontroller.html#initialize" class="tsd-kind-icon">initialize</a>
+								<a href="_message_manager_abstractmessagemanager_.abstractmessagemanager.html#initialize" class="tsd-kind-icon">initialize</a>
 							</li>
 							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-inherited">
-								<a href="_user_preferencescontroller_.preferencescontroller.html#notify" class="tsd-kind-icon">notify</a>
+								<a href="_message_manager_abstractmessagemanager_.abstractmessagemanager.html#notify" class="tsd-kind-icon">notify</a>
 							</li>
 							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-inherited">
-								<a href="_user_preferencescontroller_.preferencescontroller.html#oncomposed" class="tsd-kind-icon">on<wbr>Composed</a>
+								<a href="_message_manager_abstractmessagemanager_.abstractmessagemanager.html#oncomposed" class="tsd-kind-icon">on<wbr>Composed</a>
 							</li>
 							<li class=" tsd-kind-method tsd-parent-kind-class">
-								<a href="_user_preferencescontroller_.preferencescontroller.html#removefromfrequentrpclist" class="tsd-kind-icon">remove<wbr>From<wbr>Frequent<wbr>Rpc<wbr>List</a>
+								<a href="_message_manager_abstractmessagemanager_.abstractmessagemanager.html#prepmessageforsigning" class="tsd-kind-icon">prep<wbr>Message<wbr>For<wbr>Signing</a>
 							</li>
 							<li class=" tsd-kind-method tsd-parent-kind-class">
-								<a href="_user_preferencescontroller_.preferencescontroller.html#removeidentity" class="tsd-kind-icon">remove<wbr>Identity</a>
+								<a href="_message_manager_abstractmessagemanager_.abstractmessagemanager.html#rejectmessage" class="tsd-kind-icon">reject<wbr>Message</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-protected">
+								<a href="_message_manager_abstractmessagemanager_.abstractmessagemanager.html#savemessagelist" class="tsd-kind-icon">save<wbr>Message<wbr>List</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-protected">
+								<a href="_message_manager_abstractmessagemanager_.abstractmessagemanager.html#setmessagestatus" class="tsd-kind-icon">set<wbr>Message<wbr>Status</a>
 							</li>
 							<li class=" tsd-kind-method tsd-parent-kind-class">
-								<a href="_user_preferencescontroller_.preferencescontroller.html#setaccountlabel" class="tsd-kind-icon">set<wbr>Account<wbr>Label</a>
+								<a href="_message_manager_abstractmessagemanager_.abstractmessagemanager.html#setmessagestatusapproved" class="tsd-kind-icon">set<wbr>Message<wbr>Status<wbr>Approved</a>
 							</li>
 							<li class=" tsd-kind-method tsd-parent-kind-class">
-								<a href="_user_preferencescontroller_.preferencescontroller.html#setfeatureflag" class="tsd-kind-icon">set<wbr>Feature<wbr>Flag</a>
-							</li>
-							<li class=" tsd-kind-method tsd-parent-kind-class">
-								<a href="_user_preferencescontroller_.preferencescontroller.html#setipfsgateway" class="tsd-kind-icon">set<wbr>Ipfs<wbr>Gateway</a>
+								<a href="_message_manager_abstractmessagemanager_.abstractmessagemanager.html#setmessagestatussigned" class="tsd-kind-icon">set<wbr>Message<wbr>Status<wbr>Signed</a>
 							</li>
 							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-inherited">
-								<a href="_user_preferencescontroller_.preferencescontroller.html#subscribe" class="tsd-kind-icon">subscribe</a>
-							</li>
-							<li class=" tsd-kind-method tsd-parent-kind-class">
-								<a href="_user_preferencescontroller_.preferencescontroller.html#syncidentities" class="tsd-kind-icon">sync<wbr>Identities</a>
+								<a href="_message_manager_abstractmessagemanager_.abstractmessagemanager.html#subscribe" class="tsd-kind-icon">subscribe</a>
 							</li>
 							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-inherited">
-								<a href="_user_preferencescontroller_.preferencescontroller.html#unsubscribe" class="tsd-kind-icon">unsubscribe</a>
+								<a href="_message_manager_abstractmessagemanager_.abstractmessagemanager.html#unsubscribe" class="tsd-kind-icon">unsubscribe</a>
 							</li>
 							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-inherited">
-								<a href="_user_preferencescontroller_.preferencescontroller.html#update" class="tsd-kind-icon">update</a>
+								<a href="_message_manager_abstractmessagemanager_.abstractmessagemanager.html#update" class="tsd-kind-icon">update</a>
 							</li>
-							<li class=" tsd-kind-method tsd-parent-kind-class">
-								<a href="_user_preferencescontroller_.preferencescontroller.html#updateidentities" class="tsd-kind-icon">update<wbr>Identities</a>
+							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-protected">
+								<a href="_message_manager_abstractmessagemanager_.abstractmessagemanager.html#updatemessage" class="tsd-kind-icon">update<wbr>Message</a>
 							</li>
 						</ul>
 					</li>
 				</ul>
 				<ul class="after-current">
 					<li class=" tsd-kind-interface tsd-parent-kind-external-module">
-						<a href="../interfaces/_user_preferencescontroller_.frequentrpc.html" class="tsd-kind-icon">Frequent<wbr>Rpc</a>
+						<a href="../interfaces/_message_manager_abstractmessagemanager_.abstractmessage.html" class="tsd-kind-icon">Abstract<wbr>Message</a>
 					</li>
 					<li class=" tsd-kind-interface tsd-parent-kind-external-module">
-						<a href="../interfaces/_user_preferencescontroller_.preferencesstate.html" class="tsd-kind-icon">Preferences<wbr>State</a>
+						<a href="../interfaces/_message_manager_abstractmessagemanager_.abstractmessageparams.html" class="tsd-kind-icon">Abstract<wbr>Message<wbr>Params</a>
 					</li>
 					<li class=" tsd-kind-interface tsd-parent-kind-external-module">
-						<a href="../interfaces/_user_preferencescontroller_.rpcpreferences.html" class="tsd-kind-icon">Rpc<wbr>Preferences</a>
+						<a href="../interfaces/_message_manager_abstractmessagemanager_.abstractmessageparamsmetamask.html" class="tsd-kind-icon">Abstract<wbr>Message<wbr>Params<wbr>Metamask</a>
+					</li>
+					<li class=" tsd-kind-interface tsd-parent-kind-external-module tsd-has-type-parameter">
+						<a href="../interfaces/_message_manager_abstractmessagemanager_.messagemanagerstate.html" class="tsd-kind-icon">Message<wbr>Manager<wbr>State</a>
+					</li>
+					<li class=" tsd-kind-interface tsd-parent-kind-external-module">
+						<a href="../interfaces/_message_manager_abstractmessagemanager_.originalrequest.html" class="tsd-kind-icon">Original<wbr>Request</a>
 					</li>
 				</ul>
 			</nav>

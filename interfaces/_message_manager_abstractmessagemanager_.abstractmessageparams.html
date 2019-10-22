@@ -3,7 +3,7 @@
 <head>
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<title>PhishingConfig | gaba</title>
+	<title>AbstractMessageParams | gaba</title>
 	<meta name="description" content="">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="stylesheet" href="../assets/css/main.css">
@@ -54,13 +54,13 @@
 					<a href="../globals.html">Globals</a>
 				</li>
 				<li>
-					<a href="../modules/_third_party_phishingcontroller_.html">&quot;third-party/PhishingController&quot;</a>
+					<a href="../modules/_message_manager_abstractmessagemanager_.html">&quot;message-manager/AbstractMessageManager&quot;</a>
 				</li>
 				<li>
-					<a href="_third_party_phishingcontroller_.phishingconfig.html">PhishingConfig</a>
+					<a href="_message_manager_abstractmessagemanager_.abstractmessageparams.html">AbstractMessageParams</a>
 				</li>
 			</ul>
-			<h1>Interface PhishingConfig</h1>
+			<h1>Interface AbstractMessageParams</h1>
 		</div>
 	</div>
 </header>
@@ -71,11 +71,14 @@
 				<div class="tsd-comment tsd-typography">
 					<dl class="tsd-comment-tags">
 						<dt>type</dt>
-						<dd><p>PhishingConfig</p>
-							<p>Phishing controller configuration</p>
+						<dd><p>MessageParams</p>
+							<p>Represents the parameters to pass to the signing method once the signature request is approved.</p>
 						</dd>
 						<dt>property</dt>
-						<dd><p>interval - Polling interval used to fetch new block / approve lists</p>
+						<dd><p>from - Address to sign this message from</p>
+						</dd>
+						<dt>property</dt>
+						<dd><p>origin? - Added for request origin identification</p>
 						</dd>
 					</dl>
 				</div>
@@ -84,10 +87,19 @@
 				<h3>Hierarchy</h3>
 				<ul class="tsd-hierarchy">
 					<li>
-						<a href="_basecontroller_.baseconfig.html" class="tsd-signature-type">BaseConfig</a>
+						<span class="target">AbstractMessageParams</span>
 						<ul class="tsd-hierarchy">
 							<li>
-								<span class="target">PhishingConfig</span>
+								<a href="_message_manager_abstractmessagemanager_.abstractmessageparamsmetamask.html" class="tsd-signature-type">AbstractMessageParamsMetamask</a>
+							</li>
+							<li>
+								<a href="_message_manager_messagemanager_.messageparams.html" class="tsd-signature-type">MessageParams</a>
+							</li>
+							<li>
+								<a href="_message_manager_personalmessagemanager_.personalmessageparams.html" class="tsd-signature-type">PersonalMessageParams</a>
+							</li>
+							<li>
+								<a href="_message_manager_typedmessagemanager_.typedmessageparams.html" class="tsd-signature-type">TypedMessageParams</a>
 							</li>
 						</ul>
 					</li>
@@ -100,8 +112,8 @@
 						<section class="tsd-index-section ">
 							<h3>Properties</h3>
 							<ul class="tsd-index-list">
-								<li class="tsd-kind-property tsd-parent-kind-interface tsd-is-inherited"><a href="_third_party_phishingcontroller_.phishingconfig.html#disabled" class="tsd-kind-icon">disabled</a></li>
-								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="_third_party_phishingcontroller_.phishingconfig.html#interval" class="tsd-kind-icon">interval</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="_message_manager_abstractmessagemanager_.abstractmessageparams.html#from" class="tsd-kind-icon">from</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="_message_manager_abstractmessagemanager_.abstractmessageparams.html#origin" class="tsd-kind-icon">origin</a></li>
 							</ul>
 						</section>
 					</div>
@@ -109,24 +121,23 @@
 			</section>
 			<section class="tsd-panel-group tsd-member-group ">
 				<h2>Properties</h2>
-				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface tsd-is-inherited">
-					<a name="disabled" class="tsd-anchor"></a>
-					<h3><span class="tsd-flag ts-flagOptional">Optional</span> disabled</h3>
-					<div class="tsd-signature tsd-kind-icon">disabled<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">false</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">true</span></div>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
+					<a name="from" class="tsd-anchor"></a>
+					<h3>from</h3>
+					<div class="tsd-signature tsd-kind-icon">from<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span></div>
 					<aside class="tsd-sources">
-						<p>Inherited from <a href="_basecontroller_.baseconfig.html">BaseConfig</a>.<a href="_basecontroller_.baseconfig.html#disabled">disabled</a></p>
 						<ul>
-							<li>Defined in <a href="https://github.com/MetaMask/gaba/blob/dedada2/src/BaseController.ts#L16">BaseController.ts:16</a></li>
+							<li>Defined in <a href="https://github.com/MetaMask/gaba/blob/dedada2/src/message-manager/AbstractMessageManager.ts#L42">message-manager/AbstractMessageManager.ts:42</a></li>
 						</ul>
 					</aside>
 				</section>
 				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
-					<a name="interval" class="tsd-anchor"></a>
-					<h3>interval</h3>
-					<div class="tsd-signature tsd-kind-icon">interval<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">number</span></div>
+					<a name="origin" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagOptional">Optional</span> origin</h3>
+					<div class="tsd-signature tsd-kind-icon">origin<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">string</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/MetaMask/gaba/blob/dedada2/src/third-party/PhishingController.ts#L35">third-party/PhishingController.ts:35</a></li>
+							<li>Defined in <a href="https://github.com/MetaMask/gaba/blob/dedada2/src/message-manager/AbstractMessageManager.ts#L43">message-manager/AbstractMessageManager.ts:43</a></li>
 						</ul>
 					</aside>
 				</section>
@@ -171,7 +182,7 @@
 					<li class=" tsd-kind-external-module">
 						<a href="../modules/_keyring_keyringcontroller_.html">"keyring/<wbr>Keyring<wbr>Controller"</a>
 					</li>
-					<li class=" tsd-kind-external-module">
+					<li class="current tsd-kind-external-module">
 						<a href="../modules/_message_manager_abstractmessagemanager_.html">"message-<wbr>manager/<wbr>Abstract<wbr>Message<wbr>Manager"</a>
 					</li>
 					<li class=" tsd-kind-external-module">
@@ -192,7 +203,7 @@
 					<li class=" tsd-kind-external-module">
 						<a href="../modules/_third_party_enscontroller_.html">"third-<wbr>party/<wbr>Ens<wbr>Controller"</a>
 					</li>
-					<li class="current tsd-kind-external-module">
+					<li class=" tsd-kind-external-module">
 						<a href="../modules/_third_party_phishingcontroller_.html">"third-<wbr>party/<wbr>Phishing<wbr>Controller"</a>
 					</li>
 					<li class=" tsd-kind-external-module">
@@ -214,29 +225,35 @@
 			</nav>
 			<nav class="tsd-navigation secondary menu-sticky">
 				<ul class="before-current">
-					<li class=" tsd-kind-class tsd-parent-kind-external-module">
-						<a href="../classes/_third_party_phishingcontroller_.phishingcontroller.html" class="tsd-kind-icon">Phishing<wbr>Controller</a>
+					<li class=" tsd-kind-class tsd-parent-kind-external-module tsd-has-type-parameter">
+						<a href="../classes/_message_manager_abstractmessagemanager_.abstractmessagemanager.html" class="tsd-kind-icon">Abstract<wbr>Message<wbr>Manager</a>
 					</li>
 					<li class=" tsd-kind-interface tsd-parent-kind-external-module">
-						<a href="_third_party_phishingcontroller_.ethphishingresponse.html" class="tsd-kind-icon">Eth<wbr>Phishing<wbr>Response</a>
+						<a href="_message_manager_abstractmessagemanager_.abstractmessage.html" class="tsd-kind-icon">Abstract<wbr>Message</a>
 					</li>
 				</ul>
 				<ul class="current">
 					<li class="current tsd-kind-interface tsd-parent-kind-external-module">
-						<a href="_third_party_phishingcontroller_.phishingconfig.html" class="tsd-kind-icon">Phishing<wbr>Config</a>
+						<a href="_message_manager_abstractmessagemanager_.abstractmessageparams.html" class="tsd-kind-icon">Abstract<wbr>Message<wbr>Params</a>
 						<ul>
-							<li class=" tsd-kind-property tsd-parent-kind-interface tsd-is-inherited">
-								<a href="_third_party_phishingcontroller_.phishingconfig.html#disabled" class="tsd-kind-icon">disabled</a>
+							<li class=" tsd-kind-property tsd-parent-kind-interface">
+								<a href="_message_manager_abstractmessagemanager_.abstractmessageparams.html#from" class="tsd-kind-icon">from</a>
 							</li>
 							<li class=" tsd-kind-property tsd-parent-kind-interface">
-								<a href="_third_party_phishingcontroller_.phishingconfig.html#interval" class="tsd-kind-icon">interval</a>
+								<a href="_message_manager_abstractmessagemanager_.abstractmessageparams.html#origin" class="tsd-kind-icon">origin</a>
 							</li>
 						</ul>
 					</li>
 				</ul>
 				<ul class="after-current">
 					<li class=" tsd-kind-interface tsd-parent-kind-external-module">
-						<a href="_third_party_phishingcontroller_.phishingstate.html" class="tsd-kind-icon">Phishing<wbr>State</a>
+						<a href="_message_manager_abstractmessagemanager_.abstractmessageparamsmetamask.html" class="tsd-kind-icon">Abstract<wbr>Message<wbr>Params<wbr>Metamask</a>
+					</li>
+					<li class=" tsd-kind-interface tsd-parent-kind-external-module tsd-has-type-parameter">
+						<a href="_message_manager_abstractmessagemanager_.messagemanagerstate.html" class="tsd-kind-icon">Message<wbr>Manager<wbr>State</a>
+					</li>
+					<li class=" tsd-kind-interface tsd-parent-kind-external-module">
+						<a href="_message_manager_abstractmessagemanager_.originalrequest.html" class="tsd-kind-icon">Original<wbr>Request</a>
 					</li>
 				</ul>
 			</nav>

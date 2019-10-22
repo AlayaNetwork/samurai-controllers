@@ -289,6 +289,21 @@ controller.unsubscribe(onChange);</code></pre>
 						<pre><code class="language-sh"> $ npm link gaba</code></pre>
 					</li>
 				</ol>
+				<a href="#release-steps" id="release-steps" style="color: inherit; text-decoration: none;">
+					<h2>Release Steps</h2>
+				</a>
+				<ul>
+					<li>Create branch from <code>develop</code> named <code>v${version}</code></li>
+					<li>push remote branch</li>
+					<li>Run <code>npx release &lt;major|minor|patch&gt;</code>. <code>major</code> for breaking changes, <code>patch</code> for bugfixes, <code>minor</code> for backwards compatible features.</li>
+					<li>Then select which PRs will be added to generate the changelog</li>
+					<li>Github page will be opened in your browser with the new generated tag and changelog, press the green button to release.</li>
+					<li>Then merge <code>v${version}</code> branch to <code>develop</code>, then make <code>master</code> up to date with <code>develop</code></li>
+					<li>enable &quot;create merge commit&quot; option</li>
+					<li>do a normal merge to maintain history</li>
+					<li>disable &quot;create merge commit&quot; option</li>
+					<li>On a clean <code>master</code> run <code>npm run build</code> go to <code>/dist</code> folder just generated, then <code>npm publish</code> and GABA will be on npm</li>
+				</ul>
 				<a href="#api-documentation" id="api-documentation" style="color: inherit; text-decoration: none;">
 					<h2>API documentation</h2>
 				</a>
@@ -338,6 +353,9 @@ controller.unsubscribe(onChange);</code></pre>
 					</li>
 					<li class=" tsd-kind-external-module">
 						<a href="modules/_keyring_keyringcontroller_.html">"keyring/<wbr>Keyring<wbr>Controller"</a>
+					</li>
+					<li class=" tsd-kind-external-module">
+						<a href="modules/_message_manager_abstractmessagemanager_.html">"message-<wbr>manager/<wbr>Abstract<wbr>Message<wbr>Manager"</a>
 					</li>
 					<li class=" tsd-kind-external-module">
 						<a href="modules/_message_manager_messagemanager_.html">"message-<wbr>manager/<wbr>Message<wbr>Manager"</a>

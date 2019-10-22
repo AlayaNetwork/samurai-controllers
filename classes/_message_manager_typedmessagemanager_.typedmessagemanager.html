@@ -78,7 +78,7 @@
 				<h3>Hierarchy</h3>
 				<ul class="tsd-hierarchy">
 					<li>
-						<a href="_message_manager_messagemanager_.messagemanager.html" class="tsd-signature-type">MessageManager</a><span class="tsd-signature-symbol">&lt;</span><a href="../interfaces/_message_manager_typedmessagemanager_.typedmessage.html" class="tsd-signature-type">TypedMessage</a><span class="tsd-signature-symbol">, </span><a href="../interfaces/_message_manager_typedmessagemanager_.typedmessageparams.html" class="tsd-signature-type">TypedMessageParams</a><span class="tsd-signature-symbol">, </span><a href="../interfaces/_message_manager_typedmessagemanager_.typedmessageparamsmetamask.html" class="tsd-signature-type">TypedMessageParamsMetamask</a><span class="tsd-signature-symbol">&gt;</span>
+						<a href="_message_manager_abstractmessagemanager_.abstractmessagemanager.html" class="tsd-signature-type">AbstractMessageManager</a><span class="tsd-signature-symbol">&lt;</span><a href="../interfaces/_message_manager_typedmessagemanager_.typedmessage.html" class="tsd-signature-type">TypedMessage</a><span class="tsd-signature-symbol">, </span><a href="../interfaces/_message_manager_typedmessagemanager_.typedmessageparams.html" class="tsd-signature-type">TypedMessageParams</a><span class="tsd-signature-symbol">, </span><a href="../interfaces/_message_manager_typedmessagemanager_.typedmessageparamsmetamask.html" class="tsd-signature-type">TypedMessageParamsMetamask</a><span class="tsd-signature-symbol">&gt;</span>
 						<ul class="tsd-hierarchy">
 							<li>
 								<span class="target">TypedMessageManager</span>
@@ -153,20 +153,20 @@
 					<a name="constructor" class="tsd-anchor"></a>
 					<h3>constructor</h3>
 					<ul class="tsd-signatures tsd-kind-constructor tsd-parent-kind-class tsd-is-overwrite tsd-is-inherited">
-						<li class="tsd-signature tsd-kind-icon">new <wbr>Typed<wbr>Message<wbr>Manager<span class="tsd-signature-symbol">(</span>config<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">Partial</span><span class="tsd-signature-symbol">&lt;</span><a href="../interfaces/_basecontroller_.baseconfig.html" class="tsd-signature-type">BaseConfig</a><span class="tsd-signature-symbol">&gt;</span>, state<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">Partial</span><span class="tsd-signature-symbol">&lt;</span><a href="../interfaces/_message_manager_messagemanager_.messagemanagerstate.html" class="tsd-signature-type">MessageManagerState</a><span class="tsd-signature-symbol">&lt;</span><a href="../interfaces/_message_manager_typedmessagemanager_.typedmessage.html" class="tsd-signature-type">TypedMessage</a><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="_message_manager_typedmessagemanager_.typedmessagemanager.html" class="tsd-signature-type">TypedMessageManager</a></li>
+						<li class="tsd-signature tsd-kind-icon">new <wbr>Typed<wbr>Message<wbr>Manager<span class="tsd-signature-symbol">(</span>config<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">Partial</span><span class="tsd-signature-symbol">&lt;</span><a href="../interfaces/_basecontroller_.baseconfig.html" class="tsd-signature-type">BaseConfig</a><span class="tsd-signature-symbol">&gt;</span>, state<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">Partial</span><span class="tsd-signature-symbol">&lt;</span><a href="../interfaces/_message_manager_abstractmessagemanager_.messagemanagerstate.html" class="tsd-signature-type">MessageManagerState</a><span class="tsd-signature-symbol">&lt;</span><a href="../interfaces/_message_manager_typedmessagemanager_.typedmessage.html" class="tsd-signature-type">TypedMessage</a><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="_message_manager_typedmessagemanager_.typedmessagemanager.html" class="tsd-signature-type">TypedMessageManager</a></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
-								<p>Inherited from <a href="_message_manager_messagemanager_.messagemanager.html">MessageManager</a>.<a href="_message_manager_messagemanager_.messagemanager.html#constructor">constructor</a></p>
+								<p>Inherited from <a href="_message_manager_abstractmessagemanager_.abstractmessagemanager.html">AbstractMessageManager</a>.<a href="_message_manager_abstractmessagemanager_.abstractmessagemanager.html#constructor">constructor</a></p>
 								<p>Overrides <a href="_basecontroller_.basecontroller.html">BaseController</a>.<a href="_basecontroller_.basecontroller.html#constructor">constructor</a></p>
 								<ul>
-									<li>Defined in <a href="https://github.com/MetaMask/gaba/blob/e68c476/src/message-manager/MessageManager.ts#L138">message-manager/MessageManager.ts:138</a></li>
+									<li>Defined in <a href="https://github.com/MetaMask/gaba/blob/dedada2/src/message-manager/AbstractMessageManager.ts#L137">message-manager/AbstractMessageManager.ts:137</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
 								<div class="lead">
-									<p>Creates a MessageManager instance</p>
+									<p>Creates an AbstractMessageManager instance</p>
 								</div>
 							</div>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -180,7 +180,7 @@
 									</div>
 								</li>
 								<li>
-									<h5><span class="tsd-flag ts-flagOptional">Optional</span> state: <span class="tsd-signature-type">Partial</span><span class="tsd-signature-symbol">&lt;</span><a href="../interfaces/_message_manager_messagemanager_.messagemanagerstate.html" class="tsd-signature-type">MessageManagerState</a><span class="tsd-signature-symbol">&lt;</span><a href="../interfaces/_message_manager_typedmessagemanager_.typedmessage.html" class="tsd-signature-type">TypedMessage</a><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol">&gt;</span></h5>
+									<h5><span class="tsd-flag ts-flagOptional">Optional</span> state: <span class="tsd-signature-type">Partial</span><span class="tsd-signature-symbol">&lt;</span><a href="../interfaces/_message_manager_abstractmessagemanager_.messagemanagerstate.html" class="tsd-signature-type">MessageManagerState</a><span class="tsd-signature-symbol">&lt;</span><a href="../interfaces/_message_manager_typedmessagemanager_.typedmessage.html" class="tsd-signature-type">TypedMessage</a><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol">&gt;</span></h5>
 									<div class="tsd-comment tsd-typography">
 										<div class="lead">
 											<p>Initial state to set on this controller</p>
@@ -202,7 +202,7 @@
 					<aside class="tsd-sources">
 						<p>Inherited from <a href="_basecontroller_.basecontroller.html">BaseController</a>.<a href="_basecontroller_.basecontroller.html#context">context</a></p>
 						<ul>
-							<li>Defined in <a href="https://github.com/MetaMask/gaba/blob/e68c476/src/BaseController.ts#L39">BaseController.ts:39</a></li>
+							<li>Defined in <a href="https://github.com/MetaMask/gaba/blob/dedada2/src/BaseController.ts#L39">BaseController.ts:39</a></li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
@@ -220,7 +220,7 @@
 					<aside class="tsd-sources">
 						<p>Inherited from <a href="_basecontroller_.basecontroller.html">BaseController</a>.<a href="_basecontroller_.basecontroller.html#defaultconfig">defaultConfig</a></p>
 						<ul>
-							<li>Defined in <a href="https://github.com/MetaMask/gaba/blob/e68c476/src/BaseController.ts#L44">BaseController.ts:44</a></li>
+							<li>Defined in <a href="https://github.com/MetaMask/gaba/blob/dedada2/src/BaseController.ts#L44">BaseController.ts:44</a></li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
@@ -232,11 +232,11 @@
 				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-inherited">
 					<a name="defaultstate" class="tsd-anchor"></a>
 					<h3>default<wbr>State</h3>
-					<div class="tsd-signature tsd-kind-icon">default<wbr>State<span class="tsd-signature-symbol">:</span> <a href="../interfaces/_message_manager_messagemanager_.messagemanagerstate.html" class="tsd-signature-type">MessageManagerState</a><span class="tsd-signature-symbol">&lt;</span><a href="../interfaces/_message_manager_typedmessagemanager_.typedmessage.html" class="tsd-signature-type">TypedMessage</a><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol"> =&nbsp;{} as S</span></div>
+					<div class="tsd-signature tsd-kind-icon">default<wbr>State<span class="tsd-signature-symbol">:</span> <a href="../interfaces/_message_manager_abstractmessagemanager_.messagemanagerstate.html" class="tsd-signature-type">MessageManagerState</a><span class="tsd-signature-symbol">&lt;</span><a href="../interfaces/_message_manager_typedmessagemanager_.typedmessage.html" class="tsd-signature-type">TypedMessage</a><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol"> =&nbsp;{} as S</span></div>
 					<aside class="tsd-sources">
 						<p>Inherited from <a href="_basecontroller_.basecontroller.html">BaseController</a>.<a href="_basecontroller_.basecontroller.html#defaultstate">defaultState</a></p>
 						<ul>
-							<li>Defined in <a href="https://github.com/MetaMask/gaba/blob/e68c476/src/BaseController.ts#L49">BaseController.ts:49</a></li>
+							<li>Defined in <a href="https://github.com/MetaMask/gaba/blob/dedada2/src/BaseController.ts#L49">BaseController.ts:49</a></li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
@@ -252,7 +252,7 @@
 					<aside class="tsd-sources">
 						<p>Inherited from <a href="_basecontroller_.basecontroller.html">BaseController</a>.<a href="_basecontroller_.basecontroller.html#disabled">disabled</a></p>
 						<ul>
-							<li>Defined in <a href="https://github.com/MetaMask/gaba/blob/e68c476/src/BaseController.ts#L54">BaseController.ts:54</a></li>
+							<li>Defined in <a href="https://github.com/MetaMask/gaba/blob/dedada2/src/BaseController.ts#L54">BaseController.ts:54</a></li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
@@ -266,9 +266,9 @@
 					<h3>hub</h3>
 					<div class="tsd-signature tsd-kind-icon">hub<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">EventEmitter</span><span class="tsd-signature-symbol"> =&nbsp;new EventEmitter()</span></div>
 					<aside class="tsd-sources">
-						<p>Inherited from <a href="_message_manager_messagemanager_.messagemanager.html">MessageManager</a>.<a href="_message_manager_messagemanager_.messagemanager.html#hub">hub</a></p>
+						<p>Inherited from <a href="_message_manager_abstractmessagemanager_.abstractmessagemanager.html">AbstractMessageManager</a>.<a href="_message_manager_abstractmessagemanager_.abstractmessagemanager.html#hub">hub</a></p>
 						<ul>
-							<li>Defined in <a href="https://github.com/MetaMask/gaba/blob/e68c476/src/message-manager/MessageManager.ts#L133">message-manager/MessageManager.ts:133</a></li>
+							<li>Defined in <a href="https://github.com/MetaMask/gaba/blob/dedada2/src/message-manager/AbstractMessageManager.ts#L132">message-manager/AbstractMessageManager.ts:132</a></li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
@@ -282,9 +282,9 @@
 					<h3><span class="tsd-flag ts-flagProtected">Protected</span> messages</h3>
 					<div class="tsd-signature tsd-kind-icon">messages<span class="tsd-signature-symbol">:</span> <a href="../interfaces/_message_manager_typedmessagemanager_.typedmessage.html" class="tsd-signature-type">TypedMessage</a><span class="tsd-signature-symbol">[]</span></div>
 					<aside class="tsd-sources">
-						<p>Inherited from <a href="_message_manager_messagemanager_.messagemanager.html">MessageManager</a>.<a href="_message_manager_messagemanager_.messagemanager.html#messages">messages</a></p>
+						<p>Inherited from <a href="_message_manager_abstractmessagemanager_.abstractmessagemanager.html">AbstractMessageManager</a>.<a href="_message_manager_abstractmessagemanager_.abstractmessagemanager.html#messages">messages</a></p>
 						<ul>
-							<li>Defined in <a href="https://github.com/MetaMask/gaba/blob/e68c476/src/message-manager/MessageManager.ts#L82">message-manager/MessageManager.ts:82</a></li>
+							<li>Defined in <a href="https://github.com/MetaMask/gaba/blob/dedada2/src/message-manager/AbstractMessageManager.ts#L81">message-manager/AbstractMessageManager.ts:81</a></li>
 						</ul>
 					</aside>
 				</section>
@@ -293,9 +293,9 @@
 					<h3>name</h3>
 					<div class="tsd-signature tsd-kind-icon">name<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span><span class="tsd-signature-symbol"> =&nbsp;&quot;TypedMessageManager&quot;</span></div>
 					<aside class="tsd-sources">
-						<p>Overrides <a href="_message_manager_messagemanager_.messagemanager.html">MessageManager</a>.<a href="_message_manager_messagemanager_.messagemanager.html#name">name</a></p>
+						<p>Overrides <a href="_message_manager_abstractmessagemanager_.abstractmessagemanager.html">AbstractMessageManager</a>.<a href="_message_manager_abstractmessagemanager_.abstractmessagemanager.html#name">name</a></p>
 						<ul>
-							<li>Defined in <a href="https://github.com/MetaMask/gaba/blob/e68c476/src/message-manager/TypedMessageManager.ts#L70">message-manager/TypedMessageManager.ts:70</a></li>
+							<li>Defined in <a href="https://github.com/MetaMask/gaba/blob/dedada2/src/message-manager/TypedMessageManager.ts#L79">message-manager/TypedMessageManager.ts:79</a></li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
@@ -311,7 +311,7 @@
 					<aside class="tsd-sources">
 						<p>Overrides <a href="_basecontroller_.basecontroller.html">BaseController</a>.<a href="_basecontroller_.basecontroller.html#requiredcontrollers">requiredControllers</a></p>
 						<ul>
-							<li>Defined in <a href="https://github.com/MetaMask/gaba/blob/e68c476/src/message-manager/TypedMessageManager.ts#L75">message-manager/TypedMessageManager.ts:75</a></li>
+							<li>Defined in <a href="https://github.com/MetaMask/gaba/blob/dedada2/src/message-manager/TypedMessageManager.ts#L84">message-manager/TypedMessageManager.ts:84</a></li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
@@ -334,7 +334,7 @@
 							<aside class="tsd-sources">
 								<p>Inherited from <a href="_basecontroller_.basecontroller.html">BaseController</a>.<a href="_basecontroller_.basecontroller.html#config">config</a></p>
 								<ul>
-									<li>Defined in <a href="https://github.com/MetaMask/gaba/blob/e68c476/src/BaseController.ts#L106">BaseController.ts:106</a></li>
+									<li>Defined in <a href="https://github.com/MetaMask/gaba/blob/dedada2/src/BaseController.ts#L106">BaseController.ts:106</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -360,7 +360,7 @@
 							<aside class="tsd-sources">
 								<p>Inherited from <a href="_basecontroller_.basecontroller.html">BaseController</a>.<a href="_basecontroller_.basecontroller.html#state">state</a></p>
 								<ul>
-									<li>Defined in <a href="https://github.com/MetaMask/gaba/blob/e68c476/src/BaseController.ts#L115">BaseController.ts:115</a></li>
+									<li>Defined in <a href="https://github.com/MetaMask/gaba/blob/dedada2/src/BaseController.ts#L115">BaseController.ts:115</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -387,9 +387,9 @@
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
-								<p>Inherited from <a href="_message_manager_messagemanager_.messagemanager.html">MessageManager</a>.<a href="_message_manager_messagemanager_.messagemanager.html#addmessage">addMessage</a></p>
+								<p>Inherited from <a href="_message_manager_abstractmessagemanager_.abstractmessagemanager.html">AbstractMessageManager</a>.<a href="_message_manager_abstractmessagemanager_.abstractmessagemanager.html#addmessage">addMessage</a></p>
 								<ul>
-									<li>Defined in <a href="https://github.com/MetaMask/gaba/blob/e68c476/src/message-manager/MessageManager.ts#L188">message-manager/MessageManager.ts:188</a></li>
+									<li>Defined in <a href="https://github.com/MetaMask/gaba/blob/dedada2/src/message-manager/AbstractMessageManager.ts#L187">message-manager/AbstractMessageManager.ts:187</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -415,13 +415,13 @@
 					<a name="addunapprovedmessage" class="tsd-anchor"></a>
 					<h3>add<wbr>Unapproved<wbr>Message</h3>
 					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
-						<li class="tsd-signature tsd-kind-icon">add<wbr>Unapproved<wbr>Message<span class="tsd-signature-symbol">(</span>messageParams<span class="tsd-signature-symbol">: </span><a href="../interfaces/_message_manager_typedmessagemanager_.typedmessageparams.html" class="tsd-signature-type">TypedMessageParams</a>, version<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span>, req<span class="tsd-signature-symbol">?: </span><a href="../interfaces/_message_manager_messagemanager_.originalrequest.html" class="tsd-signature-type">OriginalRequest</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">any</span></li>
+						<li class="tsd-signature tsd-kind-icon">add<wbr>Unapproved<wbr>Message<span class="tsd-signature-symbol">(</span>messageParams<span class="tsd-signature-symbol">: </span><a href="../interfaces/_message_manager_typedmessagemanager_.typedmessageparams.html" class="tsd-signature-type">TypedMessageParams</a>, version<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span>, req<span class="tsd-signature-symbol">?: </span><a href="../interfaces/_message_manager_abstractmessagemanager_.originalrequest.html" class="tsd-signature-type">OriginalRequest</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">any</span></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/MetaMask/gaba/blob/e68c476/src/message-manager/TypedMessageManager.ts#L129">message-manager/TypedMessageManager.ts:129</a></li>
+									<li>Defined in <a href="https://github.com/MetaMask/gaba/blob/dedada2/src/message-manager/TypedMessageManager.ts#L138">message-manager/TypedMessageManager.ts:138</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -447,7 +447,7 @@
 									</div>
 								</li>
 								<li>
-									<h5><span class="tsd-flag ts-flagOptional">Optional</span> req: <a href="../interfaces/_message_manager_messagemanager_.originalrequest.html" class="tsd-signature-type">OriginalRequest</a></h5>
+									<h5><span class="tsd-flag ts-flagOptional">Optional</span> req: <a href="../interfaces/_message_manager_abstractmessagemanager_.originalrequest.html" class="tsd-signature-type">OriginalRequest</a></h5>
 								</li>
 							</ul>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">any</span></h4>
@@ -461,13 +461,13 @@
 					<a name="addunapprovedmessageasync" class="tsd-anchor"></a>
 					<h3>add<wbr>Unapproved<wbr>Message<wbr>Async</h3>
 					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
-						<li class="tsd-signature tsd-kind-icon">add<wbr>Unapproved<wbr>Message<wbr>Async<span class="tsd-signature-symbol">(</span>messageParams<span class="tsd-signature-symbol">: </span><a href="../interfaces/_message_manager_typedmessagemanager_.typedmessageparams.html" class="tsd-signature-type">TypedMessageParams</a>, version<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span>, req<span class="tsd-signature-symbol">?: </span><a href="../interfaces/_message_manager_messagemanager_.originalrequest.html" class="tsd-signature-type">OriginalRequest</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">&gt;</span></li>
+						<li class="tsd-signature tsd-kind-icon">add<wbr>Unapproved<wbr>Message<wbr>Async<span class="tsd-signature-symbol">(</span>messageParams<span class="tsd-signature-symbol">: </span><a href="../interfaces/_message_manager_typedmessagemanager_.typedmessageparams.html" class="tsd-signature-type">TypedMessageParams</a>, version<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span>, req<span class="tsd-signature-symbol">?: </span><a href="../interfaces/_message_manager_abstractmessagemanager_.originalrequest.html" class="tsd-signature-type">OriginalRequest</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">&gt;</span></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/MetaMask/gaba/blob/e68c476/src/message-manager/TypedMessageManager.ts#L86">message-manager/TypedMessageManager.ts:86</a></li>
+									<li>Defined in <a href="https://github.com/MetaMask/gaba/blob/dedada2/src/message-manager/TypedMessageManager.ts#L95">message-manager/TypedMessageManager.ts:95</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -491,7 +491,7 @@
 									</div>
 								</li>
 								<li>
-									<h5><span class="tsd-flag ts-flagOptional">Optional</span> req: <a href="../interfaces/_message_manager_messagemanager_.originalrequest.html" class="tsd-signature-type">OriginalRequest</a></h5>
+									<h5><span class="tsd-flag ts-flagOptional">Optional</span> req: <a href="../interfaces/_message_manager_abstractmessagemanager_.originalrequest.html" class="tsd-signature-type">OriginalRequest</a></h5>
 								</li>
 							</ul>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">&gt;</span></h4>
@@ -510,9 +510,9 @@
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
-								<p>Inherited from <a href="_message_manager_messagemanager_.messagemanager.html">MessageManager</a>.<a href="_message_manager_messagemanager_.messagemanager.html#approvemessage">approveMessage</a></p>
+								<p>Inherited from <a href="_message_manager_abstractmessagemanager_.abstractmessagemanager.html">AbstractMessageManager</a>.<a href="_message_manager_abstractmessagemanager_.abstractmessagemanager.html#approvemessage">approveMessage</a></p>
 								<ul>
-									<li>Defined in <a href="https://github.com/MetaMask/gaba/blob/e68c476/src/message-manager/MessageManager.ts#L213">message-manager/MessageManager.ts:213</a></li>
+									<li>Defined in <a href="https://github.com/MetaMask/gaba/blob/dedada2/src/message-manager/AbstractMessageManager.ts#L212">message-manager/AbstractMessageManager.ts:212</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -549,7 +549,7 @@
 							<aside class="tsd-sources">
 								<p>Inherited from <a href="_basecontroller_.basecontroller.html">BaseController</a>.<a href="_basecontroller_.basecontroller.html#configure">configure</a></p>
 								<ul>
-									<li>Defined in <a href="https://github.com/MetaMask/gaba/blob/e68c476/src/BaseController.ts#L126">BaseController.ts:126</a></li>
+									<li>Defined in <a href="https://github.com/MetaMask/gaba/blob/dedada2/src/BaseController.ts#L126">BaseController.ts:126</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -591,9 +591,9 @@
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
-								<p>Inherited from <a href="_message_manager_messagemanager_.messagemanager.html">MessageManager</a>.<a href="_message_manager_messagemanager_.messagemanager.html#getmessage">getMessage</a></p>
+								<p>Inherited from <a href="_message_manager_abstractmessagemanager_.abstractmessagemanager.html">AbstractMessageManager</a>.<a href="_message_manager_abstractmessagemanager_.abstractmessagemanager.html#getmessage">getMessage</a></p>
 								<ul>
-									<li>Defined in <a href="https://github.com/MetaMask/gaba/blob/e68c476/src/message-manager/MessageManager.ts#L201">message-manager/MessageManager.ts:201</a></li>
+									<li>Defined in <a href="https://github.com/MetaMask/gaba/blob/dedada2/src/message-manager/AbstractMessageManager.ts#L200">message-manager/AbstractMessageManager.ts:200</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -630,9 +630,9 @@
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
-								<p>Inherited from <a href="_message_manager_messagemanager_.messagemanager.html">MessageManager</a>.<a href="_message_manager_messagemanager_.messagemanager.html#getunapprovedmessages">getUnapprovedMessages</a></p>
+								<p>Inherited from <a href="_message_manager_abstractmessagemanager_.abstractmessagemanager.html">AbstractMessageManager</a>.<a href="_message_manager_abstractmessagemanager_.abstractmessagemanager.html#getunapprovedmessages">getUnapprovedMessages</a></p>
 								<ul>
-									<li>Defined in <a href="https://github.com/MetaMask/gaba/blob/e68c476/src/message-manager/MessageManager.ts#L172">message-manager/MessageManager.ts:172</a></li>
+									<li>Defined in <a href="https://github.com/MetaMask/gaba/blob/dedada2/src/message-manager/AbstractMessageManager.ts#L171">message-manager/AbstractMessageManager.ts:171</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -661,9 +661,9 @@
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
-								<p>Inherited from <a href="_message_manager_messagemanager_.messagemanager.html">MessageManager</a>.<a href="_message_manager_messagemanager_.messagemanager.html#getunapprovedmessagescount">getUnapprovedMessagesCount</a></p>
+								<p>Inherited from <a href="_message_manager_abstractmessagemanager_.abstractmessagemanager.html">AbstractMessageManager</a>.<a href="_message_manager_abstractmessagemanager_.abstractmessagemanager.html#getunapprovedmessagescount">getUnapprovedMessagesCount</a></p>
 								<ul>
-									<li>Defined in <a href="https://github.com/MetaMask/gaba/blob/e68c476/src/message-manager/MessageManager.ts#L162">message-manager/MessageManager.ts:162</a></li>
+									<li>Defined in <a href="https://github.com/MetaMask/gaba/blob/dedada2/src/message-manager/AbstractMessageManager.ts#L161">message-manager/AbstractMessageManager.ts:161</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -689,7 +689,7 @@
 							<aside class="tsd-sources">
 								<p>Inherited from <a href="_basecontroller_.basecontroller.html">BaseController</a>.<a href="_basecontroller_.basecontroller.html#initialize">initialize</a></p>
 								<ul>
-									<li>Defined in <a href="https://github.com/MetaMask/gaba/blob/e68c476/src/BaseController.ts#L93">BaseController.ts:93</a></li>
+									<li>Defined in <a href="https://github.com/MetaMask/gaba/blob/dedada2/src/BaseController.ts#L93">BaseController.ts:93</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -717,7 +717,7 @@
 							<aside class="tsd-sources">
 								<p>Inherited from <a href="_basecontroller_.basecontroller.html">BaseController</a>.<a href="_basecontroller_.basecontroller.html#notify">notify</a></p>
 								<ul>
-									<li>Defined in <a href="https://github.com/MetaMask/gaba/blob/e68c476/src/BaseController.ts#L149">BaseController.ts:149</a></li>
+									<li>Defined in <a href="https://github.com/MetaMask/gaba/blob/dedada2/src/BaseController.ts#L149">BaseController.ts:149</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -740,7 +740,7 @@
 							<aside class="tsd-sources">
 								<p>Inherited from <a href="_basecontroller_.basecontroller.html">BaseController</a>.<a href="_basecontroller_.basecontroller.html#oncomposed">onComposed</a></p>
 								<ul>
-									<li>Defined in <a href="https://github.com/MetaMask/gaba/blob/e68c476/src/BaseController.ts#L162">BaseController.ts:162</a></li>
+									<li>Defined in <a href="https://github.com/MetaMask/gaba/blob/dedada2/src/BaseController.ts#L162">BaseController.ts:162</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -762,9 +762,9 @@
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
-								<p>Overrides <a href="_message_manager_messagemanager_.messagemanager.html">MessageManager</a>.<a href="_message_manager_messagemanager_.messagemanager.html#prepmessageforsigning">prepMessageForSigning</a></p>
+								<p>Overrides <a href="_message_manager_abstractmessagemanager_.abstractmessagemanager.html">AbstractMessageManager</a>.<a href="_message_manager_abstractmessagemanager_.abstractmessagemanager.html#prepmessageforsigning">prepMessageForSigning</a></p>
 								<ul>
-									<li>Defined in <a href="https://github.com/MetaMask/gaba/blob/e68c476/src/message-manager/TypedMessageManager.ts#L171">message-manager/TypedMessageManager.ts:171</a></li>
+									<li>Defined in <a href="https://github.com/MetaMask/gaba/blob/dedada2/src/message-manager/TypedMessageManager.ts#L180">message-manager/TypedMessageManager.ts:180</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -798,9 +798,9 @@
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
-								<p>Inherited from <a href="_message_manager_messagemanager_.messagemanager.html">MessageManager</a>.<a href="_message_manager_messagemanager_.messagemanager.html#rejectmessage">rejectMessage</a></p>
+								<p>Inherited from <a href="_message_manager_abstractmessagemanager_.abstractmessagemanager.html">AbstractMessageManager</a>.<a href="_message_manager_abstractmessagemanager_.abstractmessagemanager.html#rejectmessage">rejectMessage</a></p>
 								<ul>
-									<li>Defined in <a href="https://github.com/MetaMask/gaba/blob/e68c476/src/message-manager/MessageManager.ts#L260">message-manager/MessageManager.ts:260</a></li>
+									<li>Defined in <a href="https://github.com/MetaMask/gaba/blob/dedada2/src/message-manager/AbstractMessageManager.ts#L259">message-manager/AbstractMessageManager.ts:259</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -830,9 +830,9 @@
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
-								<p>Inherited from <a href="_message_manager_messagemanager_.messagemanager.html">MessageManager</a>.<a href="_message_manager_messagemanager_.messagemanager.html#savemessagelist">saveMessageList</a></p>
+								<p>Inherited from <a href="_message_manager_abstractmessagemanager_.abstractmessagemanager.html">AbstractMessageManager</a>.<a href="_message_manager_abstractmessagemanager_.abstractmessagemanager.html#savemessagelist">saveMessageList</a></p>
 								<ul>
-									<li>Defined in <a href="https://github.com/MetaMask/gaba/blob/e68c476/src/message-manager/MessageManager.ts#L88">message-manager/MessageManager.ts:88</a></li>
+									<li>Defined in <a href="https://github.com/MetaMask/gaba/blob/dedada2/src/message-manager/AbstractMessageManager.ts#L87">message-manager/AbstractMessageManager.ts:87</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -853,9 +853,9 @@
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
-								<p>Inherited from <a href="_message_manager_messagemanager_.messagemanager.html">MessageManager</a>.<a href="_message_manager_messagemanager_.messagemanager.html#setmessagestatus">setMessageStatus</a></p>
+								<p>Inherited from <a href="_message_manager_abstractmessagemanager_.abstractmessagemanager.html">AbstractMessageManager</a>.<a href="_message_manager_abstractmessagemanager_.abstractmessagemanager.html#setmessagestatus">setMessageStatus</a></p>
 								<ul>
-									<li>Defined in <a href="https://github.com/MetaMask/gaba/blob/e68c476/src/message-manager/MessageManager.ts#L101">message-manager/MessageManager.ts:101</a></li>
+									<li>Defined in <a href="https://github.com/MetaMask/gaba/blob/dedada2/src/message-manager/AbstractMessageManager.ts#L100">message-manager/AbstractMessageManager.ts:100</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -891,9 +891,9 @@
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
-								<p>Inherited from <a href="_message_manager_messagemanager_.messagemanager.html">MessageManager</a>.<a href="_message_manager_messagemanager_.messagemanager.html#setmessagestatusapproved">setMessageStatusApproved</a></p>
+								<p>Inherited from <a href="_message_manager_abstractmessagemanager_.abstractmessagemanager.html">AbstractMessageManager</a>.<a href="_message_manager_abstractmessagemanager_.abstractmessagemanager.html#setmessagestatusapproved">setMessageStatusApproved</a></p>
 								<ul>
-									<li>Defined in <a href="https://github.com/MetaMask/gaba/blob/e68c476/src/message-manager/MessageManager.ts#L223">message-manager/MessageManager.ts:223</a></li>
+									<li>Defined in <a href="https://github.com/MetaMask/gaba/blob/dedada2/src/message-manager/AbstractMessageManager.ts#L222">message-manager/AbstractMessageManager.ts:222</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -924,7 +924,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/MetaMask/gaba/blob/e68c476/src/message-manager/TypedMessageManager.ts#L153">message-manager/TypedMessageManager.ts:153</a></li>
+									<li>Defined in <a href="https://github.com/MetaMask/gaba/blob/dedada2/src/message-manager/TypedMessageManager.ts#L162">message-manager/TypedMessageManager.ts:162</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -960,9 +960,9 @@
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
-								<p>Inherited from <a href="_message_manager_messagemanager_.messagemanager.html">MessageManager</a>.<a href="_message_manager_messagemanager_.messagemanager.html#setmessagestatussigned">setMessageStatusSigned</a></p>
+								<p>Inherited from <a href="_message_manager_abstractmessagemanager_.abstractmessagemanager.html">AbstractMessageManager</a>.<a href="_message_manager_abstractmessagemanager_.abstractmessagemanager.html#setmessagestatussigned">setMessageStatusSigned</a></p>
 								<ul>
-									<li>Defined in <a href="https://github.com/MetaMask/gaba/blob/e68c476/src/message-manager/MessageManager.ts#L235">message-manager/MessageManager.ts:235</a></li>
+									<li>Defined in <a href="https://github.com/MetaMask/gaba/blob/dedada2/src/message-manager/AbstractMessageManager.ts#L234">message-manager/AbstractMessageManager.ts:234</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -995,14 +995,14 @@
 					<a name="subscribe" class="tsd-anchor"></a>
 					<h3>subscribe</h3>
 					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-inherited">
-						<li class="tsd-signature tsd-kind-icon">subscribe<span class="tsd-signature-symbol">(</span>listener<span class="tsd-signature-symbol">: </span><a href="../modules/_basecontroller_.html#listener" class="tsd-signature-type">Listener</a><span class="tsd-signature-symbol">&lt;</span><a href="../interfaces/_message_manager_messagemanager_.messagemanagerstate.html" class="tsd-signature-type">MessageManagerState</a><span class="tsd-signature-symbol">&lt;</span><a href="../interfaces/_message_manager_typedmessagemanager_.typedmessage.html" class="tsd-signature-type">TypedMessage</a><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
+						<li class="tsd-signature tsd-kind-icon">subscribe<span class="tsd-signature-symbol">(</span>listener<span class="tsd-signature-symbol">: </span><a href="../modules/_basecontroller_.html#listener" class="tsd-signature-type">Listener</a><span class="tsd-signature-symbol">&lt;</span><a href="../interfaces/_message_manager_abstractmessagemanager_.messagemanagerstate.html" class="tsd-signature-type">MessageManagerState</a><span class="tsd-signature-symbol">&lt;</span><a href="../interfaces/_message_manager_typedmessagemanager_.typedmessage.html" class="tsd-signature-type">TypedMessage</a><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<p>Inherited from <a href="_basecontroller_.basecontroller.html">BaseController</a>.<a href="_basecontroller_.basecontroller.html#subscribe">subscribe</a></p>
 								<ul>
-									<li>Defined in <a href="https://github.com/MetaMask/gaba/blob/e68c476/src/BaseController.ts#L175">BaseController.ts:175</a></li>
+									<li>Defined in <a href="https://github.com/MetaMask/gaba/blob/dedada2/src/BaseController.ts#L175">BaseController.ts:175</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -1013,7 +1013,7 @@
 							<h4 class="tsd-parameters-title">Parameters</h4>
 							<ul class="tsd-parameters">
 								<li>
-									<h5>listener: <a href="../modules/_basecontroller_.html#listener" class="tsd-signature-type">Listener</a><span class="tsd-signature-symbol">&lt;</span><a href="../interfaces/_message_manager_messagemanager_.messagemanagerstate.html" class="tsd-signature-type">MessageManagerState</a><span class="tsd-signature-symbol">&lt;</span><a href="../interfaces/_message_manager_typedmessagemanager_.typedmessage.html" class="tsd-signature-type">TypedMessage</a><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol">&gt;</span></h5>
+									<h5>listener: <a href="../modules/_basecontroller_.html#listener" class="tsd-signature-type">Listener</a><span class="tsd-signature-symbol">&lt;</span><a href="../interfaces/_message_manager_abstractmessagemanager_.messagemanagerstate.html" class="tsd-signature-type">MessageManagerState</a><span class="tsd-signature-symbol">&lt;</span><a href="../interfaces/_message_manager_typedmessagemanager_.typedmessage.html" class="tsd-signature-type">TypedMessage</a><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol">&gt;</span></h5>
 									<div class="tsd-comment tsd-typography">
 										<p>Callback triggered when state changes</p>
 									</div>
@@ -1027,14 +1027,14 @@
 					<a name="unsubscribe" class="tsd-anchor"></a>
 					<h3>unsubscribe</h3>
 					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-inherited">
-						<li class="tsd-signature tsd-kind-icon">unsubscribe<span class="tsd-signature-symbol">(</span>listener<span class="tsd-signature-symbol">: </span><a href="../modules/_basecontroller_.html#listener" class="tsd-signature-type">Listener</a><span class="tsd-signature-symbol">&lt;</span><a href="../interfaces/_message_manager_messagemanager_.messagemanagerstate.html" class="tsd-signature-type">MessageManagerState</a><span class="tsd-signature-symbol">&lt;</span><a href="../interfaces/_message_manager_typedmessagemanager_.typedmessage.html" class="tsd-signature-type">TypedMessage</a><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">boolean</span></li>
+						<li class="tsd-signature tsd-kind-icon">unsubscribe<span class="tsd-signature-symbol">(</span>listener<span class="tsd-signature-symbol">: </span><a href="../modules/_basecontroller_.html#listener" class="tsd-signature-type">Listener</a><span class="tsd-signature-symbol">&lt;</span><a href="../interfaces/_message_manager_abstractmessagemanager_.messagemanagerstate.html" class="tsd-signature-type">MessageManagerState</a><span class="tsd-signature-symbol">&lt;</span><a href="../interfaces/_message_manager_typedmessagemanager_.typedmessage.html" class="tsd-signature-type">TypedMessage</a><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">boolean</span></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<p>Inherited from <a href="_basecontroller_.basecontroller.html">BaseController</a>.<a href="_basecontroller_.basecontroller.html#unsubscribe">unsubscribe</a></p>
 								<ul>
-									<li>Defined in <a href="https://github.com/MetaMask/gaba/blob/e68c476/src/BaseController.ts#L185">BaseController.ts:185</a></li>
+									<li>Defined in <a href="https://github.com/MetaMask/gaba/blob/dedada2/src/BaseController.ts#L185">BaseController.ts:185</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -1045,7 +1045,7 @@
 							<h4 class="tsd-parameters-title">Parameters</h4>
 							<ul class="tsd-parameters">
 								<li>
-									<h5>listener: <a href="../modules/_basecontroller_.html#listener" class="tsd-signature-type">Listener</a><span class="tsd-signature-symbol">&lt;</span><a href="../interfaces/_message_manager_messagemanager_.messagemanagerstate.html" class="tsd-signature-type">MessageManagerState</a><span class="tsd-signature-symbol">&lt;</span><a href="../interfaces/_message_manager_typedmessagemanager_.typedmessage.html" class="tsd-signature-type">TypedMessage</a><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol">&gt;</span></h5>
+									<h5>listener: <a href="../modules/_basecontroller_.html#listener" class="tsd-signature-type">Listener</a><span class="tsd-signature-symbol">&lt;</span><a href="../interfaces/_message_manager_abstractmessagemanager_.messagemanagerstate.html" class="tsd-signature-type">MessageManagerState</a><span class="tsd-signature-symbol">&lt;</span><a href="../interfaces/_message_manager_typedmessagemanager_.typedmessage.html" class="tsd-signature-type">TypedMessage</a><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol">&gt;</span></h5>
 									<div class="tsd-comment tsd-typography">
 										<p>Callback to remove</p>
 									</div>
@@ -1062,14 +1062,14 @@
 					<a name="update" class="tsd-anchor"></a>
 					<h3>update</h3>
 					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-inherited">
-						<li class="tsd-signature tsd-kind-icon">update<span class="tsd-signature-symbol">(</span>state<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Partial</span><span class="tsd-signature-symbol">&lt;</span><a href="../interfaces/_message_manager_messagemanager_.messagemanagerstate.html" class="tsd-signature-type">MessageManagerState</a><span class="tsd-signature-symbol">&lt;</span><a href="../interfaces/_message_manager_typedmessagemanager_.typedmessage.html" class="tsd-signature-type">TypedMessage</a><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol">&gt;</span>, overwrite<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">boolean</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
+						<li class="tsd-signature tsd-kind-icon">update<span class="tsd-signature-symbol">(</span>state<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Partial</span><span class="tsd-signature-symbol">&lt;</span><a href="../interfaces/_message_manager_abstractmessagemanager_.messagemanagerstate.html" class="tsd-signature-type">MessageManagerState</a><span class="tsd-signature-symbol">&lt;</span><a href="../interfaces/_message_manager_typedmessagemanager_.typedmessage.html" class="tsd-signature-type">TypedMessage</a><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol">&gt;</span>, overwrite<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">boolean</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<p>Inherited from <a href="_basecontroller_.basecontroller.html">BaseController</a>.<a href="_basecontroller_.basecontroller.html#update">update</a></p>
 								<ul>
-									<li>Defined in <a href="https://github.com/MetaMask/gaba/blob/e68c476/src/BaseController.ts#L197">BaseController.ts:197</a></li>
+									<li>Defined in <a href="https://github.com/MetaMask/gaba/blob/dedada2/src/BaseController.ts#L197">BaseController.ts:197</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -1080,7 +1080,7 @@
 							<h4 class="tsd-parameters-title">Parameters</h4>
 							<ul class="tsd-parameters">
 								<li>
-									<h5>state: <span class="tsd-signature-type">Partial</span><span class="tsd-signature-symbol">&lt;</span><a href="../interfaces/_message_manager_messagemanager_.messagemanagerstate.html" class="tsd-signature-type">MessageManagerState</a><span class="tsd-signature-symbol">&lt;</span><a href="../interfaces/_message_manager_typedmessagemanager_.typedmessage.html" class="tsd-signature-type">TypedMessage</a><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol">&gt;</span></h5>
+									<h5>state: <span class="tsd-signature-type">Partial</span><span class="tsd-signature-symbol">&lt;</span><a href="../interfaces/_message_manager_abstractmessagemanager_.messagemanagerstate.html" class="tsd-signature-type">MessageManagerState</a><span class="tsd-signature-symbol">&lt;</span><a href="../interfaces/_message_manager_typedmessagemanager_.typedmessage.html" class="tsd-signature-type">TypedMessage</a><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol">&gt;</span></h5>
 									<div class="tsd-comment tsd-typography">
 										<p>New state</p>
 									</div>
@@ -1105,9 +1105,9 @@
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
-								<p>Inherited from <a href="_message_manager_messagemanager_.messagemanager.html">MessageManager</a>.<a href="_message_manager_messagemanager_.messagemanager.html#updatemessage">updateMessage</a></p>
+								<p>Inherited from <a href="_message_manager_abstractmessagemanager_.abstractmessagemanager.html">AbstractMessageManager</a>.<a href="_message_manager_abstractmessagemanager_.abstractmessagemanager.html#updatemessage">updateMessage</a></p>
 								<ul>
-									<li>Defined in <a href="https://github.com/MetaMask/gaba/blob/e68c476/src/message-manager/MessageManager.ts#L121">message-manager/MessageManager.ts:121</a></li>
+									<li>Defined in <a href="https://github.com/MetaMask/gaba/blob/dedada2/src/message-manager/AbstractMessageManager.ts#L120">message-manager/AbstractMessageManager.ts:120</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -1169,6 +1169,9 @@
 					</li>
 					<li class=" tsd-kind-external-module">
 						<a href="../modules/_keyring_keyringcontroller_.html">"keyring/<wbr>Keyring<wbr>Controller"</a>
+					</li>
+					<li class=" tsd-kind-external-module">
+						<a href="../modules/_message_manager_abstractmessagemanager_.html">"message-<wbr>manager/<wbr>Abstract<wbr>Message<wbr>Manager"</a>
 					</li>
 					<li class=" tsd-kind-external-module">
 						<a href="../modules/_message_manager_messagemanager_.html">"message-<wbr>manager/<wbr>Message<wbr>Manager"</a>
