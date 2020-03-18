@@ -1,10 +1,12 @@
 import { ethers, utils } from 'ethers';
 import BaseController, { BaseConfig, BaseState } from '../BaseController';
+import { ethersToBN } from '../util';
 
 const BN = require('ethereumjs-util').BN;
 const abiERC20 = require('human-standard-token-abi');
 const abiERC721 = require('human-standard-collectible-abi');
 const abiSingleCallBalancesContract = require('single-call-balance-checker-abi');
+
 const ERC721METADATA_INTERFACE_ID = '0x5b5e139f';
 const ERC721ENUMERABLE_INTERFACE_ID = '0x780e9d63';
 const SINGLE_CALL_BALANCES_ADDRESS = '0xb1f8e55c7f64d203c1400b9d8555d050f94adf39';
@@ -103,7 +105,7 @@ export class AssetsContractController extends BaseController<AssetsContractConfi
 	 */
 	async getBalanceOf(address: string, selectedAddress: string): Promise<typeof BN> {
 		const contract = new ethers.Contract(address, abiERC20, this._web3Provider!);
-		return await contract.balanceOf(selectedAddress);
+		return ethersToBN(await contract.balanceOf(selectedAddress));
 	}
 
 	/**

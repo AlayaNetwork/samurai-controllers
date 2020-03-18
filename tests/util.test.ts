@@ -4,6 +4,7 @@ import * as fetchMock from 'fetch-mock';
 import * as util from '../src/util';
 
 const { BN } = require('ethereumjs-util');
+const { BigNumber: EthersBN } = require('ethers/utils');
 const SOME_API = 'https://someapi.com';
 const SOME_FAILING_API = 'https://somefailingapi.com';
 
@@ -14,6 +15,10 @@ describe('util', () => {
 
 	it('BNToHex', () => {
 		expect(util.BNToHex(new BN('1337'))).toBe('0x539');
+	});
+
+	it('ethersToBN', () => {
+		expect(util.BNToHex(util.ethersToBN(new EthersBN('1337')))).toBe('0x539');
 	});
 
 	it('fractionBN', () => {

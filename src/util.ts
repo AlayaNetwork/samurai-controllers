@@ -1,4 +1,5 @@
 import { addHexPrefix, isValidAddress, bufferToHex } from 'ethereumjs-util';
+import { BigNumber as EthersBN } from 'ethers/utils';
 import { Transaction } from './transaction/TransactionController';
 import { MessageParams } from './message-manager/MessageManager';
 import { PersonalMessageParams } from './message-manager/PersonalMessageManager';
@@ -79,6 +80,10 @@ export function getBuyURL(networkCode = '1', address?: string, amount = 5) {
  */
 export function hexToBN(inputHex: string) {
 	return new BN(stripHexPrefix(inputHex), 16);
+}
+
+export function ethersToBN(ethersBigNum: EthersBN) {
+	return new BN(stripHexPrefix(ethersBigNum.toHexString()), 16);
 }
 
 /**
