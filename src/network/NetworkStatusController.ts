@@ -12,7 +12,7 @@ export type Status = 'ok' | 'down' | 'degraded';
 export interface NetworkStatus {
   kovan: Status;
   mainnet: Status;
-  rinkeby: Status;
+  alaya: Status;
   ropsten: Status;
 }
 
@@ -43,7 +43,7 @@ export interface NetworkStatusState extends BaseState {
 const DOWN_NETWORK_STATUS: NetworkStatus = {
   kovan: 'down',
   mainnet: 'down',
-  rinkeby: 'down',
+  alaya: 'down',
   ropsten: 'down',
 };
 

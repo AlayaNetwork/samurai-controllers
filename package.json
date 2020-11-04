@@ -1,5 +1,5 @@
 {
-  "name": "@metamask/controllers",
+  "name": "@alayanetwork/controllers",
   "version": "3.0.1",
   "description": "Collection of platform-agnostic modules for creating secure data models for cryptocurrency wallets",
   "license": "MIT",
@@ -21,32 +21,32 @@
     "build:link": "yarn build && cd dist && yarn link && rm -rf node_modules && cd ..",
     "doc": "typedoc src/ && touch docs/.nojekyll"
   },
-  "homepage": "https://github.com/MetaMask/controllers#readme",
+  "homepage": "https://github.com/AlayaNetwork/samurai-controllers#readme",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/MetaMask/controllers.git"
+    "url": "git+https://github.com/AlayaNetwork/samurai-controllers.git"
   },
   "keywords": [
-    "MetaMask",
-    "Ethereum"
+    "Samurai",
+    "PlatON"
   ],
   "bugs": {
-    "url": "https://github.com/MetaMask/controllers/issues"
+    "url": "https://github.com/AlayaNetwork/samurai-controllers/issues"
   },
   "dependencies": {
     "await-semaphore": "^0.1.3",
     "eth-contract-metadata": "^1.11.0",
     "eth-ens-namehash": "^2.0.8",
     "eth-json-rpc-infura": "^5.0.0",
-    "eth-keyring-controller": "^5.6.1",
-    "eth-method-registry": "1.1.0",
+    "@alayanetwork/eth-keyring-controller": "^6.1.0",
+    "@alayanetwork/eth-method-registry": "^1.2.0",
     "eth-phishing-detect": "^1.1.13",
-    "eth-query": "^2.1.2",
+    "@alayanetwork/eth-query": "^2.1.2",
     "eth-rpc-errors": "^2.1.1",
-    "eth-sig-util": "^2.3.0",
-    "ethereumjs-util": "^6.1.0",
+    "@alayanetwork/eth-sig-util": "^2.5.3",
+    "@alayanetwork/ethereumjs-util": "^5.2.0",
     "ethereumjs-wallet": "0.6.0",
-    "ethjs-query": "^0.3.8",
+    "@alayanetwork/ethjs-query": "^0.3.4",
     "human-standard-collectible-abi": "^1.0.2",
     "human-standard-token-abi": "^2.0.0",
     "isomorphic-fetch": "^2.2.1",

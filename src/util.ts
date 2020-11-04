@@ -5,9 +5,9 @@ import { PersonalMessageParams } from './message-manager/PersonalMessageManager'
 import { TypedMessageParams } from './message-manager/TypedMessageManager';
 import { Token } from './assets/TokenRatesController';
 
-const sigUtil = require('eth-sig-util');
+const sigUtil = require('@alayanetwork/eth-sig-util');
 const jsonschema = require('jsonschema');
-const { BN, stripHexPrefix } = require('ethereumjs-util');
+const { BN, stripHexPrefix } = require('@alayanetwork/ethereumjs-util');
 const ensNamehash = require('eth-ens-namehash');
 
 const hexRe = /^[0-9A-Fa-f]+$/ug;
@@ -67,6 +67,8 @@ export function getBuyURL(networkCode = '1', address?: string, amount = 5) {
       return 'https://goerli-faucet.slock.it/';
     case '42':
       return 'https://github.com/kovan-testnet/faucet';
+    case '201018':
+      return 'https://www.rinkeby.io/';
   }
 }
 

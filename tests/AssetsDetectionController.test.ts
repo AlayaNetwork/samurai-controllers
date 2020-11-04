@@ -7,7 +7,7 @@ import { ComposableController } from '../src/ComposableController';
 import { AssetsController } from '../src/assets/AssetsController';
 import { AssetsContractController } from '../src/assets/AssetsContractController';
 
-const { BN } = require('ethereumjs-util');
+const { BN } = require('@alayanetwork/ethereumjs-util');
 
 const DEFAULT_INTERVAL = 180000;
 const MAINNET = 'mainnet';

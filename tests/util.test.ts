@@ -3,7 +3,7 @@ import * as fetchMock from 'fetch-mock';
 
 import * as util from '../src/util';
 
-const { BN } = require('ethereumjs-util');
+const { BN } = require('@alayanetwork/ethereumjs-util');
 
 const SOME_API = 'https://someapi.com';
 const SOME_FAILING_API = 'https://somefailingapi.com';

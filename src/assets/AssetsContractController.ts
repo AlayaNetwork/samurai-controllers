@@ -2,7 +2,7 @@ import BaseController, { BaseConfig, BaseState } from '../BaseController';
 
 // TODO: Destructuring this line introduces a compilation error
 // eslint-disable-next-line prefer-destructuring
-const BN = require('ethereumjs-util').BN;
+const BN = require('@alayanetwork/ethereumjs-util').BN;
 const Web3 = require('web3');
 const abiERC20 = require('human-standard-token-abi');
 const abiERC721 = require('human-standard-collectible-abi');

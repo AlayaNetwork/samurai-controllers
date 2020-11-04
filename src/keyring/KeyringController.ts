@@ -5,11 +5,11 @@ import { Transaction } from '../transaction/TransactionController';
 import { PersonalMessageParams } from '../message-manager/PersonalMessageManager';
 import { TypedMessageParams } from '../message-manager/TypedMessageManager';
 
-const sigUtil = require('eth-sig-util');
-const Keyring = require('eth-keyring-controller');
+const sigUtil = require('@alayanetwork/eth-sig-util');
+const Keyring = require('@alayanetwork/eth-keyring-controller');
 const { Mutex } = require('await-semaphore');
 const Wallet = require('ethereumjs-wallet');
-const ethUtil = require('ethereumjs-util');
+const ethUtil = require('@alayanetwork/ethereumjs-util');
 const importers = require('ethereumjs-wallet/thirdparty');
 
 const privates = new WeakMap();

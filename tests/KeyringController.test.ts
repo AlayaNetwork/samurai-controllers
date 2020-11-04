@@ -4,8 +4,8 @@ import KeyringController, { Keyring, KeyringConfig } from '../src/keyring/Keyrin
 import PreferencesController from '../src/user/PreferencesController';
 import ComposableController from '../src/ComposableController';
 
-const sigUtil = require('eth-sig-util');
-const Transaction = require('ethereumjs-tx');
+const sigUtil = require('@alayanetwork/eth-sig-util');
+const Transaction = require('@alayanetwork/ethereumjs-tx');
 const mockEncryptor: any = require('./utils/mockEncryptor');
 
 const input =
