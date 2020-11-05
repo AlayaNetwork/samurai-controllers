@@ -9,7 +9,7 @@ const sigUtil = require('@alayanetwork/eth-sig-util');
 const Keyring = require('@alayanetwork/eth-keyring-controller');
 const { Mutex } = require('await-semaphore');
 const Wallet = require('ethereumjs-wallet');
-const ethUtil = require('@alayanetwork/ethereumjs-util');
+const ethUtil = require('ethereumjs-util');
 const importers = require('ethereumjs-wallet/thirdparty');
 
 const privates = new WeakMap();

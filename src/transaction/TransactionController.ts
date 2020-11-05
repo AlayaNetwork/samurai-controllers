@@ -19,7 +19,7 @@ const MethodRegistry = require('@alayanetwork/eth-method-registry');
 const EthQuery = require('@alayanetwork/eth-query');
 const Transaction = require('@alayanetwork/ethereumjs-tx');
 const random = require('uuid/v1');
-const { BN } = require('@alayanetwork/ethereumjs-util');
+const { BN } = require('ethereumjs-util');
 const { Mutex } = require('await-semaphore');
 
 /**

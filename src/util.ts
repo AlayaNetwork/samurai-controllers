@@ -7,7 +7,7 @@ import { Token } from './assets/TokenRatesController';
 
 const sigUtil = require('@alayanetwork/eth-sig-util');
 const jsonschema = require('jsonschema');
-const { BN, stripHexPrefix } = require('@alayanetwork/ethereumjs-util');
+const { BN, stripHexPrefix } = require('ethereumjs-util');
 const ensNamehash = require('eth-ens-namehash');
 
 const hexRe = /^[0-9A-Fa-f]+$/ug;
