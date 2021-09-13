@@ -213,7 +213,7 @@ export class NetworkController extends BaseController<NetworkConfig, NetworkStat
     this.update({
       provider: {
         ...providerState,
-        ...{ type, ticker: 'ATP' },
+        ...{ type, ticker: 'LAT' },
       },
     });
     this.refreshNetwork();

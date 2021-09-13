@@ -76,7 +76,7 @@ export class CurrencyRateController extends BaseController<CurrencyRateConfig, C
       currentCurrency: this.getCurrentCurrencyFromState(state),
       disabled: true,
       interval: 180000,
-      nativeCurrency: 'ATP',
+      nativeCurrency: 'LAT',
     };
     this.defaultState = {
       conversionDate: 0,
